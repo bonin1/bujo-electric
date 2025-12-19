@@ -1,0 +1,45 @@
+
+```markdown
+---
+title: "{{PAGE_TITLE}}" 
+meta_description: "{{PAGE_META_DESCRIPTION}}" 
+keywords: {{PAGE_KEYWORDS_MD}}
+url_slug: "{{PAGE_URL_SLUG}}"
+---
+
+# {{PAGE_TITLE}}
+
+{{PAGE_CONTENT}}
+
+• Include internal links to pillar or sibling pages in natural sentences  
+• End with a CTA block
+
+
+✅ Rules:
+Every page must have at least 1 clear CTA
+
+Use forms, buttons, phone numbers, or links
+
+Repeat CTA near the top and bottom of page
+
+Forms should include: Name, Phone, Email, Message
+
+✅ Content:
+NAP (Name, Address, Phone) in schema format
+
+Main nav links
+
+Social icons
+
+Privacy Policy / Terms links
+
+Google Map embed (for local SEO)
+
+✅ Technical SEO:
+Robots.txt and XML sitemap correctly configured
+
+Canonical tags to avoid duplicates
+
+Core Web Vitals: FID <100ms, LCP <2.5s, CLS <0.1
+
+Mobile-first responsive design

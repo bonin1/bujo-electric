@@ -1,0 +1,156 @@
+{
+  "thingsToDo": {
+    "example-city-st": {
+      "cityName": "Example City",
+      "citySlug": "example-city-st",
+      "state": "ST",
+      "description": "Example City is a vibrant community offering a perfect blend of cultural attractions, outdoor recreation, and family-friendly activities. Visitors can explore local parks, historic sites, and enjoy community events throughout the year. Our professional services help Example City residents maintain their properties with reliable, expert care.",
+      "highlights": [
+        "Example City attractions",
+        "downtown activities",
+        "family entertainment",
+        "local parks",
+        "cultural venues",
+        "community events",
+        "outdoor recreation",
+        "local dining",
+        "shopping districts"
+      ],
+      "attractions": [
+        {
+          "name": "Example City Community Park",
+          "address": "123 Park Avenue, Example City, ST 12345",
+          "description": "Example City Community Park is a beautiful green space perfect for families and outdoor enthusiasts. This well-maintained park features playground equipment, walking trails, picnic areas, and sports facilities. The park provides a peaceful setting for relaxation and recreation, making it an ideal spot for family gatherings, morning walks, or afternoon picnics. With its shaded areas and well-kept grounds, it serves as a central hub for community activities.",
+          "mapUrl": "https://maps.app.goo.gl/example",
+          "iframeSrc": "https://www.google.com/maps/embed?pb=example",
+          "type": "Park & Recreation",
+          "category": "Parks & Recreation",
+          "keywords": ["community park", "family activities", "outdoor recreation", "public park"],
+          "seo": {
+            "metaTitle": "Example City Community Park - Family Recreation & Activities",
+            "metaDescription": "Visit Example City Community Park featuring playgrounds, walking trails, and picnic areas. Perfect spot for family activities and outdoor recreation.",
+            "keywords": "Example City park, community park, family recreation, outdoor activities"
+          }
+        },
+        {
+          "name": "Example City Cultural Center",
+          "address": "456 Main Street, Example City, ST 12345",
+          "description": "The Example City Cultural Center offers a diverse range of programs, exhibitions, and performances throughout the year. This multi-purpose facility serves as a hub for arts, culture, and community engagement. Visitors can enjoy art exhibitions, theater performances, educational workshops, and special events. The center provides a welcoming space for people of all ages to explore creativity and connect with the community.",
+          "mapUrl": "https://maps.app.goo.gl/example",
+          "iframeSrc": "https://www.google.com/maps/embed?pb=example",
+          "type": "Cultural Venue",
+          "category": "Arts & Culture",
+          "keywords": ["cultural center", "arts venue", "community programs", "exhibitions"],
+          "seo": {
+            "metaTitle": "Example City Cultural Center - Arts, Culture & Community Events",
+            "metaDescription": "Explore arts and culture at Example City Cultural Center. Featuring exhibitions, performances, and community programs for all ages.",
+            "keywords": "Example City Cultural Center, arts venue, cultural programs, community events"
+          }
+        },
+        {
+          "name": "Downtown Example City Historic District",
+          "address": "Downtown Example City, ST 12345",
+          "description": "Downtown Example City Historic District showcases the city's rich heritage with preserved architecture, boutique shops, local restaurants, and charming streetscapes. Take a walking tour to discover historic landmarks, enjoy local cuisine, and browse unique shops. The district hosts regular farmers markets, art walks, and seasonal festivals, making it a vibrant destination for residents and visitors alike.",
+          "mapUrl": "https://maps.app.goo.gl/example",
+          "iframeSrc": "https://www.google.com/maps/embed?pb=example",
+          "type": "Historic District",
+          "category": "Shopping & Dining",
+          "keywords": ["historic downtown", "shopping district", "local restaurants", "heritage sites"],
+          "seo": {
+            "metaTitle": "Downtown Example City Historic District - Shopping, Dining & History",
+            "metaDescription": "Explore Downtown Example City Historic District featuring unique shops, restaurants, and preserved architecture. Perfect for shopping and dining.",
+            "keywords": "Downtown Example City, historic district, shopping, restaurants, local dining"
+          }
+        }
+      ],
+      "totalAttractions": 3,
+      "seo": {
+        "metaTitle": "Things to Do in Example City, ST - Top Attractions & Activities",
+        "metaDescription": "Discover the best things to do in Example City, ST. Explore parks, cultural venues, historic sites, and family activities in this vibrant community.",
+        "keywords": "things to do Example City ST, Example City attractions, activities, tourism, entertainment"
+      },
+      "location": {
+        "city": "Example City",
+        "state": "ST",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "featuredImage": "/images/things-to-do/example-city-featured.jpg",
+      "gallery": [
+        "/images/things-to-do/example-city-1.jpg",
+        "/images/things-to-do/example-city-2.jpg",
+        "/images/things-to-do/example-city-3.jpg"
+      ]
+    },
+    "north-town-st": {
+      "cityName": "North Town",
+      "citySlug": "north-town-st",
+      "state": "ST",
+      "description": "North Town offers small-town charm with modern amenities and a welcoming community atmosphere. Our professional services help North Town residents maintain their homes and businesses with reliable, expert care.",
+      "highlights": [
+        "North Town community",
+        "outdoor activities",
+        "family-friendly attractions",
+        "local parks",
+        "community events",
+        "small town charm",
+        "outdoor recreation",
+        "local dining",
+        "shopping"
+      ],
+      "attractions": [
+        {
+          "name": "North Town Recreation Center",
+          "address": "North Town, ST",
+          "description": "North Town Recreation Center is a modern facility offering sports, fitness, and community programs for all ages. Features include indoor courts, fitness equipment, swimming pool, and meeting spaces perfect for community gatherings.",
+          "mapUrl": "https://maps.app.goo.gl/example",
+          "iframeSrc": "https://www.google.com/maps/embed/example",
+          "type": "Recreation Center",
+          "category": "Sports & Fitness",
+          "keywords": ["recreation center", "fitness", "community programs", "sports facility"],
+          "seo": {
+            "metaTitle": "North Town Recreation Center - Sports, Fitness & Community Programs",
+            "metaDescription": "Visit North Town Recreation Center offering sports facilities, fitness programs, and community activities for all ages.",
+            "keywords": "North Town recreation, community center, fitness programs, sports facility"
+          }
+        },
+        {
+          "name": "North Town Farmers Market",
+          "address": "Downtown North Town, ST",
+          "description": "North Town Farmers Market brings the community together every weekend with local produce, artisan goods, live music, and food vendors. Experience the best of local agriculture and handmade crafts in a friendly, festive atmosphere.",
+          "mapUrl": "https://maps.app.goo.gl/example",
+          "iframeSrc": "https://www.google.com/maps/embed/example",
+          "type": "Market",
+          "category": "Shopping & Dining",
+          "keywords": ["farmers market", "local produce", "artisan goods", "community market"],
+          "seo": {
+            "metaTitle": "North Town Farmers Market - Local Produce & Artisan Goods",
+            "metaDescription": "Shop at North Town Farmers Market for fresh local produce, artisan goods, and handmade crafts. Open weekends with live music and food vendors.",
+            "keywords": "North Town farmers market, local produce, artisan market, weekend market"
+          }
+        }
+      ],
+      "totalAttractions": 2,
+      "seo": {
+        "metaTitle": "Things to Do in North Town, ST - Community Activities & Attractions",
+        "metaDescription": "Discover the best things to do in North Town, ST. Explore recreation centers, farmers markets, and family-friendly activities.",
+        "keywords": "things to do North Town ST, North Town attractions, activities, community events"
+      },
+      "location": {
+        "city": "North Town",
+        "state": "ST",
+        "coordinates": {
+          "latitude": 40.7500,
+          "longitude": -74.0200
+        }
+      },
+      "featuredImage": "/images/things-to-do/north-town-featured.jpg",
+      "gallery": [
+        "/images/things-to-do/north-town-1.jpg",
+        "/images/things-to-do/north-town-2.jpg"
+      ]
+    }
+  }
+}

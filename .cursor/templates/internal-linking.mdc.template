@@ -1,0 +1,59 @@
+---
+alwaysApply: true
+---
+
+# 📌 Cursor Internal Linking Rules for {{BUSINESS_NAME}}
+
+Purpose: Keep users engaged, improve crawlability
+
+---
+
+## ✅ Rules
+
+Each service page should link to:
+
+- Related service pages: {{SERVICES_MD}}
+- Portfolio examples: {{SERVICES_URLS_MD}}
+- Blog posts: {{BLOG_LINKS_MD}}
+- Contact/CTA: {{CONTACT_MD}}
+
+Use keyword-rich anchor text
+
+---
+
+## ✅ Examples
+
+**Service Page Internal Links:**
+```html
+<h2>Related Services</h2>
+<ul>
+  <li><a href="{{SERVICES_URLS}}">{{SERVICES}}</a></li>
+  <li><a href="{{SERVICES_URLS}}">{{SERVICES}}</a></li>
+  <li><a href="{{SERVICES_URLS}}">{{SERVICES}}</a></li>
+</ul>
+
+<h2>Learn More</h2>
+<ul>
+  <li><a href="{{BLOG_LINKS_MD}}">{{BLOG_TOPICS}}</a></li>
+  <li><a href="{{BLOG_LINKS_MD}}">{{BLOG_TOPICS}}</a></li>
+  <li><a href="{{BLOG_LINKS_MD}}">{{BLOG_TOPICS}}</a></li>
+</ul>
+
+<p>{{CONTACT_MD}}</p>
+```
+
+**Location Page Internal Links:**
+```html
+<h2>Our Services in {{LOCATIONS}}</h2>
+<ul>
+  <li><a href="{{SERVICES_URLS}}">{{SERVICES}} in {{LOCATIONS}}</a></li>
+  <li><a href="{{SERVICES_URLS}}">{{SERVICES}} in {{LOCATIONS}}</a></li>
+  <li><a href="{{SERVICES_URLS}}">{{SERVICES}} in {{LOCATIONS}}</a></li>
+</ul>
+
+<h2>Local Resources</h2>
+<ul>
+  <li><a href="{{BLOG_LINKS_MD}}">{{BLOG_TOPICS}} in {{LOCATIONS}}</a></li>
+  <li><a href="{{BLOG_LINKS_MD}}">{{BLOG_TOPICS}} for {{LOCATIONS}}</a></li>
+</ul>
+```

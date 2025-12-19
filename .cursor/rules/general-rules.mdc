@@ -1,0 +1,17 @@
+---
+alwaysApply: true
+---
+
+Purpose: These are general rules when building websites
+
+---
+
+## ✅ Rules
+
+Never use <a> tags always use the pre-made <Link> tag 
+
+In paragraphs, texts, titles or whatever strings there are never use ' or " replace them by &apos; example: Let's | Let&apos;s
+
+Always update the sitemap whenever there is a new page created
+
+---

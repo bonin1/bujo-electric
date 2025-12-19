@@ -1,0 +1,85 @@
+{
+  "name": "Example Company - Professional Services",
+  "short_name": "Example Company",
+  "description": "Expert professional services in Example City, ST. Quality solutions and customer satisfaction guaranteed. Contact us today for a free consultation!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": [
+    "service provider",
+    "professional_services"
+  ],
+  "icons": [
+    {
+      "src": "/assets/config/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/config/favicon.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/config/favicon.ico",
+      "sizes": "180x180",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/config/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/config/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/config/favicon.ico",
+      "sizes": "1280x720",
+      "type": "image/x-icon",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/config/favicon.ico",
+      "sizes": "750x1334",
+      "type": "image/x-icon",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with us",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/assets/config/favicon.ico",
+          "sizes": "16x16"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "View our professional professional services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "/assets/config/favicon.ico",
+          "sizes": "16x16"
+        }
+      ]
+    }
+  ]
+}

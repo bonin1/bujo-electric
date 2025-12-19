@@ -1,0 +1,44 @@
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{BUSINESS_NAME}}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{CONTACT.ADDRESS}}"
+  },
+  "telephone": "{{CONTACT.PHONE}}",
+  "email": "{{CONTACT.EMAIL}}",
+  "url": "{{WEBSITE_URL}}",
+  "areaServed": "{{LOCATIONS_ARRAY}}",
+  "serviceType": {{SERVICES_ARRAY}}
+}
+```
+
+### WebSite
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{BUSINESS_NAME}}",
+  "url": "{{WEBSITE_URL}}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{WEBSITE_URL}}/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+```
+
+### Service Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{SERVICES}}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{BUSINESS_NAME}}"
+  },
+  "areaServed": "{{LOCATIONS_ARRAY}}",
+  "description": "Professional {{SERVICES}} services in {{LOCATIONS}}"
+}
+```

@@ -1,0 +1,120 @@
+{
+  "stats": {
+    "totalProjects": 500,
+    "happyClients": 450,
+    "yearsExperience": 10,
+    "averageRating": 4.9
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Professional Service One Project",
+      "category": "Service One",
+      "image": "/assets/config/placeholder-image.png",
+      "date": "2024",
+      "location": "Example City, ST",
+      "description": "Complete service one with professional installation and quality materials.",
+      "features": [
+        "Professional Installation",
+        "Quality Materials",
+        "Expert Service",
+        "Customer Satisfaction"
+      ],
+      "client": "Residential Client",
+      "duration": "1-2 Days",
+      "tags": [
+        "Service One",
+        "Example City",
+        "ST"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Professional Service Two Project",
+      "category": "Service Two",
+      "image": "/assets/config/placeholder-image.png",
+      "date": "2024",
+      "location": "North Town, ST",
+      "description": "Complete service two with professional installation and quality materials.",
+      "features": [
+        "Professional Installation",
+        "Quality Materials",
+        "Expert Service",
+        "Customer Satisfaction"
+      ],
+      "client": "Commercial Client",
+      "duration": "1-2 Days",
+      "tags": [
+        "Service Two",
+        "North Town",
+        "ST"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Professional Service Three Project",
+      "category": "Service Three",
+      "image": "/assets/config/placeholder-image.png",
+      "date": "2024",
+      "location": "South Town, ST",
+      "description": "Complete service three with professional installation and quality materials.",
+      "features": [
+        "Professional Installation",
+        "Quality Materials",
+        "Expert Service",
+        "Customer Satisfaction"
+      ],
+      "client": "Residential Client",
+      "duration": "1-2 Days",
+      "tags": [
+        "Service Three",
+        "South Town",
+        "ST"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Professional Service Four Project",
+      "category": "Service Four",
+      "image": "/assets/config/placeholder-image.png",
+      "date": "2024",
+      "location": "East Village, ST",
+      "description": "Complete service four with professional installation and quality materials.",
+      "features": [
+        "Professional Installation",
+        "Quality Materials",
+        "Expert Service",
+        "Customer Satisfaction"
+      ],
+      "client": "Commercial Client",
+      "duration": "1-2 Days",
+      "tags": [
+        "Service Four",
+        "East Village",
+        "ST"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Professional Service Five Project",
+      "category": "Service Five",
+      "image": "/assets/config/placeholder-image.png",
+      "date": "2024",
+      "location": "West Borough, ST",
+      "description": "Complete service five with professional installation and quality materials.",
+      "features": [
+        "Professional Installation",
+        "Quality Materials",
+        "Expert Service",
+        "Customer Satisfaction"
+      ],
+      "client": "Residential Client",
+      "duration": "1-2 Days",
+      "tags": [
+        "Service Five",
+        "West Borough",
+        "ST"
+      ]
+    }
+  ]
+}

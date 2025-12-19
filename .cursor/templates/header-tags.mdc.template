@@ -1,0 +1,68 @@
+---
+alwaysApply: true
+---
+
+# 📌 Cursor Header Tags Rules for {{BUSINESS_NAME}}
+
+Purpose: Readability + SEO crawlability
+
+---
+
+## ✅ Rules
+
+1x <h1> per page (unique and keyword-focused)
+
+Use <h2> for primary sections, <h3> for subsections
+
+Never skip heading levels
+
+Avoid generic H1s like "Welcome"
+
+---
+
+## ✅ Examples
+
+**{{PRIMARY_KEYWORD}} Page:**
+```html
+<h1>{{PRIMARY_KEYWORD}} Services in {{LOCATIONS}}</h1>
+
+<h2>Why Choose {{BUSINESS_NAME}}</h2>
+<h3>Expert Craftsmanship</h3>
+<h3>Quality Materials</h3>
+<h3>Professional Installation</h3>
+
+<h2>Our {{PRIMARY_KEYWORD}} Services</h2>
+<h3>{{SERVICES_MD}}</h3>
+<h3>Custom Design Solutions</h3>
+<h3>Project Management</h3>
+```
+
+**Service Page Structure:**
+```html
+<h1>{{SERVICES}} in {{LOCATIONS}}</h1>
+
+<h2>Professional {{SERVICES}} Services</h2>
+<h3>Design & Planning</h3>
+<h3>Installation & Construction</h3>
+<h3>Maintenance & Support</h3>
+
+<h2>Why Choose Us</h2>
+<h3>Experience & Expertise</h3>
+<h3>Quality Guarantee</h3>
+<h3>Customer Satisfaction</h3>
+```
+
+**Location Page Structure:**
+```html
+<h1>{{PRIMARY_KEYWORD}} in {{LOCATIONS}}</h1>
+
+<h2>{{BUSINESS_NAME}} {{LOCATIONS}} Services</h2>
+<h3>{{SERVICES_MD}}</h3>
+<h3>Local Expertise</h3>
+<h3>Community Focus</h3>
+
+<h2>Why Choose {{BUSINESS_NAME}} in {{LOCATIONS}}</h2>
+<h3>Local Knowledge</h3>
+<h3>Proven Track Record</h3>
+<h3>Customer Reviews</h3>
+```

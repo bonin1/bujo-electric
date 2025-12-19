@@ -1,0 +1,583 @@
+---
+alwaysApply: true
+---
+
+# 📌 Cursor Header Tags Rules for Example Company
+
+Purpose: Readability + SEO crawlability
+
+---
+
+## ✅ Rules
+
+1x <h1> per page (unique and keyword-focused)
+
+Use <h2> for primary sections, <h3> for subsections
+
+Never skip heading levels
+
+Avoid generic H1s like "Welcome"
+
+---
+
+## ✅ Examples
+
+**Professional Services Page:**
+```html
+<h1>Professional Services Services in [
+  {
+    "CITY": "Example City",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "North Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "South Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "East Village",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "West Borough",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Central District",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Riverside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Hillside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Lakeside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Mountain View",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Valley Springs",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Meadowbrook",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Oak Grove",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Pine Hills",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Maple Ridge",
+    "STATE": "ST"
+  }
+]</h1>
+
+<h2>Why Choose Example Company</h2>
+<h3>Expert Craftsmanship</h3>
+<h3>Quality Materials</h3>
+<h3>Professional Installation</h3>
+
+<h2>Our Professional Services Services</h2>
+<h3>
+- Service One
+- Service Two
+- Service Three
+- Service Four
+- Service Five</h3>
+<h3>Custom Design Solutions</h3>
+<h3>Project Management</h3>
+```
+
+**Service Page Structure:**
+```html
+<h1>[
+  {
+    "NAME": "Service One",
+    "URL": "/service-one/",
+    "DESCRIPTION": "Professional Service One solutions for residential and commercial clients",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Residential Service One",
+        "URL": "/residential-service-one/"
+      },
+      {
+        "NAME": "Commercial Service One",
+        "URL": "/commercial-service-one/"
+      },
+      {
+        "NAME": "Custom Service One",
+        "URL": "/custom-service-one/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Two",
+    "URL": "/service-two/",
+    "DESCRIPTION": "Fast, reliable Service Two for all your needs",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Emergency Service Two",
+        "URL": "/emergency-service-two/"
+      },
+      {
+        "NAME": "Standard Service Two",
+        "URL": "/standard-service-two/"
+      },
+      {
+        "NAME": "Premium Service Two",
+        "URL": "/premium-service-two/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Three",
+    "URL": "/service-three/",
+    "DESCRIPTION": "Preventive Service Three to keep everything running smoothly",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Basic Service Three",
+        "URL": "/basic-service-three/"
+      },
+      {
+        "NAME": "Advanced Service Three",
+        "URL": "/advanced-service-three/"
+      },
+      {
+        "NAME": "Maintenance Plans",
+        "URL": "/maintenance-plans/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Four",
+    "URL": "/service-four/",
+    "DESCRIPTION": "Specialized Service Four with latest technology",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Installation",
+        "URL": "/installation/"
+      },
+      {
+        "NAME": "Repair",
+        "URL": "/repair/"
+      },
+      {
+        "NAME": "Smart Solutions",
+        "URL": "/smart-solutions/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Five",
+    "URL": "/service-five/",
+    "DESCRIPTION": "Complete Service Five upgrades and replacements",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Option A",
+        "URL": "/option-a/"
+      },
+      {
+        "NAME": "Option B",
+        "URL": "/option-b/"
+      },
+      {
+        "NAME": "Option C",
+        "URL": "/option-c/"
+      },
+      {
+        "NAME": "Option D",
+        "URL": "/option-d/"
+      }
+    ]
+  }
+] in [
+  {
+    "CITY": "Example City",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "North Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "South Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "East Village",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "West Borough",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Central District",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Riverside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Hillside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Lakeside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Mountain View",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Valley Springs",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Meadowbrook",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Oak Grove",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Pine Hills",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Maple Ridge",
+    "STATE": "ST"
+  }
+]</h1>
+
+<h2>Professional [
+  {
+    "NAME": "Service One",
+    "URL": "/service-one/",
+    "DESCRIPTION": "Professional Service One solutions for residential and commercial clients",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Residential Service One",
+        "URL": "/residential-service-one/"
+      },
+      {
+        "NAME": "Commercial Service One",
+        "URL": "/commercial-service-one/"
+      },
+      {
+        "NAME": "Custom Service One",
+        "URL": "/custom-service-one/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Two",
+    "URL": "/service-two/",
+    "DESCRIPTION": "Fast, reliable Service Two for all your needs",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Emergency Service Two",
+        "URL": "/emergency-service-two/"
+      },
+      {
+        "NAME": "Standard Service Two",
+        "URL": "/standard-service-two/"
+      },
+      {
+        "NAME": "Premium Service Two",
+        "URL": "/premium-service-two/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Three",
+    "URL": "/service-three/",
+    "DESCRIPTION": "Preventive Service Three to keep everything running smoothly",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Basic Service Three",
+        "URL": "/basic-service-three/"
+      },
+      {
+        "NAME": "Advanced Service Three",
+        "URL": "/advanced-service-three/"
+      },
+      {
+        "NAME": "Maintenance Plans",
+        "URL": "/maintenance-plans/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Four",
+    "URL": "/service-four/",
+    "DESCRIPTION": "Specialized Service Four with latest technology",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Installation",
+        "URL": "/installation/"
+      },
+      {
+        "NAME": "Repair",
+        "URL": "/repair/"
+      },
+      {
+        "NAME": "Smart Solutions",
+        "URL": "/smart-solutions/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Five",
+    "URL": "/service-five/",
+    "DESCRIPTION": "Complete Service Five upgrades and replacements",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Option A",
+        "URL": "/option-a/"
+      },
+      {
+        "NAME": "Option B",
+        "URL": "/option-b/"
+      },
+      {
+        "NAME": "Option C",
+        "URL": "/option-c/"
+      },
+      {
+        "NAME": "Option D",
+        "URL": "/option-d/"
+      }
+    ]
+  }
+] Services</h2>
+<h3>Design & Planning</h3>
+<h3>Installation & Construction</h3>
+<h3>Maintenance & Support</h3>
+
+<h2>Why Choose Us</h2>
+<h3>Experience & Expertise</h3>
+<h3>Quality Guarantee</h3>
+<h3>Customer Satisfaction</h3>
+```
+
+**Location Page Structure:**
+```html
+<h1>Professional Services in [
+  {
+    "CITY": "Example City",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "North Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "South Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "East Village",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "West Borough",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Central District",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Riverside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Hillside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Lakeside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Mountain View",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Valley Springs",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Meadowbrook",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Oak Grove",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Pine Hills",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Maple Ridge",
+    "STATE": "ST"
+  }
+]</h1>
+
+<h2>Example Company [
+  {
+    "CITY": "Example City",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "North Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "South Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "East Village",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "West Borough",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Central District",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Riverside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Hillside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Lakeside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Mountain View",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Valley Springs",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Meadowbrook",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Oak Grove",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Pine Hills",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Maple Ridge",
+    "STATE": "ST"
+  }
+] Services</h2>
+<h3>
+- Service One
+- Service Two
+- Service Three
+- Service Four
+- Service Five</h3>
+<h3>Local Expertise</h3>
+<h3>Community Focus</h3>
+
+<h2>Why Choose Example Company in [
+  {
+    "CITY": "Example City",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "North Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "South Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "East Village",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "West Borough",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Central District",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Riverside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Hillside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Lakeside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Mountain View",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Valley Springs",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Meadowbrook",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Oak Grove",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Pine Hills",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Maple Ridge",
+    "STATE": "ST"
+  }
+]</h2>
+<h3>Local Knowledge</h3>
+<h3>Proven Track Record</h3>
+<h3>Customer Reviews</h3>
+```

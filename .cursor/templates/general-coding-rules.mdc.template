@@ -1,0 +1,481 @@
+---
+alwaysApply: true
+---
+
+# 📌 Cursor General Coding Rules for {{BUSINESS_NAME}}
+
+Purpose: Maintain consistent code quality, SEO best practices, and proper Next.js conventions
+
+---
+
+## ✅ HTML/TSX Rules
+
+### Links & Navigation
+- **NEVER use `<a>` tags** - Always use the pre-made `<Link>` component
+- Use `<Link href="/path">Text</Link>` for internal navigation
+- Use `<Link href="/path" target="_blank" rel="noopener noreferrer">Text</Link>` for external links
+- Always import Link: `import Link from 'next/link'`
+
+### Images & Media
+- **NEVER use `<img>` tags** - Always use Next.js `<Image>` component
+- Use `<Image src="/path" alt="description" width={width} height={height} />`
+- Always import Image: `import Image from '@/components/ui/image'`
+- Provide meaningful alt text for accessibility and SEO
+
+### Text Content
+- **NEVER use `'` or `"` in HTML strings** - Always use `&apos;` and `&quot;` for visual content
+- **ONLY apply this rule to HTML content** - NOT for JSON files, TypeScript/JavaScript variables, or configuration files
+- Example (HTML/JSX): `<p>Let&apos;s get started</p>` instead of `<p>Let's get started</p>`
+- Example (HTML/JSX): `<span>He said &quot;Hello&quot;</span>` instead of `<span>He said "Hello"</span>`
+- Example (Correct - Variables/JSON): `const title = "Let's go"` or `{"name": "John's Company"}` - these are fine as-is
+
+### Icons & Visual Elements
+- **NEVER use emojis** - Always use proper icon components
+- **ALWAYS use Lucide React icons** as the primary icon library
+- Font Awesome icons are acceptable as a secondary option
+- Import icons: `import { IconName } from 'lucide-react'`
+- Example: `<Star className="w-5 h-5" />` instead of ⭐
+- Example: `<Check className="w-4 h-4 text-green-500" />` instead of ✓
+
+---
+
+## ✅ SEO & Page Management Rules
+
+### New Page Creation
+- **ALWAYS update sitemap** when creating new pages
+- **ALWAYS add new pages to SEO config** (`lib/seo-config.ts`)
+- **ALWAYS include proper meta tags** (title, description, keywords)
+- **ALWAYS use proper heading hierarchy** (H1 → H2 → H3)
+
+### SEO Headers
+- **1x H1 per page** (unique and keyword-focused)
+- Use H2 for primary sections, H3 for subsections
+- Never skip heading levels
+- Avoid generic H1s like "Welcome"
+
+### Meta Descriptions
+- Keep between 140-160 characters
+- Start with strong hook or action phrase
+- Include primary keyword: {{PRIMARY_KEYWORD}}
+- Include service areas: {{LOCATIONS}}
+- End with CTA: {{CTA_TEXT}}
+
+---
+
+## ✅ Component Rules
+
+### File Organization
+- Place components in appropriate folders (`components/ui/`, `components/global/`, etc.)
+- Use descriptive file names with proper casing
+- Export components with `export default`
+- Use TypeScript interfaces for props
+
+### Import Organization
+- Group imports: React/Next.js first, then third-party, then local
+- Use absolute imports when possible (`@/components/...`)
+- Sort imports alphabetically within groups
+
+---
+
+## ✅ Content Rules
+
+### Internal Linking
+- Each service page should link to related services: {{SERVICES_MD}}
+- Link to portfolio examples: {{SERVICES_URLS_MD}}
+- Include contact/CTA: {{CONTACT_MD}}
+- Use keyword-rich anchor text
+
+### Location References
+- Always include service areas: {{LOCATIONS}}
+- Format as "Austin-TX, Dallas-TX, Houston-TX, San Antonio-TX"
+- Include in page titles and meta descriptions
+
+---
+
+## ✅ Responsive & Styling Rules
+
+### Mobile-First Design
+- **ALWAYS test components on mobile, tablet, and desktop breakpoints**
+- Use Tailwind responsive classes: `sm:`, `md:`, `lg:`, `xl:`, `2xl:`
+- Start with mobile styles, then add larger breakpoints
+
+### Layout & Sizing
+- **Avoid fixed heights unless necessary** - prefer `min-h` and flex layouts
+- Use `aspect-ratio` utility for images/videos when applicable
+- Use `w-full`, `h-auto` for responsive images
+- Prefer `flex` and `grid` over absolute positioning
+
+### Tailwind Best Practices
+- Use semantic spacing: `space-y-4`, `gap-4` instead of manual margins
+- Use consistent color palette from `tailwind.config.ts`
+- Group related classes: `flex items-center justify-between`
+- Use `@apply` in CSS for repeated patterns
+
+### Color Scheme & Design System
+- **ALWAYS reference colors from `tailwind.config.ts`** - Never use arbitrary color values
+- Use semantic color names from the design system (e.g., `primary`, `secondary`, `accent`)
+- If custom colors are needed, add them to `tailwind.config.ts` first
+- Prefer Tailwind's built-in color scales: `gray-50` through `gray-900`
+- Use CSS custom properties for dynamic theming when needed
+- Example: `bg-primary-500 text-white` instead of `bg-[#3B82F6] text-[#FFFFFF]`
+- Example: `border-gray-200 hover:border-gray-300` for consistent borders
+- Maintain consistent spacing using Tailwind's spacing scale (4, 8, 12, 16, etc.)
+
+---
+
+## ✅ Reusability & Components
+
+### Component Architecture
+- **Prefer reusable UI components over inline repetitive TSX**
+- Create atomic components: Button, Input, Card, etc.
+- Use compound components for complex UI patterns
+- Extract business logic into custom hooks
+
+### DRY Principles
+- Create shared utilities in `lib/utils.ts`
+- Use TypeScript interfaces for consistent prop types
+- Extract common patterns into custom hooks
+- Create reusable layout components
+
+### Component Organization
+- Group related components in folders
+- Use `index.ts` files for clean exports
+- Keep components focused on single responsibility
+- Use proper naming conventions: PascalCase for components
+
+---
+
+## ✅ Next.js Best Practices
+
+### App Router (App Directory)
+- Use `app/` directory structure for new projects
+- Implement proper loading.tsx and error.tsx files
+- Use Server Components by default, Client Components when needed
+- Leverage parallel and intercepting routes
+
+### Performance Optimization
+- Use `next/dynamic` for code splitting
+- Implement proper `loading.tsx` files
+- Use `Suspense` boundaries for better UX
+- Optimize images with `next/image`
+
+### SEO & Metadata
+- Implement proper Open Graph tags
+- Use structured data (JSON-LD)
+- Ensure proper canonical URLs
+
+### Content & Copywriting
+- **NEVER use duplicate content** - Always rewrite to be 100% unique
+- **Make content SEO-friendly** - Insert relevant keywords naturally (avoid keyword stuffing)
+- **Improve readability and flow** - Use varied sentence rhythms (short + long)
+- **Make it human and engaging** - Add subtle emotions and expressions
+- **Use specific, vivid language** - Replace generic words with emotional alternatives
+- **Add smooth connectors** - Use "besides," "the truth is," "and the thing is," "therefore," etc.
+- **Include examples and analogies** - Add details when appropriate
+- **Avoid robotic tone** - No overly formal or repetitive structures
+- **Vary sentence structures** - Avoid perfectly symmetrical phrasing
+- **Use conversational language** - Replace neutral language with engaging alternatives
+
+---
+
+## ✅ TypeScript Best Practices
+
+### Type Safety
+- Use proper typing for all props and functions
+- Avoid `any` type - use specific types or `unknown`
+- Use interfaces for object shapes, types for unions
+- Enable strict mode in tsconfig.json
+
+### Advanced TypeScript
+- Use generics for reusable components
+- Implement proper error boundaries with typed errors
+- Use discriminated unions for state management
+- Leverage utility types: `Pick`, `Omit`, `Partial`
+
+### Code Organization
+- Use barrel exports (`index.ts` files)
+- Group related types in separate files
+- Use const assertions for immutable data
+- Implement proper error handling with Result types
+
+---
+
+## ✅ Performance & Optimization
+
+### Bundle Optimization
+- Use dynamic imports for large components
+- Implement proper tree shaking
+- Use `next/bundle-analyzer` to monitor bundle size
+- Optimize third-party library usage
+
+### Runtime Performance
+- Use `React.memo()` for expensive components
+- Implement `useMemo()` and `useCallback()` appropriately
+- Avoid unnecessary re-renders
+- Use proper dependency arrays in hooks
+
+### Image & Media Optimization
+- Use Next.js Image component with proper sizing
+- Implement responsive images with `sizes` prop
+- Use modern formats (WebP, AVIF) when possible
+- Lazy load images below the fold
+
+---
+
+## ✅ Accessibility & UX
+
+### Accessibility Standards
+- Include proper ARIA labels and roles
+- Ensure keyboard navigation works completely
+- Use semantic HTML elements (`main`, `section`, `article`)
+- Test with screen readers and accessibility tools
+
+### User Experience
+- Implement proper loading states and skeletons
+- Use optimistic updates for better perceived performance
+- Handle error states gracefully with user-friendly messages
+- Ensure proper focus management
+---
+
+## ✅ Examples
+
+### ✅ Correct Link Usage
+```tsx
+import Link from 'next/link'
+
+// Internal link
+<Link href="/pond-installation/">Pond Installation Services</Link>
+
+// External link
+<Link href="https://example.com" target="_blank" rel="noopener noreferrer">
+  External Resource
+</Link>
+```
+
+### ✅ Correct Image Usage
+```tsx
+import Image from '@/components/ui/image'
+
+<Image 
+  src="/images/example.jpg" 
+  alt="Professional services in City One"
+  width={800}
+  height={600}
+  priority={true}
+/>
+```
+
+### ✅ Correct Icon Usage
+```tsx
+import { Star, Check, ArrowRight, Phone } from 'lucide-react'
+
+// Good - Using Lucide React icons
+<div className="flex items-center gap-2">
+  <Star className="w-5 h-5 text-yellow-500" />
+  <span>Featured Service</span>
+</div>
+
+// Good - Icon button
+<button className="flex items-center gap-2 bg-primary-500 text-white px-4 py-2 rounded-lg">
+  <Phone className="w-4 h-4" />
+  Contact Us
+</button>
+
+// Bad - Using emojis
+<div>⭐ Featured Service</div>
+<button>📞 Contact Us</button>
+```
+
+### ✅ Correct Color Usage
+```tsx
+// Good - Using Tailwind colors from config
+<div className="bg-primary-500 text-white border-primary-600">
+  <h2 className="text-2xl font-bold text-gray-900">Title</h2>
+  <p className="text-gray-600">Description text</p>
+  <button className="bg-accent-500 hover:bg-accent-600 text-white">
+    Action
+  </button>
+</div>
+
+// Bad - Using arbitrary colors
+<div className="bg-[#3B82F6] text-[#FFFFFF] border-[#2563EB]">
+  <h2 className="text-2xl font-bold text-[#111827]">Title</h2>
+  <p className="text-[#4B5563]">Description text</p>
+  <button className="bg-[#10B981] hover:bg-[#059669] text-white">
+    Action
+  </button>
+</div>
+```
+
+### ✅ Correct Text Formatting
+```tsx
+// Good
+<p>Let&apos;s create your dream pond today!</p>
+<p>He said &quot;This looks amazing!&quot;</p>
+
+// Bad
+<p>Let's create your dream pond today!</p>
+<p>He said "This looks amazing!"</p>
+```
+
+### ✅ Correct Responsive Design
+```tsx
+import { ArrowRight } from 'lucide-react'
+
+// Mobile-first responsive component
+export default function HeroSection() {
+  return (
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-8 sm:px-6 sm:py-12 md:px-8 md:py-16 lg:px-12 lg:py-20 bg-linear-to-br from-primary-50 to-white">
+      <div className="w-full max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 md:space-y-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+          Professional Services
+        </h1>
+        <p className="text-base sm:text-lg md:text-xl text-gray-600">
+          Transform your business with our expert solutions
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full sm:w-auto">
+            Get Free Quote
+            <ArrowRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    </section>
+  )
+}
+```
+
+### ✅ Correct Reusable Component
+```tsx
+// Reusable Card component
+interface CardProps {
+  title: string
+  description: string
+  image: string
+  alt: string
+  className?: string
+}
+
+export default function Card({ title, description, image, alt, className = "" }: CardProps) {
+  return (
+    <div className={`bg-white rounded-lg shadow-md overflow-hidden ${className}`}>
+      <div className="aspect-video relative">
+        <Image
+          src={image}
+          alt={alt}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-gray-600">{description}</p>
+      </div>
+    </div>
+  )
+}
+
+// Usage
+<Card
+  title="Service One"
+  description="Professional service one solutions"
+  image="/images/service-example.jpg"
+  alt="Service one in City One"
+  className="hover:shadow-lg transition-shadow"
+/>
+```
+
+---
+
+## ❌ Common Mistakes to Avoid
+
+### HTML/TSX Mistakes
+- Using `<a>` instead of `<Link>`
+- Using `<img>` instead of `<Image>`
+- Using unescaped quotes in strings (`'` instead of `&apos;`)
+- Linting Errors related to content (&apos; and so on)
+- Missing alt text on images
+- Using non-semantic HTML elements
+- Using emojis instead of icon components
+- Using arbitrary color values instead of design system colors
+
+### SEO Mistakes
+- Skipping heading levels (H1 → H3)
+- Forgetting to update sitemap for new pages
+- Not adding new pages to SEO config
+- Generic H1 tags like "Welcome" or "Home"
+- Not including location keywords in content
+- Missing meta descriptions or using duplicate ones
+- Not using our approach using seo-config and generators
+
+### Responsive Design Mistakes
+- Using fixed heights instead of flexible layouts
+- Not testing on actual mobile devices
+- Skipping responsive breakpoints
+- Using absolute positioning unnecessarily
+- Not using `aspect-ratio` for media content
+
+### Component Architecture Mistakes
+- Creating inline repetitive TSX instead of reusable components
+- Not using TypeScript interfaces for props
+- Mixing business logic with UI components
+- Not extracting custom hooks for shared logic
+- Poor component organization and naming
+
+### Performance Mistakes
+- Not using `React.memo()` for expensive components
+- Missing dependency arrays in hooks
+- Not implementing proper loading states
+- Using large bundle sizes without code splitting
+- Not optimizing images with proper sizing
+
+### TypeScript Mistakes
+- Using `any` type instead of specific types
+- Not using generics for reusable components
+- Missing error handling with proper types
+- Not leveraging utility types (`Pick`, `Omit`, `Partial`)
+- Poor type organization and barrel exports
+
+### Content & Copywriting Mistakes
+- Using duplicate content from other websites
+- Generic, robotic language without personality
+- Keyword stuffing instead of natural integration
+- Repetitive sentence structures
+- Overly formal or neutral tone
+- Missing emotional connections with readers
+- Lack of specific details and examples
+- Perfectly symmetrical phrasing that sounds artificial
+
+---
+
+## ✅ Content & Copywriting Examples
+
+### ✅ Correct Content Writing
+```tsx
+// ❌ BAD - Generic, duplicate content
+const badContent = `
+Our company provides excellent services. We have many years of experience. 
+Our team is professional and skilled. We offer competitive prices. 
+Contact us today for more information.
+`
+
+// ✅ GOOD - Unique, engaging, SEO-optimized content
+const goodContent = `
+The truth is, we&apos;ve been transforming businesses for over a decade, and the thing is, 
+our passion shows in every project we touch. Besides our award-winning solutions, 
+we specialize in creating services that become the foundation of your success.
+
+Therefore, when you choose us, you&apos;re not just getting a service – you&apos;re getting 
+a team that treats your vision as our own. And the best part? Our clients across 
+multiple locations consistently tell us we exceed their expectations.
+
+Ready to see what we can create together? Let&apos;s start with a free consultation 
+that&apos;s completely tailored to your unique needs.
+`
+
+// Content checklist:
+// ✅ Unique phrasing - No duplicate content
+// ✅ SEO optimization - Natural keyword integration  
+// ✅ Conversational tone - Engaging and human
+```

@@ -1,0 +1,5 @@
+export { default as SimpleHero } from './SimpleHero'
+export { default as StatsHero } from './StatsHero'
+export { default as HouseMaskHero } from './HouseMaskHero'
+export { default as LuxuriousHero } from './LuxuriousHero'
+export { default as ImageFocusedHero } from './ImageFocusedHero'

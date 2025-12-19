@@ -1,0 +1,312 @@
+{
+  "headers": [
+    {
+      "id": "home",
+      "url": "/",
+      "title": "Transform Your Garage with Professional Garage Door Services",
+      "subtitle": "Quality garage door installation, repair, and maintenance services across all regions",
+      "description": "Create stunning results with our expert garage door services. From custom garage door installations to year-round maintenance, we bring your vision to life.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Get Free Consultation",
+          "link": "/contact",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "View Our Work",
+          "link": "/portfolio",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Licensed & Insured",
+        "5+ Years Experience",
+        "Satisfaction Guaranteed"
+      ]
+    },
+    {
+      "id": "maintenance-tips",
+      "url": "/maintenance-tips",
+      "title": "Essential Garage Door Maintenance Tips",
+      "subtitle": "Keep your garage doors thriving year-round with expert maintenance guidance",
+      "description": "Learn the best practices for maintaining your garage doors throughout the year. From seasonal care to garage door maintenance.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Read Full Guide",
+          "link": "#content",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Get Professional Service",
+          "link": "/contact",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Expert Tips",
+        "Seasonal Guide",
+        "Best Practices"
+      ],
+      "breadcrumbs": [
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "Maintenance Tips",
+          "href": "/maintenance-tips"
+        }
+      ]
+    },
+    {
+      "id": "design-ideas",
+      "url": "/design-ideas",
+      "title": "10 Stunning Garage Door Design Ideas",
+      "subtitle": "Transform your garage with beautiful garage door design concepts",
+      "description": "Discover creative garage door design ideas that complement your home perfectly. From modern to traditional styles, find inspiration for your dream garage door.",
+      "image": "/assets/config/placeholder-image.png",
+      "price": "Design Consultation",
+      "priceNote": "Custom solutions available",
+      "features": [
+        "10 Unique Design Ideas",
+        "Modern & Traditional Styles",
+        "Custom Design Services",
+        "Professional Consultation"
+      ],
+      "cta": {
+        "primary": {
+          "text": "View All Designs",
+          "link": "#content",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Get Custom Design",
+          "link": "/contact",
+          "style": "secondary"
+        }
+      },
+      "badges": [
+        "Design Inspiration",
+        "Custom Solutions",
+        "Expert Guidance"
+      ]
+    },
+    {
+      "id": "installation-process",
+      "url": "/installation-process",
+      "title": "Complete Guide to Professional Garage Door Installation",
+      "subtitle": "Everything you need to know about our comprehensive garage door installation process",
+      "description": "Learn about our professional garage door installation process from planning to completion. Expert garage door installation with quality guarantee and ongoing support.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Learn Our Process",
+          "link": "#content",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Start Your Project",
+          "link": "/contact",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Step-by-Step Guide",
+        "Professional Installation",
+        "Quality Guaranteed"
+      ]
+    },
+    {
+      "id": "service-guide",
+      "url": "/service-guide",
+      "title": "Ultimate Garage Door Service Guide: When and How to Maintain Your Garage Doors",
+      "subtitle": "Expert garage door maintenance schedule and best practices",
+      "description": "Complete guide to garage door maintenance. Learn when and how to maintain your garage doors properly for optimal performance and longevity.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Read Full Guide",
+          "link": "#content",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Schedule Service",
+          "link": "/contact",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Maintenance Guide",
+        "Expert Advice",
+        "Best Practices"
+      ]
+    },
+    {
+      "id": "example-city-st",
+      "url": "/example-city-st/",
+      "title": "Professional Garage Door Services in Example City, ST",
+      "subtitle": "Quality garage door services for Example City residents",
+      "description": "Example City offers a unique blend of urban and suburban living. Our local office provides comprehensive garage door services tailored to the area's needs.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Get Example City Quote",
+          "link": "/contact",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "View Local Work",
+          "link": "/portfolio",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Local Service",
+        "Expert Solutions",
+        "Free Consultation"
+      ]
+    },
+    {
+      "id": "service-areas",
+      "url": "/service-areas/",
+      "title": "Our Garage Door Service Areas",
+      "subtitle": "Professional garage door services across multiple regions",
+      "description": "We proudly serve Example City, North Town, South Town, East Village and surrounding areas with expert garage door installation, repair, and maintenance services.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Find Your Area",
+          "link": "#service-areas",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Contact Us",
+          "link": "/contact",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Multiple Locations",
+        "Regional Coverage",
+        "Local Expertise"
+      ]
+    },
+    {
+      "id": "services",
+      "url": "/services/",
+      "title": "Our Professional Garage Door Services",
+      "subtitle": "Complete garage door solutions for your property",
+      "description": "From custom garage door installation to year-round maintenance, we provide comprehensive garage door services tailored to your specific needs.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "View All Services",
+          "link": "#services",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Get Quote",
+          "link": "/contact",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Full Service",
+        "Expert Team",
+        "Quality Guaranteed"
+      ]
+    },
+    {
+      "id": "about",
+      "url": "/about/",
+      "title": "About Example Company",
+      "subtitle": "Your trusted garage door service experts",
+      "description": "Learn about our company, team, and commitment to creating quality garage door solutions that enhance your property.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Learn More",
+          "link": "#about",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Contact Us",
+          "link": "/contact",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Experienced Team",
+        "Quality Focused",
+        "Customer First"
+      ]
+    },
+    {
+      "id": "contact",
+      "url": "/contact/",
+      "title": "Contact Us",
+      "subtitle": "Get in touch for a free consultation",
+      "description": "Get in touch with our team for a free consultation. We're here to help bring your vision to life.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Call Now",
+          "link": "tel:5551234567",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Send Message",
+          "link": "#contact-form",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Free Consultation",
+        "Fast Response",
+        "Expert Guidance"
+      ]
+    },
+    {
+      "id": "faq",
+      "url": "/faq/",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our services",
+      "description": "Find answers to common questions about garage door installation, repair, maintenance, pricing, and our garage door services across all regions.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "View All FAQs",
+          "link": "#faq",
+          "style": "primary"
+        },
+        "secondary": {
+          "text": "Ask a Question",
+          "link": "/contact",
+          "style": "outline"
+        }
+      },
+      "badges": [
+        "Common Questions",
+        "Expert Answers",
+        "Helpful Resources"
+      ]
+    },
+    {
+      "id": "default",
+      "url": "*",
+      "title": "Example Company",
+      "subtitle": "Professional Garage Door Services",
+      "description": "Transform your garage with our expert garage door services.",
+      "image": "/assets/config/placeholder-image.png",
+      "cta": {
+        "primary": {
+          "text": "Get Started",
+          "link": "/contact",
+          "style": "primary"
+        }
+      }
+    }
+  ]
+}

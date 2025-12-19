@@ -1,0 +1,359 @@
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Example Company",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Main Street, Example City, ST 12345"
+  },
+  "telephone": "(555) 123-4567",
+  "email": "info@example.com",
+  "url": "https://example.com",
+  "areaServed": "[
+  "Example City, ST",
+  "North Town, ST",
+  "South Town, ST",
+  "East Village, ST",
+  "West Borough, ST",
+  "Central District, ST",
+  "Riverside, ST",
+  "Hillside, ST",
+  "Lakeside, ST",
+  "Mountain View, ST",
+  "Valley Springs, ST",
+  "Meadowbrook, ST",
+  "Oak Grove, ST",
+  "Pine Hills, ST",
+  "Maple Ridge, ST"
+]",
+  "serviceType": [
+  "Service One",
+  "Residential Service One",
+  "Commercial Service One",
+  "Custom Service One",
+  "Service Two",
+  "Emergency Service Two",
+  "Standard Service Two",
+  "Premium Service Two",
+  "Service Three",
+  "Basic Service Three",
+  "Advanced Service Three",
+  "Maintenance Plans",
+  "Service Four",
+  "Installation",
+  "Repair",
+  "Smart Solutions",
+  "Service Five",
+  "Option A",
+  "Option B",
+  "Option C",
+  "Option D"
+]
+}
+```
+
+### WebSite
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Example Company",
+  "url": "https://example.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+```
+
+### Service Schema
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "[
+  {
+    "NAME": "Service One",
+    "URL": "/service-one/",
+    "DESCRIPTION": "Professional Service One solutions for residential and commercial clients",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Residential Service One",
+        "URL": "/residential-service-one/"
+      },
+      {
+        "NAME": "Commercial Service One",
+        "URL": "/commercial-service-one/"
+      },
+      {
+        "NAME": "Custom Service One",
+        "URL": "/custom-service-one/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Two",
+    "URL": "/service-two/",
+    "DESCRIPTION": "Fast, reliable Service Two for all your needs",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Emergency Service Two",
+        "URL": "/emergency-service-two/"
+      },
+      {
+        "NAME": "Standard Service Two",
+        "URL": "/standard-service-two/"
+      },
+      {
+        "NAME": "Premium Service Two",
+        "URL": "/premium-service-two/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Three",
+    "URL": "/service-three/",
+    "DESCRIPTION": "Preventive Service Three to keep everything running smoothly",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Basic Service Three",
+        "URL": "/basic-service-three/"
+      },
+      {
+        "NAME": "Advanced Service Three",
+        "URL": "/advanced-service-three/"
+      },
+      {
+        "NAME": "Maintenance Plans",
+        "URL": "/maintenance-plans/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Four",
+    "URL": "/service-four/",
+    "DESCRIPTION": "Specialized Service Four with latest technology",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Installation",
+        "URL": "/installation/"
+      },
+      {
+        "NAME": "Repair",
+        "URL": "/repair/"
+      },
+      {
+        "NAME": "Smart Solutions",
+        "URL": "/smart-solutions/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Five",
+    "URL": "/service-five/",
+    "DESCRIPTION": "Complete Service Five upgrades and replacements",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Option A",
+        "URL": "/option-a/"
+      },
+      {
+        "NAME": "Option B",
+        "URL": "/option-b/"
+      },
+      {
+        "NAME": "Option C",
+        "URL": "/option-c/"
+      },
+      {
+        "NAME": "Option D",
+        "URL": "/option-d/"
+      }
+    ]
+  }
+]",
+  "provider": {
+    "@type": "Organization",
+    "name": "Example Company"
+  },
+  "areaServed": "[
+  "Example City, ST",
+  "North Town, ST",
+  "South Town, ST",
+  "East Village, ST",
+  "West Borough, ST",
+  "Central District, ST",
+  "Riverside, ST",
+  "Hillside, ST",
+  "Lakeside, ST",
+  "Mountain View, ST",
+  "Valley Springs, ST",
+  "Meadowbrook, ST",
+  "Oak Grove, ST",
+  "Pine Hills, ST",
+  "Maple Ridge, ST"
+]",
+  "description": "Professional [
+  {
+    "NAME": "Service One",
+    "URL": "/service-one/",
+    "DESCRIPTION": "Professional Service One solutions for residential and commercial clients",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Residential Service One",
+        "URL": "/residential-service-one/"
+      },
+      {
+        "NAME": "Commercial Service One",
+        "URL": "/commercial-service-one/"
+      },
+      {
+        "NAME": "Custom Service One",
+        "URL": "/custom-service-one/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Two",
+    "URL": "/service-two/",
+    "DESCRIPTION": "Fast, reliable Service Two for all your needs",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Emergency Service Two",
+        "URL": "/emergency-service-two/"
+      },
+      {
+        "NAME": "Standard Service Two",
+        "URL": "/standard-service-two/"
+      },
+      {
+        "NAME": "Premium Service Two",
+        "URL": "/premium-service-two/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Three",
+    "URL": "/service-three/",
+    "DESCRIPTION": "Preventive Service Three to keep everything running smoothly",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Basic Service Three",
+        "URL": "/basic-service-three/"
+      },
+      {
+        "NAME": "Advanced Service Three",
+        "URL": "/advanced-service-three/"
+      },
+      {
+        "NAME": "Maintenance Plans",
+        "URL": "/maintenance-plans/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Four",
+    "URL": "/service-four/",
+    "DESCRIPTION": "Specialized Service Four with latest technology",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Installation",
+        "URL": "/installation/"
+      },
+      {
+        "NAME": "Repair",
+        "URL": "/repair/"
+      },
+      {
+        "NAME": "Smart Solutions",
+        "URL": "/smart-solutions/"
+      }
+    ]
+  },
+  {
+    "NAME": "Service Five",
+    "URL": "/service-five/",
+    "DESCRIPTION": "Complete Service Five upgrades and replacements",
+    "SUB_SERVICES": [
+      {
+        "NAME": "Option A",
+        "URL": "/option-a/"
+      },
+      {
+        "NAME": "Option B",
+        "URL": "/option-b/"
+      },
+      {
+        "NAME": "Option C",
+        "URL": "/option-c/"
+      },
+      {
+        "NAME": "Option D",
+        "URL": "/option-d/"
+      }
+    ]
+  }
+] services in [
+  {
+    "CITY": "Example City",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "North Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "South Town",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "East Village",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "West Borough",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Central District",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Riverside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Hillside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Lakeside",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Mountain View",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Valley Springs",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Meadowbrook",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Oak Grove",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Pine Hills",
+    "STATE": "ST"
+  },
+  {
+    "CITY": "Maple Ridge",
+    "STATE": "ST"
+  }
+]"
+}
+```

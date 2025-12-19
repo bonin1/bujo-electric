@@ -1,0 +1,43 @@
+---
+alwaysApply: true
+---
+export default {
+  name: "global-seo",
+  description: "Enable prerender, inject global SEO tags, and auto-generate sitemap for all sites",
+  
+  config: { prerender: true },
+
+  hooks: {
+    "render:head": (context) => {
+      const canonical = `<link rel="canonical" href="https://${context.host}${context.url}" />`;
+      const metaRobots = `<meta name="robots" content="index,follow" />`;
+      const jsonLd = `<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://${context.host}",
+        "name": "${context.siteTitle || 'Example Company'}"
+      }
+      </script>`;
+      context.head.push(canonical, metaRobots, jsonLd);
+    },
+  },
+
+  buildEnd: async (config) => {
+    const sitemapPath = path.join(config.outDir, "sitemap.xml");
+    const sitemap = new SitemapStream({ hostname: `https://${config.host}` });
+    const walk = (dir) =>
+      fs.readdirSync(dir).flatMap((file) => {
+        const full = path.join(dir, file);
+        return fs.statSync(full).isDirectory()
+          ? walk(full)
+          : full.endsWith(".html")
+          ? [`/${path.relative(config.outDir, full).replace(/\\/g, "/").replace(/index\.html$/, "")}`]
+          : [];
+      });
+    walk(config.outDir).forEach((url) => sitemap.write({ url, changefreq: "weekly", priority: 0.8 }));
+    sitemap.end();
+    const xml = await streamToPromise(sitemap);
+    fs.writeFileSync(sitemapPath, xml);
+  },
+};

@@ -1,0 +1,30 @@
+---
+alwaysApply: true
+---
+# 📌 Cursor Meta Description Rules for {{BUSINESS_NAME}}
+
+Purpose: Entice clicks, reinforce keywords, and provide clarity in SERPs.
+
+---
+
+## ✅ Rules
+
+- 140–160 characters  
+- Start with a strong hook or action phrase  
+- Include primary keyword: {{PRIMARY_KEYWORD}}  
+- Include city or service area: {{LOCATIONS_MD}}  
+- Include a CTA: {{CTA_TEXT}}
+
+---
+
+## ✅ Examples
+
+**{{PRIMARY_KEYWORD}}:**
+"Transform your {{PRIMARY_KEYWORD}} with expert services in {{LOCATIONS}}. Professional quality, modern solutions, and {{CTA_TEXT}}"
+
+**Service Page Examples:**
+"Professional {{SERVICES}} in {{LOCATIONS}}. Expert craftsmanship, quality materials, and {{CTA_TEXT}}"
+
+"Custom {{SERVICES}} solutions in {{LOCATIONS}}. Specialized expertise and {{CTA_TEXT}}"
+
+"Trusted {{SERVICES}} professionals in {{LOCATIONS}}. Quality guaranteed and {{CTA_TEXT}}"

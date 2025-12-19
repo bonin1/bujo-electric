@@ -1,0 +1,322 @@
+# -----------------------------
+# Business Info
+# -----------------------------
+BUSINESS_NAME: "Example Company"  
+WEBSITE_URL: "https://example.com"
+TONE: "Professional"
+LOGO_URL: "https://example.com/logo.png"
+TAGLINE: "Your Trusted Service Provider"
+
+# -----------------------------
+# Business Categories (Google My Business)
+# -----------------------------
+CATEGORIES:
+  PRIMARY: "Service Provider"
+  SECONDARY:
+    - "Professional Services"
+    - "Local Business"
+    - "Service Establishment"
+    - "Contractor"
+    - "Home Services"
+
+# -----------------------------
+# Schema.org Business Type
+# -----------------------------
+# Choose the Schema.org type that best matches your business
+# Options: LocalBusiness, HomeAndConstructionBusiness, ProfessionalService, 
+#          Dentist, Physician, Attorney, Accountant, Plumber, Electrician,
+#          GeneralContractor, HousePainter, Locksmith, MovingCompany, 
+#          RoofingContractor, HVACBusiness, AutoRepair, BeautySalon, 
+#          Restaurant, Store, RealEstateAgent, InsuranceAgency, TravelAgency
+SCHEMA_TYPE: "ProfessionalService"
+
+# -----------------------------
+# Core Services with Sub-Services
+# -----------------------------
+SERVICES:
+  - NAME: "Service One"
+    URL: "/service-one/"
+    DESCRIPTION: "Professional Service One solutions for residential and commercial clients"
+    SUB_SERVICES:
+      - NAME: "Residential Service One"
+        URL: "/residential-service-one/"
+      - NAME: "Commercial Service One"
+        URL: "/commercial-service-one/"
+      - NAME: "Custom Service One"
+        URL: "/custom-service-one/"
+  
+  - NAME: "Service Two"
+    URL: "/service-two/"
+    DESCRIPTION: "Fast, reliable Service Two for all your needs"
+    SUB_SERVICES:
+      - NAME: "Emergency Service Two"
+        URL: "/emergency-service-two/"
+      - NAME: "Standard Service Two"
+        URL: "/standard-service-two/"
+      - NAME: "Premium Service Two"
+        URL: "/premium-service-two/"
+  
+  - NAME: "Service Three"
+    URL: "/service-three/"
+    DESCRIPTION: "Preventive Service Three to keep everything running smoothly"
+    SUB_SERVICES:
+      - NAME: "Basic Service Three"
+        URL: "/basic-service-three/"
+      - NAME: "Advanced Service Three"
+        URL: "/advanced-service-three/"
+      - NAME: "Maintenance Plans"
+        URL: "/maintenance-plans/"
+  
+  - NAME: "Service Four"
+    URL: "/service-four/"
+    DESCRIPTION: "Specialized Service Four with latest technology"
+    SUB_SERVICES:
+      - NAME: "Installation"
+        URL: "/installation/"
+      - NAME: "Repair"
+        URL: "/repair/"
+      - NAME: "Smart Solutions"
+        URL: "/smart-solutions/"
+  
+  - NAME: "Service Five"
+    URL: "/service-five/"
+    DESCRIPTION: "Complete Service Five upgrades and replacements"
+    SUB_SERVICES:
+      - NAME: "Option A"
+        URL: "/option-a/"
+      - NAME: "Option B"
+        URL: "/option-b/"
+      - NAME: "Option C"
+        URL: "/option-c/"
+      - NAME: "Option D"
+        URL: "/option-d/"
+
+# -----------------------------
+# Flattened Service Lists (for quick access)
+# -----------------------------
+# Core Services Only
+CORE_SERVICES:
+  - "Service One"
+  - "Service Two"
+  - "Service Three"
+  - "Service Four"
+  - "Service Five"
+
+CORE_SERVICES_URLS:
+  - "/service-one/"
+  - "/service-two/"
+  - "/service-three/"
+  - "/service-four/"
+  - "/service-five/"
+
+# All Services (Core + Sub-Services)
+ALL_SERVICES:
+  - "Service One"
+  - "Residential Service One"
+  - "Commercial Service One"
+  - "Custom Service One"
+  - "Service Two"
+  - "Emergency Service Two"
+  - "Standard Service Two"
+  - "Premium Service Two"
+  - "Service Three"
+  - "Basic Service Three"
+  - "Advanced Service Three"
+  - "Maintenance Plans"
+  - "Service Four"
+  - "Installation"
+  - "Repair"
+  - "Smart Solutions"
+  - "Service Five"
+  - "Option A"
+  - "Option B"
+  - "Option C"
+  - "Option D"
+
+ALL_SERVICES_URLS:
+  - "/service-one/"
+  - "/residential-service-one/"
+  - "/commercial-service-one/"
+  - "/custom-service-one/"
+  - "/service-two/"
+  - "/emergency-service-two/"
+  - "/standard-service-two/"
+  - "/premium-service-two/"
+  - "/service-three/"
+  - "/basic-service-three/"
+  - "/advanced-service-three/"
+  - "/maintenance-plans/"
+  - "/service-four/"
+  - "/installation/"
+  - "/repair/"
+  - "/smart-solutions/"
+  - "/service-five/"
+  - "/option-a/"
+  - "/option-b/"
+  - "/option-c/"
+  - "/option-d/"
+
+# -----------------------------
+# Locations (Service Areas)
+# -----------------------------
+# These are example service areas - replace with your actual service locations
+# You can add as many cities as needed
+LOCATIONS:
+  - CITY: "Example City"
+    STATE: "ST"
+  - CITY: "North Town"
+    STATE: "ST"
+  - CITY: "South Town"
+    STATE: "ST"
+  - CITY: "East Village"
+    STATE: "ST"
+  - CITY: "West Borough"
+    STATE: "ST"
+  - CITY: "Central District"
+    STATE: "ST"
+  - CITY: "Riverside"
+    STATE: "ST"
+  - CITY: "Hillside"
+    STATE: "ST"
+  - CITY: "Lakeside"
+    STATE: "ST"
+  - CITY: "Mountain View"
+    STATE: "ST"
+  - CITY: "Valley Springs"
+    STATE: "ST"
+  - CITY: "Meadowbrook"
+    STATE: "ST"
+  - CITY: "Oak Grove"
+    STATE: "ST"
+  - CITY: "Pine Hills"
+    STATE: "ST"
+  - CITY: "Maple Ridge"
+    STATE: "ST"
+
+LOCATIONS_MD:
+  - "/example-city-st/"
+  - "/north-town-st/"
+  - "/south-town-st/"
+  - "/east-village-st/"
+  - "/west-borough-st/"
+  - "/central-district-st/"
+  - "/riverside-st/"
+  - "/hillside-st/"
+  - "/lakeside-st/"
+  - "/mountain-view-st/"
+  - "/valley-springs-st/"
+  - "/meadowbrook-st/"
+  - "/oak-grove-st/"
+  - "/pine-hills-st/"
+  - "/maple-ridge-st/"
+
+# Array formats for schema markup
+LOCATIONS_ARRAY:
+  - "Example City, ST"
+  - "North Town, ST"
+  - "South Town, ST"
+  - "East Village, ST"
+  - "West Borough, ST"
+  - "Central District, ST"
+  - "Riverside, ST"
+  - "Hillside, ST"
+  - "Lakeside, ST"
+  - "Mountain View, ST"
+  - "Valley Springs, ST"
+  - "Meadowbrook, ST"
+  - "Oak Grove, ST"
+  - "Pine Hills, ST"
+  - "Maple Ridge, ST"
+
+# -----------------------------
+# Blog Topics
+# -----------------------------
+BLOG_TOPICS:
+  - "Industry Tips and Tricks"
+  - "Best Practices Guide"
+  - "How to Choose the Right Solution"
+  - "Common Problems and Solutions"
+  - "Latest Technology Trends"
+
+# -----------------------------
+# Contact Information 
+# -----------------------------
+CONTACT:
+  ADDRESS: "123 Main Street, Example City, ST 12345"
+  STREET: "123 Main Street"
+  CITY: "Example City"
+  STATE: "ST"
+  ZIP: "12345"
+  AREA_CODE: "555"
+  PHONE: "(555) 123-4567"
+  EMAIL: "info@example.com"
+  ADDRESS_VISIBILITY: "VISIBLE" # Options: VISIBLE or HIDDEN (for Service Area Business)
+
+# -----------------------------
+# Business Hours
+# -----------------------------
+HOURS:
+  MONDAY: "9:00 AM - 5:00 PM"
+  TUESDAY: "9:00 AM - 5:00 PM"
+  WEDNESDAY: "9:00 AM - 5:00 PM"
+  THURSDAY: "9:00 AM - 5:00 PM"
+  FRIDAY: "9:00 AM - 5:00 PM"
+  SATURDAY: "10:00 AM - 3:00 PM"
+  SUNDAY: "Closed"
+
+# -----------------------------
+# Google Maps Integration
+# -----------------------------
+GOOGLE_MAPS:
+  SHORT_LINK: "https://maps.app.goo.gl/example"
+  FULL_URL: "https://www.google.com/maps/place/Example+Company"
+  EMBED_CODE: '<iframe src="https://www.google.com/maps/embed?pb=EXAMPLE_EMBED_CODE" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[300px] mb-4" title="Example Company Map"></iframe>'
+  LATITUDE: "40.7128"
+  LONGITUDE: "-74.0060"
+
+# -----------------------------
+# Social Media Links
+# -----------------------------
+SOCIAL_MEDIA:
+  FACEBOOK:
+    URL: "https://www.facebook.com/examplecompany"
+    EMAIL: "social@example.com"
+  TWITTER:
+    URL: "https://twitter.com/examplecompany"
+    EMAIL: "social@example.com"
+  LINKEDIN:
+    URL: "https://www.linkedin.com/company/examplecompany"
+    EMAIL: "social@example.com"
+  PINTEREST:
+    URL: ""
+    EMAIL: ""
+  NEXTDOOR:
+    URL: ""
+    EMAIL: ""
+  YELP:
+    URL: ""
+    EMAIL: ""
+  INSTAGRAM:
+    URL: "https://www.instagram.com/examplecompany"
+    EMAIL: "social@example.com"
+  YOUTUBE:
+    URL: ""
+    EMAIL: ""
+
+# -----------------------------
+# Meta Information
+# ----------------------------- 
+META:
+  title: "Example Company - Professional Services in Example City, ST"
+  description: "Expert professional services in Example City, ST. Quality solutions and customer satisfaction guaranteed. Contact us today for a free consultation!"
+  keywords: "professional services, Example City ST, quality service, reliable solutions, expert services"
+
+# -----------------------------
+# SEO Keywords
+# -----------------------------
+PRIMARY_KEYWORD: "Professional Services"
+
+# -----------------------------
+# Call to Action
+# -----------------------------
+CTA_TEXT: "Contact us today for a free consultation!"
