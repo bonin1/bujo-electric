@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPin, ArrowRight } from 'lucide-react';
 import citiesData from '@/data/cities.json';
 import { motion } from 'framer-motion';
@@ -34,6 +35,16 @@ const ServiceAreasGrid = () => {
                 href={`/${city.slug}/`}
                 className="group block bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary/20 relative overflow-hidden"
               >
+                {/* Background Image */}
+                <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                  <Image
+                    src={`/assets/images/services/${((index % 20) + 1)}.webp`}
+                    alt={city.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
                 <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110" />
                 
                 <div className="relative z-10">

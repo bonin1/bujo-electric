@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { ChevronDown, ChevronUp, Search } from 'lucide-react';
 import { DynamicHeader } from '@/components/global/dynamic-header';
 import faqData from '@/data/faq.json';
@@ -47,7 +48,7 @@ export default function FAQPage() {
       <DynamicHeader 
         title="Pyetjet e Shpeshta"
         description="Gjeni përgjigje për pyetjet e zakonshme rreth shërbimeve tona elektrike. Nuk e gjeni atë që kërkoni? Na kontaktoni për asistencë të personalizuar."
-        image="/assets/config/placeholder-image.png"
+        image="/assets/images/services/19.webp"
         breadcrumbs={[
           { label: 'Pyetjet e Shpeshta', href: '/pyetje-te-shpeshta/' }
         ]}
@@ -56,6 +57,26 @@ export default function FAQPage() {
       {/* FAQ Section */}
       <section className="py-24 bg-white relative overflow-hidden">
         {/* Background Decorative Elements */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 w-1/3 h-full">
+            <Image
+              src="/assets/images/services/11.webp"
+              alt="FAQ background"
+              fill
+              className="object-cover"
+              sizes="33vw"
+            />
+          </div>
+          <div className="absolute top-0 right-0 w-1/3 h-full">
+            <Image
+              src="/assets/images/services/12.webp"
+              alt="FAQ background"
+              fill
+              className="object-cover"
+              sizes="33vw"
+            />
+          </div>
+        </div>
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-5">
           <div className="absolute top-1/4 left-[-10%] w-96 h-96 bg-primary rounded-full blur-[120px]" />
           <div className="absolute bottom-1/4 right-[-10%] w-96 h-96 bg-secondary rounded-full blur-[120px]" />

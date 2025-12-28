@@ -123,7 +123,7 @@ export const getCitiesForNavigation = (limit?: number): Array<{
 }> => {
   const cities = limit ? citiesData.cities.slice(0, limit) : citiesData.cities;
   return cities.map((city) => ({
-    name: `${city.name}, ${city.state}`,
+    name: `${city.name}, ${city.state}/`,
     city: city.name,
     state: city.state,
     href: `/${city.slug}/`,
@@ -147,7 +147,7 @@ export const getCityUrls = (baseUrl: string): Array<{
   priority: number;
 }> => {
   return citiesData.cities.map((city) => ({
-    url: `${baseUrl}/${city.slug}`,
+    url: `${baseUrl}/${city.slug}/`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.8,

@@ -23,7 +23,11 @@ const page = () => {
       ))}
       
       <div className="min-h-screen">
-        <DynamicHeader title="Zonat e Shërbimit" description="Shërbime elektrike profesionale në Prishtinë dhe në të gjithë Kosovën"  />
+        <DynamicHeader 
+          title="Zonat e Shërbimit" 
+          description="Shërbime elektrike profesionale në Prishtinë dhe në të gjithë Kosovën" 
+          image="/assets/images/services/16.webp"
+        />
         <ServiceAreasGrid />
         <CTASection />
       </div>

@@ -132,6 +132,7 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [] }) => {
       <DynamicHeader 
         title="Blogu & Lajmet" 
         description="Këshilla ekspertësh, udhëzues dhe informacione për mirëmbajtjen e rrjetit tuaj elektrik." 
+        image="/assets/images/services/8.webp"
         breadcrumbs={[{ label: 'Blogu', href: '/blog/' }]} 
       />
 
@@ -223,8 +224,8 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [] }) => {
 
                         <div className="flex items-center justify-between pt-8 border-t border-gray-50">
                           <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                              <User className="w-5 h-5 text-primary" />
+                            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-sm">
+                              BE
                             </div>
                             <span className="text-sm font-bold text-gray-900">Bujo Electric</span>
                           </div>
@@ -262,6 +263,15 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [] }) => {
 
       {/* Newsletter Section */}
       <section className="py-24 bg-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <Image
+            src="/assets/images/services/8.webp"
+            alt="Newsletter"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 skew-x-12 translate-x-1/2 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="bg-primary rounded-[3rem] p-12 md:p-20 text-center text-white">

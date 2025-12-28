@@ -28,6 +28,7 @@ const page = () => {
         <DynamicHeader 
           title="Rreth Nesh" 
           description="Historia jonë, misioni dhe përkushtimi ndaj sigurisë elektrike në Kosovë" 
+          image="/assets/images/services/17.webp"
           breadcrumbs={[{ label: 'Rreth Nesh', href: '/rreth-nesh/' }]} 
         />
         

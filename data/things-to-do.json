@@ -79,9 +79,9 @@
       },
       "featuredImage": "/images/things-to-do/example-city-featured.jpg",
       "gallery": [
-        "/images/things-to-do/example-city-1.jpg",
-        "/images/things-to-do/example-city-2.jpg",
-        "/images/things-to-do/example-city-3.jpg"
+        "/images/things-to-do/example-city-1.webp",
+        "/images/things-to-do/example-city-2.webp",
+        "/images/things-to-do/example-city-3.webp"
       ]
     },
     "north-town-st": {
@@ -148,8 +148,8 @@
       },
       "featuredImage": "/images/things-to-do/north-town-featured.jpg",
       "gallery": [
-        "/images/things-to-do/north-town-1.jpg",
-        "/images/things-to-do/north-town-2.jpg"
+        "/images/things-to-do/north-town-1.webp",
+        "/images/things-to-do/north-town-2.webp"
       ]
     }
   }

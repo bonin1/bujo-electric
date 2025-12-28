@@ -77,7 +77,7 @@ export default function ModernAbout() {
                 style={{ y: imageY, scale }}
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop"
+                  src="/assets/images/services/6.webp"
                   alt="Bujo Electric Work"
                   fill
                   className="object-cover"
@@ -150,10 +150,10 @@ export default function ModernAbout() {
       <section className="py-32 relative min-h-[80vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1581092921461-eab62e97a7823?q=80&w=2069&auto=format&fit=crop"
+            src="/assets/images/services/7.webp"
             alt="Misioni ynë"
             fill
-            className="object-cover grayscale"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gray-900/80 backdrop-blur-sm" />
         </div>

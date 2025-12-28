@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { generateMetadataFromConfig, generateStructuredData } from '@/lib/seo-metadata'
 import ContactFormComponent from '@/components/contact/ContactFormComponent'
 import ContactInfo from '@/components/contact/ContactInfo'
@@ -33,7 +34,7 @@ const page = () => {
         <DynamicHeader
           title="Na Kontaktoni"
           description={`Na kontaktoni për një konsultim dhe ofertë falas. Ne shërbejmë në ${topLocations} me shërbime profesionale të ${BUSINESS_INFO.primaryKeyword.toLowerCase()}.`}
-          image="/assets/config/placeholder-image.png"
+          image="/assets/images/services/13.webp"
           breadcrumbs={[{ label: 'Kontakti', href: '/kontakti/' }]}
         />
         <section className="py-16">

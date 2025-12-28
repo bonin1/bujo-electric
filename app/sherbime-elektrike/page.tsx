@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import servicesData from '@/data/services.json'
 import WhyChooseUsLocationsSection from '@/components/sections/why-choose-us-variants/why-choose-us-locations-section'
 import { DynamicHeader } from '@/components/global/dynamic-header'
@@ -65,6 +66,16 @@ export default function ServicesPage() {
                 <ScrollRevealUp key={service.id} delay={index * 0.1}>
                   <Link href={`/${service.slug}/`} className="group block h-full">
                     <div className="h-full bg-white rounded-[2rem] p-10 shadow-sm border border-gray-100 hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 flex flex-col relative overflow-hidden">
+                      {/* Service Image Background */}
+                      <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+                        <Image
+                          src={`/assets/images/services/${(index % 20) + 1}.webp`}
+                          alt={service.name}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                      </div>
                       {/* Decorative background element */}
                       <div className="absolute -right-10 -top-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors duration-500" />
                       

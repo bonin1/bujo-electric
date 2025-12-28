@@ -35,9 +35,9 @@
       },
       "featuredImage": "/images/service-in-city/service-one-example-city.jpg",
       "gallery": [
-        "/images/service-in-city/example-city-1.jpg",
-        "/images/service-in-city/example-city-2.jpg",
-        "/images/service-in-city/example-city-3.jpg"
+        "/images/service-in-city/example-city-1.webp",
+        "/images/service-in-city/example-city-2.webp",
+        "/images/service-in-city/example-city-3.webp"
       ]
     },
     {
@@ -75,9 +75,9 @@
       },
       "featuredImage": "/images/service-in-city/service-two-north-town.jpg",
       "gallery": [
-        "/images/service-in-city/north-town-1.jpg",
-        "/images/service-in-city/north-town-2.jpg",
-        "/images/service-in-city/north-town-3.jpg"
+        "/images/service-in-city/north-town-1.webp",
+        "/images/service-in-city/north-town-2.webp",
+        "/images/service-in-city/north-town-3.webp"
       ]
     }
   ]

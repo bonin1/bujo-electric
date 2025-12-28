@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/buttons/Button';
 import { ArrowRight, Zap, Shield, Clock, Lightbulb, Settings } from 'lucide-react';
 import { CORE_SERVICES } from '@/lib/business-config';
@@ -34,6 +35,15 @@ const OurServicesSection = ({ city, cityData }: OurServicesSectionProps) => {
   const heading = servicesContent?.heading || `Shërbimet Tona Profesionale${city ? ` në ${city}` : ''}`;
   const subheading = servicesContent?.subheading || "Ne ofrojmë një gamë të gjerë shërbimesh elektrike me cilësi të lartë dhe siguri maksimale për shtëpinë dhe biznesin tuaj.";
   const ctaText = servicesContent?.cta || "Kërko Ofertë Falas";
+
+  // Service images mapping
+  const serviceImages = [
+    '/assets/images/services/1.webp',
+    '/assets/images/services/2.webp',
+    '/assets/images/services/3.webp',
+    '/assets/images/services/4.webp',
+    '/assets/images/services/5.webp',
+  ];
 
   return (
     <section className="bg-white relative py-24">
@@ -68,6 +78,17 @@ const OurServicesSection = ({ city, cityData }: OurServicesSectionProps) => {
               <Link href={service.url} className="group block">
                 <div className={`relative rounded-[2rem] p-8 md:p-12 shadow-xl border border-white/10 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 flex flex-col md:flex-row gap-8 items-center overflow-hidden ${isEven ? 'bg-primary' : 'bg-secondary'}`}>
                   
+                  {/* Background Image */}
+                  <div className="absolute inset-0 opacity-10 group-hover:opacity-15 transition-opacity duration-500">
+                    <Image
+                      src={serviceImages[index] || serviceImages[0]}
+                      alt={service.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 1200px"
+                    />
+                  </div>
+
                   {/* Minimal Decorative Element */}
                   <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />
                   <div className="absolute top-10 right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl pointer-events-none" />
@@ -75,6 +96,18 @@ const OurServicesSection = ({ city, cityData }: OurServicesSectionProps) => {
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
+                  {/* Image on the right */}
+                  <div className="hidden md:block relative w-64 h-64 flex-shrink-0 rounded-2xl overflow-hidden z-10 order-last">
+                    <Image
+                      src={serviceImages[index] || serviceImages[0]}
+                      alt={service.name}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      sizes="256px"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-tr from-black/30 to-transparent" />
+                  </div>
+
                   {/* Content Section */}
                   <div className="flex-1 flex flex-col justify-center relative text-center md:text-left z-10">
                     <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mb-6">

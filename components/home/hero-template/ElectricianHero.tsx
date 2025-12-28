@@ -23,15 +23,15 @@ export default function ElectricianHero({
   subtitle,
   cta1Text,
   cta1Link,
+  backgroundImage = "/assets/images/services/15.webp",
 }: ElectricianHeroProps) {
-  const heroImage = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop";
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#042946]">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={heroImage}
+          src={backgroundImage}
           alt="Professional Electrician"
           fill
           className="object-cover opacity-30 scale-105 animate-slow-zoom"

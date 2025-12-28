@@ -18,9 +18,9 @@ interface AboutUsSimpleSectionProps {
 }
 
 const carouselImages = [
-  "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581092921461-eab62e97a7823?q=80&w=2069&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?q=80&w=2069&auto=format&fit=crop"
+  "/assets/images/services/30.webp",
+  "/assets/images/services/31.webp",
+  "/assets/images/services/32.webp"
 ];
 
 const AboutUsSimpleSection = ({ city, cityData }: AboutUsSimpleSectionProps) => {

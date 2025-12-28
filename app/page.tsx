@@ -69,7 +69,7 @@ export default function Home() {
           cta1Link="/kontakti/"
           cta2Text="Eksploro Shërbimet"
           cta2Link="/sherbime-elektrike/"
-          backgroundImage="/assets/config/placeholder-image.png"
+          backgroundImage="/assets/images/services/15.webp"
         />
 
         
