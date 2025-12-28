@@ -171,14 +171,14 @@ const DynamicPage = async ({ params }: DynamicPageProps) => {
         category: service.category,
         price: service.priceRange,
         serviceType: service.category,
-        areaServed: ['Austin', 'Dallas', 'Houston', 'San Antonio'],
+        areaServed: ['Prishtinë', 'Prizren', 'Pejë', 'Gjakovë', 'Ferizaj', 'Gjilan', 'Mitrovicë'],
       },
       faqData: {
         questions: faqs
       },
       breadcrumbs: [
-        { name: 'Home', url: siteConfig.url },
-        { name: 'Services', url: `${siteConfig.url}/services/` },
+        { name: 'Ballina', url: siteConfig.url },
+        { name: 'Shërbimet', url: `${siteConfig.url}/sherbime-elektrike/` },
         { name: service.name, url: `${siteConfig.url}/${slug}/` },
       ],
     });
@@ -234,8 +234,8 @@ const DynamicPage = async ({ params }: DynamicPageProps) => {
           totalAttractions: cityData.totalAttractions,
         },
         breadcrumbs: [
-          { name: 'Home', url: siteConfig.url },
-          { name: `Things to Do in ${cityData.cityName}, ${cityData.state}`, url: `${siteConfig.url}/${slug}/` },
+          { name: 'Ballina', url: siteConfig.url },
+          { name: `Gjërat për të bërë në ${cityData.cityName}, ${cityData.state}`, url: `${siteConfig.url}/${slug}/` },
         ],
       });
 
@@ -291,8 +291,8 @@ const DynamicPage = async ({ params }: DynamicPageProps) => {
         seo: blogPost.seo,
       },
       breadcrumbs: [
-        { name: 'Home', url: siteConfig.url },
-        { name: 'Blog', url: `${siteConfig.url}/blog/` },
+        { name: 'Ballina', url: siteConfig.url },
+        { name: 'Blogu', url: `${siteConfig.url}/blog/` },
         { name: blogPost.title, url: `${siteConfig.url}/${slug}/` },
       ],
     });
@@ -334,8 +334,8 @@ const DynamicPage = async ({ params }: DynamicPageProps) => {
         servicesOffered: city.services,
       },
       breadcrumbs: [
-        { name: 'Home', url: siteConfig.url },
-        { name: 'Service Areas', url: `${siteConfig.url}/service-areas/` },
+        { name: 'Ballina', url: siteConfig.url },
+        { name: 'Zonat e Shërbimit', url: `${siteConfig.url}/zonat-e-sherbimit/` },
         { name: `${city.name}, ${city.state}`, url: `${siteConfig.url}/${slug}/` },
       ],
     });

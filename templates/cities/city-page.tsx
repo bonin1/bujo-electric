@@ -8,7 +8,7 @@ import ProcessStepsSection from "@/components/sections/process-steps-section";
 import WhatSetsUsApartSection from "@/components/sections/what-sets-apart-section";
 import AboutUsSimpleSection from "@/components/sections/about-us-simple-section";
 import CTASection from "@/components/global/call-to-action/cta-section";
-import ServiceAreasThinSection from "@/components/sections/service-areas-thin-section";
+import ServiceAreasGrid from "@/components/sections/service-areas-grid";
 
 interface CityPageProps {
   params: {
@@ -26,29 +26,30 @@ const CityPage = ({ params }: CityPageProps) => {
   const cityName = `${city.name}, ${city.state}`;
 
   return (
-    <div>
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <SimpleHero
         title={`${city.heroTitle}`}
         subtitle={`${city.description}`}
-        cta1Text="Get Free Quote"
-        cta1Link="/contact"
-        cta2Text="View Our Work"
-        cta2Link="/portfolio"
-        backgroundImage="/assets/config/placeholder-image.png"
+        cta1Text="Na Kontaktoni"
+        cta1Link="/kontakti"
+        cta2Text="Shiko Portofolin"
+        cta2Link="/galeria-e-projekteve"
+        backgroundImage={city.featuredImage || "/assets/config/placeholder-image.png"}
       />
 
-      {/* Brands Carousel */}
-      <BrandsCarouselSection />
-
       {/* Services Section */}
-      <OurServicesSection city={cityName} cityData={city as any} />
+      <div className="bg-gray-50">
+        <OurServicesSection city={cityName} cityData={city as any} />
+      </div>
 
       {/* Process Steps */}
       <ProcessStepsSection city={cityName} cityData={city as any} />
 
       {/* What Sets Us Apart */}
-      <WhatSetsUsApartSection city={cityName} cityData={city as any} />
+      <div className="bg-gray-50">
+        <WhatSetsUsApartSection city={cityName} cityData={city as any} />
+      </div>
 
       {/* Simple About Us */}
       <AboutUsSimpleSection city={cityName} cityData={city as any} />
@@ -56,11 +57,11 @@ const CityPage = ({ params }: CityPageProps) => {
       {/* General CTA Section */}
       <CTASection city={cityName} cityData={city as any} />
 
-
-
-      {/* Service Areas (Thin) */}
-      <ServiceAreasThinSection />
-    </div>
+      {/* Service Areas Grid */}
+      <div className="border-t border-gray-100">
+        <ServiceAreasGrid />
+      </div>
+    </main>
   );
 };
 

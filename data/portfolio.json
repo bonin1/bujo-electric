@@ -8,12 +8,12 @@
   "projects": [
     {
       "id": 1,
-      "title": "Professional Service One Project",
-      "category": "Service One",
-      "image": "/assets/config/placeholder-image.png",
+      "title": "Professional Instalime Elektrike Project",
+      "category": "Instalime Elektrike",
+      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "date": "2024",
-      "location": "Example City, ST",
-      "description": "Complete service one with professional installation and quality materials.",
+      "location": "Prishtin\u00eb, Kosov\u00eb",
+      "description": "Complete instalime elektrike with professional installation and quality materials.",
       "features": [
         "Professional Installation",
         "Quality Materials",
@@ -23,19 +23,19 @@
       "client": "Residential Client",
       "duration": "1-2 Days",
       "tags": [
-        "Service One",
-        "Example City",
-        "ST"
+        "Instalime Elektrike",
+        "Prishtin\u00eb",
+        "Kosov\u00eb"
       ]
     },
     {
       "id": 2,
-      "title": "Professional Service Two Project",
-      "category": "Service Two",
-      "image": "/assets/config/placeholder-image.png",
+      "title": "Professional Riparime Elektrike Project",
+      "category": "Riparime Elektrike",
+      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "date": "2024",
-      "location": "North Town, ST",
-      "description": "Complete service two with professional installation and quality materials.",
+      "location": "Prizren, Kosov\u00eb",
+      "description": "Complete riparime elektrike with professional installation and quality materials.",
       "features": [
         "Professional Installation",
         "Quality Materials",
@@ -45,19 +45,19 @@
       "client": "Commercial Client",
       "duration": "1-2 Days",
       "tags": [
-        "Service Two",
-        "North Town",
-        "ST"
+        "Riparime Elektrike",
+        "Prizren",
+        "Kosov\u00eb"
       ]
     },
     {
       "id": 3,
-      "title": "Professional Service Three Project",
-      "category": "Service Three",
-      "image": "/assets/config/placeholder-image.png",
+      "title": "Professional Mir\u00ebmbajtje Elektrike Project",
+      "category": "Mir\u00ebmbajtje Elektrike",
+      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "date": "2024",
-      "location": "South Town, ST",
-      "description": "Complete service three with professional installation and quality materials.",
+      "location": "Ferizaj, Kosov\u00eb",
+      "description": "Complete mir\u00ebmbajtje elektrike with professional installation and quality materials.",
       "features": [
         "Professional Installation",
         "Quality Materials",
@@ -67,19 +67,19 @@
       "client": "Residential Client",
       "duration": "1-2 Days",
       "tags": [
-        "Service Three",
-        "South Town",
-        "ST"
+        "Mir\u00ebmbajtje Elektrike",
+        "Ferizaj",
+        "Kosov\u00eb"
       ]
     },
     {
       "id": 4,
-      "title": "Professional Service Four Project",
-      "category": "Service Four",
-      "image": "/assets/config/placeholder-image.png",
+      "title": "Professional Ndri\u00e7im & Energji Project",
+      "category": "Ndri\u00e7im & Energji",
+      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "date": "2024",
-      "location": "East Village, ST",
-      "description": "Complete service four with professional installation and quality materials.",
+      "location": "Gjilan, Kosov\u00eb",
+      "description": "Complete ndri\u00e7im & energji with professional installation and quality materials.",
       "features": [
         "Professional Installation",
         "Quality Materials",
@@ -89,19 +89,19 @@
       "client": "Commercial Client",
       "duration": "1-2 Days",
       "tags": [
-        "Service Four",
-        "East Village",
-        "ST"
+        "Ndri\u00e7im & Energji",
+        "Gjilan",
+        "Kosov\u00eb"
       ]
     },
     {
       "id": 5,
-      "title": "Professional Service Five Project",
-      "category": "Service Five",
-      "image": "/assets/config/placeholder-image.png",
+      "title": "Professional Sisteme Speciale Project",
+      "category": "Sisteme Speciale",
+      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "date": "2024",
-      "location": "West Borough, ST",
-      "description": "Complete service five with professional installation and quality materials.",
+      "location": "Pej\u00eb, Kosov\u00eb",
+      "description": "Complete sisteme speciale with professional installation and quality materials.",
       "features": [
         "Professional Installation",
         "Quality Materials",
@@ -111,9 +111,9 @@
       "client": "Residential Client",
       "duration": "1-2 Days",
       "tags": [
-        "Service Five",
-        "West Borough",
-        "ST"
+        "Sisteme Speciale",
+        "Pej\u00eb",
+        "Kosov\u00eb"
       ]
     }
   ]

@@ -49,15 +49,15 @@ const services: { title: string; href: string; description: string; icon: React.
 
 const aboutServices: { title: string; href: string; description: string; icon: React.ReactNode }[] = [
   {
-    title: "Blogs",
-    href: "/blog",
-    description: "Read our latest insights and tips",
+    title: "Blogu",
+    href: "/blog/",
+    description: "Lexoni këshillat dhe lajmet tona më të fundit",
     icon: <FileText className="h-4 w-4" />
   },
   {
-    title: "FAQ",
-    href: "/faq",
-    description: "Find answers to frequently asked questions",
+    title: "Pyetje të Shpeshta",
+    href: "/pyetje-te-shpeshta",
+    description: "Gjeni përgjigje për pyetjet tuaja",
     icon: <FileText className="h-4 w-4" />
   }
 ]
@@ -72,12 +72,12 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/service-areas/"
+              href="/zonat-e-sherbimit/"
               className={cn(
                 "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 font-medium focus:outline-none disabled:pointer-events-none disabled:opacity-50 group text-sm font-600 tracking-wide uppercase transition-colors duration-200 text-[#f5f5f5] hover:bg-primary/90 hover:text-[#2B2B2B] data-[state=open]:bg-primary/90 data-[state=open]:text-[#2B2B2B]"
               )}
             >
-              Service Areas
+              Zonat e Shërbimit
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
@@ -87,7 +87,7 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger className={cn(
             "text-sm font-600 tracking-wide uppercase transition-colors duration-200","text-[#f5f5f5] hover:bg-primary/90 hover:text-[#2B2B2B] data-[state=open]:bg-primary/90 data-[state=open]:text-[#2B2B2B]"
           )}>
-            Services
+            Shërbimet
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[500px] lg:w-[800px] lg:grid-cols-2 lg:grid-rows-2">
@@ -95,21 +95,21 @@ export function NavigationMenuDemo() {
                 <NavigationMenuLink asChild>
                   <Link
                     className="flex h-full w-full hover:shadow-lg hover:scale-102 transition-all duration-200 select-none flex-col justify-end rounded-md bg-linear-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md relative overflow-hidden"
-                    href="/services/"
+                    href="/sherbime-elektrike/"
                   >
                     <div className="absolute inset-0 bg-black/80 z-0"></div>
                     <div className="relative z-10">
                       <div className="mb-2 mt-4 text-lg font-medium flex items-center gap-2 text-white">
                         <ListCheck className="h-5 w-5" />
-                        All Services
+                        Të gjitha Shërbimet
                       </div>
                       <p className="text-sm leading-tight text-white/90">
-                        View all our professional services and solutions.
+                        Shikoni të gjitha shërbimet dhe zgjidhjet tona profesionale.
                       </p>
                     </div>
                     <Image
                       src="/assets/config/placeholder-image.png"
-                      alt="All Services"
+                      alt="Të gjitha Shërbimet"
                       fill
                       className="object-cover opacity-30 z-0"
                       loading="lazy"
@@ -133,7 +133,7 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger className={cn(
             "text-sm font-600 tracking-wide uppercase transition-colors duration-200","text-[#f5f5f5] hover:bg-primary/90 hover:text-[#2B2B2B] data-[state=open]:bg-primary/90 data-[state=open]:text-[#2B2B2B]"
           )}>
-            About Us
+            Rreth Nesh
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[500px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
@@ -141,21 +141,21 @@ export function NavigationMenuDemo() {
                 <NavigationMenuLink asChild>
                   <Link
                     className="flex h-full w-full hover:shadow-lg hover:scale-102 transition-all duration-200 select-none flex-col justify-end rounded-md bg-linear-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md relative overflow-hidden"
-                    href="/about/"
+                    href="/rreth-nesh/"
                   >
                     <div className="absolute inset-0 bg-black/80 z-0"></div>
                     <div className="relative z-10">
                       <div className="mb-2 mt-4 text-lg font-medium flex items-center gap-2 text-white">
                         <Users className="h-5 w-5" />
-                        About Us
+                        Rreth Nesh
                       </div>
                       <p className="text-sm leading-tight text-white/90">
-                        Learn more about our company, team, and mission.
+                        Mësoni më shumë rreth kompanisë, ekipit dhe misionit tonë.
                       </p>
                     </div>
                     <Image
                       src="/assets/config/placeholder-image.png"
-                      alt="About Us"
+                      alt="Rreth Nesh"
                       fill
                       className="object-cover opacity-30 z-0"
                       loading="lazy"
@@ -178,12 +178,12 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/portfolio"
+              href="/galeria-e-projekteve"
               className={cn(
                 "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 font-medium focus:outline-none disabled:pointer-events-none disabled:opacity-50 group text-sm font-600 tracking-wide uppercase transition-colors duration-200 text-[#f5f5f5] hover:bg-primary/90 hover:text-[#2B2B2B] data-[state=open]:bg-primary/90 data-[state=open]:text-[#2B2B2B]"
               )}
             >
-              Portfolio
+              Galeria
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
@@ -192,12 +192,12 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/contact"
+              href="/kontakti"
               className={cn(
                 "group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 font-medium focus:outline-none disabled:pointer-events-none disabled:opacity-50 group text-sm font-600 tracking-wide uppercase transition-colors duration-200 text-[#f5f5f5] hover:bg-primary/90 hover:text-[#2B2B2B] data-[state=open]:bg-primary/90 data-[state=open]:text-[#2B2B2B]"
               )}
             >
-              Contact Us
+              Kontakti
             </Link>
           </NavigationMenuLink>
         </NavigationMenuItem>

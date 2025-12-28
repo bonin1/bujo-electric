@@ -1,6 +1,6 @@
 "use client";
 
-import { MenuIcon, Phone, Facebook, Instagram, Twitter, Youtube, Linkedin, Wrench, Droplets, Palette, Leaf, MapPin, Users, FileText, Home, Info, HelpCircle, Image as ImageIcon } from "lucide-react";
+import { MenuIcon, Phone, Facebook, Instagram, Twitter, Youtube, Linkedin, Wrench, Droplets, Palette, Leaf, MapPin, FileText, Home, Info, HelpCircle, Image as ImageIcon } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from '@/components/ui/image';
 import Link from "next/link";
@@ -94,21 +94,15 @@ export const TopBarNavbar = () => {
 
   const company = [
     {
-      title: "Team",
-      description: "Meet our expert team of professionals",
-      href: "/about/team",
-      icon: <Users className="h-4 w-4 text-accent" />,
-    },
-    {
-      title: "Blogs",
-      description: "Read our latest insights and tips",
-      href: "/blog",
+      title: "Blogu",
+      description: "Lexoni këshillat dhe lajmet tona më të fundit",
+      href: "/blog/",
       icon: <FileText className="h-4 w-4 text-accent" />,
     },
     {
-      title: "FAQ",
-      description: "Find answers to frequently asked questions",
-      href: "/FAQ",
+      title: "Pyetje të Shpeshta",
+      description: "Gjeni përgjigje për pyetjet tuaja",
+      href: "/pyetje-te-shpeshta",
       icon: <HelpCircle className="h-4 w-4 text-accent" />,
     },
   ];
@@ -130,7 +124,7 @@ export const TopBarNavbar = () => {
     <div className="w-full">
       {/* Top Bar with Phone and Social Icons */}
       <div className="bg-primary text-primary-foreground py-2">
-        <div className="container max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
@@ -161,7 +155,7 @@ export const TopBarNavbar = () => {
       <section className={`py-4 w-full flex justify-center transition-all duration-300 ease-in-out z-[100] ${
         isScrolled ? 'fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-md shadow-lg border-b border-border' : 'bg-background border-b border-border'
       }`}>
-        <div className="container max-w-7xl">
+        <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center">
             {/* Logo - Left side */}
             <div className="shrink-0">
@@ -170,7 +164,7 @@ export const TopBarNavbar = () => {
                 className="flex items-center gap-3"
               >
                 <Image
-                  src="/assets/config/logo.png"
+                  src="/assets/config/logo.webp"
                   width={40}
                   height={40}
                   style={{ height: 'auto', width: 'auto' }}
@@ -192,19 +186,19 @@ export const TopBarNavbar = () => {
                 <NavigationMenuList className="gap-6">
                   <NavigationMenuItem>
                     <NavigationMenuLink
-                      href="/service-areas/"
+                      href="/zonat-e-sherbimit/"
                       className={navigationMenuTriggerStyle()}
                     >
-                      Service Areas
+                      Zonat e Shërbimit
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Shërbimet</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <div className="grid w-[500px] grid-cols-2 p-4 gap-3">
                         <NavigationMenuLink
-                          href="/services/"
+                          href="/sherbime-elektrike/"
                           className="rounded-md p-3 transition-colors hover:bg-muted/70 group"
                         >
                           <div className="flex items-start gap-3">
@@ -213,10 +207,10 @@ export const TopBarNavbar = () => {
                             </div>
                             <div>
                               <p className="mb-1 font-semibold text-foreground">
-                                All Services
+                                Të gjitha Shërbimet
                               </p>
                               <p className="text-sm text-muted-foreground">
-                                View all our professional services
+                                Shikoni të gjitha shërbimet tona profesionale
                               </p>
                             </div>
                           </div>
@@ -247,11 +241,11 @@ export const TopBarNavbar = () => {
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>Rreth Nesh</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <div className="grid w-[500px] grid-cols-2 p-4 gap-3">
                         <NavigationMenuLink
-                          href="/about/"
+                          href="/rreth-nesh/"
                           className="rounded-md p-3 transition-colors hover:bg-muted/70 group"
                         >
                           <div className="flex items-start gap-3">
@@ -260,10 +254,10 @@ export const TopBarNavbar = () => {
                             </div>
                             <div>
                               <p className="mb-1 font-semibold text-foreground">
-                                About Us
+                                Rreth Nesh
                               </p>
                               <p className="text-sm text-muted-foreground">
-                                Learn about our company and mission
+                                Mësoni rreth kompanisë dhe misionit tonë
                               </p>
                             </div>
                           </div>
@@ -295,19 +289,19 @@ export const TopBarNavbar = () => {
 
                   <NavigationMenuItem>
                     <NavigationMenuLink
-                      href="/portfolio"
+                      href="/galeria-e-projekteve"
                       className={navigationMenuTriggerStyle()}
                     >
-                      Portfolio
+                      Galeria
                     </NavigationMenuLink>
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
                     <NavigationMenuLink
-                      href="/contact"
+                      href="/kontakti"
                       className={navigationMenuTriggerStyle()}
                     >
-                      Contact Us
+                      Kontakti
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                 </NavigationMenuList>
@@ -340,7 +334,7 @@ export const TopBarNavbar = () => {
                   className="flex items-center gap-3"
                 >
                   <Image
-                    src="/assets/config/logo.png"
+                    src="/assets/config/logo.webp"
                     width={40}
                     height={40}
                     style={{ height: 'auto', width: 'auto' }}
@@ -367,24 +361,24 @@ export const TopBarNavbar = () => {
               <div className="space-y-6">
                 <Link href="/" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
                   <Home className="h-5 w-5 mr-3" />
-                  Home
+                  Kreu
                 </Link>
 
-                <Link href="/service-areas/" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
+                <Link href="/zonat-e-sherbimit/" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
                   <MapPin className="h-5 w-5 mr-3" />
-                  Service Areas
+                  Zonat e Shërbimit
                 </Link>
 
                 <Accordion type="single" collapsible className="mb-6">
                   <AccordionItem value="services" className="border-none">
                     <AccordionTrigger className="text-base hover:no-underline flex items-center">
                       <Wrench className="h-5 w-5 mr-3" />
-                      Services
+                      Shërbimet
                     </AccordionTrigger>
                     <AccordionContent>
                       <div className="grid grid-cols-1 gap-2 max-h-60 overflow-y-auto ml-8">
                         <Link
-                          href="/services/"
+                          href="/sherbime-elektrike/"
                           className="rounded-md p-3 transition-colors hover:bg-muted/70 group"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -394,10 +388,10 @@ export const TopBarNavbar = () => {
                             </div>
                             <div>
                               <p className="mb-1 font-semibold text-foreground">
-                                All Services
+                                Të gjitha Shërbimet
                               </p>
                               <p className="text-sm text-muted-foreground">
-                                View all our professional services
+                                Shikoni të gjitha shërbimet tona profesionale
                               </p>
                             </div>
                           </div>
@@ -433,12 +427,12 @@ export const TopBarNavbar = () => {
                   <AccordionItem value="about" className="border-none">
                     <AccordionTrigger className="text-base hover:no-underline flex items-center">
                       <Info className="h-5 w-5 mr-3" />
-                      About Us
+                      Rreth Nesh
                     </AccordionTrigger>
                     <AccordionContent>
                       <div className="grid grid-cols-1 gap-2 max-h-60 overflow-y-auto ml-8">
                         <Link
-                          href="/about/"
+                          href="/rreth-nesh/"
                           className="rounded-md p-3 transition-colors hover:bg-muted/70 group"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -448,10 +442,10 @@ export const TopBarNavbar = () => {
                             </div>
                             <div>
                               <p className="mb-1 font-semibold text-foreground">
-                                About Us
+                                Rreth Nesh
                               </p>
                               <p className="text-sm text-muted-foreground">
-                                Learn about our company and mission
+                                Mësoni rreth kompanisë dhe misionit tonë
                               </p>
                             </div>
                           </div>
@@ -483,14 +477,14 @@ export const TopBarNavbar = () => {
                   </AccordionItem>
                 </Accordion>
 
-                <Link href="/portfolio" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
+                <Link href="/galeria-e-projekteve" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
                   <ImageIcon className="h-5 w-5 mr-3" />
-                  Portfolio
+                  Galeria
                 </Link>
 
-                <Link href="/contact" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
+                <Link href="/kontakti" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
                   <HelpCircle className="h-5 w-5 mr-3" />
-                  Contact Us
+                  Kontakti
                 </Link>
 
                 <div className="pt-6 space-y-4">

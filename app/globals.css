@@ -82,9 +82,15 @@
   --animate-slide-up: slide-up 0.3s ease-out;
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-slow-zoom: slow-zoom 20s ease-in-out infinite alternate;
 }
 
 /* Keyframe Animations */
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
 @keyframes fade-in {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -125,19 +131,19 @@
     --text-muted-light: 0 0% 55%; /* #8C8C8C - Light muted text */
     
     /* Primary Colors */
-    --primary: 220 14% 96%; /* #F1F5F9 - Primary color */
-    --primary-foreground: 0 0% 7%; /* #121212 - Text on primary */
-    --primary-hover: 220 14% 94%; /* #E2E8F0 - Primary hover */
+    --primary: 221 78% 55%; /* #3270E4 - Primary color */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --primary-hover: 221 78% 50%; /* Darker primary hover */
     
     /* Accent Colors */
-    --accent: 220 14% 96%; /* #F1F5F9 - Accent color */
-    --accent-foreground: 0 0% 7%; /* #121212 - Text on accent */
-    --accent-hover: 220 14% 94%; /* #E2E8F0 - Accent hover */
+    --accent: 221 78% 55%; /* #3270E4 - Accent color */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+    --accent-hover: 221 78% 50%; /* Accent hover */
     
     /* Secondary Colors */
-    --secondary: 0 0% 96%; /* #F5F5F5 - Secondary color */
-    --secondary-foreground: 0 0% 7%; /* #121212 - Text on secondary */
-    --secondary-hover: 0 0% 94%; /* #E5E5E5 - Secondary hover */
+    --secondary: 207 89% 15%; /* #042946 - Secondary color */
+    --secondary-foreground: 0 0% 100%; /* White text on secondary */
+    --secondary-hover: 207 89% 12%; /* Secondary hover */
     
     /* Tertiary Colors */
     --tertiary: 0 0% 94%; /* #F0F0F0 - Tertiary color */
@@ -246,10 +252,12 @@
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   html {
-    font-family: system-ui, sans-serif;
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-size: 15px; /* Slightly smaller for a more professional look */
   }
 }
 

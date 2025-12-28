@@ -1,0 +1,1 @@
+update also the section for the service areas and make sure the page is /zonat-e-sherbimit/ not service-areas

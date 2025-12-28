@@ -30,8 +30,8 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ className = "" }) => {
             <Phone className="w-6 h-6 text-primary" />
           </div>
           <div className="flex-1">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
-            <p className="text-gray-600 mb-2">Call us for immediate assistance</p>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Telefoni</h3>
+            <p className="text-gray-600 mb-2">Na telefononi për asistencë të menjëhershme</p>
             <a 
               href={`tel:${phoneTel}`} 
               className="text-primary font-medium hover:text-primary/80 transition-colors text-lg"
@@ -47,7 +47,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ className = "" }) => {
           </div>
           <div className="flex-1">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-            <p className="text-gray-600 mb-2">Send us a message anytime</p>
+            <p className="text-gray-600 mb-2">Na dërgoni një mesazh në çdo kohë</p>
             <a 
               href={`mailto:${email}`} 
               className="text-primary font-medium hover:text-primary/80 transition-colors text-lg"
@@ -62,8 +62,8 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ className = "" }) => {
             <MapPin className="w-6 h-6 text-primary" />
           </div>
           <div className="flex-1">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Service Areas</h3>
-            <p className="text-gray-600 mb-2">We proudly serve</p>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Zonat e Shërbimit</h3>
+            <p className="text-gray-600 mb-2">Ne shërbejmë me krenari në</p>
             <p className="text-primary font-medium text-lg">
               {topLocations}
             </p>
@@ -75,15 +75,15 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ className = "" }) => {
             <Clock className="w-6 h-6 text-primary" />
           </div>
           <div className="flex-1">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Business Hours</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Orari i Punës</h3>
             <div className="text-gray-600 space-y-1">
-              <p>Monday: {businessHours.monday}</p>
-              <p>Tuesday: {businessHours.tuesday}</p>
-              <p>Wednesday: {businessHours.wednesday}</p>
-              <p>Thursday: {businessHours.thursday}</p>
-              <p>Friday: {businessHours.friday}</p>
-              <p>Saturday: {businessHours.saturday}</p>
-              <p>Sunday: {businessHours.sunday}</p>
+              <p>E Hënë: {businessHours.monday}</p>
+              <p>E Martë: {businessHours.tuesday}</p>
+              <p>E Mërkurë: {businessHours.wednesday}</p>
+              <p>E Enjte: {businessHours.thursday}</p>
+              <p>E Premte: {businessHours.friday}</p>
+              <p>E Shtunë: {businessHours.saturday}</p>
+              <p>E Diel: {businessHours.sunday}</p>
             </div>
           </div>
         </div>

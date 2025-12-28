@@ -7,72 +7,52 @@ import { AnimatedBrandLogo } from '@/components/ui/animations/animated-brand-log
 const BrandsCarouselSection = () => {
   const brands = [
     {
-      name: "Amarr",
-      logo: "/assets/images/brands/amarr-logo.webp",
-      alt: "Amarr Garage Doors Logo"
+      name: "Schneider Electric",
+      logo: "/assets/images/brands/schneider-electric-logo.webp",
+      alt: "Schneider Electric Logo"
     },
     {
-      name: "Clopay",
-      logo: "/assets/images/brands/clopay-goldbar.webp",
-      alt: "Clopay Garage Doors Logo"
+      name: "ABB",
+      logo: "/assets/images/brands/abb-logo.webp",
+      alt: "ABB Logo"
     },
     {
-      name: "LiftMaster",
-      logo: "/assets/images/brands/liftmaster-garage-doors-Logo.webp",
-      alt: "LiftMaster Garage Door Openers Logo"
+      name: "Siemens",
+      logo: "/assets/images/brands/siemens-logo.webp",
+      alt: "Siemens Logo"
     },
     {
-      name: "CHI Overhead Doors",
-      logo: "/assets/images/brands/chi-overhead-doors-logo.webp",
-      alt: "CHI Overhead Doors Logo"
+      name: "Legrand",
+      logo: "/assets/images/brands/legrand-logo.webp",
+      alt: "Legrand Logo"
     },
     {
-      name: "Wayne Dalton",
-      logo: "/assets/images/brands/wayne-dalton-logo.webp",
-      alt: "Wayne Dalton Garage Doors Logo"
+      name: "Philips",
+      logo: "/assets/images/brands/philips-logo.webp",
+      alt: "Philips Lighting Logo"
     },
     {
-      name: "Raynor",
-      logo: "/assets/images/brands/raynor-garage-doors-logo.webp",
-      alt: "Raynor Garage Doors Logo"
-    },
-    {
-      name: "Genie",
-      logo: "/assets/images/brands/genie-garage-door-logo.webp",
-      alt: "Genie Garage Door Openers Logo"
-    },
-    {
-      name: "Overhead Door",
-      logo: "/assets/images/brands/overhead-door-logo.webp",
-      alt: "Overhead Door Corporation Logo"
-    },
-    {
-      name: "Guardian",
-      logo: "/assets/images/brands/guardian-garage-door-logo.webp",
-      alt: "Guardian Access and Door Hardware Logo"
-    },
-    {
-      name: "Arrow Tru-Line",
-      logo: "/assets/images/brands/arrow-tru-line-garage-doors-logo.webp",
-      alt: "Arrow Tru-Line Garage Doors Logo"
+      name: "Eaton",
+      logo: "/assets/images/brands/eaton-logo.webp",
+      alt: "Eaton Logo"
     }
   ]
 
   return (
-    <section className="py-16 px-4 bg-bg-secondary">
-      <div className="container mx-auto max-w-7xl">
+    <section className="py-24 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Trusted Brands We Work With
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+            Brendet që ne Besojmë
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            We&apos;re proud to work with the industry&apos;s most respected partners and manufacturers.
+          <p className="text-xl text-gray-600 max-w-7xl mx-auto leading-relaxed">
+            Ne punojmë vetëm me prodhuesit më të njohur botërorë për të siguruar cilësi dhe siguri maksimale.
           </p>
         </motion.div>
 
@@ -83,33 +63,33 @@ const BrandsCarouselSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {/* Gradient overlays for smooth fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-linear-to-r from-bg-secondary to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-linear-to-l from-bg-secondary to-transparent z-10" />
+          {/* Gradient overlays */}
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-white to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-white to-transparent z-10" />
           
-          {/* Auto-scrolling brands - Using global CSS animation */}
+          {/* Auto-scrolling brands */}
           <div className="flex animate-brands-scroll">
-            {/* First set of brands */}
-            <div className="flex items-center space-x-16 shrink-0">
+            <div className="flex items-center space-x-24 shrink-0">
               {brands.map((brand, index) => (
-                <AnimatedBrandLogo
-                  key={`first-${index}`}
-                  logo={brand.logo}
-                  alt={brand.alt}
-                  name={brand.name}
-                />
+                <div key={`first-${index}`} className="grayscale hover:grayscale-0 transition-all duration-500 opacity-50 hover:opacity-100">
+                  <AnimatedBrandLogo
+                    logo={brand.logo}
+                    alt={brand.alt}
+                    name={brand.name}
+                  />
+                </div>
               ))}
             </div>
             
-            {/* Duplicate set for seamless loop */}
-            <div className="flex items-center space-x-16 shrink-0 ml-16">
+            <div className="flex items-center space-x-24 shrink-0 ml-24">
               {brands.map((brand, index) => (
-                <AnimatedBrandLogo
-                  key={`second-${index}`}
-                  logo={brand.logo}
-                  alt={brand.alt}
-                  name={brand.name}
-                />
+                <div key={`second-${index}`} className="grayscale hover:grayscale-0 transition-all duration-500 opacity-50 hover:opacity-100">
+                  <AnimatedBrandLogo
+                    logo={brand.logo}
+                    alt={brand.alt}
+                    name={brand.name}
+                  />
+                </div>
               ))}
             </div>
           </div>

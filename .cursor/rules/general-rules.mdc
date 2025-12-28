@@ -10,7 +10,7 @@ Purpose: These are general rules when building websites
 
 Never use <a> tags always use the pre-made <Link> tag 
 
-In paragraphs, texts, titles or whatever strings there are never use ' or " replace them by &apos; example: Let's | Let&apos;s
+In HTML/JSX content (paragraphs, texts, titles, etc.), never use ' or " - replace them with &apos; and &quot; for visual text only. Example: <p>Let's</p> should be <p>Let&apos;s</p>. Do NOT apply this to JSON files, variables, or configuration files - those should use regular quotes.
 
 Always update the sitemap whenever there is a new page created
 

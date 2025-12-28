@@ -159,7 +159,7 @@ export default function AboutUsSection() {
       />
 
       <motion.div
-        className="container mx-auto max-w-6xl relative z-10"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
@@ -189,7 +189,7 @@ export default function AboutUsSection() {
         </motion.div>
 
         <motion.p 
-          className="text-center max-w-2xl mx-auto mb-16 text-text-secondary"
+          className="text-center max-w-7xl mx-auto mb-16 text-text-secondary"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}

@@ -9,7 +9,7 @@ import { ScrollRevealScale, ScrollRevealUp } from '@/components/ui/animations/sc
 export default function PortfolioPage() {
   // Server-side data preparation
   const categories = [
-    { name: "All Projects", href: "/portfolio/" },
+    { name: "Të Gjitha", href: "/galeria-e-projekteve/" },
     ...getServicesForNavigation()
   ];
 
@@ -17,11 +17,11 @@ export default function PortfolioPage() {
     <div className="min-h-screen bg-background">
       {/* Dynamic Header */}
       <DynamicHeader 
-        title="Our Portfolio"
-        description="Explore our completed garage door projects across Austin, Dallas, Houston, and San Antonio. See the quality and craftsmanship that sets us apart."
+        title="Portofolio"
+        description="Eksploroni projektet tona të përfunduara në mbarë Kosovën. Shihni cilësinë dhe profesionalizmin që na dallon në shërbimet elektrike."
         image="/assets/config/placeholder-image.png"
         breadcrumbs={[
-          { label: 'Portfolio', href: '/portfolio/' }
+          { label: 'Galeria e Projekteve', href: '/galeria-e-projekteve/' }
         ]}
       />
 
@@ -35,7 +35,7 @@ export default function PortfolioPage() {
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                 {portfolioData.stats.totalProjects}+
               </div>
-              <div className="text-gray-600">Projects Completed</div>
+              <div className="text-gray-600">Projekte të Përfunduara</div>
             </div>
             </ScrollRevealScale>
             )}
@@ -45,7 +45,7 @@ export default function PortfolioPage() {
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                 {portfolioData.stats.happyClients}+
               </div>
-              <div className="text-gray-600">Happy Clients</div>
+              <div className="text-gray-600">Klientë të Kënaqur</div>
             </div>
             </ScrollRevealScale>
             )}
@@ -55,7 +55,7 @@ export default function PortfolioPage() {
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                 {portfolioData.stats.yearsExperience}+
               </div>
-              <div className="text-gray-600">Years Experience</div>
+              <div className="text-gray-600">Vite Përvojë</div>
             </div>
             </ScrollRevealScale>
             )}
@@ -65,7 +65,7 @@ export default function PortfolioPage() {
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                 {getLocationsForNavigation().length}
               </div>
-              <div className="text-gray-600">Service Areas</div>
+              <div className="text-gray-600">Zonat e Shërbimit</div>
             </div>
             </ScrollRevealScale>
             )}

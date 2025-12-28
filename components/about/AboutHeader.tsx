@@ -45,7 +45,7 @@ const AboutHeader = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -70,7 +70,7 @@ const AboutHeader = () => {
                   {" "}Expert Solutions
                 </span>
               </h1>
-              <p className="text-xl text-text-secondary leading-relaxed max-w-2xl">
+              <p className="text-xl text-text-secondary leading-relaxed max-w-7xl">
                 The truth is, we&apos;ve been providing professional services for over a decade, and the thing is, 
                 our passion shows in every project we complete. Besides our expert installations, 
                 we specialize in repairs and maintenance that keep your systems operating smoothly for years.

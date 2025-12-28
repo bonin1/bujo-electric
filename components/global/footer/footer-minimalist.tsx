@@ -56,10 +56,10 @@ const contactInfoDefault = getContactInfo();
 const defaultAddresses = getDefaultAddresses();
 
 const defaultEssentialLinks = [
-  { name: "Services", href: "/services/" },
-  { name: "About", href: "/about/" },
-  { name: "Contact", href: "/contact/" },
-  { name: "Service Areas", href: "/service-areas/" },
+  { name: "Shërbimet", href: "/sherbime-elektrike/" },
+  { name: "Rreth Nesh", href: "/rreth-nesh/" },
+  { name: "Kontakti", href: "/kontakti/" },
+  { name: "Service Areas", href: "/zonat-e-sherbimit/" },
 ];
 
 // Build social links from config
@@ -83,7 +83,7 @@ const defaultSocialLinks = Object.entries(ACTIVE_SOCIAL_MEDIA)
 export const FooterMinimalist = ({
   logo = {
     url: "/",
-    src: "/assets/config/logo.png",
+    src: "/assets/config/logo.webp",
     alt: businessName,
     title: businessName,
   },

@@ -24,7 +24,7 @@ templates_folder = os.path.join(script_dir, ".cursor/templates/")
 # Load business YAML
 # -----------------------------
 try:
-    with open(business_file, "r") as f:
+    with open(business_file, "r", encoding="utf-8") as f:
         business = yaml.safe_load(f)
     print(f"✅ Loaded business data from {business_file}")
 except FileNotFoundError:
@@ -145,7 +145,7 @@ def create_missing_placeholders(business_data):
             placeholders['SERVICES_MD'] = render_value(services, 'SERVICES_MD')
             placeholders['SERVICES'] = services
     
-    placeholders['CTA_TEXT'] = business_data.get('CTA_TEXT', 'Contact us today for a free consultation!')
+    placeholders['CTA_TEXT'] = business_data.get('CTA_TEXT', 'Na kontaktoni sot për një konsultim falas!')
     
     # Meta information mapping
     meta = business_data.get('META', {})
@@ -353,38 +353,38 @@ def generate_faqs(business_data):
         {
             "id": 1,
             "category": "General",
-            "question": "What areas do you serve?",
-            "answer": f"We proudly serve {service_areas}, along with surrounding areas. Our professional services are available throughout these communities."
+            "question": "Cilat zona mbuloni?",
+            "answer": f"Ne me krenari u shërbejmë {service_areas}, së bashku me zonat përreth. Shërbimet tona profesionale janë të disponueshme në të gjitha këto komunitete."
         },
         {
             "id": 2,
             "category": "General",
-            "question": "How can I contact you?",
-            "answer": f"You can reach us at {phone} or email us at {contact.get('EMAIL', '')}. We're available {business_data.get('HOURS', {}).get('MONDAY', '7 days a week')}."
+            "question": "Si mund t'ju kontaktoj?",
+            "answer": f"Ju mund të na kontaktoni në {phone} ose të na dërgoni email në {contact.get('EMAIL', '')}. Ne jemi në dispozicion {business_data.get('HOURS', {}).get('MONDAY', '7 ditë në javë')}."
         },
         {
             "id": 3,
             "category": "Services",
-            "question": "What services do you offer?",
-            "answer": f"We offer {', '.join(core_services)}. Contact us for a free consultation to discuss your specific needs."
+            "question": "Çfarë shërbimesh ofroni?",
+            "answer": f"Ne ofrojmë {', '.join(core_services)}. Na kontaktoni për një konsultim falas për të diskutuar nevojat tuaja specifike."
         },
         {
             "id": 4,
             "category": "Services",
-            "question": "Do you provide free estimates?",
-            "answer": f"Yes, we provide completely free, no-obligation estimates for all our services. Contact us at {phone} to schedule your estimate."
+            "question": "A ofroni vlerësime falas?",
+            "answer": f"Po, ne ofrojmë vlerësime plotësisht falas dhe pa detyrime për të gjitha shërbimet tona. Na kontaktoni në {phone} për të caktuar vlerësimin tuaj."
         },
         {
             "id": 5,
             "category": "Pricing",
-            "question": "How much do your services cost?",
-            "answer": "Pricing varies depending on the scope of work, materials needed, and specific requirements. We provide transparent, upfront pricing with no hidden fees. Contact us for a free estimate."
+            "question": "Sa kushtojnë shërbimet tuaja?",
+            "answer": "Çmimi ndryshon në varësi të fushëveprimit të punës, materialeve të nevojshme dhe kërkesave specifike. Ne ofrojmë çmime transparente, paraprake pa tarifa të fshehura. Na kontaktoni për një vlerësim falas."
         },
         {
             "id": 6,
             "category": "Scheduling",
-            "question": "How quickly can you start a project?",
-            "answer": f"We offer same-day service for emergency repairs. For installations and larger projects, we typically can schedule within a few days. Call {phone} to check current availability."
+            "question": "Sa shpejt mund të filloni një projekt?",
+            "answer": f"Ne ofrojmë shërbim në të njëjtën ditë për riparime emergjente. Për instalime dhe projekte më të mëdha, zakonisht mund të caktojmë brenda pak ditësh. Telefononi {phone} për të kontrolluar disponueshmërinë aktuale."
         }
     ]
     
@@ -582,7 +582,7 @@ def generate_business_config(business_data):
     logo_url = business_data.get('LOGO_URL', f'{website_url}/logo.png')
     tagline = business_data.get('TAGLINE', 'Your Trusted Service Provider')
     primary_keyword = business_data.get('PRIMARY_KEYWORD', 'Services')
-    cta_text = business_data.get('CTA_TEXT', 'Contact us today!')
+    cta_text = business_data.get('CTA_TEXT', 'Na kontaktoni sot!')
     tone = business_data.get('TONE', 'Professional')
     
     # Categories
@@ -795,13 +795,13 @@ export const CONTACT: ContactInfo = {{
 // BUSINESS HOURS
 // ==========================================
 export const BUSINESS_HOURS: BusinessHours = {{
-  monday: "{hours.get('MONDAY', '9:00 AM - 5:00 PM')}",
-  tuesday: "{hours.get('TUESDAY', '9:00 AM - 5:00 PM')}",
-  wednesday: "{hours.get('WEDNESDAY', '9:00 AM - 5:00 PM')}",
-  thursday: "{hours.get('THURSDAY', '9:00 AM - 5:00 PM')}",
-  friday: "{hours.get('FRIDAY', '9:00 AM - 5:00 PM')}",
-  saturday: "{hours.get('SATURDAY', '9:00 AM - 5:00 PM')}",
-  sunday: "{hours.get('SUNDAY', 'Closed')}",
+  monday: "{hours.get('MONDAY', '08:00 - 17:00')}",
+  tuesday: "{hours.get('TUESDAY', '08:00 - 17:00')}",
+  wednesday: "{hours.get('WEDNESDAY', '08:00 - 17:00')}",
+  thursday: "{hours.get('THURSDAY', '08:00 - 17:00')}",
+  friday: "{hours.get('FRIDAY', '08:00 - 17:00')}",
+  saturday: "{hours.get('SATURDAY', '08:00 - 17:00')}",
+  sunday: "{hours.get('SUNDAY', 'Mbyllur')}",
 }};
 
 // Helper to format business hours for schema
@@ -875,19 +875,19 @@ export const getLocationsForNavigation = (limit?: number) => {{
  * Get company links for footer/navigation
  */
 export const getCompanyLinks = () => [
-  {{ name: "About Us", href: "/about/" }},
-  {{ name: "Blog", href: "/our-blog/" }},
-  {{ name: "Contact", href: "/contact/" }},
-  {{ name: "Portfolio", href: "/portfolio/" }},
-  {{ name: "Service Areas", href: "/service-areas/" }},
+  {{ name: "Rreth Nesh", href: "/rreth-nesh/" }},
+  {{ name: "Blogu", href: "/blog/" }},
+  {{ name: "Kontakti", href: "/kontakti/" }},
+  {{ name: "Portofolio", href: "/galeria-e-projekteve/" }},
+  {{ name: "Zonat e Shërbimit", href: "/zonat-e-sherbimit/" }},
 ];
 
 /**
  * Get legal links for footer
  */
 export const getLegalLinks = () => [
-  {{ name: "Privacy Policy", href: "/privacy-policy/" }},
-  {{ name: "Terms & Conditions", href: "/terms/" }},
+  {{ name: "Politika e Privatësisë", href: "/politika-e-privatesise/" }},
+  {{ name: "Kushtet e Përdorimit", href: "/kushtet-e-perdorimit/" }},
 ];
 
 /**
@@ -968,10 +968,10 @@ export const getMetaInfo = () => ({{
   keywords: META.keywords,
 }});
 export const getBlogTopics = (): readonly string[] => BLOG_TOPICS;
-export const getCopyright = (): string => `© ${{new Date().getFullYear()}} ${{BUSINESS_INFO.name}}. All rights reserved.`;
+export const getCopyright = (): string => `© ${{new Date().getFullYear()}} ${{BUSINESS_INFO.name}}. Të gjitha të drejtat e rezervuara.`;
 export const getBusinessCategories = () => BUSINESS_CATEGORIES;
 export const getBusinessDescription = (): string => {{
-  return `Professional ${{BUSINESS_INFO.primaryKeyword}} providing quality solutions and exceptional customer service.`;
+  return `Profesionistë në ${{BUSINESS_INFO.primaryKeyword}} që ofrojnë zgjidhje cilësore dhe shërbim të jashtëzakonshëm.`;
 }};
 export const getContactInfo = () => ({{
   phone: getPhoneDisplay(),
@@ -1082,10 +1082,10 @@ def generate_manifest_json(business_data):
         ],
         "shortcuts": [
             {
-                "name": "Contact Us",
-                "short_name": "Contact",
-                "description": "Get in touch with us",
-                "url": "/contact",
+                "name": "Na Kontaktoni",
+                "short_name": "Kontakti",
+                "description": "Na kontaktoni",
+                "url": "/kontakti",
                 "icons": [
                     {
                         "src": "/assets/config/favicon.ico",
@@ -1094,10 +1094,10 @@ def generate_manifest_json(business_data):
                 ]
             },
             {
-                "name": "Our Services",
-                "short_name": "Services",
-                "description": f"View our professional {primary_keyword.lower()}",
-                "url": "/services",
+                "name": "Shërbimet Tona",
+                "short_name": "Shërbimet",
+                "description": f"Shikoni {primary_keyword.lower()} tona profesionale",
+                "url": "/sherbime-elektrike",
                 "icons": [
                     {
                         "src": "/assets/config/favicon.ico",
@@ -1209,7 +1209,7 @@ def generate_seo_config(business_data):
     city: CONTACT.city,
     state: CONTACT.state,
     zipCode: CONTACT.zip,
-    country: "USA"
+    country: "Kosovë"
   }},
   businessHours: BUSINESS_HOURS_SCHEMA,
   services: CORE_SERVICE_NAMES,
@@ -1628,8 +1628,9 @@ def generate_rules_and_data():
     #     print(f"❌ Error generating blog-posts.json: {e}")
 
     try:
-        generate_services_json(business)
-        data_files_generated += 1
+        # generate_services_json(business)
+        # data_files_generated += 1
+        print("⚠️  Skipping services.json generation to preserve manual edits")
     except Exception as e:
         print(f"❌ Error generating services.json: {e}")
 

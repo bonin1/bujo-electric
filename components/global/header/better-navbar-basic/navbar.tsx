@@ -128,10 +128,10 @@ export const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    href="/service-areas/"
+                    href="/zonat-e-sherbimit/"
                     className={`${navigationMenuTriggerStyle()} ${isScrolled ? 'bg-background' : 'text-text-dark hover:text-text-dark bg-transparent'}`}
                   >
-                    Service Areas
+                    Zonat e Shërbimit
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
@@ -139,15 +139,15 @@ export const Navbar = () => {
                   <NavigationMenuContent>
                     <div className="grid w-[600px] grid-cols-3 p-3">
                       <NavigationMenuLink
-                        href="/services/"
+                        href="/sherbime-elektrike/"
                         className="rounded-md p-3 transition-colors hover:bg-muted/70"
                       >
                         <div>
                           <p className="mb-1 font-semibold text-foreground">
-                            All Services
+                            Të Gjitha Shërbimet
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            View all our professional services
+                            Shikoni të gjitha shërbimet tona profesionale
                           </p>
                         </div>
                       </NavigationMenuLink>
@@ -175,15 +175,15 @@ export const Navbar = () => {
                   <NavigationMenuContent>
                     <div className="grid w-[600px] grid-cols-2 p-3">
                       <NavigationMenuLink
-                        href="/about/"
+                        href="/rreth-nesh/"
                         className="rounded-md p-3 transition-colors hover:bg-muted/70"
                       >
                         <div>
                           <p className="mb-1 font-semibold text-foreground">
-                            About Us
+                            Rreth Nesh
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            Learn about our company and mission
+                            Mësoni më shumë për kompaninë dhe misionin tonë
                           </p>
                         </div>
                       </NavigationMenuLink>
@@ -208,18 +208,18 @@ export const Navbar = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    href="/portfolio"
+                    href="/galeria-e-projekteve/"
                     className={`${navigationMenuTriggerStyle()} ${isScrolled ? 'bg-background' : 'text-text-dark hover:text-text-dark bg-transparent'}`}
                   >
-                    Portfolio
+                    Galeria
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    href="/contact"
+                    href="/kontakti/"
                     className={`${navigationMenuTriggerStyle()} ${isScrolled ? 'bg-background' : 'text-text-dark hover:text-text-dark bg-transparent'}`}
                   >
-                    Contact Us
+                    Kontakti
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -290,9 +290,9 @@ export const Navbar = () => {
                 Home
               </Link>
 
-              <Link href="/service-areas/" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
+              <Link href="/zonat-e-sherbimit/" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
                 <MapPin className="h-5 w-5 mr-3" />
-                Service Areas
+                Zonat e Shërbimit
               </Link>
 
               <Accordion type="single" collapsible className="mb-6">
@@ -304,16 +304,16 @@ export const Navbar = () => {
                   <AccordionContent>
                     <div className="grid grid-cols-1 gap-2 max-h-60 overflow-y-auto ml-8">
                       <Link
-                        href="/services/"
+                        href="/sherbime-elektrike/"
                         className="rounded-md p-3 transition-colors hover:bg-muted/70 group"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         <div>
                           <p className="mb-1 font-semibold text-foreground">
-                            All Services
+                            Të Gjitha Shërbimet
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            View all our professional services
+                            Shikoni të gjitha shërbimet tona profesionale
                           </p>
                         </div>
                       </Link>
@@ -348,16 +348,16 @@ export const Navbar = () => {
                   <AccordionContent>
                     <div className="grid grid-cols-1 gap-2 max-h-60 overflow-y-auto ml-8">
                       <Link
-                        href="/about/"
+                        href="/rreth-nesh/"
                         className="rounded-md p-3 transition-colors hover:bg-muted/70 group"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         <div>
                           <p className="mb-1 font-semibold text-foreground">
-                            About Us
+                            Rreth Nesh
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            Learn about our company and mission
+                            Mësoni më shumë për kompaninë dhe misionin tonë
                           </p>
                         </div>
                       </Link>
@@ -383,14 +383,14 @@ export const Navbar = () => {
                 </AccordionItem>
               </Accordion>
 
-              <Link href="/portfolio" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
+              <Link href="/galeria-e-projekteve/" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
                 <ImageIcon className="h-5 w-5 mr-3" />
-                Portfolio
+                Galeria
               </Link>
 
-              <Link href="/contact" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
+              <Link href="/kontakti/" className="flex items-center font-medium py-2 hover:text-primary transition-colors">
                 <HelpCircle className="h-5 w-5 mr-3" />
-                Contact Us
+                Kontakti
               </Link>
 
               <div className="pt-6 space-y-4">

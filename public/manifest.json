@@ -1,7 +1,7 @@
 {
-  "name": "Example Company - Professional Services",
-  "short_name": "Example Company",
-  "description": "Expert professional services in Example City, ST. Quality solutions and customer satisfaction guaranteed. Contact us today for a free consultation!",
+  "name": "Bujo Electric - Elektricist",
+  "short_name": "Bujo Electric",
+  "description": "Sh\u00ebrbime elektrike profesionale 24/7 n\u00eb Prishtin\u00eb dhe mbar\u00eb Kosov\u00ebn. Instalime, riparime dhe mir\u00ebmbajtje elektrike me standarde evropiane.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -10,8 +10,8 @@
   "scope": "/",
   "lang": "en-US",
   "categories": [
-    "service provider",
-    "professional_services"
+    "electrician",
+    "elektricist"
   ],
   "icons": [
     {
@@ -58,10 +58,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Contact Us",
-      "short_name": "Contact",
-      "description": "Get in touch with us",
-      "url": "/contact",
+      "name": "Na Kontaktoni",
+      "short_name": "Kontakti",
+      "description": "Na kontaktoni",
+      "url": "/kontakti",
       "icons": [
         {
           "src": "/assets/config/favicon.ico",
@@ -70,10 +70,10 @@
       ]
     },
     {
-      "name": "Our Services",
-      "short_name": "Services",
-      "description": "View our professional professional services",
-      "url": "/services",
+      "name": "Sh\u00ebrbimet Tona",
+      "short_name": "Sh\u00ebrbimet",
+      "description": "Shikoni elektricist tona profesionale",
+      "url": "/sherbime-elektrike",
       "icons": [
         {
           "src": "/assets/config/favicon.ico",

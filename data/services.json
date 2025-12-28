@@ -1,1716 +1,1373 @@
 {
   "services": [
     {
-      "id": "service-one",
-      "name": "Service One",
-      "slug": "service-one",
-      "description": "Professional Service One solutions for residential and commercial clients across Example City, ST.",
+      "id": "instalime-elektrike",
+      "name": "Instalime Elektrike",
+      "slug": "instalime-elektrike",
+      "description": "Projektim dhe ekzekutim i instalimeve elektrike të plota për objekte të reja dhe renovime, duke garantuar siguri maksimale dhe efiçiencë energjetike.",
       "contentSections": {
         "introduction": {
-          "title": "Professional Service One",
-          "paragraph": "Expert Service One solutions across Example City, ST designed to improve functionality, enhance performance, and ensure long-lasting results. Our technicians deliver precise execution, quality testing, and full system integration for smooth, dependable operation."
+          "title": "Ekspertizë në Instalime Elektrike Moderne",
+          "paragraph": "Bujo Electric ofron zgjidhje gjithëpërfshirëse për instalimet elektrike, duke filluar nga projektimi fillestar deri te certifikimi përfundimtar. Ne përdorim teknologjitë më të avancuara dhe materialet më cilësore në treg për të siguruar që rrjeti juaj elektrik të jetë i sigurt, i qëndrueshëm dhe i gatshëm për kërkesat e ardhshme teknologjike."
         },
         "whyMatters": {
-          "title": "Why Proper Service One Matters",
-          "paragraph": "A well-executed Service One is essential for efficiency, reliability, and long-term performance. Incorrect implementation leads to early wear on components and systems. We ensure correct setup, balance, and quality standards to protect your property from Example City weather conditions, usage demands, and environmental factors."
+          "title": "Siguria Fillon nga Instalimi i Saktë",
+          "paragraph": "Një sistem elektrik i projektuar keq është një rrezik i fshehur. Ne sigurohemi që çdo kabllo, prizë dhe panel të jetë në përputhje me standardet ndërkombëtare të sigurisë (IEC), duke minimizuar rrezikun e zjarrit dhe duke mbrojtur pajisjet tuaja elektronike nga mbingarkesat."
         },
         "process": {
-          "title": "Our Service One Process",
+          "title": "Procesi Ynë i Punës",
           "steps": [
             {
-              "number": 1,
-              "title": "Site Assessment & Free Estimate",
-              "description": "We evaluate your existing setup, measure all relevant points, and provide a no-obligation quote tailored to your needs."
+              "number": "01",
+              "title": "Analiza dhe Konsultimi",
+              "description": "Vlerësimi i nevojave energjetike dhe planifikimi i shpërndarjes së pikave elektrike."
             },
             {
-              "number": 2,
-              "title": "Service Selection & Preparation",
-              "description": "Choose from a variety of options and designs. We prepare the workspace and ensure all components meet high durability standards."
+              "number": "02",
+              "title": "Projektimi Teknik",
+              "description": "Krijimi i skemave elektrike të detajuara që optimizojnë konsumin dhe funksionalitetin."
             },
             {
-              "number": 3,
-              "title": "Professional Execution & Testing",
-              "description": "Our technicians complete your Service One, test all systems, verify quality standards, and confirm smooth operation."
+              "number": "03",
+              "title": "Ekzekutimi Profesional",
+              "description": "Instalimi i rrjetit me precizitet të lartë, duke përdorur teknika që ruajnë strukturën e objektit."
+            },
+            {
+              "number": "04",
+              "title": "Testimi dhe Certifikimi",
+              "description": "Kontrolli rigoroz i çdo qarku dhe lëshimi i dokumentacionit teknik të garancisë."
             }
           ]
         },
         "challenges": {
-          "title": "Common Service One Challenges We Prevent",
+          "title": "Sfidat që Zgjidhim",
           "items": [
-            "Performance issues from improper setup in Example City conditions.",
-            "Misaligned components leading to early system failure.",
-            "Inadequate quality standards causing instability during use."
+            "Optimizimi i konsumit të energjisë në objekte të mëdha",
+            "Integrimi i sistemeve të ndërlikuara të ndriçimit dhe kontrollit",
+            "Përshtatja e instalimeve të vjetra me standardet e reja të sigurisë",
+            "Sigurimi i vazhdimësisë së punës gjatë procesit de renovimit"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver fast service, dependable craftsmanship, and solutions built to handle various conditions. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Pse të Zgjidhni Bujo Electric",
+          "paragraph": "Me vite përvojë në tregun e Kosovës, ne kemi ndërtuar një reputacion për besueshmëri dhe ekspertizë. Ne nuk bëjmë kompromise me sigurinë dhe jemi të përkushtuar ndaj kënaqësisë së klientit në çdo projekt, i vogël apo i madh."
         }
       },
-      "category": "Core Services",
-      "duration": "Typically completed within 1-2 days",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Shërbimet Kryesore",
+      "duration": "1-2 ditë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": true,
       "parentService": null,
       "features": [
-        "Free Consultation",
-        "Licensed Technicians",
-        "Durable Materials",
-        "Precision Execution",
-        "Quality-Ready Service"
+        "Konsultim Falas",
+        "Shërbim Profesional",
+        "Garanci Cilësie",
+        "Përfshin Garancinë",
+        "Ekip Ekspertësh"
       ],
       "seo": {
-        "metaTitle": "Service One in Example City, ST | Example Company",
-        "metaDescription": "Professional Service One across Example City. Fast service, expert technicians, and long-lasting results. Call today for a free estimate.",
-        "keywords": "service one Example City, professional service one, Example Company service one"
+        "metaTitle": "Instalime Elektrike Profesionale | Bujo Electric",
+        "metaDescription": "Instalime elektrike profesionale për shtëpi dhe biznese. Siguri maksimale, materiale cilësore dhe certifikim teknik. Na kontaktoni për një konsultim falas!",
+        "keywords": "instalime elektrike, elektricist, Prishtinë, Kosovë, siguri elektrike"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-20.webp"
       ],
-      "contentVariations": {
-        "opening": "Upgrade your property with professional Service One built for Example City conditions.",
-        "whyChoose": "Trusted by clients for fast service, precision workmanship, and durable solutions.",
-        "closing": "Ready to get started with Service One? Call Example Company today for a free estimate."
-      },
       "uniqueFaqs": [
         {
-          "question": "How long does Service One typically take?",
-          "answer": "Most Service One projects are completed within 1-2 days depending on scope and configuration."
+          "question": "Çfarë përfshijnë instalimet elektrike?",
+          "answer": "Instalimet tona elektrike përfshijnë konsultimin, ofrimin e shërbimit profesional, materiale cilësore dhe mbështetje pas instalimit. Ne ofrojmë zgjidhje gjithëpërfshirëse të përshtatura për nevojat tuaja."
         },
         {
-          "question": "Do you offer different Service One options?",
-          "answer": "Yes, we provide a wide range of Service One solutions designed for various needs and preferences."
+          "question": "Sa kohë zgjasin instalimet elektrike?",
+          "answer": "Shumica e projekteve përfundojnë brenda 1-2 ditëve, varësisht nga fushëveprimi dhe kompleksiteti. Ne do të ofrojmë një afat kohor të saktë gjatë konsultimit tuaj."
         },
         {
-          "question": "Can you combine Service One with other services?",
-          "answer": "Absolutely. We can coordinate Service One with related services during the same visit for convenience."
+          "question": "A ofroni projektim të skemave elektrike?",
+          "answer": "Po, ne ofrojmë projektim të detajuar teknik para fillimit të punimeve për të garantuar saktësi dhe efiçiencë."
+        },
+        {
+          "question": "Cilat marka të materialeve përdorni?",
+          "answer": "Ne përdorim marka lider si Schneider, ABB dhe Legrand për të garantuar siguri maksimale dhe jetëgjatësi të instalimit."
         }
       ]
     },
     {
-      "id": "residential-service-one",
-      "name": "Residential Service One",
-      "slug": "residential-service-one",
-      "description": "Expert residential Service One services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "instalime-elektrike-rezidenciale",
+      "name": "Instalime Rezidenciale",
+      "slug": "instalime-elektrike-rezidenciale",
+      "description": "Shërbime të specializuara për shtëpi dhe apartamente, duke u fokusuar në komoditetin, sigurinë e familjes dhe integrimin e teknologjisë Smart Home.",
       "contentSections": {
         "introduction": {
-          "title": "Residential Service One",
-          "paragraph": "Specialized residential Service One solutions across Example City, ST designed for homes and families. Our technicians deliver personalized service, quality materials, and expert execution tailored to residential needs."
+          "title": "Energji e Sigurt për Shtëpinë Tuaj",
+          "paragraph": "Shtëpia juaj meriton një sistem elektrik që punon në heshtje dhe siguri. Ne ofrojmë instalime rezidenciale që kombinojnë funksionalitetin me estetikën, duke siguruar që çdo dhomë të ketë ndriçimin dhe fuqinë e duhur për nevojat e përditshme të familjes suaj."
         },
         "whyMatters": {
-          "title": "Why Residential Service One Matters",
-          "paragraph": "Proper residential Service One is essential for home safety, comfort, and value. Incorrect service leads to issues affecting daily life. We ensure residential-focused solutions, quality standards, and reliable service to protect your home in Example City conditions."
+          "title": "Mbrojtja e Familjes dhe Pronës",
+          "paragraph": "Defektet elektrike janë shkaku kryesor i aksidenteve shtëpiake. Instalimet tona përfshijnë mbrojtje të avancuar kundër goditjeve elektrike dhe mbingarkesave, duke ju dhënë qetësinë shpirtërore që meritoni në ambientin tuaj të banimit."
         },
         "process": {
-          "title": "Our Residential Service One Process",
+          "title": "Si Punojmë në Shtëpinë Tuaj",
           "steps": [
             {
-              "number": 1,
-              "title": "Home Assessment & Consultation",
-              "description": "We evaluate your residential needs, provide personalized recommendations, and deliver a detailed quote."
+              "number": "01",
+              "title": "Vlerësimi i Hapësirës",
+              "description": "Identifikimi i nevojave specifike për çdo ambient të shtëpisë."
             },
             {
-              "number": 2,
-              "title": "Residential Service Delivery",
-              "description": "Our expert team provides specialized residential service using quality materials and careful execution."
+              "number": "02",
+              "title": "Zgjedhja e Materialeve",
+              "description": "Përzgjedhja e aksesorëve (prizave, çelësave) që përshtaten me dizajnin tuaj de brendshëm."
             },
             {
-              "number": 3,
-              "title": "Quality Check & Home Care",
-              "description": "We verify service quality, ensure home safety, and provide maintenance guidance for ongoing care."
+              "number": "03",
+              "title": "Instalimi i Pastër",
+              "description": "Punë profesionale me ndikim minimal në muret dhe dekorin ekzistues."
+            },
+            {
+              "number": "04",
+              "title": "Verifikimi i Sigurisë",
+              "description": "Testimi i mbrojtjes FI (RCD) dhe tokëzimit për siguri maksimale."
             }
           ]
         },
         "challenges": {
-          "title": "Common Residential Service One Challenges We Prevent",
+          "title": "Zgjidhje për Shtëpi",
           "items": [
-            "Home safety issues from improper service in Example City conditions.",
-            "Comfort problems affecting daily family life.",
-            "Value reduction from inadequate residential service."
+            "Shtimi i pikave të reja elektrike pa dëmtuar dekorin",
+            "Instalimi i sistemeve të ndriçimit dekorativ LED",
+            "Mbrojtja e pajisjeve shtëpiake të ndjeshme nga luhatjet e tensionit",
+            "Përgatitja e infrastrukturës për sisteme inteligjente"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City homeowners, we deliver specialized residential service, quality solutions, and personalized care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Përkushtim ndaj Familjes Tuaj",
+          "paragraph": "Ne e trajtojmë shtëpinë tuaj me respektin më të madh. Elektricistët tanë janë të sjellshëm, të pastër dhe të besueshëm, duke ju ofruar paqe mendore."
         }
       },
-      "category": "Service One Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Instalime Elektrike",
+      "duration": "1 ditë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": false,
-      "parentService": "service-one",
+      "parentService": "instalime-elektrike",
       "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
+        "Shërbim Ekspert",
+        "Materiale Cilësore",
+        "Ekip Profesional",
+        "Garanci Kënaqësie"
       ],
       "seo": {
-        "metaTitle": "Residential Service One | Example Company",
-        "metaDescription": "Expert residential service one services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "residential service one, service one, professional services"
+        "metaTitle": "Instalime Elektrike Rezidenciale | Bujo Electric",
+        "metaDescription": "Instalime elektrike për shtëpi dhe apartamente. Siguri, komoditet dhe teknologji Smart Home. Shërbim i pastër dhe profesional.",
+        "keywords": "instalime rezidenciale, instalime elektrike shtëpi, elektricist shtëpie"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp"
       ],
-      "contentVariations": {
-        "opening": "Specialized residential service one services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our residential service one services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with residential service one today. Contact us for your free consultation."
-      },
       "uniqueFaqs": [
         {
-          "question": "What makes your residential service one different?",
-          "answer": "Our residential service one services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
+          "question": "Çfarë i bën instalimet tuaja rezidenciale të veçanta?",
+          "answer": "Instalimet tona rezidenciale kombinojnë ekspertizën profesionale me vëmendjen e personalizuar. Ne fokusohemi në cilësi dhe kënaqësinë e klientit në çdo projekt."
+        },
+        {
+          "question": "A mund të shtoni priza të reja pa dëmtuar muret?",
+          "answer": "Po, përdorim teknika moderne dhe pajisje profesionale për të minimizuar dëmtimet gjatë renovimeve në shtëpinë tuaj."
+        },
+        {
+          "question": "A instaloni sisteme mbrojtëse për fëmijë?",
+          "answer": "Po, ofrojmë instalimin e prizave me mbrojtje të integruar (shutter) për të garantuar sigurinë e fëmijëve tuaj."
         }
       ]
     },
     {
-      "id": "commercial-service-one",
-      "name": "Commercial Service One",
-      "slug": "commercial-service-one",
-      "description": "Expert commercial Service One services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "instalime-elektrike-komerciale",
+      "name": "Instalime Komerciale",
+      "slug": "instalime-elektrike-komerciale",
+      "description": "Zgjidhje elektrike për biznese, zyra dhe qendra tregtare, të dizajnuara për të mbështetur operacionet intensive dhe për të ulur kostot operative.",
       "contentSections": {
         "introduction": {
-          "title": "Commercial Service One",
-          "paragraph": "Specialized commercial Service One solutions across Example City, ST designed for businesses and commercial properties. Our technicians deliver efficient service, commercial-grade materials, and expert execution tailored to business needs."
+          "title": "Infrastrukturë Elektrike për Bizneset Moderne",
+          "paragraph": "Në një ambient biznesi, efiçienca dhe besueshmëria janë gjithçka. Ne ofrojmë instalime komerciale që garantojnë që biznesi juaj të mos ndalet kurrë, duke integruar sisteme të fuqishme të shpërndarjes së energjisë dhe ndriçim profesional që rrit produktivitetin."
         },
         "whyMatters": {
-          "title": "Why Commercial Service One Matters",
-          "paragraph": "Proper commercial Service One is essential for business operations, productivity, and professional appearance. Incorrect service leads to downtime and business disruption. We ensure commercial-focused solutions, durable materials, and reliable service to protect your business in Example City conditions."
+          "title": "Kontinuiteti i Biznesit",
+          "paragraph": "Çdo minutë pa energji është humbje financiare. Sistemet tona komerciale janë të projektuara për të përballuar ngarkesa të larta dhe për të ofruar redundancë, duke siguruar që serverët, pajisjet e punës dhe sistemet e sigurisë të jenë gjithmonë aktive."
         },
         "process": {
-          "title": "Our Commercial Service One Process",
+          "title": "Procesi për Biznese",
           "steps": [
             {
-              "number": 1,
-              "title": "Business Assessment & Planning",
-              "description": "We evaluate your commercial needs, minimize business disruption, and provide a detailed quote with timeline."
+              "number": "01",
+              "title": "Analiza e Ngarkesës",
+              "description": "Llogaritja e saktë e fuqisë së kërkuar për pajisjet e biznesit."
             },
             {
-              "number": 2,
-              "title": "Commercial Service Delivery",
-              "description": "Our expert team provides specialized commercial service using commercial-grade materials and efficient execution."
+              "number": "02",
+              "title": "Projektimi i Shpërndarjes",
+              "description": "Planifikimi i paneleve shpërndarëse për qasje të lehtë dhe siguri."
             },
             {
-              "number": 3,
-              "title": "Quality Verification & Business Support",
-              "description": "We verify service quality, ensure business operations, and provide maintenance plans for ongoing care."
+              "number": "03",
+              "title": "Instalimi i Shpejtë",
+              "description": "Ekzekutimi i punimeve në afate rekord për të minimizuar ndërprerjen e aktivitetit."
+            },
+            {
+              "number": "04",
+              "title": "Dokumentimi Teknik",
+              "description": "Dorëzimi i planeve \"as-built\" dhe certifikatave të sigurisë për inspektim."
             }
           ]
         },
         "challenges": {
-          "title": "Common Commercial Service One Challenges We Prevent",
+          "title": "Sfidat Komerciale",
           "items": [
-            "Business downtime from improper service in Example City conditions.",
-            "Productivity loss affecting business operations.",
-            "Professional appearance issues impacting customer perception."
+            "Menaxhim i kabllove në zyra me densitet të lartë",
+            "Instalimi i sistemeve të ndriçimit emergjent dhe sinjalizimit",
+            "Integrimi i sistemeve të kontrollit të qasjes dhe vëzhgimit",
+            "Optimizimi i tarifave të energjisë përmes sistemeve efiçiente"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City businesses, we deliver specialized commercial service, quality solutions, and business-focused care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Partneri Juaj i Besueshëm",
+          "paragraph": "Ne kuptojmë nevojat e biznesit dhe ofrojmë shërbime të shpejta, profesionale dhe me dokumentacion të plotë tatimor dhe teknik."
         }
       },
-      "category": "Service One Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Instalime Elektrike",
+      "duration": "1 ditë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": false,
-      "parentService": "service-one",
+      "parentService": "instalime-elektrike",
       "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
+        "Shërbim Ekspert",
+        "Materiale Cilësore",
+        "Ekip Profesional",
+        "Garanci Kënaqësie"
       ],
       "seo": {
-        "metaTitle": "Commercial Service One | Example Company",
-        "metaDescription": "Expert commercial service one services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "commercial service one, service one, professional services"
+        "metaTitle": "Instalime Elektrike Komerciale | Bujo Electric",
+        "metaDescription": "Zgjidhje elektrike për biznese, zyra dhe dyqane. Efiçiencë energjetike, ndriçim profesional dhe mirëmbajtje e garantuar.",
+        "keywords": "instalime komerciale, elektricist biznesi, ndriçim zyrash"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp"
       ],
-      "contentVariations": {
-        "opening": "Specialized commercial service one services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our commercial service one services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with commercial service one today. Contact us for your free consultation."
-      },
       "uniqueFaqs": [
         {
-          "question": "What makes your commercial service one different?",
-          "answer": "Our commercial service one services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
+          "question": "Çfarë i bën instalimet tuaja komerciale të veçanta?",
+          "answer": "Instalimet tona komerciale kombinojnë ekspertizën profesionale me vëmendjen e personalizuar. Ne fokusohemi në cilësi dhe kënaqësinë e klientit në çdo projekt."
+        },
+        {
+          "question": "A punoni jashtë orarit të biznesit?",
+          "answer": "Po, ne mund të planifikojmë punimet gjatë natës ose fundjavave për të minimizuar ndikimin në aktivitetin tuaj ditor."
+        },
+        {
+          "question": "A ofroni certifikim për inspektim teknik?",
+          "answer": "Po, ne lëshojmë të gjithë dokumentacionin e nevojshëm teknik dhe certifikatat e sigurisë që kërkohen për bizneset."
         }
       ]
     },
     {
-      "id": "custom-service-one",
-      "name": "Custom Service One",
-      "slug": "custom-service-one",
-      "description": "Expert custom Service One services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "instalime-industriale",
+      "name": "Instalime Industriale",
+      "slug": "instalime-industriale",
+      "description": "Instalime të rënda elektrike për fabrika dhe reparte prodhimi, duke përfshirë panele automatizimi, motorë trefazorë dhe sisteme mbrojtëse industriale.",
       "contentSections": {
         "introduction": {
-          "title": "Custom Service One",
-          "paragraph": "Specialized custom Service One solutions across Example City, ST designed to meet your unique requirements. Our technicians deliver personalized service, custom designs, and expert execution tailored to your specific needs."
+          "title": "Fuqi dhe Precizitet për Industrinë",
+          "paragraph": "Mjediset industriale kërkojnë një qasje krejtësisht tjetër ndaj energjisë elektrike. Bujo Electric ka përvojën e duhur in trajtimin e sistemeve me tension të lartë dhe makinerive komplekse, duke ofrojmë instalime që përballojnë kushtet më të vështira të punës."
         },
         "whyMatters": {
-          "title": "Why Custom Service One Matters",
-          "paragraph": "Custom Service One is essential for unique requirements, specific preferences, and personalized solutions. Standard service leads to compromises and limitations. We ensure custom designs, personalized service, and tailored solutions to meet your exact needs in Example City conditions."
+          "title": "Performancë pa Kompromis",
+          "paragraph": "Në industri, dështimi i një komponenti elektrik mund të ndalojë të gjithë linjën e prodhimit. Ne përdorim materiale të gradës industriale dhe teknika të avancuara izolimi për të garantuar që sistemi juaj të jetë imun ndaj pluhurit, lagështisë dhe vibrimeve."
         },
         "process": {
-          "title": "Our Custom Service One Process",
+          "title": "Procesi Industrial",
           "steps": [
             {
-              "number": 1,
-              "title": "Custom Design & Consultation",
-              "description": "We discuss your unique requirements, create custom designs, and provide a detailed quote with timeline."
+              "number": "01",
+              "title": "Studimi i Fizibilitetit",
+              "description": "Analizojmë kërkesat e fuqisë dhe specifikimet e makinerive."
             },
             {
-              "number": 2,
-              "title": "Custom Service Delivery",
-              "description": "Our expert team provides specialized custom service using quality materials and precise custom execution."
+              "number": "02",
+              "title": "Projektimi Teknik",
+              "description": "Krijojmë skema të detajuara për shpërndarjen e energjisë dhe panelet e kontrollit."
             },
             {
-              "number": 3,
-              "title": "Custom Verification & Support",
-              "description": "We verify custom service quality, ensure requirements are met, and provide ongoing support."
+              "number": "03",
+              "title": "Instalimi i Specializuar",
+              "description": "Përdorim kabllo dhe pajisje të certifikuara për përdorim industrial."
+            },
+            {
+              "number": "04",
+              "title": "Testimi i Ngarkesës",
+              "description": "Verifikojmë që sistemi përballon ngarkesat maksimale pa probleme."
             }
           ]
         },
         "challenges": {
-          "title": "Common Custom Service One Challenges We Prevent",
+          "title": "Sfidat Industriale",
           "items": [
-            "Design limitations from standard solutions in Example City conditions.",
-            "Compromise issues affecting functionality and appearance.",
-            "Custom requirement failures from inadequate planning."
+            "Menaxhimi i faktorit të fuqisë dhe reduktimi i reaktivitetit",
+            "Mbrojtja e sistemeve nga interferencat elektromagnetike",
+            "Instalimi i sistemeve të automatizimit (PLC) dhe sensorëve",
+            "Sigurimi i tokëzimit industrial me rezistencë shumë të ulët"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver custom solutions, personalized service, and tailored care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Ekspertizë e Lartë Teknike",
+          "paragraph": "Ekipi ynë ka kualifikimet dhe përvojën e nevojshme për të trajtuar projektet më komplekse industriale me saktësi dhe profesionalizëm."
         }
       },
-      "category": "Service One Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Instalime Elektrike",
+      "duration": "1 ditë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": false,
-      "parentService": "service-one",
+      "parentService": "instalime-elektrike",
       "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
+        "Shërbim Ekspert",
+        "Materiale Cilësore",
+        "Ekip Profesional",
+        "Garanci Kënaqësie"
       ],
       "seo": {
-        "metaTitle": "Custom Service One | Example Company",
-        "metaDescription": "Expert custom service one services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "custom service one, service one, professional services"
+        "metaTitle": "Instalime Elektrike Industriale | Bujo Electric",
+        "metaDescription": "Instalime elektrike për fabrika dhe industri. Panele kontrolli, sisteme trefazore dhe automatizim industrial. Siguri dhe fuqi maksimale.",
+        "keywords": "instalime industriale, elektricist industrial, panele kontrolli, trefazor"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp"
       ],
-      "contentVariations": {
-        "opening": "Specialized custom service one services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our custom service one services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with custom service one today. Contact us for your free consultation."
-      },
       "uniqueFaqs": [
         {
-          "question": "What makes your custom service one different?",
-          "answer": "Our custom service one services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
+          "question": "Çfarë i bën instalimet tuaja industriale të veçanta?",
+          "answer": "Instalimet tona industriale kombinojnë ekspertizën profesionale me vëmendjen e personalizuar. Ne fokusohemi në cilësi dhe kënaqësinë e klientit në çdo projekt."
+        },
+        {
+          "question": "A keni përvojë me panele trefazore të fuqisë së lartë?",
+          "answer": "Po, ekipi ynë është i trajnuar dhe i certifikuar për instalimin dhe mirëmbajtjen e sistemeve trefazore të tensionit të ulët dhe të mesëm."
+        },
+        {
+          "question": "A instaloni sisteme automatizimi PLC?",
+          "answer": "Po, ne ofrojmë instalimin e infrastrukturës elektrike dhe kabllimit të nevojshëm për sisteme të automatizuara PLC dhe sensorë industrialë."
         }
       ]
     },
     {
-      "id": "service-two",
-      "name": "Service Two",
-      "slug": "service-two",
-      "description": "Fast, reliable Service Two for all your needs across Example City, ST.",
+      "id": "riparime-elektrike",
+      "name": "Riparime Elektrike",
+      "slug": "riparime-elektrike",
+      "description": "Shërbim i shpejtë për eliminimin e defekteve elektrike, riparimin e pajisjeve dhe rikthimin e sigurisë në rrjetin tuaj elektrik.",
       "contentSections": {
         "introduction": {
-          "title": "Professional Service Two",
-          "paragraph": "Expert Service Two solutions across Example City, ST designed to deliver fast, reliable results and ensure optimal performance. Our technicians provide efficient service, quality materials, and comprehensive support for smooth, dependable operation."
+          "title": "Zgjidhje të Shpejta për Çdo Problem Elektrik",
+          "paragraph": "Një defekt elektrik mund të jetë stresues dhe i rrezikshëm. Ekipi ynë i ndërhyrjes së shpejtë është i trajnuar për të gjetur dhe riparuar çdo lloj problemi, nga një prizë e djegur deri te dështimet komplekse të paneleve shpërndarëse, duke përdorur mjete diagnostikuese të saktësisë së lartë."
         },
         "whyMatters": {
-          "title": "Why Proper Service Two Matters",
-          "paragraph": "A well-executed Service Two is essential for reliability, efficiency, and long-term satisfaction. Incorrect implementation leads to frequent issues and increased costs. We ensure proper setup, quality standards, and reliable execution to protect your investment from Example City conditions and usage demands."
+          "title": "Parandalimi i Dëmeve të Mëtejshme",
+          "paragraph": "Shpesh, një problem i vogël elektrik është shenjë e një defekti më të madh në sistem. Riparimi i menjëhershëm jo vetëm që rikthen funksionalitetin, por parandalon dëmtimin e pajisjeve të shtrenjta elektronike dhe eliminon rrezikun e zjarrit."
         },
         "process": {
-          "title": "Our Service Two Process",
+          "title": "Si Veprojmë në Raste Defektesh",
           "steps": [
             {
-              "number": 1,
-              "title": "Consultation & Assessment",
-              "description": "We evaluate your needs, provide custom recommendations, and deliver a detailed quote with timeline."
+              "number": "01",
+              "title": "Diagnostikimi",
+              "description": "Përdorimi i multimetrave dhe kamerave termike për të gjetur burimin e defektit."
             },
             {
-              "number": 2,
-              "title": "Professional Service Delivery",
-              "description": "Our expert team uses quality materials and precise execution to deliver exceptional results."
+              "number": "02",
+              "title": "Izolimi i Rrezikut",
+              "description": "Shkëputja e sigurt e zonës së dëmtuar për të mbrojtur pjesën tjetër të rrjetit."
             },
             {
-              "number": 3,
-              "title": "Follow-up Support & Quality Check",
-              "description": "We conduct thorough quality checks, demonstrate operation, and provide warranty and maintenance guidance."
+              "number": "03",
+              "title": "Riparimi Profesional",
+              "description": "Zëvendësimi i pjesët e dëmtuara me komponentë origjinalë dhe cilësorë."
+            },
+            {
+              "number": "04",
+              "title": "Testimi i Sigurisë",
+              "description": "Verifikimi që riparimi është i qëndrueshëm dhe sistemi punon normalisht."
             }
           ]
         },
         "challenges": {
-          "title": "Common Service Two Challenges We Prevent",
+          "title": "Problemet e Zakonshme që Zgjidhim",
           "items": [
-            "Reliability issues from improper setup in Example City conditions.",
-            "Frequent breakdowns leading to increased maintenance costs.",
-            "Inadequate quality standards causing premature system failure."
+            "Gjetja e defekteve të fshehura brenda mureve",
+            "Riparimi i instalimeve të vjetra ku materialet janë të konsumuara",
+            "Ndërhyrjet në panele të mbingarkuara me lidhje të pasigurta",
+            "Sigurimi i energjisë provizore gjatë kohës së riparimit"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver fast service, dependable craftsmanship, and solutions built to handle various conditions. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Pse Bujo Electric për Riparime",
+          "paragraph": "Ne jemi të disponueshëm kur keni më shumë nevojë. Me një ekip të gatshëm për emergjenca dhe pajisje profesionale, ne garantojmë zgjidhje të shpejta dhe afatgjata."
         }
       },
-      "category": "Core Services",
-      "duration": "Typically completed within 1-2 days",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Shërbimet Kryesore",
+      "duration": "1-2 ditë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": true,
       "parentService": null,
       "features": [
-        "Free Consultation",
-        "Professional Service",
-        "Quality Guarantee",
-        "Warranty Included",
-        "Expert Team"
+        "Konsultim Falas",
+        "Shërbim Profesional",
+        "Garanci Cilësie",
+        "Përfshin Garancinë",
+        "Ekip Ekspertësh"
       ],
       "seo": {
-        "metaTitle": "Service Two in Example City, ST | Example Company",
-        "metaDescription": "Professional service two in Example City, ST. Expert service, quality products & satisfaction guaranteed. Free consultation!",
-        "keywords": "service two, professional services, Example City, ST"
+        "metaTitle": "Riparime Elektrike Profesionale | Bujo Electric",
+        "metaDescription": "Riparime elektrike të shpejta dhe të sigurta. Diagnostikim me pajisje moderne dhe riparim i garantuar për shtëpi dhe biznese.",
+        "keywords": "riparime elektrike, elektricist emergjence, defekte elektrike, riparim paneli"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-20.webp"
       ],
-      "contentVariations": {
-        "opening": "Transform your property with professional service two. Our expert team provides quality solutions tailored to your specific needs.",
-        "whyChoose": "We bring years of experience and expertise to every service two project. Our commitment to quality and customer satisfaction sets us apart.",
-        "closing": "Ready to get started? Let's discuss your service two needs. Schedule your free consultation today."
-      },
       "uniqueFaqs": [
         {
-          "question": "What does service two include?",
-          "answer": "Our service two includes consultation, professional service delivery, quality materials, and follow-up support. We provide comprehensive solutions tailored to your needs."
+          "question": "Çfarë përfshijnë riparimet elektrike?",
+          "answer": "Riparimet tona elektrike përfshijnë diagnostifikimin, zgjidhjen e problemit, materiale cilësore dhe testimin e sigurisë. Ne ofrojmë zgjidhje të shpejta dhe efektive."
         },
         {
-          "question": "How long does service two take?",
-          "answer": "Most projects are completed within 1-2 days, depending on scope and complexity. We'll provide an accurate timeline during your consultation."
+          "question": "Sa kohë zgjasin riparimet?",
+          "answer": "Shumica e riparimeve përfundojnë brenda ditës. Për raste emergjente, ne intervenojmë menjëherë."
+        },
+        {
+          "question": "Çfarë duhet të bëj nëse dëgjoj zhurmë nga priza?",
+          "answer": "Fikni siguresën menjëherë dhe na kontaktoni. Zhurma mund të jetë shenjë e një lidhjeje të dobët që mund të shkaktojë zjarr."
+        },
+        {
+          "question": "A riparoni defektet e fshehura në mure?",
+          "answer": "Po, ne përdorim pajisje detektuese moderne për të gjetur defektet brenda mureve pa pasur nevojë për prishje të panevojshme."
         }
       ]
     },
     {
-      "id": "emergency-service-two",
-      "name": "Emergency Service Two",
-      "slug": "emergency-service-two",
-      "description": "Expert emergency Service Two services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "defekte-elektrike",
+      "name": "Riparim Defektesh Elektrike",
+      "slug": "defekte-elektrike",
+      "description": "Zgjidhje e menjëhershme për çdo lloj defekti elektrik në shtëpi ose biznes. Diagnostikim i saktë dhe riparim i sigurt 24/7.",
       "contentSections": {
         "introduction": {
-          "title": "Emergency Service Two",
-          "paragraph": "Rapid emergency Service Two solutions across Example City, ST available 24/7 for urgent situations. Our technicians deliver fast response, immediate service, and expert emergency solutions to restore functionality quickly."
+          "title": "Diagnostikim Profesional i Defekteve",
+          "paragraph": "Gjetja e burimit të një problemi elektrik kërkon përvojë dhe pajisje të specializuara. Ne ofrojmë një shërbim të plotë diagnostikues për të identifikuar defektet e fshehura përpara se ato të kthehen në rreziqe serioze për pronën tuaj."
         },
         "whyMatters": {
-          "title": "Why Emergency Service Two Matters",
-          "paragraph": "Fast emergency Service Two is essential for minimizing disruption, preventing further damage, and restoring operations quickly. Delayed emergency service leads to extended downtime and increased costs. We ensure rapid response, immediate solutions, and expert emergency care in Example City conditions."
+          "title": "Siguria Juaj është Prioriteti Ynë",
+          "paragraph": "Defektet elektrike janë shkaku kryesor i zjarreve në ndërtesa. Dritat që dridhen, prizat që nxehen ose rënia e shpeshtë e siguresave janë shenja alarmi që nuk duhen injoruar kurrë."
         },
         "process": {
-          "title": "Our Emergency Service Two Process",
+          "title": "Si e Zgjidhim Problemin Tuaj",
           "steps": [
             {
-              "number": 1,
-              "title": "Emergency Response & Assessment",
-              "description": "We respond quickly to your emergency, assess the situation, and provide immediate service options."
+              "number": "01",
+              "title": "Inspektimi i Detajuar",
+              "description": "Kontrollojmë të gjithë rrjetin elektrik duke përdorur kamera termike dhe pajisje matëse të saktësisë së lartë."
             },
             {
-              "number": 2,
-              "title": "Rapid Emergency Service",
-              "description": "Our expert team provides fast emergency service using quality materials and efficient emergency techniques."
+              "number": "02",
+              "title": "Izolimi i Defektit",
+              "description": "Identifikojmë zonën specifike të dëmtuar dhe e izolojmë atë për të parandaluar dëmtimin e pajisjeve të tjera."
             },
             {
-              "number": 3,
-              "title": "Emergency Resolution & Follow-up",
-              "description": "We resolve the emergency, verify functionality, and provide recommendations to prevent future issues."
+              "number": "03",
+              "title": "Riparimi Standard",
+              "description": "Zëvendësojmë pjesët e dëmtuara me materiale të certifikuara që plotësojnë standardet më të larta të sigurisë."
+            },
+            {
+              "number": "04",
+              "title": "Certifikimi i Punës",
+              "description": "Lëshojmë një raport mbi ndërhyrjen e kryer dhe garantojmë që sistemi është sërish i sigurt."
             }
           ]
         },
         "challenges": {
-          "title": "Common Emergency Service Two Challenges We Prevent",
+          "title": "Sfidat në Gjetjen e Defekteve",
           "items": [
-            "Extended downtime from delayed emergency response in Example City conditions.",
-            "Further damage from unresolved emergency situations.",
-            "Increased costs from prolonged emergency service delays."
+            "Identifikimi i lidhjeve të dobëta në kutitë e shpërndarjes",
+            "Zbulimi i kabllove të dëmtuara nga lagështia ose brejtësit",
+            "Zgjidhja e problemeve me mbingarkesën e fazave",
+            "Riparimi i defekteve që ndodhin në mënyrë të ndërprerë"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver rapid emergency response, immediate solutions, and expert emergency care. Every emergency includes fast service, reliable workmanship, and exceptional attention to detail."
+          "title": "Pse të na Besoni Ne",
+          "paragraph": "Me vite përvojë në terren, ne kemi parë dhe zgjidhur çdo lloj defekti të mundshëm. Ne nuk bëjmë arnime, ne ofrojmë zgjidhje përfundimtare."
         }
       },
-      "category": "Service Two Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-two",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Emergency Service Two | Example Company",
-        "metaDescription": "Expert emergency service two services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "emergency service two, service two, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized emergency service two services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our emergency service two services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with emergency service two today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your emergency service two different?",
-          "answer": "Our emergency service two services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "standard-service-two",
-      "name": "Standard Service Two",
-      "slug": "standard-service-two",
-      "description": "Expert standard Service Two services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
-      "contentSections": {
-        "introduction": {
-          "title": "Standard Service Two",
-          "paragraph": "Reliable standard Service Two solutions across Example City, ST designed for routine needs and regular maintenance. Our technicians deliver consistent service, quality materials, and expert execution for dependable results."
-        },
-        "whyMatters": {
-          "title": "Why Standard Service Two Matters",
-          "paragraph": "Consistent standard Service Two is essential for reliable performance, routine maintenance, and predictable results. Inconsistent service leads to unexpected issues and reduced reliability. We ensure standard quality, consistent execution, and reliable service in Example City conditions."
-        },
-        "process": {
-          "title": "Our Standard Service Two Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "Standard Assessment & Planning",
-              "description": "We evaluate your standard needs, provide routine recommendations, and deliver a detailed quote."
-            },
-            {
-              "number": 2,
-              "title": "Standard Service Delivery",
-              "description": "Our expert team provides consistent standard service using quality materials and reliable techniques."
-            },
-            {
-              "number": 3,
-              "title": "Quality Verification & Maintenance",
-              "description": "We verify service quality, ensure standard performance, and provide maintenance schedules."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Standard Service Two Challenges We Prevent",
-          "items": [
-            "Inconsistent results from variable service quality in Example City conditions.",
-            "Unexpected issues from inadequate standard service.",
-            "Reduced reliability from inconsistent maintenance."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver consistent standard service, quality solutions, and reliable care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Service Two Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-two",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Standard Service Two | Example Company",
-        "metaDescription": "Expert standard service two services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "standard service two, service two, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized standard service two services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our standard service two services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with standard service two today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your standard service two different?",
-          "answer": "Our standard service two services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "premium-service-two",
-      "name": "Premium Service Two",
-      "slug": "premium-service-two",
-      "description": "Expert premium Service Two services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
-      "contentSections": {
-        "introduction": {
-          "title": "Premium Service Two",
-          "paragraph": "High-end premium Service Two solutions across Example City, ST featuring superior quality, advanced features, and exceptional service. Our technicians deliver premium materials, enhanced execution, and comprehensive support for superior results."
-        },
-        "whyMatters": {
-          "title": "Why Premium Service Two Matters",
-          "paragraph": "Premium Service Two is essential for superior quality, enhanced features, and exceptional performance. Standard service leads to limitations and compromises. We ensure premium materials, advanced techniques, and superior service to maximize value in Example City conditions."
-        },
-        "process": {
-          "title": "Our Premium Service Two Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "Premium Consultation & Design",
-              "description": "We discuss premium options, recommend superior solutions, and provide a detailed premium quote."
-            },
-            {
-              "number": 2,
-              "title": "Premium Service Delivery",
-              "description": "Our expert team provides premium service using superior materials and advanced execution techniques."
-            },
-            {
-              "number": 3,
-              "title": "Premium Verification & Support",
-              "description": "We verify premium quality, ensure superior performance, and provide enhanced support and warranty."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Premium Service Two Challenges We Prevent",
-          "items": [
-            "Quality limitations from standard service in Example City conditions.",
-            "Feature compromises affecting performance and value.",
-            "Premium material issues from improper installation."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver premium service, superior quality, and exceptional care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Service Two Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-two",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Premium Service Two | Example Company",
-        "metaDescription": "Expert premium service two services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "premium service two, service two, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized premium service two services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our premium service two services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with premium service two today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your premium service two different?",
-          "answer": "Our premium service two services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "service-three",
-      "name": "Service Three",
-      "slug": "service-three",
-      "description": "Preventive Service Three to keep everything running smoothly across Example City, ST.",
-      "contentSections": {
-        "introduction": {
-          "title": "Professional Service Three",
-          "paragraph": "Expert preventive Service Three solutions across Example City, ST designed to maintain optimal performance, prevent issues, and ensure long-term reliability. Our technicians deliver comprehensive maintenance, proactive care, and full system support for smooth, dependable operation."
-        },
-        "whyMatters": {
-          "title": "Why Preventive Service Three Matters",
-          "paragraph": "Regular Service Three is essential for preventing costly breakdowns, maintaining efficiency, and extending system lifespan. Neglected maintenance leads to premature failures and expensive repairs. We ensure proactive care, early problem detection, and optimal performance to protect your investment from Example City conditions."
-        },
-        "process": {
-          "title": "Our Service Three Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "System Inspection & Assessment",
-              "description": "We thoroughly inspect your system, identify potential issues, and provide a comprehensive maintenance plan."
-            },
-            {
-              "number": 2,
-              "title": "Preventive Maintenance Service",
-              "description": "Our expert team performs all necessary maintenance tasks using quality materials and proven techniques."
-            },
-            {
-              "number": 3,
-              "title": "Testing & Maintenance Schedule",
-              "description": "We test all systems, verify optimal performance, and establish a maintenance schedule for ongoing care."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Service Three Challenges We Prevent",
-          "items": [
-            "Unexpected breakdowns from neglected maintenance in Example City conditions.",
-            "Premature system failure leading to costly replacements.",
-            "Reduced efficiency and performance from lack of preventive care."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver comprehensive maintenance, dependable service, and preventive care built to handle various conditions. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Core Services",
-      "duration": "Typically completed within 1-2 days",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Shërbimet Kryesore",
+      "duration": "1-3 orë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": true,
       "parentService": null,
       "features": [
-        "Free Consultation",
-        "Professional Service",
-        "Quality Guarantee",
-        "Warranty Included",
-        "Expert Team"
+        "Konsultim Falas",
+        "Shërbim Profesional",
+        "Garanci Cilësie",
+        "Përfshin Garancinë",
+        "Ekip Ekspertësh"
       ],
       "seo": {
-        "metaTitle": "Service Three in Example City, ST | Example Company",
-        "metaDescription": "Professional service three in Example City, ST. Expert service, quality products & satisfaction guaranteed. Free consultation!",
-        "keywords": "service three, professional services, Example City, ST"
+        "metaTitle": "Riparim Defektesh Elektrike | Bujo Electric",
+        "metaDescription": "Keni një defekt elektrik? Ne ofrojmë diagnostikim dhe riparim të shpejtë për çdo problem në rrjetin tuaj elektrik. Siguri e garantuar.",
+        "keywords": "defekte elektrike, riparim defektesh, elektricist, gjetje defekti"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-21.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-22.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-23.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-24.webp"
       ],
-      "contentVariations": {
-        "opening": "Transform your property with professional service three. Our expert team provides quality solutions tailored to your specific needs.",
-        "whyChoose": "We bring years of experience and expertise to every service three project. Our commitment to quality and customer satisfaction sets us apart.",
-        "closing": "Ready to get started? Let's discuss your service three needs. Schedule your free consultation today."
-      },
       "uniqueFaqs": [
         {
-          "question": "What does service three include?",
-          "answer": "Our service three includes consultation, professional service delivery, quality materials, and follow-up support. We provide comprehensive solutions tailored to your needs."
+          "question": "Si mund ta dalloj një defekt elektrik?",
+          "answer": "Shenjat përfshijnë dritat që dridhen, erën e djegies pranë prizave, ose rënien e shpeshtë të siguresave. Nëse vëreni këto, na kontaktoni menjëherë."
         },
         {
-          "question": "How long does service three take?",
-          "answer": "Most projects are completed within 1-2 days, depending on scope and complexity. We'll provide an accurate timeline during your consultation."
+          "question": "A ofroni shërbim gjatë natës?",
+          "answer": "Po, ne ofrojmë shërbim emergjence 24/7 për defektet që rrezikojnë sigurinë tuaj."
+        },
+        {
+          "question": "Pse bien siguresat kur ndez furrën?",
+          "answer": "Kjo zakonisht tregon një mbingarkesë të qarkut ose një defekt në pajisje. Ne mund të bëjmë një kontroll për të gjetur shkakun e saktë."
+        },
+        {
+          "question": "A është e rrezikshme nëse dritat dridhen?",
+          "answer": "Po, dridhja e dritave mund të jetë shenjë e lidhjeve të dobëta ose luhatjeve të tensionit që kërkojnë kontroll të menjëhershëm profesional."
         }
       ]
     },
     {
-      "id": "basic-service-three",
-      "name": "Basic Service Three",
-      "slug": "basic-service-three",
-      "description": "Expert basic Service Three services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "nderrim-siguresash",
+      "name": "Ndërrim Siguresash & Paneleve",
+      "slug": "nderrim-siguresash",
+      "description": "Modernizimi i panelit elektrik dhe zëvendësimi i siguresave të vjetra me teknologjinë më të fundit për siguri maksimale.",
       "contentSections": {
         "introduction": {
-          "title": "Basic Service Three",
-          "paragraph": "Essential basic Service Three solutions across Example City, ST designed for fundamental needs and essential maintenance. Our technicians deliver reliable service, quality materials, and expert execution for dependable basic care."
+          "title": "Zemra e Sistemit Tuaj Elektrik",
+          "paragraph": "Paneli elektrik është pika qendrore që shpërndan energjinë në të gjithë pronën tuaj. Një panel i vjetëruar ose siguresa që digjen shpesh janë shenja se sistemi juaj është i mbingarkuar dhe ka nevojë për ndërhyrje profesionale."
         },
         "whyMatters": {
-          "title": "Why Basic Service Three Matters",
-          "paragraph": "Reliable basic Service Three is essential for fundamental functionality, essential maintenance, and cost-effective care. Neglected basics lead to system failures and expensive repairs. We ensure essential service, quality basics, and reliable care in Example City conditions."
+          "title": "Pse duhet të Përmirësoni Panelin",
+          "paragraph": "Pajisjet moderne kërkojnë më shumë energji se ato të 20 viteve më parë. Ndërrimi i panelit parandalon mbinxehjen e kabllove, mbron pajisjet elektronike nga luhatjet e tensionit dhe rrit vlerën e pronës suaj."
         },
         "process": {
-          "title": "Our Basic Service Three Process",
+          "title": "Si e Realizojmë Ndërrimin",
           "steps": [
             {
-              "number": 1,
-              "title": "Basic Assessment & Planning",
-              "description": "We evaluate essential needs, provide basic recommendations, and deliver a detailed quote."
+              "number": "01",
+              "title": "Auditimi i Ngarkesës",
+              "description": "Llogarisim konsumin total të energjisë për të përcaktuar kapacitetin e nevojshëm të panelit të ri."
             },
             {
-              "number": 2,
-              "title": "Basic Service Delivery",
-              "description": "Our expert team provides essential basic service using quality materials and reliable techniques."
+              "number": "02",
+              "title": "Zëvendësimi i Sigurt",
+              "description": "Heqja e panelit të vjetër dhe instalimi i kutisë së re me siguresa automatike të markave lider."
             },
             {
-              "number": 3,
-              "title": "Basic Verification & Care",
-              "description": "We verify basic service quality, ensure essential functionality, and provide basic maintenance guidance."
+              "number": "03",
+              "title": "Riorganizimi i Linjave",
+              "description": "Sistemimi i kabllove brenda panelit dhe etiketimi i qartë i çdo zone të shtëpisë."
+            },
+            {
+              "number": "04",
+              "title": "Testimi i Mbrojtjes",
+              "description": "Verifikimi i tokëzimit dhe funksionimit të mbrojtjes automatike kundër goditjeve elektrike."
             }
           ]
         },
         "challenges": {
-          "title": "Common Basic Service Three Challenges We Prevent",
+          "title": "Kur është i Nevojshëm Ndërrimi",
           "items": [
-            "System failures from neglected basics in Example City conditions.",
-            "Expensive repairs from inadequate basic maintenance.",
-            "Reduced functionality from missing essential service."
+            "Nëse paneli juaj bën zhurmë ose ka erë djegieje",
+            "Nëse siguresat bien sa herë ndizni kondicionerin ose furrën",
+            "Nëse keni ende siguresa të vjetra me tel (plumb)",
+            "Nëse planifikoni të instaloni pajisje të reja me fuqi të lartë"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver reliable basic service, quality essentials, and dependable care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Siguri pa Kompromis",
+          "paragraph": "Ne përdorim vetëm siguresa dhe panele të certifikuara (si Schneider, ABB, Legrand) për të garantuar që familja ose biznesi juaj të jetë i mbrojtur 24/7."
         }
       },
-      "category": "Service Three Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-three",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Basic Service Three | Example Company",
-        "metaDescription": "Expert basic service three services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "basic service three, service three, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized basic service three services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our basic service three services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with basic service three today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your basic service three different?",
-          "answer": "Our basic service three services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "advanced-service-three",
-      "name": "Advanced Service Three",
-      "slug": "advanced-service-three",
-      "description": "Expert advanced Service Three services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
-      "contentSections": {
-        "introduction": {
-          "title": "Advanced Service Three",
-          "paragraph": "Comprehensive advanced Service Three solutions across Example City, ST featuring enhanced features, sophisticated techniques, and superior performance. Our technicians deliver advanced service, premium materials, and expert execution for optimal results."
-        },
-        "whyMatters": {
-          "title": "Why Advanced Service Three Matters",
-          "paragraph": "Advanced Service Three is essential for enhanced performance, sophisticated features, and superior results. Basic service leads to limitations and reduced capabilities. We ensure advanced techniques, enhanced features, and superior service to maximize performance in Example City conditions."
-        },
-        "process": {
-          "title": "Our Advanced Service Three Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "Advanced Assessment & Design",
-              "description": "We evaluate advanced needs, recommend sophisticated solutions, and provide a detailed advanced quote."
-            },
-            {
-              "number": 2,
-              "title": "Advanced Service Delivery",
-              "description": "Our expert team provides advanced service using premium materials and sophisticated techniques."
-            },
-            {
-              "number": 3,
-              "title": "Advanced Verification & Support",
-              "description": "We verify advanced quality, ensure superior performance, and provide enhanced support and maintenance."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Advanced Service Three Challenges We Prevent",
-          "items": [
-            "Performance limitations from basic service in Example City conditions.",
-            "Feature restrictions affecting capabilities and results.",
-            "Advanced technique failures from inadequate expertise."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver advanced service, sophisticated solutions, and superior care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Service Three Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-three",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Advanced Service Three | Example Company",
-        "metaDescription": "Expert advanced service three services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "advanced service three, service three, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized advanced service three services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our advanced service three services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with advanced service three today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your advanced service three different?",
-          "answer": "Our advanced service three services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "maintenance-plans",
-      "name": "Maintenance Plans",
-      "slug": "maintenance-plans",
-      "description": "Expert maintenance plans services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
-      "contentSections": {
-        "introduction": {
-          "title": "Maintenance Plans",
-          "paragraph": "Comprehensive maintenance plans across Example City, ST designed for ongoing care, preventive maintenance, and long-term reliability. Our technicians deliver scheduled service, proactive maintenance, and comprehensive plans for optimal system performance."
-        },
-        "whyMatters": {
-          "title": "Why Maintenance Plans Matter",
-          "paragraph": "Regular maintenance plans are essential for preventing breakdowns, extending lifespan, and maintaining optimal performance. Sporadic maintenance leads to unexpected failures and costly repairs. We ensure scheduled care, proactive maintenance, and comprehensive plans to protect your investment in Example City conditions."
-        },
-        "process": {
-          "title": "Our Maintenance Plans Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "Plan Assessment & Customization",
-              "description": "We evaluate your needs, customize a maintenance plan, and provide a detailed schedule and pricing."
-            },
-            {
-              "number": 2,
-              "title": "Scheduled Maintenance Service",
-              "description": "Our expert team provides regular scheduled maintenance using quality materials and proven techniques."
-            },
-            {
-              "number": 3,
-              "title": "Plan Monitoring & Adjustments",
-              "description": "We monitor plan effectiveness, adjust schedules as needed, and provide ongoing maintenance support."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Maintenance Plans Challenges We Prevent",
-          "items": [
-            "Unexpected breakdowns from irregular maintenance in Example City conditions.",
-            "Premature failures from lack of scheduled care.",
-            "Increased costs from reactive rather than preventive maintenance."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver comprehensive maintenance plans, scheduled care, and preventive service. Every plan includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Service Three Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-three",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Maintenance Plans | Example Company",
-        "metaDescription": "Expert maintenance plans services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "maintenance plans, service three, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized maintenance plans services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our maintenance plans services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with maintenance plans today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your maintenance plans different?",
-          "answer": "Our maintenance plans services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "service-four",
-      "name": "Service Four",
-      "slug": "service-four",
-      "description": "Specialized Service Four with latest technology across Example City, ST.",
-      "contentSections": {
-        "introduction": {
-          "title": "Professional Service Four",
-          "paragraph": "Expert Service Four solutions across Example City, ST featuring the latest technology, advanced features, and cutting-edge innovation. Our technicians deliver modern solutions, smart integration, and comprehensive support for enhanced performance and convenience."
-        },
-        "whyMatters": {
-          "title": "Why Advanced Service Four Matters",
-          "paragraph": "Modern Service Four technology is essential for improved efficiency, enhanced features, and future-proof solutions. Outdated systems lead to higher costs and limited functionality. We ensure the latest technology, smart integration, and advanced features to maximize your investment in Example City conditions."
-        },
-        "process": {
-          "title": "Our Service Four Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "Technology Assessment & Consultation",
-              "description": "We evaluate your needs, recommend the latest technology solutions, and provide a detailed quote with timeline."
-            },
-            {
-              "number": 2,
-              "title": "Advanced Installation & Integration",
-              "description": "Our expert team installs cutting-edge technology, integrates smart features, and ensures seamless operation."
-            },
-            {
-              "number": 3,
-              "title": "Testing & Training",
-              "description": "We thoroughly test all advanced features, provide comprehensive training, and offer ongoing support."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Service Four Challenges We Prevent",
-          "items": [
-            "Technology compatibility issues in Example City conditions.",
-            "Outdated systems leading to limited functionality and higher costs.",
-            "Improper integration causing system conflicts and reduced performance."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver the latest technology, advanced solutions, and smart integration built to handle various conditions. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Core Services",
-      "duration": "Typically completed within 1-2 days",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Shërbimet Kryesore",
+      "duration": "4-8 orë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": true,
       "parentService": null,
       "features": [
-        "Free Consultation",
-        "Professional Service",
-        "Quality Guarantee",
-        "Warranty Included",
-        "Expert Team"
+        "Konsultim Falas",
+        "Shërbim Profesional",
+        "Garanci Cilësie",
+        "Përfshin Garancinë",
+        "Ekip Ekspertësh"
       ],
       "seo": {
-        "metaTitle": "Service Four in Example City, ST | Example Company",
-        "metaDescription": "Professional service four in Example City, ST. Expert service, quality products & satisfaction guaranteed. Free consultation!",
-        "keywords": "service four, professional services, Example City, ST"
+        "metaTitle": "Ndërrim Siguresash & Paneleve Elektrike | Bujo Electric",
+        "metaDescription": "Zëvendësoni panelin tuaj të vjetër me siguresa automatike moderne. Siguri e lartë, instalim profesional dhe garanci afatgjatë.",
+        "keywords": "nderrim siguresash, panel elektrik, siguresa automatike, elektricist, upgrade paneli"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-25.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-26.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-27.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-28.webp"
       ],
-      "contentVariations": {
-        "opening": "Transform your property with professional service four. Our expert team provides quality solutions tailored to your specific needs.",
-        "whyChoose": "We bring years of experience and expertise to every service four project. Our commitment to quality and customer satisfaction sets us apart.",
-        "closing": "Ready to get started? Let's discuss your service four needs. Schedule your free consultation today."
-      },
       "uniqueFaqs": [
         {
-          "question": "What does service four include?",
-          "answer": "Our service four includes consultation, professional service delivery, quality materials, and follow-up support. We provide comprehensive solutions tailored to your needs."
+          "question": "Sa kohë zgjat ndërrimi i panelit?",
+          "answer": "Zakonisht procesi zgjat nga 4 deri në 8 orë, gjatë të cilave energjia do të jetë e shkëputur për siguri."
         },
         {
-          "question": "How long does service four take?",
-          "answer": "Most projects are completed within 1-2 days, depending on scope and complexity. We'll provide an accurate timeline during your consultation."
+          "question": "A duhet të ndërroj të gjithë panelin apo vetëm siguresat?",
+          "answer": "Kjo varet nga gjendja e kutisë dhe instalimeve. Ne bëjmë një vlerësim falas dhe ju rekomandojmë zgjidhjen më të sigurt."
+        },
+        {
+          "question": "Pse duhet të kaloj në siguresa automatike?",
+          "answer": "Siguresat automatike reagojnë më shpejt ndaj defekteve dhe janë shumë më të sigurta dhe më praktike se siguresat e vjetra me tel."
+        },
+        {
+          "question": "A ofroni garanci për panelin e ri?",
+          "answer": "Po, të gjitha panelet dhe siguresat e reja që instalojmë vijnë me garanci të plotë nga prodhuesi dhe garanci për punën tonë."
         }
       ]
     },
     {
-      "id": "installation",
-      "name": "Installation",
-      "slug": "installation",
-      "description": "Expert installation services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "riparime-emergjente",
+      "name": "Riparime Emergjente 24/7",
+      "slug": "riparime-emergjente",
+      "description": "Ndërhyrje e menjëhershme për çdo emergjencë elektrike. Jemi në dispozicionin tuaj 24 orë në ditë, 7 ditë të javës.",
       "contentSections": {
         "introduction": {
-          "title": "Professional Installation",
-          "paragraph": "Expert installation services across Example City, ST designed for proper setup, optimal performance, and long-lasting results. Our technicians deliver precise installation, quality materials, and expert execution for reliable operation."
+          "title": "Gatishmëri Maksimale për Emergjencat",
+          "paragraph": "Një shkëndijë, një erë djegieje ose një ndërprerje e plotë e energjisë në mes të natës kërkon veprim të menjëhershëm. Ekipi ynë i emergjencës është gjithmonë në gatishmëri për të rikthyer sigurinë dhe dritën në shtëpinë tuaj."
         },
         "whyMatters": {
-          "title": "Why Professional Installation Matters",
-          "paragraph": "Proper installation is essential for system performance, safety, and longevity. Incorrect installation leads to frequent issues and premature failures. We ensure precise setup, quality standards, and expert installation to protect your investment in Example City conditions."
+          "title": "Pse Shërbimi 24/7 është i Rëndësishëm",
+          "paragraph": "Zjarret elektrike nuk presin mëngjesin. Ndërhyrja e shpejtë brenda 60 minutave të para mund të shpëtojë pajisjet tuaja dhe, më e rëndësishmja, të parandalojë rreziqet për jetën."
         },
         "process": {
-          "title": "Our Installation Process",
+          "title": "Protokolli ynë i Emergjencës",
           "steps": [
             {
-              "number": 1,
-              "title": "Site Preparation & Planning",
-              "description": "We prepare the installation site, plan the setup, and provide a detailed installation quote."
+              "number": "01",
+              "title": "Thirrja dhe Triazhi",
+              "description": "Vlerësimi i shpejtë i situatës përmes telefonit dhe udhëzimet e para për sigurinë."
             },
             {
-              "number": 2,
-              "title": "Professional Installation",
-              "description": "Our expert team performs precise installation using quality materials and proven techniques."
+              "number": "02",
+              "title": "Mbërritja e Shpejtë",
+              "description": "Ekipi mbërrin në adresë me të gjitha mjetet e nevojshme për riparim të menjëhershëm."
             },
             {
-              "number": 3,
-              "title": "Installation Testing & Verification",
-              "description": "We test the installation, verify proper operation, and provide installation warranty and support."
+              "number": "03",
+              "title": "Stabilizimi i Sistemit",
+              "description": "Eliminimi i rrezikut të menjëhershëm dhe rikthimi i energjisë in linjat kryesore."
+            },
+            {
+              "number": "04",
+              "title": "Riparimi Përfundimtar",
+              "description": "Zgjidhja e plotë e problemit ose sigurimi i një zgjidhjeje provizore të sigurt deri në mëngjes."
             }
           ]
         },
         "challenges": {
-          "title": "Common Installation Challenges We Prevent",
+          "title": "Situatat që Trajtojmë",
           "items": [
-            "Performance issues from improper installation in Example City conditions.",
-            "Safety concerns from incorrect setup and installation.",
-            "Premature failures from inadequate installation quality."
+            "Ndërprerje totale të energjisë pa shkak të jashtëm",
+            "Zhurma shpërthyese ose shkëndija nga paneli",
+            "Prizat ose çelësat që nxehen dhe lëshojnë erë",
+            "Përmbytjet që kanë prekur instalimet elektrike"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver precise installation, quality setup, and expert care. Every installation includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Besueshmëri në Çdo Orë",
+          "paragraph": "Kur telefononi Bujo Electric në orën 3 të mëngjesit, ju nuk merrni një sekretari telefonike, por një teknik të gatshëm për t'ju ndihmuar."
         }
       },
-      "category": "Service Four Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-four",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Installation | Example Company",
-        "metaDescription": "Expert installation services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "installation, service four, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized installation services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our installation services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with installation today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your installation different?",
-          "answer": "Our installation services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "repair",
-      "name": "Repair",
-      "slug": "repair",
-      "description": "Expert repair services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
-      "contentSections": {
-        "introduction": {
-          "title": "Professional Repair",
-          "paragraph": "Expert repair services across Example City, ST designed to restore functionality, fix issues, and ensure reliable operation. Our technicians deliver efficient repairs, quality parts, and expert execution for dependable results."
-        },
-        "whyMatters": {
-          "title": "Why Professional Repair Matters",
-          "paragraph": "Proper repair is essential for restoring functionality, preventing further damage, and ensuring reliability. Inadequate repairs lead to recurring issues and increased costs. We ensure quality repairs, proper diagnosis, and expert service to restore your system in Example City conditions."
-        },
-        "process": {
-          "title": "Our Repair Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "Diagnosis & Assessment",
-              "description": "We diagnose the issue, assess repair needs, and provide a detailed repair quote."
-            },
-            {
-              "number": 2,
-              "title": "Professional Repair Service",
-              "description": "Our expert team performs quality repairs using proper parts and proven repair techniques."
-            },
-            {
-              "number": 3,
-              "title": "Repair Testing & Verification",
-              "description": "We test the repair, verify functionality, and provide repair warranty and maintenance guidance."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Repair Challenges We Prevent",
-          "items": [
-            "Recurring issues from inadequate repairs in Example City conditions.",
-            "Further damage from improper repair techniques.",
-            "Increased costs from temporary fixes rather than proper repairs."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver quality repairs, proper diagnosis, and expert care. Every repair includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Service Four Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-four",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Repair | Example Company",
-        "metaDescription": "Expert repair services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "repair, service four, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized repair services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our repair services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with repair today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your repair different?",
-          "answer": "Our repair services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "smart-solutions",
-      "name": "Smart Solutions",
-      "slug": "smart-solutions",
-      "description": "Expert smart solutions services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
-      "contentSections": {
-        "introduction": {
-          "title": "Smart Solutions",
-          "paragraph": "Advanced smart solutions across Example City, ST featuring modern technology, intelligent features, and enhanced convenience. Our technicians deliver smart integration, advanced systems, and expert execution for improved functionality and control."
-        },
-        "whyMatters": {
-          "title": "Why Smart Solutions Matter",
-          "paragraph": "Smart solutions are essential for modern convenience, enhanced control, and improved efficiency. Traditional systems lead to limitations and reduced functionality. We ensure smart technology, intelligent integration, and advanced features to maximize convenience in Example City conditions."
-        },
-        "process": {
-          "title": "Our Smart Solutions Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "Smart Technology Consultation",
-              "description": "We discuss smart options, recommend intelligent solutions, and provide a detailed smart technology quote."
-            },
-            {
-              "number": 2,
-              "title": "Smart Integration & Installation",
-              "description": "Our expert team installs smart technology, integrates intelligent features, and ensures seamless operation."
-            },
-            {
-              "number": 3,
-              "title": "Smart System Training & Support",
-              "description": "We provide smart system training, verify intelligent features, and offer ongoing smart technology support."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Smart Solutions Challenges We Prevent",
-          "items": [
-            "Integration issues from incompatible smart technology in Example City conditions.",
-            "Functionality limitations from inadequate smart system setup.",
-            "Control problems from improper smart technology integration."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver smart solutions, intelligent technology, and advanced care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Service Four Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-four",
-      "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
-      ],
-      "seo": {
-        "metaTitle": "Smart Solutions | Example Company",
-        "metaDescription": "Expert smart solutions services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "smart solutions, service four, professional services"
-      },
-      "featuredImage": "/assets/config/placeholder-image.png",
-      "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
-      ],
-      "contentVariations": {
-        "opening": "Specialized smart solutions services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our smart solutions services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with smart solutions today. Contact us for your free consultation."
-      },
-      "uniqueFaqs": [
-        {
-          "question": "What makes your smart solutions different?",
-          "answer": "Our smart solutions services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
-        }
-      ]
-    },
-    {
-      "id": "service-five",
-      "name": "Service Five",
-      "slug": "service-five",
-      "description": "Complete Service Five upgrades and replacements across Example City, ST.",
-      "contentSections": {
-        "introduction": {
-          "title": "Professional Service Five",
-          "paragraph": "Expert Service Five upgrades and replacements across Example City, ST designed to modernize your system, improve performance, and ensure long-lasting results. Our technicians deliver complete solutions, quality upgrades, and comprehensive support for enhanced functionality and reliability."
-        },
-        "whyMatters": {
-          "title": "Why Service Five Upgrades Matter",
-          "paragraph": "Complete Service Five upgrades are essential for improved performance, modern features, and long-term value. Outdated systems lead to inefficiency and frequent repairs. We ensure quality upgrades, proper installation, and enhanced performance to maximize your investment in Example City conditions."
-        },
-        "process": {
-          "title": "Our Service Five Process",
-          "steps": [
-            {
-              "number": 1,
-              "title": "Evaluation & Upgrade Planning",
-              "description": "We assess your current system, recommend upgrade options, and provide a detailed quote with timeline."
-            },
-            {
-              "number": 2,
-              "title": "Professional Upgrade & Replacement",
-              "description": "Our expert team performs complete upgrades using quality materials and precise installation techniques."
-            },
-            {
-              "number": 3,
-              "title": "Quality Verification & Support",
-              "description": "We verify all upgrades, test system performance, and provide warranty and maintenance guidance."
-            }
-          ]
-        },
-        "challenges": {
-          "title": "Common Service Five Challenges We Prevent",
-          "items": [
-            "Upgrade compatibility issues in Example City conditions.",
-            "Improper installation leading to system failures and costly repairs.",
-            "Outdated components causing reduced performance and efficiency."
-          ]
-        },
-        "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver complete upgrades, quality replacements, and enhanced solutions built to handle various conditions. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
-        }
-      },
-      "category": "Core Services",
-      "duration": "Typically completed within 1-2 days",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Shërbimet Kryesore",
+      "duration": "1-2 orë",
+      "priceRange": "Tarifë emergjence",
       "isCore": true,
       "parentService": null,
       "features": [
-        "Free Consultation",
-        "Professional Service",
-        "Quality Guarantee",
-        "Warranty Included",
-        "Expert Team"
+        "Konsultim Falas",
+        "Shërbim Profesional",
+        "Garanci Cilësie",
+        "Përfshin Garancinë",
+        "Ekip Ekspertësh"
       ],
       "seo": {
-        "metaTitle": "Service Five in Example City, ST | Example Company",
-        "metaDescription": "Professional service five in Example City, ST. Expert service, quality products & satisfaction guaranteed. Free consultation!",
-        "keywords": "service five, professional services, Example City, ST"
+        "metaTitle": "Riparime Emergjente 24/7 | Bujo Electric",
+        "metaDescription": "Elektricist emergjence 24/7. Ndërhyrje e shpejtë për defekte, zjarre elektrike dhe ndërprerje energjie. Na kontaktoni në çdo kohë.",
+        "keywords": "elektricist 24/7, emergjence elektrike, riparime te shpejta, defekte naten"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-29.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-30.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-31.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-32.webp"
       ],
-      "contentVariations": {
-        "opening": "Transform your property with professional service five. Our expert team provides quality solutions tailored to your specific needs.",
-        "whyChoose": "We bring years of experience and expertise to every service five project. Our commitment to quality and customer satisfaction sets us apart.",
-        "closing": "Ready to get started? Let's discuss your service five needs. Schedule your free consultation today."
-      },
       "uniqueFaqs": [
         {
-          "question": "What does service five include?",
-          "answer": "Our service five includes consultation, professional service delivery, quality materials, and follow-up support. We provide comprehensive solutions tailored to your needs."
+          "question": "Sa shpejt mbërrini në rast emergjence?",
+          "answer": "Ne synojmë të jemi në adresën tuaj brenda 30 deri në 60 minutave nga thirrja juaj."
         },
         {
-          "question": "How long does service five take?",
-          "answer": "Most projects are completed within 1-2 days, depending on scope and complexity. We'll provide an accurate timeline during your consultation."
+          "question": "A ka kosto shtesë shërbimi i natës?",
+          "answer": "Po, shërbimet jashtë orarit zyrtar kanë një tarifë emergjence, për të cilën do të informoheni gjatë thirrjes."
+        },
+        {
+          "question": "Çfarë konsiderohet emergjencë elektrike?",
+          "answer": "Çdo situatë që përfshin shkëndija, erë djegieje, ose ndërprerje totale të energjisë që rrezikon sigurinë tuaj konsiderohet emergjencë."
+        },
+        {
+          "question": "A mund të më ndihmoni përmes telefonit deri sa të vini?",
+          "answer": "Po, operatorët tanë do t'ju japin udhëzimet e para të sigurisë (si fikja e çelësit kryesor) menjëherë gjatë thirrjes."
         }
       ]
     },
     {
-      "id": "option-a",
-      "name": "Option A",
-      "slug": "option-a",
-      "description": "Expert Option A services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "mirembajtje-elektrike",
+      "name": "Mirëmbajtje Elektrike",
+      "slug": "mirembajtje-elektrike",
+      "description": "Kontroll i rregullt dhe mirëmbajtje profesionale për të garantuar jetëgjatësinë dhe efikasitetin e sistemit tuaj elektrik.",
       "contentSections": {
         "introduction": {
-          "title": "Option A Service",
-          "paragraph": "Specialized Option A solutions across Example City, ST designed for specific needs and tailored requirements. Our technicians deliver customized Option A service, quality materials, and expert execution for optimal results."
+          "title": "Mirëmbajtje për Siguri dhe Qetësi Mendore",
+          "paragraph": "Sistemet elektrike kërkojnë kujdes të vazhdueshëm për të funksionuar në mënyrë optimale. Shërbimet tona të mirëmbajtjes janë krijuar për të identifikuar problemet përpara se ato të kthehen në defekte të kushtueshme, duke siguruar që shtëpia ose biznesi juaj të jetë gjithmonë i mbrojtur."
         },
         "whyMatters": {
-          "title": "Why Option A Matters",
-          "paragraph": "Proper Option A service is essential for meeting specific requirements, achieving desired results, and ensuring satisfaction. Generic service leads to compromises and limitations. We ensure tailored Option A solutions, quality service, and expert care to meet your needs in Example City conditions."
+          "title": "Pse është e Rëndësishme Mirëmbajtja",
+          "paragraph": "Një sistem i mirëmbajtur jo vetëm që parandalon rreziqet e zjarrit, por edhe ul konsumin e energjisë. Duke kontrolluar rregullisht lidhjet, panelet dhe pajisjet, ne zgjasim jetëgjatësinë e instalimeve tuaja dhe shmangim ndërprerjet e papritura."
         },
         "process": {
-          "title": "Our Option A Process",
+          "title": "Plani ynë i Mirëmbajtjes",
           "steps": [
             {
-              "number": 1,
-              "title": "Option A Assessment & Planning",
-              "description": "We evaluate Option A needs, provide tailored recommendations, and deliver a detailed quote."
+              "number": "01",
+              "title": "Inspektimi Periodik",
+              "description": "Kontroll i plotë i të gjitha pikave të kontaktit, paneleve dhe siguresave."
             },
             {
-              "number": 2,
-              "title": "Option A Service Delivery",
-              "description": "Our expert team provides specialized Option A service using quality materials and proven techniques."
+              "number": "02",
+              "title": "Pastrimi dhe Shtrëngimi",
+              "description": "Eliminimi i pluhurit në panele dhe shtrëngimi i lidhjeve që mund të jenë liruara me kohën."
             },
             {
-              "number": 3,
-              "title": "Option A Verification & Support",
-              "description": "We verify Option A quality, ensure requirements are met, and provide ongoing support."
+              "number": "03",
+              "title": "Testimi i Ngarkesës",
+              "description": "Verifikimi i performancës së sistemit nën ngarkesë për të zbuluar pikat e nxehta."
+            },
+            {
+              "number": "04",
+              "title": "Raporti Teknik",
+              "description": "Dorëzimi i një raporti të detajuar me gjendjen aktuale dhe rekomandimet e nevojshme."
             }
           ]
         },
         "challenges": {
-          "title": "Common Option A Challenges We Prevent",
+          "title": "Çfarë Parandalojmë me Mirëmbajtje",
           "items": [
-            "Requirement mismatches from generic service in Example City conditions.",
-            "Compromise issues affecting functionality and results.",
-            "Quality limitations from inadequate Option A service."
+            "Mbinxehjen e kabllove dhe rrezikun e zjarrit",
+            "Dështimin e parakohshëm të pajisjeve elektronike",
+            "Humbjet e energjisë nga lidhjet e dobëta",
+            "Gjobat nga mosrespektimi i rregulloreve të sigurisë"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver specialized Option A service, quality solutions, and tailored care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Kujdes i Vazhdueshëm Profesional",
+          "paragraph": "Ne ofrojmë plane mirëmbajtjeje të personalizuara për shtëpi, zyra dhe industri, duke ju garantuar prioritet në shërbim dhe siguri maksimale."
         }
       },
-      "category": "Service Five Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-five",
+      "category": "Shërbimet Kryesore",
+      "duration": "1-2 ditë",
+      "priceRange": "Kontaktoni për ofertë",
+      "isCore": true,
+      "parentService": null,
       "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
+        "Konsultim Falas",
+        "Shërbim Profesional",
+        "Garanci Cilësie",
+        "Përfshin Garancinë",
+        "Ekip Ekspertësh"
       ],
       "seo": {
-        "metaTitle": "Option A | Example Company",
-        "metaDescription": "Expert option a services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "option a, service five, professional services"
+        "metaTitle": "Mirëmbajtje Elektrike Profesionale | Bujo Electric",
+        "metaDescription": "Siguroni sistemin tuaj elektrik me mirëmbajtje të rregullt. Parandaloni defektet, ulni kostot dhe rritni sigurinë me ekspertët tanë.",
+        "keywords": "mirembajtje elektrike, kontroll elektrik, elektricist, parandalim defektesh"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-20.webp"
       ],
-      "contentVariations": {
-        "opening": "Specialized option a services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our option a services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with option a today. Contact us for your free consultation."
-      },
       "uniqueFaqs": [
         {
-          "question": "What makes your option a different?",
-          "answer": "Our option a services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
+          "question": "Sa shpesh duhet bërë mirëmbajtja?",
+          "answer": "Për shtëpi rekomandohet një kontroll çdo 3-5 vjet, ndërsa për biznese çdo vit ose më shpesh varësisht nga natyra e punës."
+        },
+        {
+          "question": "Çfarë përfshin një kontroll i rregullt mirëmbajtjeje?",
+          "answer": "Përfshin kontrollin e të gjitha lidhjeve, testimin e tokëzimit, inspektimin termik të panelit dhe verifikimin e mbrojtjes automatike."
+        },
+        {
+          "question": "A mund të parandalojë mirëmbajtja rritjen e faturës?",
+          "answer": "Po, duke identifikuar humbjet e energjisë dhe lidhjet e dobëta që shkaktojnë nxehtësi të panevojshme dhe rritje të konsumit."
         }
       ]
     },
     {
-      "id": "option-b",
-      "name": "Option B",
-      "slug": "option-b",
-      "description": "Expert Option B services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "kontroll-inspektim",
+      "name": "Kontroll & Inspektim",
+      "slug": "kontroll-inspektim",
+      "description": "Auditimi i plotë i sigurisë elektrike për shtëpi dhe biznese. Zbuloni defektet e fshehura me teknologjinë tonë të avancuar.",
       "contentSections": {
         "introduction": {
-          "title": "Option B Service",
-          "paragraph": "Specialized Option B solutions across Example City, ST designed for alternative needs and different requirements. Our technicians deliver customized Option B service, quality materials, and expert execution for optimal results."
+          "title": "Auditimi Profesional i Sigurisë Elektrike",
+          "paragraph": "Pavarësisht nëse po blini një pronë të re, po renovoni, apo thjesht doni të siguroheni për gjendjen e instalimeve tuaja, inspektimet tona ofrojnë një pasqyrë të qartë dhe profesionale. Ne përdorim mjete diagnostikuese të fjalës së fundit për të garantuar që çdo gjë është sipas standardeve."
         },
         "whyMatters": {
-          "title": "Why Option B Matters",
-          "paragraph": "Proper Option B service is essential for meeting alternative requirements, achieving different results, and ensuring satisfaction. Standard service leads to limitations and unmet needs. We ensure tailored Option B solutions, quality service, and expert care to meet your needs in Example City conditions."
+          "title": "Njihni Gjendjen e Sistemit Tuaj",
+          "paragraph": "Problemet e fshehura elektrike mund të jenë të kushtueshme dhe jashtëzakonisht të rrezikshme. Një inspektim i detajuar zbulon çdo parregullsi, nga kabllot e vjetruara deri te mungesa e tokëzimit, përpara se ato të shkaktojnë dëme serioze."
         },
         "process": {
-          "title": "Our Option B Process",
+          "title": "Procesi i Inspektimit",
           "steps": [
             {
-              "number": 1,
-              "title": "Option B Assessment & Planning",
-              "description": "We evaluate Option B needs, provide alternative recommendations, and deliver a detailed quote."
+              "number": "01",
+              "title": "Kontrolli Vizual",
+              "description": "Ekzaminim i detajuar i të gjitha instalimeve të dukshme, paneleve dhe pikave të energjisë."
             },
             {
-              "number": 2,
-              "title": "Option B Service Delivery",
-              "description": "Our expert team provides specialized Option B service using quality materials and proven techniques."
+              "number": "02",
+              "title": "Testimi i Qarqeve",
+              "description": "Verifikimi i vazhdimësisë, tokëzimit dhe polaritetit të çdo qarku në pronën tuaj."
             },
             {
-              "number": 3,
-              "title": "Option B Verification & Support",
-              "description": "We verify Option B quality, ensure requirements are met, and provide ongoing support."
+              "number": "03",
+              "title": "Inspektimi Termografik",
+              "description": "Përdorimi i kamerave termike për të identifikuar mbinxehjen e fshehur në panele dhe lidhje."
+            },
+            {
+              "number": "04",
+              "title": "Raporti i Certifikuar",
+              "description": "Dokumentim i plotë i gjetjeve me foto dhe rekomandime për përmirësim."
             }
           ]
         },
         "challenges": {
-          "title": "Common Option B Challenges We Prevent",
+          "title": "Kur Nevojitet një Inspektim",
           "items": [
-            "Requirement mismatches from standard service in Example City conditions.",
-            "Alternative need failures affecting functionality and results.",
-            "Quality limitations from inadequate Option B service."
+            "Para blerjes ose shitjes së një prone (Home Inspection)",
+            "Pas ndodhjes së një defekti të përsëritur",
+            "Për qëllime sigurimi dhe certifikimi zyrtar",
+            "Nëse instalimet tuaja janë më të vjetra se 15-20 vite"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver specialized Option B service, quality solutions, and tailored care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Sytë e Ekspertit për Sigurinë Tuaj",
+          "paragraph": "Inspektorët tanë janë të certifikuar dhe kanë përvojë të gjatë në identifikimin e problemeve që syri i lirë nuk i sheh, duke ju kursyer kohë, para dhe rrezik."
         }
       },
-      "category": "Service Five Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Mirëmbajtje Elektrike",
+      "duration": "1 ditë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": false,
-      "parentService": "service-five",
+      "parentService": "mirembajtje-elektrike",
       "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
+        "Shërbim Ekspert",
+        "Materiale Cilësore",
+        "Ekip Profesional",
+        "Garanci Kënaqësie"
       ],
       "seo": {
-        "metaTitle": "Option B | Example Company",
-        "metaDescription": "Expert option b services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "option b, service five, professional services"
+        "metaTitle": "Kontroll & Inspektim Elektrik | Bujo Electric",
+        "metaDescription": "Inspektim i detajuar i instalimeve elektrike. Zbuloni rreziqet e fshehura dhe certifikoni sigurinë e pronës suaj me ekspertët tanë.",
+        "keywords": "kontroll elektrik, inspektim prone, certifikim elektrik, termografi"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp"
       ],
-      "contentVariations": {
-        "opening": "Specialized option b services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our option b services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with option b today. Contact us for your free consultation."
-      },
       "uniqueFaqs": [
         {
-          "question": "What makes your option b different?",
-          "answer": "Our option b services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
+          "question": "A ofroni certifikatë pas inspektimit?",
+          "answer": "Po, ne lëshojmë një raport teknik të detajuar që mund të përdoret për sigurime ose vlerësim prone."
+        },
+        {
+          "question": "A duhet të bëj inspektim para se të blej një shtëpi?",
+          "answer": "Po, është jetike për të zbuluar defektet e fshehura dhe për të shmangur kostot e papritura të riparimeve të mëdha elektrike."
+        },
+        {
+          "question": "Sa zgjat një inspektim i plotë i shtëpisë?",
+          "answer": "Zakonisht zgjat 2 deri në 4 orë, varësisht nga madhësia e objektit dhe kompleksiteti i instalimeve."
         }
       ]
     },
     {
-      "id": "option-c",
-      "name": "Option C",
-      "slug": "option-c",
-      "description": "Expert Option C services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "mirembajtje-parandaluese",
+      "name": "Mirëmbajtje Parandaluese",
+      "slug": "mirembajtje-parandaluese",
+      "description": "Investimi më i zgjuar për biznesin tuaj. Parandaloni ndërprerjet e punës dhe ulni kostot e riparimeve me shërbimin tonë proaktiv.",
       "contentSections": {
         "introduction": {
-          "title": "Option C Service",
-          "paragraph": "Specialized Option C solutions across Example City, ST designed for specific preferences and unique requirements. Our technicians deliver customized Option C service, quality materials, and expert execution for optimal results."
+          "title": "Parandaloni Problemet Para se të Ndodhin",
+          "paragraph": "Mirëmbajtja parandaluese është çelësi për një biznes të suksesshëm dhe pa ndërprerje. Duke vepruar në mënyrë proaktive, ne sigurojmë që pajisjet tuaja të punojnë me efikasitet maksimal, duke shmangur dështimet e papritura që mund të bllokojnë aktivitetin tuaj tregtar ose industrial."
         },
         "whyMatters": {
-          "title": "Why Option C Matters",
-          "paragraph": "Proper Option C service is essential for meeting unique preferences, achieving specific results, and ensuring satisfaction. Generic service leads to unmet preferences and limitations. We ensure tailored Option C solutions, quality service, and expert care to meet your needs in Example City conditions."
+          "title": "Efiçienca dhe Jetëgjatësia e Pajisjeve",
+          "paragraph": "Pajisjet elektrike që mirëmbahen rregullisht konsumojnë më pak energji dhe kanë një jetëgjatësi dukshëm më të madhe. Kjo përkthehet në kursime direkte në faturat e energjisë dhe në shmangien e investimeve të parakohshme për zëvendësimin e makinerive."
         },
         "process": {
-          "title": "Our Option C Process",
+          "title": "Strategjia jonë Parandaluese",
           "steps": [
             {
-              "number": 1,
-              "title": "Option C Assessment & Planning",
-              "description": "We evaluate Option C needs, provide preference-based recommendations, and deliver a detailed quote."
+              "number": "01",
+              "title": "Planifikimi i Personalizuar",
+              "description": "Krijojmë një kalendar mirëmbajtjeje bazuar në specifikat e pajisjeve dhe intensitetin e punës suaj."
             },
             {
-              "number": 2,
-              "title": "Option C Service Delivery",
-              "description": "Our expert team provides specialized Option C service using quality materials and proven techniques."
+              "number": "02",
+              "title": "Ekzekutimi Rutinë",
+              "description": "Kryejmë kontrolle teknike dhe servise të rregullta pa penguar procesin tuaj të punës."
             },
             {
-              "number": 3,
-              "title": "Option C Verification & Support",
-              "description": "We verify Option C quality, ensure preferences are met, and provide ongoing support."
+              "number": "03",
+              "title": "Zëvendësimi Proaktiv",
+              "description": "Identifikojmë dhe ndërrojmë pjesët e konsumuara (si kontaktorët apo siguresat) përpara se ato të dështojnë."
+            },
+            {
+              "number": "04",
+              "title": "Monitorimi i Performancës",
+              "description": "Mbajmë një ditar teknik për çdo pajisje për të ndjekur ecurinë dhe për të parashikuar nevojat e ardhshme."
             }
           ]
         },
         "challenges": {
-          "title": "Common Option C Challenges We Prevent",
+          "title": "Përfitimet për Biznesin Tuaj",
           "items": [
-            "Preference mismatches from generic service in Example City conditions.",
-            "Unique requirement failures affecting functionality and results.",
-            "Quality limitations from inadequate Option C service."
+            "Reduktimi drastik i kohës së ndërprerjes së punës (Downtime)",
+            "Ulja e kostove totale të riparimeve emergjente deri në 50%",
+            "Rritja e sigurisë në ambientet e punës për punonjësit",
+            "Përputhshmëri e plotë me standardet teknike dhe ligjore"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver specialized Option C service, quality solutions, and tailored care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Qasje Proaktive, Jo Reaktive",
+          "paragraph": "Ne nuk presim që gjërat të prishen për t'i riparuar. Ne punojmë që sistemi juaj të jetë gjithmonë në gjendje perfekte, duke ju lejuar të fokusoheni te rritja e biznesit tuaj."
         }
       },
-      "category": "Service Five Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
+      "category": "Mirëmbajtje Elektrike",
+      "duration": "1 ditë",
+      "priceRange": "Kontaktoni për ofertë",
       "isCore": false,
-      "parentService": "service-five",
+      "parentService": "mirembajtje-elektrike",
       "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
+        "Shërbim Ekspert",
+        "Materiale Cilësore",
+        "Ekip Profesional",
+        "Garanci Kënaqësie"
       ],
       "seo": {
-        "metaTitle": "Option C | Example Company",
-        "metaDescription": "Expert option c services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "option c, service five, professional services"
+        "metaTitle": "Mirëmbajtje Parandaluese Elektrike | Bujo Electric",
+        "metaDescription": "Mbroni biznesin tuaj nga ndërprerjet e papritura. Mirëmbajtje parandaluese profesionale për sisteme elektrike dhe makineri industriale.",
+        "keywords": "mirembajtje parandaluese, elektricist biznesi, efikasitet energjie, parandalim defektesh"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp"
       ],
-      "contentVariations": {
-        "opening": "Specialized option c services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our option c services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with option c today. Contact us for your free consultation."
-      },
       "uniqueFaqs": [
         {
-          "question": "What makes your option c different?",
-          "answer": "Our option c services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
+          "question": "A është e shtrenjtë mirëmbajtja parandaluese?",
+          "answer": "Në fakt, ajo kushton shumë më pak se riparimet e mëdha ose humbjet nga ndërprerja e punës që parandalon."
+        },
+        {
+          "question": "Si ndihmon kjo në jetëgjatësinë e pajisjeve?",
+          "answer": "Duke siguruar tension të qëndrueshëm dhe duke parandaluar mbinxehjen e komponentëve, pajisjet tuaja do të zgjasin shumë më tepër."
+        },
+        {
+          "question": "A ofroni kontrata vjetore për biznese?",
+          "answer": "Po, ofrojmë pako të personalizuara mirëmbajtjeje me kosto fikse që përfshijnë kontrolle periodike dhe prioritet në shërbim."
         }
       ]
     },
     {
-      "id": "option-d",
-      "name": "Option D",
-      "slug": "option-d",
-      "description": "Expert Option D services across Example City, ST. Professional quality and customer satisfaction guaranteed.",
+      "id": "ndricim-energji",
+      "name": "Ndriçim & Energji",
+      "slug": "ndricim-energji",
+      "description": "Sisteme moderne të ndriçimit LED dhe zgjidhje inteligjente për kursimin e energjisë në shtëpi dhe biznese.",
       "contentSections": {
         "introduction": {
-          "title": "Option D Service",
-          "paragraph": "Specialized Option D solutions across Example City, ST designed for comprehensive needs and complete requirements. Our technicians deliver customized Option D service, quality materials, and expert execution for optimal results."
+          "title": "Ndriçim Efiçient dhe Estetik",
+          "paragraph": "Ndriçimi i duhur ka fuqinë të transformojë tërësisht një hapësirë, duke rritur produktivitetin në zyra dhe komoditetin në shtëpi. Ne ofrojmë zgjidhje ndriçimi që kombinojnë dizajnin modern me teknologjinë më të fundit për kursimin e energjisë, duke ju ndihmuar të ulni faturat pa sakrifikuar cilësinë e dritës."
         },
         "whyMatters": {
-          "title": "Why Option D Matters",
-          "paragraph": "Proper Option D service is essential for meeting comprehensive requirements, achieving complete results, and ensuring satisfaction. Partial service leads to gaps and limitations. We ensure complete Option D solutions, quality service, and expert care to meet your needs in Example City conditions."
+          "title": "Atmosfera, Siguria dhe Kursimi",
+          "paragraph": "Ndriçimi nuk është vetëm çështje estetike; ai ndikon në sigurinë e pronës suaj dhe në mirëqenien tuaj. Kalimi në teknologji moderne si LED dhe përdorimi i sensorëve inteligjentë mund të kursejë deri në 80% të energjisë së konsumuar për ndriçim."
         },
         "process": {
-          "title": "Our Option D Process",
+          "title": "Si e Realizojmë Projektin Tuaj",
           "steps": [
             {
-              "number": 1,
-              "title": "Option D Assessment & Planning",
-              "description": "We evaluate Option D needs, provide comprehensive recommendations, and deliver a detailed quote."
+              "number": "01",
+              "title": "Dizajni i Ndriçimit",
+              "description": "Planifikojmë vendosjen strategjike të dritave për të krijuar efektin e dëshiruar dhe për të mbuluar çdo cep."
             },
             {
-              "number": 2,
-              "title": "Option D Service Delivery",
-              "description": "Our expert team provides specialized Option D service using quality materials and proven techniques."
+              "number": "02",
+              "title": "Përzgjedhja e Pajisjeve",
+              "description": "Ju rekomandojmë ndriçuesit më cilësorë dhe efiçientë që i përshtaten stilit dhe buxhetit tuaj."
             },
             {
-              "number": 3,
-              "title": "Option D Verification & Support",
-              "description": "We verify Option D quality, ensure comprehensive requirements are met, and provide ongoing support."
+              "number": "03",
+              "title": "Instalimi Profesional",
+              "description": "Montimi i ndriçuesve, shiritave LED dhe sistemeve të kontrollit me saktësi maksimale."
+            },
+            {
+              "number": "04",
+              "title": "Automatizimi dhe Kontrolli",
+              "description": "Integrimi i sensorëve të lëvizjes dhe sistemeve smart për kontrollin e ndriçimit përmes telefonit."
             }
           ]
         },
         "challenges": {
-          "title": "Common Option D Challenges We Prevent",
+          "title": "Zgjidhjet tona të Ndriçimit",
           "items": [
-            "Requirement gaps from partial service in Example City conditions.",
-            "Comprehensive need failures affecting functionality and results.",
-            "Quality limitations from inadequate Option D service."
+            "Ndriçim i brendshëm dekorativ dhe funksional",
+            "Ndriçim i jashtëm për kopshte, fasada dhe siguri",
+            "Ndriçim emergjent për biznese dhe institucione",
+            "Sisteme dimming (rregullim i intensitetit) dhe Smart Home"
           ]
         },
         "whyChoose": {
-          "title": "Why Choose Example Company",
-          "paragraph": "With years of experience serving Example City clients, we deliver specialized Option D service, quality solutions, and comprehensive care. Every project includes expert guidance, reliable workmanship, and exceptional attention to detail."
+          "title": "Estetikë dhe Funksionalitet në Një",
+          "paragraph": "Ne nuk instalojmë thjesht drita; ne krijojmë ambiente të ndriçuara bukur që janë gjithashtu praktike, ekonomike dhe miqësore me mjedisin."
         }
       },
-      "category": "Service Five Services",
-      "duration": "Typically completed within 1 day",
-      "priceRange": "Varies by service type – call for customized estimate",
-      "isCore": false,
-      "parentService": "service-five",
+      "category": "Shërbimet Kryesore",
+      "duration": "1-2 ditë",
+      "priceRange": "Kontaktoni për ofertë",
+      "isCore": true,
+      "parentService": null,
       "features": [
-        "Expert Service",
-        "Quality Materials",
-        "Professional Team",
-        "Satisfaction Guarantee"
+        "Konsultim Falas",
+        "Shërbim Profesional",
+        "Garanci Cilësie",
+        "Përfshin Garancinë",
+        "Ekip Ekspertësh"
       ],
       "seo": {
-        "metaTitle": "Option D | Example Company",
-        "metaDescription": "Expert option d services. Professional quality and customer satisfaction guaranteed. Free consultation available!",
-        "keywords": "option d, service five, professional services"
+        "metaTitle": "Ndriçim & Energji Efiçiente | Bujo Electric",
+        "metaDescription": "Transformoni hapësirën tuaj me ndriçim LED modern. Kurseni energji dhe rritni komoditetin me zgjidhjet tona profesionale të ndriçimit.",
+        "keywords": "ndricim led, kursim energjie, ndricim smart, elektricist, ndricim kopshti"
       },
-      "featuredImage": "/assets/config/placeholder-image.png",
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
       "gallery": [
-        "/assets/config/placeholder-image.png",
-        "/assets/config/placeholder-image.png"
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-20.webp"
       ],
-      "contentVariations": {
-        "opening": "Specialized option d services for your needs. Our expert team delivers quality solutions with professional care.",
-        "whyChoose": "Our option d services combine expertise with customer-focused solutions. We're committed to your satisfaction.",
-        "closing": "Get started with option d today. Contact us for your free consultation."
-      },
       "uniqueFaqs": [
         {
-          "question": "What makes your option d different?",
-          "answer": "Our option d services combine professional expertise with personalized attention. We focus on quality and customer satisfaction in every project."
+          "question": "Sa mund të kursej me drita LED?",
+          "answer": "Dritat LED konsumojnë rreth 75-80% më pak energji se llambat inkandeshente tradicionale dhe zgjasin 25 herë më shumë."
+        },
+        {
+          "question": "A instaloni sensorë lëvizjeje për kursim?",
+          "answer": "Po, sensorët janë një mënyrë e shkëlqyer për të kursyer energji në korridore, shkallë dhe ambiente të jashtme."
+        },
+        {
+          "question": "A mund të rregullohet intensiteti i dritës (dimming)?",
+          "answer": "Po, ne instalojmë sisteme 'dimming' që ju lejojnë të rregulloni dritën sipas dëshirës dhe atmosferës që doni të krijoni."
+        }
+      ]
+    },
+    {
+      "id": "ndricim-led",
+      "name": "Ndriçim LED",
+      "slug": "ndricim-led",
+      "description": "Zëvendësimi i ndriçimit tradicional me teknologjinë LED për kursim maksimal dhe dritë më cilësore.",
+      "contentSections": {
+        "introduction": {
+          "title": "Revolucioni i Ndriçimit LED",
+          "paragraph": "Teknologjia LED është standardi i ri i artë në ndriçim. Ajo ofron dritë më të pastër, jetëgjatësi të jashtëzakonshme dhe konsum minimal të energjisë. Ne ju ndihmojmë të bëni kalimin (retrofit) nga llambat e vjetra in sisteme moderne LED që paguajnë veten përmes kursimeve."
+        },
+        "whyMatters": {
+          "title": "Pse të Kaloni në LED Tani",
+          "paragraph": "Edhe pse kostoja fillestare mund të jetë pak më e lartë, kthimi i investimit është i shpejtë. Një llambë LED zgjat deri në 25 herë më shumë se një llambë e zakonshme dhe nuk lëshon nxehtësi, duke ulur edhe kostot e ftohjes gjatë verës."
+        },
+        "process": {
+          "title": "Procesi i Modernizimit",
+          "steps": [
+            {
+              "number": "01",
+              "title": "Auditimi i Ndriçimit",
+              "description": "Vlerësojmë ndriçimin tuaj aktual dhe llogarisim konsumin e energjisë."
+            },
+            {
+              "number": "02",
+              "title": "Propozimi i Kursimit",
+              "description": "Ju tregojmë saktësisht sa do të kurseni në muaj pas instalimit të LED."
+            },
+            {
+              "number": "03",
+              "title": "Instalimi i Shpejtë",
+              "description": "Zëvendësojmë ndriçuesit e vjetër me modele të reja LED me efikasitet të lartë."
+            },
+            {
+              "number": "04",
+              "title": "Garancia dhe Mbështetja",
+              "description": "Sigurojmë që çdo ndriçues punon perfekt dhe ofrojmë garanci shumëvjeçare."
+            }
+          ]
+        },
+        "challenges": {
+          "title": "Përparësitë e Teknologjisë LED",
+          "items": [
+            "Ndezje e menjëhershme pa dridhje (flicker-free)",
+            "Nuk përmbajnë mërkur apo lëndë të dëmshme",
+            "Gamë e gjerë temperaturash (dritë e ngrohtë, natyrale, e ftohtë)",
+            "Jetëgjatësi deri në 50,000 orë pune"
+          ]
+        },
+        "whyChoose": {
+          "title": "Cilësi Drite që Transformon",
+          "paragraph": "Ne përdorim vetëm produkte LED të markave të njohura që garantojnë qëndrueshmëri të ngjyrës dhe performancë afatgjatë."
+        }
+      },
+      "category": "Ndriçim & Energji",
+      "duration": "1 ditë",
+      "priceRange": "Kontaktoni për ofertë",
+      "isCore": false,
+      "parentService": "ndricim-energji",
+      "features": [
+        "Shërbim Ekspert",
+        "Materiale Cilësore",
+        "Ekip Profesional",
+        "Garanci Kënaqësie"
+      ],
+      "seo": {
+        "metaTitle": "Instalim Ndriçimi LED | Bujo Electric",
+        "metaDescription": "Kaloni në ndriçim LED dhe kurseni deri në 80% të energjisë. Instalime profesionale për shtëpi, zyra dhe ambiente industriale.",
+        "keywords": "ndricim led, retrofit led, kursim energjie, elektricist, ndricim modern"
+      },
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
+      "gallery": [
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp"
+      ],
+      "uniqueFaqs": [
+        {
+          "question": "Sa mund të kursej me drita LED?",
+          "answer": "Dritat LED konsumojnë rreth 75-80% më pak energji se llambat inkandeshente tradicionale dhe zgjasin 25 herë më shumë."
+        },
+        {
+          "question": "A mund të zëvendësoni llambat e vjetra pa ndërruar ndriçuesit?",
+          "answer": "Po, ofrojmë zgjidhje 'retrofit' që përshtaten me bazat ekzistuese, duke ju kursyer koston e ndërrimit të të gjithë ndriçuesit."
+        },
+        {
+          "question": "Cila është jetëgjatësia mesatare e një dritë LED?",
+          "answer": "Një dritë LED cilësore zgjat mesatarisht 25,000 deri në 50,000 orë pune, që do të thotë vite të tëra pa pasur nevojë për ndërrim."
+        }
+      ]
+    },
+    {
+      "id": "ndricim-i-jashtem",
+      "name": "Ndriçim i Jashtëm",
+      "slug": "ndricim-i-jashtem",
+      "description": "Shërbime eksperte për ndriçim i jashtëm. Cilësi profesionale dhe kënaqësi e garantuar.",
+      "contentSections": {
+        "introduction": {
+          "title": "Ndriçoni Ambientin e Jashtëm",
+          "paragraph": "Ndriçimi i jashtëm rrit sigurinë e pronës suaj dhe i jep asaj një pamje mahnitëse gjatë natës. Ne ofrojmë zgjidhje për kopshte, fasada, rrugica dhe parkingje."
+        },
+        "whyMatters": {
+          "title": "Siguri dhe Estetikë",
+          "paragraph": "Një oborr i ndriçuar mirë dekurajon vizitorët e paftuar dhe ju lejon të shijoni hapësirat e jashtme edhe pas perëndimit të diellit."
+        },
+        "process": {
+          "title": "Instalimi i Jashtëm",
+          "steps": [
+            {
+              "number": "01",
+              "title": "Planifikimi i Peizazhit",
+              "description": "Përcaktojmë pikat kyçe për ndriçim."
+            },
+            {
+              "number": "02",
+              "title": "Kabllimi Nëntokësor",
+              "description": "Gërmojmë dhe shtrojmë kabllot në mënyrë të sigurt dhe të fshehtë."
+            },
+            {
+              "number": "03",
+              "title": "Instalimi i Ndriçuesve",
+              "description": "Vendosim ndriçues rezistentë ndaj ujit dhe kushteve atmosferike."
+            },
+            {
+              "number": "04",
+              "title": "Konfigurimi",
+              "description": "Rregullojmë këndet dhe kohëmatësit ose sensorët."
+            }
+          ]
+        },
+        "challenges": {
+          "title": "Sfidat e Jashtme",
+          "items": [
+            "Mbrojtja nga lagështia (IP Rating)",
+            "Rezistenca ndaj goditjeve",
+            "Kontrolli automatik (muzgu/agimi)",
+            "Ndriçimi i pishinave dhe shatërvanëve"
+          ]
+        },
+        "whyChoose": {
+          "title": "Qëndrueshmëri e Garantuar",
+          "paragraph": "Ne përdorim vetëm pajisje të dizajnuara posaçërisht për ambient të jashtëm që i rezistojnë shiut, borës dhe diellit."
+        }
+      },
+      "category": "Ndriçim & Energji",
+      "duration": "1 ditë",
+      "priceRange": "Kontaktoni për ofertë",
+      "isCore": false,
+      "parentService": "ndricim-energji",
+      "features": [
+        "Shërbim Ekspert",
+        "Materiale Cilësore",
+        "Ekip Profesional",
+        "Garanci Kënaqësie"
+      ],
+      "seo": {
+        "metaTitle": "Ndriçim i Jashtëm | Bujo Electric",
+        "metaDescription": "Shërbime eksperte për ndriçim i jashtëm. Cilësi profesionale dhe kënaqësi e garantuar. Konsultim falas!",
+        "keywords": "ndriçim i jashtëm, ndriçim & energji, elektricist"
+      },
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
+      "gallery": [
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp"
+      ],
+      "uniqueFaqs": [
+        {
+          "question": "A janë dritat e jashtme të sigurta nga uji?",
+          "answer": "Po, ne instalojmë vetëm ndriçues me mbrojtje të lartë IP (Ingress Protection) që janë plotësisht të papërshkueshëm nga uji."
+        },
+        {
+          "question": "A ofroni ndriçim me energji solare?",
+          "answer": "Po, ofrojmë opsione solare cilësore për zona ku nuk është i mundur ose i dëshirueshëm kabllimi elektrik."
+        },
+        {
+          "question": "Si mund të kontrollohet ndriçimi i kopshtit?",
+          "answer": "Mund të përdorni kohëmatës automatikë, sensorë muzgu që ndizen vetë, ose kontroll të plotë përmes telefonit tuaj."
+        }
+      ]
+    },
+    {
+      "id": "sisteme-elektrike",
+      "name": "Sisteme Speciale",
+      "slug": "sisteme-elektrike",
+      "description": "Instalimi i sistemeve të avancuara si Smart Home, stacione karikimi për EV dhe sisteme të energjisë rezervë.",
+      "contentSections": {
+        "introduction": {
+          "title": "Inovacion dhe Teknologji e Avancuar",
+          "paragraph": "Përtej instalimeve konvencionale, Bujo Electric ofron ekspertizë në sisteme të specializuara që kërkojnë njohuri të thelluara teknike. Nga shtëpitë inteligjente te sistemet e energjisë rezervë, ne integrojmë teknologjinë më të fundit në objektin tuaj."
+        },
+        "whyMatters": {
+          "title": "Pse të Investoni në Sisteme Speciale",
+          "paragraph": "Sistemet speciale ofrojnë pavarësi energjetike dhe kontroll total mbi ambientin tuaj, duke rritur komoditetin dhe sigurinë në nivele të reja."
+        },
+        "process": {
+          "title": "Integrimi i Teknologjisë",
+          "steps": [
+            {
+              "number": "01",
+              "title": "Konsultimi Teknik",
+              "description": "Identifikojmë nevojat specifike dhe mundësitë e integrimit me rrjetin ekzistues."
+            },
+            {
+              "number": "02",
+              "title": "Projektimi i Sistemit",
+              "description": "Krijojmë një arkitekturë teknike të personalizuar për performancë maksimale."
+            },
+            {
+              "number": "03",
+              "title": "Instalimi dhe Programimi",
+              "description": "Ekzekutojmë instalimin fizik dhe konfigurojmë softuerin e kontrollit."
+            },
+            {
+              "number": "04",
+              "title": "Mbështetja dhe Trajnimi",
+              "description": "Ju udhëzojmë në përdorimin e thjeshtë të sistemeve komplekse."
+            }
+          ]
+        },
+        "challenges": {
+          "title": "Zgjidhjet Tona Speciale",
+          "items": [
+            "Instalimi i stacioneve të karikimit për vetura elektrike (EV)",
+            "Sistemet e automatizimit Smart Home (KNX, Zigbee, etj.)",
+            "Gjeneratorët automatikë dhe sistemet UPS për biznese",
+            "Sistemet e mbrojtjes nga rrufetë dhe mbitensionet"
+          ]
+        },
+        "whyChoose": {
+          "title": "Partneri Juaj për Inovacion",
+          "paragraph": "Jemi partneri juaj për inovacion, duke sjellë zgjidhjet më moderne globale direkt në shtëpinë apo biznesin tuaj."
+        }
+      },
+      "category": "Shërbimet Kryesore",
+      "duration": "1-3 ditë",
+      "priceRange": "Kontaktoni për ofertë",
+      "isCore": true,
+      "parentService": null,
+      "features": [
+        "Konsultim Falas",
+        "Shërbim Profesional",
+        "Garanci Cilësie",
+        "Përfshin Garancinë",
+        "Ekip Ekspertësh"
+      ],
+      "seo": {
+        "metaTitle": "Sisteme Speciale dhe Smart Home | Bujo Electric",
+        "metaDescription": "Nga karikuesit EV te shtëpitë inteligjente, Bujo Electric ofron zgjidhjet më moderne teknologjike për objektin tuaj.",
+        "keywords": "smart home, karikues ev, gjeneratore, ups, sisteme speciale, elektricist"
+      },
+      "featuredImage": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
+      "gallery": [
+        "/assets/images/portfolio/la-marque-garage-door-center-18.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-19.webp",
+        "/assets/images/portfolio/la-marque-garage-door-center-20.webp"
+      ],
+      "uniqueFaqs": [
+        {
+          "question": "A mund të kontrolloj dritat nga telefoni?",
+          "answer": "Po, përmes sistemeve tona Smart Home, ju mund të kontrolloni ndriçimin, temperaturën dhe sigurinë nga kudo përmes smartphone-it tuaj."
+        },
+        {
+          "question": "A instaloni karikues për vetura elektrike në shtëpi?",
+          "answer": "Po, instalojmë stacione karikimi (Wallbox) të shpejta dhe të sigurta, të përshtatshme për të gjitha llojet e veturave elektrike."
+        },
+        {
+          "question": "A mund të integroj panelin solar me sistemin Smart?",
+          "answer": "Po, ne mundësojmë integrimin e plotë për të monitoruar prodhimin dhe konsumit e energjisë në kohë reale përmes aplikacionit."
         }
       ]
     }

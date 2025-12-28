@@ -1,52 +1,44 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Example Company",
+  "name": "Bujo Electric",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "123 Main Street, Example City, ST 12345"
+    "streetAddress": "Prishtinë, Kosovë"
   },
-  "telephone": "(555) 123-4567",
-  "email": "info@example.com",
-  "url": "https://example.com",
+  "telephone": "044 239 757",
+  "email": "info@bujoelectric.com",
+  "url": "https://bujoelectric.com",
   "areaServed": "[
-  "Example City, ST",
-  "North Town, ST",
-  "South Town, ST",
-  "East Village, ST",
-  "West Borough, ST",
-  "Central District, ST",
-  "Riverside, ST",
-  "Hillside, ST",
-  "Lakeside, ST",
-  "Mountain View, ST",
-  "Valley Springs, ST",
-  "Meadowbrook, ST",
-  "Oak Grove, ST",
-  "Pine Hills, ST",
-  "Maple Ridge, ST"
+  "Prishtin\u00eb, Kosov\u00eb",
+  "Prizren, Kosov\u00eb",
+  "Ferizaj, Kosov\u00eb",
+  "Gjilan, Kosov\u00eb",
+  "Pej\u00eb, Kosov\u00eb",
+  "Gjakov\u00eb, Kosov\u00eb",
+  "Mitrovic\u00eb, Kosov\u00eb",
+  "Fush\u00eb Kosov\u00eb, Kosov\u00eb",
+  "Obiliq, Kosov\u00eb",
+  "Podujev\u00eb, Kosov\u00eb",
+  "Vushtrri, Kosov\u00eb",
+  "Lipjan, Kosov\u00eb",
+  "Suharek\u00eb, Kosov\u00eb"
 ]",
   "serviceType": [
-  "Service One",
-  "Residential Service One",
-  "Commercial Service One",
-  "Custom Service One",
-  "Service Two",
-  "Emergency Service Two",
-  "Standard Service Two",
-  "Premium Service Two",
-  "Service Three",
-  "Basic Service Three",
-  "Advanced Service Three",
-  "Maintenance Plans",
-  "Service Four",
-  "Installation",
-  "Repair",
-  "Smart Solutions",
-  "Service Five",
-  "Option A",
-  "Option B",
-  "Option C",
-  "Option D"
+  "Instalime Elektrike",
+  "Instalime Rezidenciale",
+  "Instalime Komerciale",
+  "Instalime Industriale",
+  "Riparime Elektrike",
+  "Defekte Elektrike",
+  "Nd\u00ebrrim Siguresash & Panelev",
+  "Riparime Emergjente 24/7",
+  "Mir\u00ebmbajtje Elektrike",
+  "Kontroll & Inspektim",
+  "Mir\u00ebmbajtje Parandaluese",
+  "Ndri\u00e7im & Energji",
+  "Ndri\u00e7im LED",
+  "Ndri\u00e7im i Jasht\u00ebm",
+  "Sisteme Speciale"
 ]
 }
 ```
@@ -56,11 +48,11 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Example Company",
-  "url": "https://example.com",
+  "name": "Bujo Electric",
+  "url": "https://bujoelectric.com",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://example.com/search?q={search_term_string}",
+    "target": "https://bujoelectric.com/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
@@ -73,286 +65,226 @@
   "@type": "Service",
   "name": "[
   {
-    "NAME": "Service One",
-    "URL": "/service-one/",
-    "DESCRIPTION": "Professional Service One solutions for residential and commercial clients",
+    "NAME": "Instalime Elektrike",
+    "URL": "/instalime-elektrike/",
+    "DESCRIPTION": "Instalime elektrike profesionale p\u00ebr sht\u00ebpi, biznese dhe industri me siguri maksimale.",
     "SUB_SERVICES": [
       {
-        "NAME": "Residential Service One",
-        "URL": "/residential-service-one/"
+        "NAME": "Instalime Rezidenciale",
+        "URL": "/instalime-elektrike-rezidenciale/"
       },
       {
-        "NAME": "Commercial Service One",
-        "URL": "/commercial-service-one/"
+        "NAME": "Instalime Komerciale",
+        "URL": "/instalime-elektrike-komerciale/"
       },
       {
-        "NAME": "Custom Service One",
-        "URL": "/custom-service-one/"
+        "NAME": "Instalime Industriale",
+        "URL": "/instalime-industriale/"
       }
     ]
   },
   {
-    "NAME": "Service Two",
-    "URL": "/service-two/",
-    "DESCRIPTION": "Fast, reliable Service Two for all your needs",
+    "NAME": "Riparime Elektrike",
+    "URL": "/riparime-elektrike/",
+    "DESCRIPTION": "Zgjidhje e shpejt\u00eb e defekteve elektrike dhe riparime emergjente 24/7.",
     "SUB_SERVICES": [
       {
-        "NAME": "Emergency Service Two",
-        "URL": "/emergency-service-two/"
+        "NAME": "Defekte Elektrike",
+        "URL": "/defekte-elektrike/"
       },
       {
-        "NAME": "Standard Service Two",
-        "URL": "/standard-service-two/"
+        "NAME": "Nd\u00ebrrim Siguresash & Panelev",
+        "URL": "/nderrim-siguresash/"
       },
       {
-        "NAME": "Premium Service Two",
-        "URL": "/premium-service-two/"
+        "NAME": "Riparime Emergjente 24/7",
+        "URL": "/riparime-emergjente/"
       }
     ]
   },
   {
-    "NAME": "Service Three",
-    "URL": "/service-three/",
-    "DESCRIPTION": "Preventive Service Three to keep everything running smoothly",
+    "NAME": "Mir\u00ebmbajtje Elektrike",
+    "URL": "/mirembajtje-elektrike/",
+    "DESCRIPTION": "Kontroll dhe mir\u00ebmbajtje parandaluese p\u00ebr t\u00eb siguruar jet\u00ebgjat\u00ebsin\u00eb e sistemit tuaj.",
     "SUB_SERVICES": [
       {
-        "NAME": "Basic Service Three",
-        "URL": "/basic-service-three/"
+        "NAME": "Kontroll & Inspektim",
+        "URL": "/kontroll-inspektim/"
       },
       {
-        "NAME": "Advanced Service Three",
-        "URL": "/advanced-service-three/"
-      },
-      {
-        "NAME": "Maintenance Plans",
-        "URL": "/maintenance-plans/"
+        "NAME": "Mir\u00ebmbajtje Parandaluese",
+        "URL": "/mirembajtje-parandaluese/"
       }
     ]
   },
   {
-    "NAME": "Service Four",
-    "URL": "/service-four/",
-    "DESCRIPTION": "Specialized Service Four with latest technology",
+    "NAME": "Ndri\u00e7im & Energji",
+    "URL": "/ndricim-energji/",
+    "DESCRIPTION": "Sisteme moderne t\u00eb ndri\u00e7imit LED dhe zgjidhje p\u00ebr kursimin e energjis\u00eb.",
     "SUB_SERVICES": [
       {
-        "NAME": "Installation",
-        "URL": "/installation/"
+        "NAME": "Ndri\u00e7im LED",
+        "URL": "/ndricim-led/"
       },
       {
-        "NAME": "Repair",
-        "URL": "/repair/"
-      },
-      {
-        "NAME": "Smart Solutions",
-        "URL": "/smart-solutions/"
+        "NAME": "Ndri\u00e7im i Jasht\u00ebm",
+        "URL": "/ndricim-i-jashtem/"
       }
     ]
   },
   {
-    "NAME": "Service Five",
-    "URL": "/service-five/",
-    "DESCRIPTION": "Complete Service Five upgrades and replacements",
-    "SUB_SERVICES": [
-      {
-        "NAME": "Option A",
-        "URL": "/option-a/"
-      },
-      {
-        "NAME": "Option B",
-        "URL": "/option-b/"
-      },
-      {
-        "NAME": "Option C",
-        "URL": "/option-c/"
-      },
-      {
-        "NAME": "Option D",
-        "URL": "/option-d/"
-      }
-    ]
+    "NAME": "Sisteme Speciale",
+    "URL": "/sisteme-elektrike/",
+    "DESCRIPTION": "Instalimi i sistemeve speciale elektrike dhe teknologjis\u00eb s\u00eb fundit.",
+    "SUB_SERVICES": []
   }
 ]",
   "provider": {
     "@type": "Organization",
-    "name": "Example Company"
+    "name": "Bujo Electric"
   },
   "areaServed": "[
-  "Example City, ST",
-  "North Town, ST",
-  "South Town, ST",
-  "East Village, ST",
-  "West Borough, ST",
-  "Central District, ST",
-  "Riverside, ST",
-  "Hillside, ST",
-  "Lakeside, ST",
-  "Mountain View, ST",
-  "Valley Springs, ST",
-  "Meadowbrook, ST",
-  "Oak Grove, ST",
-  "Pine Hills, ST",
-  "Maple Ridge, ST"
+  "Prishtin\u00eb, Kosov\u00eb",
+  "Prizren, Kosov\u00eb",
+  "Ferizaj, Kosov\u00eb",
+  "Gjilan, Kosov\u00eb",
+  "Pej\u00eb, Kosov\u00eb",
+  "Gjakov\u00eb, Kosov\u00eb",
+  "Mitrovic\u00eb, Kosov\u00eb",
+  "Fush\u00eb Kosov\u00eb, Kosov\u00eb",
+  "Obiliq, Kosov\u00eb",
+  "Podujev\u00eb, Kosov\u00eb",
+  "Vushtrri, Kosov\u00eb",
+  "Lipjan, Kosov\u00eb",
+  "Suharek\u00eb, Kosov\u00eb"
 ]",
   "description": "Professional [
   {
-    "NAME": "Service One",
-    "URL": "/service-one/",
-    "DESCRIPTION": "Professional Service One solutions for residential and commercial clients",
+    "NAME": "Instalime Elektrike",
+    "URL": "/instalime-elektrike/",
+    "DESCRIPTION": "Instalime elektrike profesionale p\u00ebr sht\u00ebpi, biznese dhe industri me siguri maksimale.",
     "SUB_SERVICES": [
       {
-        "NAME": "Residential Service One",
-        "URL": "/residential-service-one/"
+        "NAME": "Instalime Rezidenciale",
+        "URL": "/instalime-elektrike-rezidenciale/"
       },
       {
-        "NAME": "Commercial Service One",
-        "URL": "/commercial-service-one/"
+        "NAME": "Instalime Komerciale",
+        "URL": "/instalime-elektrike-komerciale/"
       },
       {
-        "NAME": "Custom Service One",
-        "URL": "/custom-service-one/"
+        "NAME": "Instalime Industriale",
+        "URL": "/instalime-industriale/"
       }
     ]
   },
   {
-    "NAME": "Service Two",
-    "URL": "/service-two/",
-    "DESCRIPTION": "Fast, reliable Service Two for all your needs",
+    "NAME": "Riparime Elektrike",
+    "URL": "/riparime-elektrike/",
+    "DESCRIPTION": "Zgjidhje e shpejt\u00eb e defekteve elektrike dhe riparime emergjente 24/7.",
     "SUB_SERVICES": [
       {
-        "NAME": "Emergency Service Two",
-        "URL": "/emergency-service-two/"
+        "NAME": "Defekte Elektrike",
+        "URL": "/defekte-elektrike/"
       },
       {
-        "NAME": "Standard Service Two",
-        "URL": "/standard-service-two/"
+        "NAME": "Nd\u00ebrrim Siguresash & Panelev",
+        "URL": "/nderrim-siguresash/"
       },
       {
-        "NAME": "Premium Service Two",
-        "URL": "/premium-service-two/"
+        "NAME": "Riparime Emergjente 24/7",
+        "URL": "/riparime-emergjente/"
       }
     ]
   },
   {
-    "NAME": "Service Three",
-    "URL": "/service-three/",
-    "DESCRIPTION": "Preventive Service Three to keep everything running smoothly",
+    "NAME": "Mir\u00ebmbajtje Elektrike",
+    "URL": "/mirembajtje-elektrike/",
+    "DESCRIPTION": "Kontroll dhe mir\u00ebmbajtje parandaluese p\u00ebr t\u00eb siguruar jet\u00ebgjat\u00ebsin\u00eb e sistemit tuaj.",
     "SUB_SERVICES": [
       {
-        "NAME": "Basic Service Three",
-        "URL": "/basic-service-three/"
+        "NAME": "Kontroll & Inspektim",
+        "URL": "/kontroll-inspektim/"
       },
       {
-        "NAME": "Advanced Service Three",
-        "URL": "/advanced-service-three/"
-      },
-      {
-        "NAME": "Maintenance Plans",
-        "URL": "/maintenance-plans/"
+        "NAME": "Mir\u00ebmbajtje Parandaluese",
+        "URL": "/mirembajtje-parandaluese/"
       }
     ]
   },
   {
-    "NAME": "Service Four",
-    "URL": "/service-four/",
-    "DESCRIPTION": "Specialized Service Four with latest technology",
+    "NAME": "Ndri\u00e7im & Energji",
+    "URL": "/ndricim-energji/",
+    "DESCRIPTION": "Sisteme moderne t\u00eb ndri\u00e7imit LED dhe zgjidhje p\u00ebr kursimin e energjis\u00eb.",
     "SUB_SERVICES": [
       {
-        "NAME": "Installation",
-        "URL": "/installation/"
+        "NAME": "Ndri\u00e7im LED",
+        "URL": "/ndricim-led/"
       },
       {
-        "NAME": "Repair",
-        "URL": "/repair/"
-      },
-      {
-        "NAME": "Smart Solutions",
-        "URL": "/smart-solutions/"
+        "NAME": "Ndri\u00e7im i Jasht\u00ebm",
+        "URL": "/ndricim-i-jashtem/"
       }
     ]
   },
   {
-    "NAME": "Service Five",
-    "URL": "/service-five/",
-    "DESCRIPTION": "Complete Service Five upgrades and replacements",
-    "SUB_SERVICES": [
-      {
-        "NAME": "Option A",
-        "URL": "/option-a/"
-      },
-      {
-        "NAME": "Option B",
-        "URL": "/option-b/"
-      },
-      {
-        "NAME": "Option C",
-        "URL": "/option-c/"
-      },
-      {
-        "NAME": "Option D",
-        "URL": "/option-d/"
-      }
-    ]
+    "NAME": "Sisteme Speciale",
+    "URL": "/sisteme-elektrike/",
+    "DESCRIPTION": "Instalimi i sistemeve speciale elektrike dhe teknologjis\u00eb s\u00eb fundit.",
+    "SUB_SERVICES": []
   }
 ] services in [
   {
-    "CITY": "Example City",
-    "STATE": "ST"
+    "CITY": "Prishtin\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "North Town",
-    "STATE": "ST"
+    "CITY": "Prizren",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "South Town",
-    "STATE": "ST"
+    "CITY": "Ferizaj",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "East Village",
-    "STATE": "ST"
+    "CITY": "Gjilan",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "West Borough",
-    "STATE": "ST"
+    "CITY": "Pej\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Central District",
-    "STATE": "ST"
+    "CITY": "Gjakov\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Riverside",
-    "STATE": "ST"
+    "CITY": "Mitrovic\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Hillside",
-    "STATE": "ST"
+    "CITY": "Fush\u00eb Kosov\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Lakeside",
-    "STATE": "ST"
+    "CITY": "Obiliq",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Mountain View",
-    "STATE": "ST"
+    "CITY": "Podujev\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Valley Springs",
-    "STATE": "ST"
+    "CITY": "Vushtrri",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Meadowbrook",
-    "STATE": "ST"
+    "CITY": "Lipjan",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Oak Grove",
-    "STATE": "ST"
-  },
-  {
-    "CITY": "Pine Hills",
-    "STATE": "ST"
-  },
-  {
-    "CITY": "Maple Ridge",
-    "STATE": "ST"
+    "CITY": "Suharek\u00eb",
+    "STATE": "Kosov\u00eb"
   }
 ]"
 }

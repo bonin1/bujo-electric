@@ -41,12 +41,12 @@ const TestimonialCards = React.forwardRef<HTMLDivElement, TestimonialCardsProps>
         className={`w-full py-16 bg-gray-50 ${className || ''}`}
         {...props}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               What Our Clients Say
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-7xl mx-auto">
               Don&apos;t just take our word for it. Here&apos;s what our satisfied customers have to say about our professional installation and repair services.
             </p>
           </div>

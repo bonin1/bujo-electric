@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         description={`We are committed to protecting your privacy and personal information. This policy explains how we collect, use, and safeguard your data when you use our ${BUSINESS_INFO.primaryKeyword.toLowerCase()} services.`}
         image="/assets/config/placeholder-image.png"
         breadcrumbs={[
-          { label: 'Privacy Policy', href: '/privacy-policy/' }
+          { label: 'Politika e Privatësisë', href: '/politika-e-privatesise/' }
         ]}
       />
 

@@ -63,85 +63,70 @@ export interface BusinessHours {
 // BUSINESS INFORMATION
 // ==========================================
 export const BUSINESS_INFO = {
-  name: "Example Company",
-  websiteUrl: "https://example.com",
+  name: "Bujo Electric",
+  websiteUrl: "https://bujoelectric.com",
   tone: "Professional",
-  logoUrl: "https://example.com/logo.png",
-  tagline: "Your Trusted Service Provider",
-  primaryKeyword: "Professional Services",
-  ctaText: "Contact us today for a free consultation!",
+  logoUrl: "/logo.webp",
+  tagline: "Ekspertët tuaj për Energji dhe Siguri Elektrike",
+  primaryKeyword: "Elektricist",
+  ctaText: "Na kontaktoni sot për një konsultim falas!",
 } as const;
 
 // ==========================================
 // BUSINESS CATEGORIES
 // ==========================================
 export const BUSINESS_CATEGORIES = {
-  primary: "Service Provider",
+  primary: "Electrician",
   secondary: [
-    "Professional Services",
-    "Local Business",
-    "Service Establishment",
-    "Contractor",
-    "Home Services"
+    "Electrical Contractor",
+    "Electrical Engineer",
+    "Electrical Repair Shop",
+    "Lighting Consultant",
+    "Home Improvement"
   ],
 } as const;
-
-// ==========================================
-// SCHEMA.ORG BUSINESS TYPE
-// ==========================================
-// The Schema.org type that best describes this business
-// Used for structured data markup on the website
-export const SCHEMA_BUSINESS_TYPE = "ProfessionalService" as const;
 
 // ==========================================
 // CORE SERVICES
 // ==========================================
 export const CORE_SERVICES: ServiceItem[] = [
   {
-    name: "Service One",
-    url: "/service-one/",
+    name: "Instalime Elektrike",
+    url: "/instalime-elektrike/",
     subServices: [
-      { name: "Residential Service One", url: "/residential-service-one/" },
-      { name: "Commercial Service One", url: "/commercial-service-one/" },
-      { name: "Custom Service One", url: "/custom-service-one/" }
+      { name: "Instalime Rezidenciale", url: "/instalime-elektrike-rezidenciale/" },
+      { name: "Instalime Komerciale", url: "/instalime-elektrike-komerciale/" },
+      { name: "Instalime Industriale", url: "/instalime-industriale/" }
     ],
   },
   {
-    name: "Service Two",
-    url: "/service-two/",
+    name: "Riparime Elektrike",
+    url: "/riparime-elektrike/",
     subServices: [
-      { name: "Emergency Service Two", url: "/emergency-service-two/" },
-      { name: "Standard Service Two", url: "/standard-service-two/" },
-      { name: "Premium Service Two", url: "/premium-service-two/" }
+      { name: "Defekte Elektrike", url: "/defekte-elektrike/" },
+      { name: "Ndërrim Siguresash & Panelev", url: "/nderrim-siguresash/" },
+      { name: "Riparime Emergjente 24/7", url: "/riparime-emergjente/" }
     ],
   },
   {
-    name: "Service Three",
-    url: "/service-three/",
+    name: "Mirëmbajtje Elektrike",
+    url: "/mirembajtje-elektrike/",
     subServices: [
-      { name: "Basic Service Three", url: "/basic-service-three/" },
-      { name: "Advanced Service Three", url: "/advanced-service-three/" },
-      { name: "Maintenance Plans", url: "/maintenance-plans/" }
+      { name: "Kontroll & Inspektim", url: "/kontroll-inspektim/" },
+      { name: "Mirëmbajtje Parandaluese", url: "/mirembajtje-parandaluese/" }
     ],
   },
   {
-    name: "Service Four",
-    url: "/service-four/",
+    name: "Ndriçim & Energji",
+    url: "/ndricim-energji/",
     subServices: [
-      { name: "Installation", url: "/installation/" },
-      { name: "Repair", url: "/repair/" },
-      { name: "Smart Solutions", url: "/smart-solutions/" }
+      { name: "Ndriçim LED", url: "/ndricim-led/" },
+      { name: "Ndriçim i Jashtëm", url: "/ndricim-i-jashtem/" }
     ],
   },
   {
-    name: "Service Five",
-    url: "/service-five/",
-    subServices: [
-      { name: "Option A", url: "/option-a/" },
-      { name: "Option B", url: "/option-b/" },
-      { name: "Option C", url: "/option-c/" },
-      { name: "Option D", url: "/option-d/" }
-    ],
+    name: "Sisteme Speciale",
+    url: "/sisteme-elektrike/",
   }
 ];
 
@@ -159,21 +144,19 @@ export const ALL_SERVICES = CORE_SERVICES.flatMap(service => [
 // SERVICE AREAS / LOCATIONS
 // ==========================================
 export const LOCATIONS: Location[] = [
-  { city: "Example City", state: "ST", url: "/example-city-st/" },
-  { city: "North Town", state: "ST", url: "/north-town-st/" },
-  { city: "South Town", state: "ST", url: "/south-town-st/" },
-  { city: "East Village", state: "ST", url: "/east-village-st/" },
-  { city: "West Borough", state: "ST", url: "/west-borough-st/" },
-  { city: "Central District", state: "ST", url: "/central-district-st/" },
-  { city: "Riverside", state: "ST", url: "/riverside-st/" },
-  { city: "Hillside", state: "ST", url: "/hillside-st/" },
-  { city: "Lakeside", state: "ST", url: "/lakeside-st/" },
-  { city: "Mountain View", state: "ST", url: "/mountain-view-st/" },
-  { city: "Valley Springs", state: "ST", url: "/valley-springs-st/" },
-  { city: "Meadowbrook", state: "ST", url: "/meadowbrook-st/" },
-  { city: "Oak Grove", state: "ST", url: "/oak-grove-st/" },
-  { city: "Pine Hills", state: "ST", url: "/pine-hills-st/" },
-  { city: "Maple Ridge", state: "ST", url: "/maple-ridge-st/" }
+  { city: "Prishtinë", state: "Kosovë", url: "/prishtinë-kosovë/" },
+  { city: "Prizren", state: "Kosovë", url: "/prizren-kosovë/" },
+  { city: "Ferizaj", state: "Kosovë", url: "/ferizaj-kosovë/" },
+  { city: "Gjilan", state: "Kosovë", url: "/gjilan-kosovë/" },
+  { city: "Pejë", state: "Kosovë", url: "/pejë-kosovë/" },
+  { city: "Gjakovë", state: "Kosovë", url: "/gjakovë-kosovë/" },
+  { city: "Mitrovicë", state: "Kosovë", url: "/mitrovicë-kosovë/" },
+  { city: "Fushë Kosovë", state: "Kosovë", url: "/fushë-kosovë-kosovë/" },
+  { city: "Obiliq", state: "Kosovë", url: "/obiliq-kosovë/" },
+  { city: "Podujevë", state: "Kosovë", url: "/podujevë-kosovë/" },
+  { city: "Vushtrri", state: "Kosovë", url: "/vushtrri-kosovë/" },
+  { city: "Lipjan", state: "Kosovë", url: "/lipjan-kosovë/" },
+  { city: "Suharekë", state: "Kosovë", url: "/suharekë-kosovë/" }
 ];
 
 // Helper to get top locations (first 4)
@@ -187,14 +170,14 @@ export const formatLocation = (location: Location): string =>
 // CONTACT INFORMATION
 // ==========================================
 export const CONTACT: ContactInfo = {
-  address: "123 Main Street, Example City, ST 12345",
-  street: "123 Main Street",
-  city: "Example City",
-  state: "ST",
-  zip: "12345",
-  areaCode: "555",
-  phone: "(555) 123-4567",
-  email: "info@example.com",
+  address: "Prishtinë, Kosovë",
+  street: "Rruga Kryesore",
+  city: "Prishtinë",
+  state: "Kosovë",
+  zip: "10000",
+  areaCode: "044",
+  phone: "044 239 757",
+  email: "info@bujoelectric.com",
   addressVisibility: "VISIBLE", // SAB (Service Area Business)
 };
 
@@ -202,13 +185,13 @@ export const CONTACT: ContactInfo = {
 // BUSINESS HOURS
 // ==========================================
 export const BUSINESS_HOURS: BusinessHours = {
-  monday: "9:00 AM - 5:00 PM",
-  tuesday: "9:00 AM - 5:00 PM",
-  wednesday: "9:00 AM - 5:00 PM",
-  thursday: "9:00 AM - 5:00 PM",
-  friday: "9:00 AM - 5:00 PM",
-  saturday: "10:00 AM - 3:00 PM",
-  sunday: "Closed",
+  monday: "24/7",
+  tuesday: "24/7",
+  wednesday: "24/7",
+  thursday: "24/7",
+  friday: "24/7",
+  saturday: "24/7",
+  sunday: "24/7",
 };
 
 // Helper to format business hours for schema
@@ -218,22 +201,17 @@ export const BUSINESS_HOURS_SCHEMA = "Mo-Fr 09:00-17:00";
 // GOOGLE MAPS
 // ==========================================
 export const GOOGLE_MAPS: GoogleMaps = {
-  shortLink: "https://maps.app.goo.gl/example",
-  fullUrl: "https://www.google.com/maps/place/Example+Company",
-  embedCode: `<iframe src="https://www.google.com/maps/embed?pb=EXAMPLE_EMBED_CODE" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[300px] mb-4" title="Example Company Map"></iframe>`,
-  latitude: "40.7128",
-  longitude: "-74.0060",
+  shortLink: "https://maps.app.goo.gl/bujoelectric",
+  fullUrl: "https://www.google.com/maps/place/Bujo+Electric",
+  embedCode: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.6!2d21.1655!3d42.6629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDM5JzQ2LjQiTiAyMcKwMDknNTUuOCJF!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s" width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[300px] mb-4" title="Bujo Electric Map"></iframe>`,
+  latitude: "42.6629",
+  longitude: "21.1655",
 };
 
 // ==========================================
 // SOCIAL MEDIA
 // ==========================================
-export const SOCIAL_MEDIA: SocialMedia = {
-  facebook: "https://www.facebook.com/examplecompany",
-  twitter: "https://twitter.com/examplecompany",
-  linkedin: "https://www.linkedin.com/company/examplecompany",
-  instagram: "https://www.instagram.com/examplecompany"
-};
+export const SOCIAL_MEDIA: SocialMedia = {};
 
 // Filter out undefined social media links
 export const ACTIVE_SOCIAL_MEDIA = Object.entries(SOCIAL_MEDIA)
@@ -244,20 +222,20 @@ export const ACTIVE_SOCIAL_MEDIA = Object.entries(SOCIAL_MEDIA)
 // BLOG TOPICS
 // ==========================================
 export const BLOG_TOPICS = [
-  "Industry Tips and Tricks",
-  "Best Practices Guide",
-  "How to Choose the Right Solution",
-  "Common Problems and Solutions",
-  "Latest Technology Trends"
+  "Këshilla për Sigurinë Elektrike",
+  "Kursimi i Energjisë",
+  "Mirëmbajtja e Shtëpisë",
+  "Teknologjia Smart Home",
+  "Zgjidhje për Biznese"
 ] as const;
 
 // ==========================================
 // META INFORMATION
 // ==========================================
 export const META = {
-  title: "Example Company - Professional Services in Example City, ST",
-  description: "Expert professional services in Example City, ST. Quality solutions and customer satisfaction guaranteed. Contact us today for a free consultation!",
-  keywords: "professional services, Example City ST, quality service, reliable solutions, expert services",
+  title: "Bujo Electric | Ekspertët e Energjisë dhe Sigurisë Elektrike në Kosovë",
+  description: "Shërbime elektrike profesionale 24/7 në Prishtinë dhe mbarë Kosovën. Instalime, riparime dhe mirëmbajtje elektrike me standarde evropiane.",
+  keywords: "elektricist, sherbime elektrike, prishtine, kosove, instalime elektrike, riparime elektrike, bujo electric",
 } as const;
 
 // ==========================================
@@ -289,51 +267,40 @@ export const getLocationsForNavigation = (limit?: number) => {
  * Get company links for footer/navigation
  */
 export const getCompanyLinks = () => [
-  { name: "About Us", href: "/about/" },
-  { name: "Blog", href: "/blog/" },
-  { name: "Contact", href: "/contact/" },
-  { name: "Portfolio", href: "/portfolio/" },
-  { name: "Service Areas", href: "/service-areas/" },
+  { name: "Rreth Nesh", href: "/rreth-nesh/" },
+  { name: "Blogu", href: "/blog/" },
+  { name: "Kontakti", href: "/kontakti/" },
+  { name: "Portofolio", href: "/galeria-e-projekteve/" },
+  { name: "Zonat e Shërbimit", href: "/zonat-e-sherbimit/" },
 ];
 
 /**
  * Get legal links for footer
  */
 export const getLegalLinks = () => [
-  { name: "Privacy Policy", href: "/privacy-policy/" },
-  { name: "Terms & Conditions", href: "/terms/" },
+  { name: "Politika e Privatësisë", href: "/politika-e-privatesise/" },
+  { name: "Kushtet e Përdorimit", href: "/kushtet-e-perdorimit/" },
 ];
 
 /**
- * Format phone number for display (555-123-4567)
+ * Format phone number for display
  */
 export const formatPhoneDisplay = (phone: string): string => {
-  const digits = phone.replace(/\D/g, '');
-  if (digits.length === 10) {
-    return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
-  }
-  if (digits.length === 11 && digits.startsWith('1')) {
-    const withoutCountryCode = digits.slice(1);
-    return `${withoutCountryCode.slice(0, 3)}-${withoutCountryCode.slice(3, 6)}-${withoutCountryCode.slice(6)}`;
-  }
   return phone;
 };
 
 /**
- * Format phone number for tel: links (+15551234567)
+ * Format phone number for tel: links (+383...)
  */
 export const formatPhoneTel = (phone: string): string => {
   const digits = phone.replace(/\D/g, '');
-  if (digits.length === 10) {
-    return `+1${digits}`;
-  }
-  if (digits.length === 11 && digits.startsWith('1')) {
+  if (digits.startsWith('383')) {
     return `+${digits}`;
   }
-  if (phone.startsWith('+')) {
-    return phone;
+  if (digits.startsWith('0')) {
+    return `+383${digits.slice(1)}`;
   }
-  return `+1${digits}`;
+  return `+383${digits}`;
 };
 
 export const getPhoneDisplay = (): string => formatPhoneDisplay(CONTACT.phone);
@@ -382,10 +349,10 @@ export const getMetaInfo = () => ({
   keywords: META.keywords,
 });
 export const getBlogTopics = (): readonly string[] => BLOG_TOPICS;
-export const getCopyright = (): string => `© ${new Date().getFullYear()} ${BUSINESS_INFO.name}. All rights reserved.`;
+export const getCopyright = (): string => `© ${new Date().getFullYear()} ${BUSINESS_INFO.name}. Të gjitha të drejtat e rezervuara.`;
 export const getBusinessCategories = () => BUSINESS_CATEGORIES;
 export const getBusinessDescription = (): string => {
-  return `Professional ${BUSINESS_INFO.primaryKeyword} providing quality solutions and exceptional customer service.`;
+  return `Profesionistë në ${BUSINESS_INFO.primaryKeyword} që ofrojnë zgjidhje cilësore dhe shërbim të jashtëzakonshëm.`;
 };
 export const getContactInfo = () => ({
   phone: getPhoneDisplay(),

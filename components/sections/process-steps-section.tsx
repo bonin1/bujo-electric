@@ -1,7 +1,5 @@
 import React from 'react';
-import { MessageCircle, Palette, Hammer, Wrench, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/buttons/Button';
-import Link from 'next/link';
+import { MessageCircle, Palette, Hammer, CheckCircle2 } from 'lucide-react';
 import { ScrollRevealUp, ScrollRevealScale } from '@/components/ui/animations/scroll-reveal';
 
 interface ProcessStepsSectionProps {
@@ -21,141 +19,109 @@ interface ProcessStepsSectionProps {
 }
 
 const ProcessStepsSection = ({ city, cityData }: ProcessStepsSectionProps) => {
-  // Get city-specific process content or use defaults
   const processContent = cityData?.sectionContent?.process;
-  const heading = processContent?.heading || `Our Simple Process${city ? ` in ${city}` : ''}`;
-  const subheading = processContent?.subheading || (city
-    ? `From initial consultation to ongoing maintenance, we make bringing your vision to life simple and stress-free. Our ${city}-based team ensures fast response times and personalized service every step of the way.`
-    : `From initial consultation to ongoing maintenance, we make bringing your vision to life simple and stress-free.`
-  );
+  const heading = processContent?.heading || `Procesi ynë i thjeshtë${city ? ` në ${city}` : ''}`;
+  const subheading = processContent?.subheading || "Ne ndjekim një proces të strukturuar për të siguruar që çdo projekt të përfundojë me sukses dhe në kohë.";
 
-  // Default steps
   const defaultSteps = [
     {
       number: "01",
-      title: "Initial Consultation",
-      description: "We start with a free consultation to understand your vision, assess your space, and discuss your project goals.",
-      icon: <MessageCircle className="w-8 h-8 text-primary" />
+      title: "Konsulta Fillestare",
+      description: "Diskutojmë kërkesat tuaja dhe bëjmë një vlerësim të detajuar të projektit pa asnjë kosto.",
+      icon: <MessageCircle className="w-10 h-10" />
     },
     {
       number: "02", 
-      title: "Custom Design",
-      description: "Our expert team creates a detailed plan tailored to your space, budget, and preferences with professional renderings.",
-      icon: <Palette className="w-8 h-8 text-primary" />
+      title: "Planifikimi & Dizajni",
+      description: "Krijojmë një plan të detajuar dhe ofrojmë një ofertë transparente bazuar në nevojat tuaja.",
+      icon: <Palette className="w-10 h-10" />
     },
     {
       number: "03",
-      title: "Professional Installation",
-      description: "Our skilled team handles the complete installation process with minimal disruption to your daily routine.",
-      icon: <Hammer className="w-8 h-8 text-primary" />
+      title: "Realizimi i Punimeve",
+      description: "Ekipi ynë i kualifikuar kryen instalimet me profesionalizëm dhe kujdes maksimal.",
+      icon: <Hammer className="w-10 h-10" />
     },
     {
       number: "04",
-      title: "Ongoing Support",
-      description: "We provide comprehensive maintenance services and support to keep your investment protected year-round.",
-      icon: <Wrench className="w-8 h-8 text-primary" />
+      title: "Testimi & Dorëzimi",
+      description: "Sigurohemi që gjithçka funksionon në mënyrë perfekte dhe dorëzojmë projektin e përfunduar.",
+      icon: <CheckCircle2 className="w-10 h-10" />
     }
   ];
 
-  // Icon array
   const icons = [
-    <MessageCircle key="1" className="w-8 h-8 text-primary" />,
-    <Palette key="2" className="w-8 h-8 text-primary" />,
-    <Hammer key="3" className="w-8 h-8 text-primary" />,
-    <Wrench key="4" className="w-8 h-8 text-primary" />
+    <MessageCircle key="1" className="w-10 h-10" />,
+    <Palette key="2" className="w-10 h-10" />,
+    <Hammer key="3" className="w-10 h-10" />,
+    <CheckCircle2 key="4" className="w-10 h-10" />
   ];
 
-  // Use city-specific steps if available, otherwise use defaults
   const steps = processContent?.steps
     ? processContent.steps.map((step, index) => ({
         number: `0${index + 1}`,
         title: step.title,
         description: step.description,
-        icon: icons[index] || <Hammer key={index} className="w-8 h-8 text-primary" />
+        icon: icons[index] || <Hammer key={index} className="w-10 h-10" />
       }))
     : defaultSteps;
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-7xl">
-        {/* Header - Server-rendered with animation */}
+    <section className="py-20 bg-secondary relative overflow-hidden">
+      {/* Decorative background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header */}
         <ScrollRevealUp>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4">
               {heading}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
               {subheading}
             </p>
           </div>
         </ScrollRevealUp>
 
         <div className="relative">
-          {/* Desktop connection line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-linear-to-r from-primary/20 via-primary to-primary/20 transform -translate-y-1/2" />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
+          {/* Connecting Line (Desktop) */}
+          <div className="hidden lg:block absolute top-8 left-0 w-full h-0.5 bg-white/10">
+            <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-50" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <ScrollRevealScale
                 key={step.number}
                 delay={0.1 * index}
-                className="relative"
+                className="relative group"
               >
-                {/* Step card */}
-                <div className="bg-card rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 relative z-10 border border-border/50 hover:border-primary/20 group">
-                  {/* Step number */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-4xl font-bold text-primary">
-                      {step.number}
-                    </span>
-                    <div className="w-12 h-12 bg-linear-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center group-hover:from-primary/30 group-hover:to-primary/20 transition-all duration-300">
-                      {step.icon}
+                <div className="flex flex-col items-center text-center">
+                  {/* Icon Circle */}
+                  <div className="relative mb-6">
+                    <div className="w-16 h-16 rounded-full bg-secondary border-2 border-white/10 group-hover:border-primary transition-all duration-500 flex items-center justify-center relative z-10 shadow-xl group-hover:shadow-primary/20 group-hover:-translate-y-1">
+                      <div className="text-gray-400 group-hover:text-primary transition-colors duration-500 scale-75">
+                        {step.icon}
+                      </div>
                     </div>
                   </div>
                   
-                  {/* Step content */}
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                  {/* Content */}
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors duration-300">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-sm text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
                     {step.description}
                   </p>
                 </div>
-
-                {/* Arrow connector for mobile */}
-                {index < steps.length - 1 && (
-                  <div className="lg:hidden flex justify-center mt-6 mb-6">
-                    <ArrowRight className="w-6 h-6 text-primary/40" />
-                  </div>
-                )}
               </ScrollRevealScale>
             ))}
           </div>
         </div>
-
-        {/* Bottom CTA - Server-rendered with animation */}
-        <ScrollRevealUp delay={0.4}>
-          <div className="text-center mt-16">
-            <p className="text-muted-foreground mb-6">
-              {city 
-                ? `Ready to start your project in ${city}? Our local team is standing by to help.`
-                : `Ready to start your project journey?`
-              }
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
-                <Link href="/contact">
-                  Start Your Project
-                </Link>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="/portfolio">
-                  View Our Work
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </ScrollRevealUp>
       </div>
     </section>
   );

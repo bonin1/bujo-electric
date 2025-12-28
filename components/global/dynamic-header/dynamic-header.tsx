@@ -22,7 +22,6 @@ interface DynamicHeaderProps {
   subtitle?: string;
   description?: string;
   image?: string;
-  badges?: string[];
   cta?: {
     primary?: CTAButton;
     secondary?: CTAButton;
@@ -36,7 +35,6 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({
   subtitle,
   description,
   image = "/assets/config/placeholder-image.png",
-  badges,
   cta,
   breadcrumbs,
   className = ""
@@ -61,7 +59,7 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({
       {/* Content */}
       <div className="relative z-10 min-h-[60vh] flex items-center">
         <div className="max-w-7xl mx-auto px-4 py-16 w-full">
-          <div className="text-center max-w-4xl mx-auto">
+          <div className="text-center max-w-7xl mx-auto">
             
            {/* Subtitle */}
             {subtitle && (
@@ -130,7 +128,7 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({
                 <nav className="flex items-center justify-center gap-2 text-sm mb-6" aria-label="Breadcrumb">
                   <Link href="/" className="flex items-center gap-1 text-text-light/70 hover:text-text-light transition-colors">
                     <Home className="w-4 h-4" />
-                    <span>Home</span>
+                    <span>Ballina</span>
                   </Link>
                   {breadcrumbs.map((crumb, index) => (
                     <React.Fragment key={crumb.href}>
@@ -145,21 +143,6 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({
                     </React.Fragment>
                   ))}
                 </nav>
-              </ScrollRevealUp>
-            )}
-            {/* Badges */}
-            {badges && badges.length > 0 && (
-              <ScrollRevealUp delay={0.5}>
-                <div className="flex flex-wrap gap-3 justify-center mb-6">
-                  {badges.map((badge, index) => (
-                    <span 
-                      key={index}
-                      className="px-4 py-2 bg-white/10 backdrop-blur-sm text-text-light rounded-full text-sm font-medium border border-white/20"
-                    >
-                      {badge}
-                    </span>
-                  ))}
-                </div>
               </ScrollRevealUp>
             )}
           </div>

@@ -155,7 +155,7 @@ const BlogCategoryIndex: React.FC<BlogCategoryIndexProps> = ({
     <div className="min-h-screen bg-background">
       {/* Back Navigation */}
       <div className="bg-secondary border-b border-border">
-        <div className="container mx-auto px-4 py-4">
+        <div className="max-w-7xl mx-auto px-4 py-4">
           <Link href="/blog" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
@@ -163,7 +163,7 @@ const BlogCategoryIndex: React.FC<BlogCategoryIndexProps> = ({
         </div>
       </div>
 
-      <div className="container mx-auto px-4 max-w-7xl py-8">
+      <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
           <div className="flex-1">

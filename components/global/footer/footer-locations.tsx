@@ -91,7 +91,7 @@ const defaultSocialLinks = Object.entries(ACTIVE_SOCIAL_MEDIA)
 export const FooterLocations = ({
   logo = {
     url: "/",
-    src: "/assets/config/logo.png",
+    src: "/assets/config/logo.webp",
     alt: businessName,
     title: businessName,
   },

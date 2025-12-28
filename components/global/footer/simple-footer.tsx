@@ -84,11 +84,11 @@ const defaultSocialLinks = Object.entries(ACTIVE_SOCIAL_MEDIA)
 
 const defaultSections = [
   {
-    title: "Services",
+    title: "Shërbimet",
     links: getServicesForNavigation(),
   },
   {
-    title: "Company",
+    title: "Kompania",
     links: getCompanyLinks(),
   },
 ];
@@ -96,7 +96,7 @@ const defaultSections = [
 const Footer: React.FC<FooterProps> = ({
   logo = {
     url: "/",
-    src: "/assets/config/logo.png",
+    src: "/assets/config/logo.webp",
     alt: businessName,
     title: businessName,
   },
@@ -157,7 +157,7 @@ const Footer: React.FC<FooterProps> = ({
               ))}
             </ul>
             <div className="flex flex-col gap-2 mt-4 text-gray-400">
-              <h3 className="font-bold text-gray-200">Contact Us</h3>
+              <h3 className="font-bold text-gray-200">Na Kontaktoni</h3>
               <Link
                 className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
                 aria-label={`Call ${businessNameFinal}`}
@@ -232,16 +232,16 @@ const Footer: React.FC<FooterProps> = ({
               <div className="flex items-center gap-4">
                 <Link 
                   className="hover:text-secondary transition-colors" 
-                  href="/terms/"
+                  href="/kushtet-e-perdorimit/"
                 >
-                  Terms and Conditions
+                  Kushtet e Përdorimit
                 </Link>
                 <span className="text-background/40 hidden sm:inline">•</span>
                 <Link 
                   className="hover:text-primary transition-colors" 
-                  href="/privacy/"
+                  href="/politika-e-privatesise/"
                 >
-                  Privacy Policy
+                  Politika e Privatësisë
                 </Link>
               </div>
             </div>

@@ -5,12 +5,12 @@ import PrivacyPage from '@/templates/legal/privacy-page';
 
 // Generate metadata using the hybrid approach
 export async function generateMetadata(): Promise<Metadata> {
-  return generateMetadataFromConfig('/privacy-policy/');
+  return generateMetadataFromConfig('/politika-e-privatesise/');
 }
 
 const page = () => {
   // Generate structured data for privacy policy page
-  const structuredData = generateStructuredData('/privacy-policy/');
+  const structuredData = generateStructuredData('/politika-e-privatesise/');
 
   return (
     <>

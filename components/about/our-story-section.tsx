@@ -15,20 +15,19 @@ export default function OurStorySection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Historia Jonë</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Example Company was founded with a simple mission: to provide reliable, professional 
-              services that enhance our clients&apos; properties and increase their value.
+              Bujo Electric u themelua me një mision të thjeshtë: të ofrojë shërbime elektrike të besueshme dhe profesionale 
+              që rrisin sigurinë dhe vlerën e pronave të klientëve tanë.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              With over 15 years of experience, we&apos;ve built our reputation on quality 
-              craftsmanship, expert installations, and exceptional customer service. Our team of certified 
-              professionals brings expertise in installation, repair, maintenance, 
-              and comprehensive support services.
+              Me përvojë të gjatë në tregun e Kosovës, ne kemi ndërtuar reputacionin tonë mbi cilësinë e punës, 
+              instalimet e sakta dhe shërbimin e jashtëzakonshëm ndaj klientit. Ekipi ynë i profesionistëve të certifikuar 
+              sjell ekspertizë në instalime, riparime, mirëmbajtje dhe mbështetje teknike gjithëpërfshirëse.
             </p>
             <p className="text-lg text-gray-700">
-              We&apos;re proud to serve Example City, North Town, South Town, East Village, and surrounding communities, 
-              providing solutions that are reliable, secure, and built to last.
+              Jemi krenarë që shërbejmë në Prishtinë, Prizren, Ferizaj dhe në të gjithë Kosovën, 
+              duke ofruar zgjidhje që janë të sigurta, efikase dhe të ndërtuara për të zgjatur.
             </p>
           </motion.div>
           
@@ -41,7 +40,7 @@ export default function OurStorySection() {
           >
             <Image
               src="/assets/config/placeholder-image.png"
-              alt="Example Company team at work"
+              alt="Ekipi i Bujo Electric duke punuar"
               fill
               className="object-cover w-auto"
               sizes="(max-width: 768px) 100vw, 50vw"

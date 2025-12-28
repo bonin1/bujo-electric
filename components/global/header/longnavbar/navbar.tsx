@@ -97,7 +97,7 @@ export function LongNavbar() {
             <div className="mx-auto flex max-w-8xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
                 <Link href="/" className="flex items-center space-x-2" aria-label={`${BUSINESS_INFO.name} Home`}>
                     <Image
-                        src="/assets/config/logo.png"
+                        src="/assets/config/logo.webp"
                         alt={`${BUSINESS_INFO.name} - Professional Services`}
                         width={160}
                         height={64}
@@ -114,14 +114,14 @@ export function LongNavbar() {
                 
                 <div className="hidden xl:flex xl:items-center xl:gap-3">
                     <Button asChild variant="outline" size="sm">
-                        <Link href={`tel:${getPhoneTel()}`} className="flex items-center gap-2" aria-label={`Call us at ${getPhoneDisplay()}`}>
+                        <Link href={`tel:${getPhoneTel()}`} className="flex items-center gap-2" aria-label={`Telefononi në ${getPhoneDisplay()}`}>
                             <Phone className="h-4 w-4" />
-                            Call Now!
+                            Telefono Tani!
                         </Link>
                     </Button>
                     <Button asChild variant="outline" size="sm">
-                        <Link href="/contact" aria-label={`Get a free consultation for ${BUSINESS_INFO.primaryKeyword} services`}>
-                            Free Consultation
+                        <Link href="/kontakti" aria-label={`Merrni një konsultë falas për shërbimet ${BUSINESS_INFO.primaryKeyword}`}>
+                            Konsultë Falas
                         </Link>
                     </Button>
                     
@@ -162,7 +162,7 @@ export function LongNavbar() {
                     <div className="flex items-center justify-between p-4 border-b border-white/20 bg-black/95 backdrop-blur-sm">
                         <Link href="/" onClick={closeMobileMenu} className="flex items-center space-x-2">
                             <Image
-                                src="/assets/config/logo.png"
+                                src="/assets/config/logo.webp"
                                 alt={`${BUSINESS_INFO.name} - Professional Services`}
                                 width={160}
                                 height={64}
@@ -188,11 +188,11 @@ export function LongNavbar() {
                         <nav className="p-4 space-y-2" role="navigation" aria-label="Mobile navigation menu">
                             {/* Service Areas - Direct Link */}
                             <Link 
-                                href="/service-areas/" 
+                                href="/zonat-e-sherbimit/" 
                                 className="flex items-center w-full text-left text-sm font-semibold text-white uppercase tracking-wide py-4 px-2 rounded-lg hover:bg-white/5 transition-colors"
                                 onClick={closeMobileMenu}
                             >
-                                Service Areas
+                                Zonat e Shërbimit
                             </Link>
 
                             {/* Services Section */}
@@ -204,7 +204,7 @@ export function LongNavbar() {
                                     aria-controls="services-section"
                                     aria-label="Toggle services section"
                                 >
-                                    <span>Services</span>
+                                    <span>Shërbimet</span>
                                     <motion.div
                                         animate={{ rotate: expandedSections.includes('services') ? 90 : 0 }}
                                         transition={{ duration: 0.2, ease: 'easeOut' }}
@@ -232,11 +232,11 @@ export function LongNavbar() {
                                                     animate="open"
                                                 >
                                                     <Link 
-                                                        href="/services/" 
+                                                        href="/sherbime-elektrike/" 
                                                         className="block text-sm font-medium text-white/90 hover:text-primary transition-colors duration-200 py-3 px-3 rounded-lg hover:bg-white/5"
                                                         onClick={closeMobileMenu}
                                                     >
-                                                        All Services
+                                                        Të gjitha Shërbimet
                                                     </Link>
                                                 </motion.div>
                                                 {coreServices.map((service, index) => (
@@ -271,7 +271,7 @@ export function LongNavbar() {
                                     aria-controls="about-section"
                                     aria-label="Toggle about section"
                                 >
-                                    <span>About Us</span>
+                                    <span>Rreth Nesh</span>
                                     <motion.div
                                         animate={{ rotate: expandedSections.includes('about') ? 90 : 0 }}
                                         transition={{ duration: 0.2, ease: 'easeOut' }}
@@ -299,11 +299,11 @@ export function LongNavbar() {
                                                     animate="open"
                                                 >
                                                     <Link 
-                                                        href="/about/" 
+                                                        href="/rreth-nesh/" 
                                                         className="block text-sm font-medium text-white/90 hover:text-primary transition-colors duration-200 py-3 px-3 rounded-lg hover:bg-white/5"
                                                         onClick={closeMobileMenu}
                                                     >
-                                                        About Us
+                                                        Rreth Nesh
                                                     </Link>
                                                 </motion.div>
                                                 <motion.div
@@ -317,7 +317,7 @@ export function LongNavbar() {
                                                         className="block text-sm font-medium text-white/90 hover:text-primary transition-colors duration-200 py-3 px-3 rounded-lg hover:bg-white/5"
                                                         onClick={closeMobileMenu}
                                                     >
-                                                        Blogs
+                                                        Blogu
                                                     </Link>
                                                 </motion.div>
                                                 <motion.div
@@ -327,11 +327,11 @@ export function LongNavbar() {
                                                     animate="open"
                                                 >
                                                     <Link 
-                                                        href="/faq/" 
+                                                        href="/pyetje-te-shpeshta/" 
                                                         className="block text-sm font-medium text-white/90 hover:text-primary transition-colors duration-200 py-3 px-3 rounded-lg hover:bg-white/5"
                                                         onClick={closeMobileMenu}
                                                     >
-                                                        FAQ
+                                                        Pyetje të Shpeshta
                                                     </Link>
                                                 </motion.div>
                                             </div>
@@ -343,18 +343,18 @@ export function LongNavbar() {
                             {/* Direct Links */}
                             <div className="space-y-1 pt-4 border-t border-white/20 mt-4">
                                 <Link 
-                                    href="/portfolio/" 
+                                    href="/galeria-e-projekteve/" 
                                     className="block text-sm font-medium text-white/90 hover:text-primary transition-colors duration-200 py-3 px-2 rounded-lg hover:bg-white/5"
                                     onClick={closeMobileMenu}
                                 >
-                                    Portfolio
+                                    Galeria
                                 </Link>
                                 <Link 
-                                    href="/contact/" 
+                                    href="/kontakti/" 
                                     className="block text-sm font-medium text-white/90 hover:text-primary transition-colors duration-200 py-3 px-2 rounded-lg hover:bg-white/5"
                                     onClick={closeMobileMenu}
                                 >
-                                    Contact Us
+                                    Kontakti
                                 </Link>
                             </div>
                         </nav>
@@ -363,14 +363,14 @@ export function LongNavbar() {
                     {/* Action Buttons - Fixed at Bottom */}
                     <div className="p-4 border-t border-white/20 bg-black/95 backdrop-blur-sm space-y-3">
                         <Button asChild variant="outline" size="sm" className="w-full font-medium border-white/20 text-[#2E2E2E] hover:bg-white/10 hover:border-white/30">
-                            <Link href={`tel:${getPhoneTel()}`} className="flex items-center justify-center gap-2" onClick={closeMobileMenu} aria-label={`Call us at ${getPhoneDisplay()}`}>
+                            <Link href={`tel:${getPhoneTel()}`} className="flex items-center justify-center gap-2" onClick={closeMobileMenu} aria-label={`Telefononi në ${getPhoneDisplay()}`}>
                                 <Phone className="h-4 w-4" />
-                                Call Now!
+                                Telefono Tani!
                             </Link>
                         </Button>
                         <Button asChild variant="outline" size="sm" className="w-full font-medium border-white/20 text-[#2E2E2E] hover:bg-white/10 hover:border-white/30">
-                            <Link href="/contact/" onClick={closeMobileMenu} aria-label="Request free consultation">
-                                Free Consultation
+                            <Link href="/kontakti/" onClick={closeMobileMenu} aria-label="Kërkoni konsultë falas">
+                                Konsultë Falas
                             </Link>
                         </Button>
                         

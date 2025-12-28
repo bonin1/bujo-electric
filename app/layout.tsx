@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import "./globals.css";
-import {LongNavbar} from "@/components/global/header/longnavbar/navbar";
+import { ModernNavbar } from "@/components/global/header/modern-navbar/navbar";
 import {FooterMaps} from "@/components/global/footer/footer-maps";
 import { siteConfig } from '@/lib/seo-config';
+
+const font = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
 // Simple layout metadata - let pages handle their own SEO
 export const metadata: Metadata = {
@@ -38,8 +41,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen overflow-x-hidden">
-        <LongNavbar />
+      <body className={`${font.className} flex flex-col min-h-screen overflow-x-hidden`}>
+        <ModernNavbar />
         <main className="grow">
           {children}
         </main>

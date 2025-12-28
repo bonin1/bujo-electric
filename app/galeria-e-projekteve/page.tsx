@@ -1,16 +1,16 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { generateMetadataFromConfig, generateStructuredData } from '@/lib/seo-metadata';
-import TermsPage from '@/templates/legal/terms-page';
+import { generateMetadataFromConfig, generateDynamicStructuredData } from '@/lib/seo-metadata';
+import PortfolioPage from '@/templates/portfolio/portfolio-page';
 
 // Generate metadata using the hybrid approach
 export async function generateMetadata(): Promise<Metadata> {
-  return generateMetadataFromConfig('/terms/');
+  return generateMetadataFromConfig('/galeria-e-projekteve/');
 }
 
 const page = () => {
-  // Generate structured data for terms page
-  const structuredData = generateStructuredData('/terms/');
+  // Generate structured data for portfolio page with custom portfolio schema
+  const structuredData = generateDynamicStructuredData('/galeria-e-projekteve/');
 
   return (
     <>
@@ -23,7 +23,7 @@ const page = () => {
         />
       ))}
       
-      <TermsPage />
+      <PortfolioPage />
     </>
   );
 };

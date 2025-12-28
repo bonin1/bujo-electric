@@ -1,7 +1,7 @@
+'use client';
+
 import React from 'react';
 import { Award, Shield, Users, Clock, MapPin, Zap, Heart, Star } from 'lucide-react';
-import { BUSINESS_INFO } from '@/lib/business-config';
-import { getPrimaryCity } from '@/lib/city-utils';
 import { ScrollRevealUp, ScrollRevealScale } from '@/components/ui/animations/scroll-reveal';
 
 interface WhatSetsUsApartSectionProps {
@@ -21,91 +21,87 @@ interface WhatSetsUsApartSectionProps {
 }
 
 const WhatSetsUsApartSection = ({ city, cityData }: WhatSetsUsApartSectionProps) => {
-  // Get city-specific content or fallback to defaults
   const whySetsApartContent = cityData?.sectionContent?.whySetsApart;
-  const primaryCity = getPrimaryCity();
-  const heading = whySetsApartContent?.heading || `What Sets ${BUSINESS_INFO.name} Apart${city ? ` in ${city}` : ''}`;
-  const subheading = whySetsApartContent?.subheading || `Since our establishment in 2010, we have delivered exceptional ${BUSINESS_INFO.primaryKeyword.toLowerCase()} that enhance property value and exceed expectations. Our certified professionals combine technical expertise with premium materials to ensure superior results across ${primaryCity.state}.`;
+  const heading = whySetsApartContent?.heading || `Çfarë e bën Bujo Electric të Veçantë${city ? ` në ${city}` : ''}`;
+  const subheading = whySetsApartContent?.subheading || `Që nga viti 2010, ne kemi ofruar shërbime elektrike të jashtëzakonshme që rrisin vlerën e pronës dhe tejkalojnë pritshmëritë. Profesionistët tanë të certifikuar kombinojnë ekspertizën teknike me materiale cilësore për të siguruar rezultate superiore në të gjithë Kosovën.`;
 
-  // Icon options for features
   const iconOptions = [
-    <Award key="icon-0" className="w-8 h-8 text-primary" />,
-    <Shield key="icon-1" className="w-8 h-8 text-primary" />,
-    <Users key="icon-2" className="w-8 h-8 text-primary" />,
-    <Clock key="icon-3" className="w-8 h-8 text-primary" />,
-    <MapPin key="icon-4" className="w-8 h-8 text-primary" />,
-    <Zap key="icon-5" className="w-8 h-8 text-primary" />,
-    <Heart key="icon-6" className="w-8 h-8 text-primary" />,
-    <Star key="icon-7" className="w-8 h-8 text-primary" />
+    <Award key="icon-0" className="w-8 h-8" />,
+    <Shield key="icon-1" className="w-8 h-8" />,
+    <Users key="icon-2" className="w-8 h-8" />,
+    <Clock key="icon-3" className="w-8 h-8" />,
+    <MapPin key="icon-4" className="w-8 h-8" />,
+    <Zap key="icon-5" className="w-8 h-8" />,
+    <Heart key="icon-6" className="w-8 h-8" />,
+    <Star key="icon-7" className="w-8 h-8" />
   ];
 
-  // Default features if no city-specific data
   const defaultFeatures = [
     {
-      title: "Award-Winning Excellence",
-      description: `Recognized for outstanding craftsmanship and customer satisfaction across ${primaryCity.state}.`
+      title: "Cilësi e Certifikuar",
+      description: `Të njohur për mjeshtëri të jashtëzakonshme dhe kënaqësi të klientit në të gjithë vendin.`
     },
     {
-      title: "Quality Guarantee",
-      description: "Every project comes with our comprehensive warranty and ongoing support."
+      title: "Garanci e Plotë",
+      description: "Çdo projekt vjen me garancinë tonë gjithëpërfshirëse dhe mbështetje të vazhdueshme."
     },
     {
-      title: "Expert Team",
-      description: "Our certified professionals are trained in the latest techniques and use premium materials."
+      title: "Ekip Ekspertësh",
+      description: "Profesionistët tanë janë të trajnuar me teknikat më të fundit dhe përdorin materiale premium."
     },
     {
-      title: "Timely Delivery",
-      description: "We respect your time and schedule with efficient project management."
+      title: "Dorëzim në Kohë",
+      description: "Ne respektojmë kohën dhe orarin tuaj me një menaxhim efikas të projektit."
     }
   ];
 
-  // Use city-specific features or defaults
   const featureData = whySetsApartContent?.features || defaultFeatures;
   
-  // Combine feature data with icons
   const features = featureData.map((feature, index) => ({
-    icon: iconOptions[index] || <Award className="w-8 h-8 text-primary" />,
+    icon: iconOptions[index] || <Award className="w-8 h-8" />,
     title: feature.title,
     description: feature.description
   }))
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:px-8">
-      <div className="container mx-auto max-w-7xl relative z-10 px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header - Server-rendered with animation */}
+    <section className="py-16 bg-white relative overflow-hidden">
+      {/* Subtle background decoration */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-50/50 -skew-x-12 transform translate-x-1/3 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header */}
         <ScrollRevealUp>
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6">
               {heading}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               {subheading}
             </p>
           </div>
         </ScrollRevealUp>
 
-        <div className="h-[100%] grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <ScrollRevealScale
               key={feature.title}
               delay={0.1 * index}
             >
-              <div className="bg-card items-center justify-center flex flex-col rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group text-center border border-border"
-              >
-              {/* Icon */}
-              <div className="mb-1 group-hover:scale-110 transition-transform duration-300 flex justify-center">
-                <div className="w-20 h-auto bg-linear-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center border-2 border-primary/20 group-hover:border-primary/40 transition-colors">
-                  {feature.icon}
+              <div className="h-full p-6 rounded-3xl bg-white border border-gray-100 flex flex-col items-center text-center overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                
+                {/* Icon */}
+                <div className="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center text-primary mb-4">
+                  {React.cloneElement(feature.icon as React.ReactElement<{ className?: string }>, { className: "w-7 h-7" })}
                 </div>
-              </div>
-              
-              {/* Content */}
-              <h3 className="text-xl font-semibold text-foreground mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {feature.description}
-              </p>
+                
+                {/* Content */}
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
             </ScrollRevealScale>
           ))}

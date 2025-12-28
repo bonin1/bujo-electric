@@ -98,7 +98,7 @@ Remember on localhost the url will be http://localhost:3000 but in production it
 // Import from business config for dynamic values
 export const siteConfig: SiteConfig = {
   name: BUSINESS_INFO.name,
-  url: BUSINESS_INFO.websiteUrl || (process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://example.com'),
+  url: BUSINESS_INFO.websiteUrl || (process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://bujoelectric.com'),
   description: `Expert ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${CONTACT.city}, ${CONTACT.state}. Quality solutions and customer satisfaction guaranteed. ${BUSINESS_INFO.ctaText}`,
   logo: BUSINESS_INFO.logoUrl || "/assets/config/logo.png",
   favicon: "/assets/config/favicon.ico",
@@ -122,7 +122,7 @@ export const siteConfig: SiteConfig = {
     city: CONTACT.city,
     state: CONTACT.state,
     zipCode: CONTACT.zip,
-    country: "USA"
+    country: "Kosovë"
   },
   businessHours: BUSINESS_HOURS_SCHEMA,
   services: CORE_SERVICE_NAMES,
@@ -134,268 +134,268 @@ export const siteConfig: SiteConfig = {
 
 export const seoConfigs: Record<string, SEOConfig> = {
   "/": {
-    title: `${BUSINESS_INFO.name} - Premium ${BUSINESS_INFO.primaryKeyword} | ${CONTACT.city}, ${CONTACT.state}`,
-    description: `Transform your property with premium ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${CONTACT.city}, ${CONTACT.state}. Certified professionals, industry-leading warranties, A+ BBB rating. Get your free quote today!`,
-    keywords: [BUSINESS_INFO.primaryKeyword.toLowerCase(), `${CONTACT.city} ${CONTACT.state}`, "certified professionals", "premium services", "quality solutions"],
+    title: `${BUSINESS_INFO.name} - Ekspertët e Energjisë dhe Sigurisë Elektrike në Kosovë`,
+    description: `Shërbime elektrike profesionale 24/7 në Prishtinë dhe mbarë Kosovën. Instalime, riparime dhe mirëmbajtje elektrike me standarde evropiane.`,
+    keywords: ["elektricist", "sherbime elektrike", "prishtine", "kosove", "instalime elektrike", "riparime elektrike", "bujo electric"],
     canonical: `${siteConfig.url}/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `${BUSINESS_INFO.name} - Premium ${BUSINESS_INFO.primaryKeyword}`,
-    linkedinDescription: `Transform your property with certified professionals. Industry-leading warranties, A+ BBB rating, and exceptional service in ${CONTACT.city}.`,
+    linkedinTitle: `${BUSINESS_INFO.name} - Ekspertët e Energjisë Elektrike`,
+    linkedinDescription: `Shërbime elektrike profesionale me standarde evropiane në Prishtinë dhe mbarë Kosovën.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: `${BUSINESS_INFO.name} - Premium Service & Exceptional Value`,
-    socialDescription: `Certified professionals delivering superior ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${CONTACT.city}. Get your free quote today!`,
+    socialTitle: `${BUSINESS_INFO.name} - Shërbime Elektrike Profesionale`,
+    socialDescription: `Instalime, riparime dhe mirëmbajtje elektrike 24/7. Na kontaktoni për një konsultim falas!`,
     socialImage: "/assets/config/og.png",
     articleSection: BUSINESS_INFO.primaryKeyword,
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url }
+      { name: "Ballina", url: siteConfig.url }
     ]
   },
 
-  "/about/": {
-    title: `About Us - ${BUSINESS_INFO.name} in ${CONTACT.city}`,
-    description: `Learn about ${BUSINESS_INFO.name}, your trusted partner for ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${CONTACT.city}. Established in 2010 with certified professionals and proven results.`,
-    keywords: ["about us", BUSINESS_INFO.name, CONTACT.city, BUSINESS_INFO.primaryKeyword.toLowerCase(), "certified professionals"],
-    canonical: `${siteConfig.url}/about/`,
+  "/rreth-nesh/": {
+    title: `Rreth Nesh - ${BUSINESS_INFO.name} | Ekspertët Elektrikë në Kosovë`,
+    description: `Mësoni më shumë rreth ${BUSINESS_INFO.name}, partneri juaj i besuar për shërbime elektrike në Kosovë. Profesionistë të certifikuar me përvojë të gjatë.`,
+    keywords: ["rreth nesh", BUSINESS_INFO.name, CONTACT.city, "elektricist i certifikuar", "pervoja elektrike"],
+    canonical: `${siteConfig.url}/rreth-nesh/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `About ${BUSINESS_INFO.name} - Your Trusted Business Partner`,
-    linkedinDescription: `Discover our story, values, and commitment to excellence in ${BUSINESS_INFO.primaryKeyword.toLowerCase()}.`,
+    linkedinTitle: `Rreth ${BUSINESS_INFO.name} - Historia dhe Misioni ynë`,
+    linkedinDescription: `Zbuloni historinë tonë, vlerat dhe përkushtimin tonë ndaj përsosmërisë në shërbimet elektrike.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: `Meet the Team Behind ${BUSINESS_INFO.name}`,
-    socialDescription: `Established in 2010 with proven results in ${BUSINESS_INFO.primaryKeyword.toLowerCase()}.`,
+    socialTitle: `Njihuni me ekipin e ${BUSINESS_INFO.name}`,
+    socialDescription: `Profesionistë të përkushtuar për sigurinë tuaj elektrike që nga fillimi ynë.`,
     socialImage: "/assets/config/og.png",
-    articleSection: "About Company",
+    articleSection: "Rreth Kompanisë",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "About", url: `${siteConfig.url}/about/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "Rreth Nesh", url: `${siteConfig.url}/rreth-nesh/` }
     ]
   },
 
-  "/contact/": {
-    title: `Contact Us - ${BUSINESS_INFO.name} in ${CONTACT.city}`,
-    description: `Get in touch with ${BUSINESS_INFO.name} for ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${CONTACT.city}. Free consultation and expert advice available.`,
-    keywords: ["contact us", BUSINESS_INFO.name, CONTACT.city, "free consultation", BUSINESS_INFO.primaryKeyword.toLowerCase()],
-    canonical: `${siteConfig.url}/contact/`,
+  "/kontakti/": {
+    title: `Kontakti - ${BUSINESS_INFO.name} | Na Kontaktoni 24/7`,
+    description: `Na kontaktoni në ${BUSINESS_INFO.name} për çdo nevojë elektrike në Prishtinë dhe Kosovë. Konsultim falas dhe shërbim i shpejtë 24/7.`,
+    keywords: ["kontakti", BUSINESS_INFO.name, CONTACT.city, "konsultim falas", "elektricist 24/7"],
+    canonical: `${siteConfig.url}/kontakti/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `Contact ${BUSINESS_INFO.name} - Get Expert ${BUSINESS_INFO.primaryKeyword}`,
-    linkedinDescription: `Ready to transform your property? Get in touch for a free consultation with our certified professionals.`,
+    linkedinTitle: `Kontaktoni ${BUSINESS_INFO.name} - Ekspertët Elektrikë`,
+    linkedinDescription: `Gati për të siguruar rrjetin tuaj elektrik? Na kontaktoni për një konsultim falas me profesionistët tanë.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: "Get Your Free Consultation Today",
-    socialDescription: `Expert ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${CONTACT.city}. Contact us for immediate assistance.`,
+    socialTitle: "Merrni Konsultimin Tuaj Falas Sot",
+    socialDescription: `Shërbime elektrike profesionale në Kosovë. Na kontaktoni për asistencë të menjëhershme.`,
     socialImage: "/assets/config/og.png",
-    articleSection: "Contact Information",
+    articleSection: "Informacioni i Kontaktit",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "Contact", url: `${siteConfig.url}/contact/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "Kontakti", url: `${siteConfig.url}/kontakti/` }
     ]
   },
 
-  "/service-areas/": {
-    title: `Service Areas - ${BUSINESS_INFO.name} Serving ${CONTACT.state}`,
-    description: `${BUSINESS_INFO.name} proudly serves clients across ${getLocationsString(5)} with comprehensive ${BUSINESS_INFO.primaryKeyword.toLowerCase()}. Expert craftsmanship and local knowledge.`,
-    keywords: ["service areas", "locations", BUSINESS_INFO.name, BUSINESS_INFO.primaryKeyword.toLowerCase(), CONTACT.state],
-    canonical: `${siteConfig.url}/service-areas/`,
+  "/zonat-e-sherbimit/": {
+    title: `Zonat e Shërbimit - ${BUSINESS_INFO.name} Shërben në mbarë Kosovën`,
+    description: `${BUSINESS_INFO.name} shërben me krenari klientët në ${getLocationsString(5)} dhe rrethinë. Ekspertizë lokale dhe shërbim cilësor.`,
+    keywords: ["zonat e sherbimit", "lokacionet", BUSINESS_INFO.name, "elektricist kosove", CONTACT.state],
+    canonical: `${siteConfig.url}/zonat-e-sherbimit/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `Service Areas - ${BUSINESS_INFO.name} Locations`,
-    linkedinDescription: `Serving multiple locations across ${CONTACT.state} with expert ${BUSINESS_INFO.primaryKeyword.toLowerCase()}. Local knowledge and proven results.`,
+    linkedinTitle: `Zonat e Shërbimit - Lokacionet e ${BUSINESS_INFO.name}`,
+    linkedinDescription: `Duke shërbyer në lokacione të shumta në mbarë Kosovën me shërbime elektrike profesionale.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: `Find ${BUSINESS_INFO.name} Near You`,
-    socialDescription: `${BUSINESS_INFO.primaryKeyword} across ${CONTACT.state}. Expert local knowledge.`,
+    socialTitle: `Gjeni ${BUSINESS_INFO.name} Pranë Jush`,
+    socialDescription: `Shërbime elektrike në mbarë Kosovën. Ekspertizë lokale e dëshmuar.`,
     socialImage: "/assets/config/og.png",
-    articleSection: "Service Areas",
+    articleSection: "Zonat e Shërbimit",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "Service Areas", url: `${siteConfig.url}/service-areas/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "Zonat e Shërbimit", url: `${siteConfig.url}/zonat-e-sherbimit/` }
     ]
   },
 
-  "/services/": {
-    title: `Our Services - ${BUSINESS_INFO.primaryKeyword}`,
-    description: `Comprehensive ${BUSINESS_INFO.primaryKeyword.toLowerCase()} including ${CORE_SERVICE_NAMES.slice(0, 3).join(', ')}. Expert service for residential and commercial properties. ${BUSINESS_INFO.ctaText}`,
-    keywords: [BUSINESS_INFO.primaryKeyword.toLowerCase(), ...CORE_SERVICE_NAMES.map(s => s.toLowerCase()), CONTACT.city, CONTACT.state],
-    canonical: `${siteConfig.url}/services/`,
+  "/sherbime-elektrike/": {
+    title: `Shërbimet Tona - ${BUSINESS_INFO.name} | Zgjidhje Elektrike Komplet`,
+    description: `Shërbime elektrike gjithëpërfshirëse duke përfshirë ${CORE_SERVICE_NAMES.slice(0, 3).join(', ')}. Ekspertizë për shtëpi dhe biznese. ${BUSINESS_INFO.ctaText}`,
+    keywords: ["sherbime elektrike", ...CORE_SERVICE_NAMES.map(s => s.toLowerCase()), CONTACT.city, CONTACT.state],
+    canonical: `${siteConfig.url}/sherbime-elektrike/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `Our Services - ${BUSINESS_INFO.primaryKeyword}`,
-    linkedinDescription: `Professional ${BUSINESS_INFO.primaryKeyword.toLowerCase()} with expert technicians and quality service.`,
+    linkedinTitle: `Shërbimet Tona - ${BUSINESS_INFO.name}`,
+    linkedinDescription: `Shërbime elektrike profesionale me teknikë ekspertë dhe cilësi të lartë.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: `Professional ${BUSINESS_INFO.primaryKeyword}`,
-    socialDescription: `Complete solutions for residential and commercial properties. Get expert service today!`,
+    socialTitle: `Shërbime Elektrike Profesionale`,
+    socialDescription: `Zgjidhje të plota për shtëpi dhe biznese. Merrni shërbimin e ekspertëve sot!`,
     socialImage: "/assets/config/og.png",
-    articleSection: "Services",
+    articleSection: "Shërbimet",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "Services", url: `${siteConfig.url}/services/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "Shërbimet", url: `${siteConfig.url}/sherbime-elektrike/` }
     ]
   },
 
   "/blog/": {
-    title: `Blog - Expert ${BUSINESS_INFO.primaryKeyword} Tips & Insights`,
-    description: `Read our latest articles on ${BUSINESS_INFO.primaryKeyword.toLowerCase()}, maintenance tips, installation guides, industry news, and expert advice. Stay informed with our comprehensive blog. ${BUSINESS_INFO.ctaText}`,
-    keywords: [BUSINESS_INFO.primaryKeyword.toLowerCase(), "maintenance tips", "installation guide", "industry news", "expert advice", "how-to guides"],
+    title: `Blogu - Këshilla dhe Informacione nga ${BUSINESS_INFO.name}`,
+    description: `Lexoni artikujt tanë të fundit mbi sigurinë elektrike, kursimin e energjisë, mirëmbajtjen dhe teknologjinë Smart Home. Qëndroni të informuar me ${BUSINESS_INFO.name}.`,
+    keywords: ["blog elektrik", "keshilla sigurie", "kursim energjie", "smart home kosove", "mirembajtje elektrike"],
     canonical: `${siteConfig.url}/blog/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `Blog - Expert ${BUSINESS_INFO.primaryKeyword} Tips & Industry Insights`,
-    linkedinDescription: `Stay informed with our comprehensive blog featuring ${BUSINESS_INFO.primaryKeyword.toLowerCase()} maintenance tips, installation guides, and expert advice.`,
+    linkedinTitle: `Blogu i ${BUSINESS_INFO.name} - Këshilla Ekspertësh`,
+    linkedinDescription: `Qëndroni të informuar me blogun tonë gjithëpërfshirës mbi mirëmbajtjen elektrike dhe kursimin e energjisë.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: "Expert Tips & Industry Insights",
-    socialDescription: `Read our latest articles on ${BUSINESS_INFO.primaryKeyword.toLowerCase()}, maintenance tips, and expert advice.`,
+    socialTitle: "Këshilla Ekspertësh dhe Informacione mbi Energjinë",
+    socialDescription: `Lexoni artikujt tanë të fundit mbi sigurinë elektrike dhe kursimin e energjisë.`,
     socialImage: "/assets/config/og.png",
-    articleSection: "Blog",
+    articleSection: "Blogu",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "Blog", url: `${siteConfig.url}/blog/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "Blogu", url: `${siteConfig.url}/blog/` }
     ]
   },
 
-  "/portfolio/": {
-    title: `Our Portfolio - Completed ${BUSINESS_INFO.primaryKeyword} Projects`,
-    description: `Explore our completed ${BUSINESS_INFO.primaryKeyword.toLowerCase()} projects across ${getLocationsString(4)}. See the quality and craftsmanship that sets us apart. Professional service with proven results.`,
-    keywords: [`${BUSINESS_INFO.primaryKeyword.toLowerCase()} portfolio`, "completed projects", "installation examples", ...LOCATIONS.slice(0, 4).map(l => `${l.city} ${l.state}`)],
-    canonical: `${siteConfig.url}/portfolio/`,
+  "/galeria-e-projekteve/": {
+    title: `Portofolio - Projektet e Përfunduara nga ${BUSINESS_INFO.name}`,
+    description: `Eksploroni projektet tona të përfunduara në mbarë Kosovën. Shihni cilësinë dhe profesionalizmin që na dallon në shërbimet elektrike.`,
+    keywords: ["portofolio elektrik", "projekte te perfunduara", "galeri punimesh", ...LOCATIONS.slice(0, 4).map(l => `${l.city} ${l.state}`)],
+    canonical: `${siteConfig.url}/galeria-e-projekteve/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `Our Portfolio - ${BUSINESS_INFO.primaryKeyword} Projects Gallery`,
-    linkedinDescription: `View our completed ${BUSINESS_INFO.primaryKeyword.toLowerCase()} projects showcasing professional service across ${CONTACT.state}.`,
+    linkedinTitle: `Portofolio - Galeria e Projekteve të ${BUSINESS_INFO.name}`,
+    linkedinDescription: `Shikoni projektet tona të përfunduara që tregojnë shërbimin tonë profesional në mbarë Kosovën.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: `Our Portfolio - Completed ${BUSINESS_INFO.primaryKeyword} Projects`,
-    socialDescription: `Explore our completed ${BUSINESS_INFO.primaryKeyword.toLowerCase()} projects across ${CONTACT.state}. Professional service with proven results.`,
+    socialTitle: `Portofolio - Projektet tona Elektrike`,
+    socialDescription: `Eksploroni punët tona në mbarë Kosovën. Shërbim profesional me rezultate të dëshmuara.`,
     socialImage: "/assets/config/og.png",
-    articleSection: "Portfolio",
+    articleSection: "Portofolio",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "Portfolio", url: `${siteConfig.url}/portfolio/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "Portofolio", url: `${siteConfig.url}/galeria-e-projekteve/` }
     ]
   },
-  "/faq/": {
-    title: `Frequently Asked Questions - ${BUSINESS_INFO.primaryKeyword} FAQ`,
-    description: `Find answers to common questions about our ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${getLocationsString(4)}. ${CORE_SERVICE_NAMES.slice(0, 3).join(', ')}, and more.`,
-    keywords: [`${BUSINESS_INFO.primaryKeyword.toLowerCase()} FAQ`, "frequently asked questions", ...CORE_SERVICE_NAMES.map(s => s.toLowerCase()), ...LOCATIONS.slice(0, 4).map(l => `${l.city} ${l.state}`)],
-    canonical: `${siteConfig.url}/faq/`,
+  "/pyetje-te-shpeshta/": {
+    title: `Pyetjet e Shpeshta (FAQ) - ${BUSINESS_INFO.name}`,
+    description: `Gjeni përgjigje për pyetjet e shpeshta rreth shërbimeve tona elektrike në Kosovë. Informacione mbi instalimet, riparimet dhe më shumë.`,
+    keywords: ["faq elektrik", "pyetje te shpeshta", ...CORE_SERVICE_NAMES.map(s => s.toLowerCase())],
+    canonical: `${siteConfig.url}/pyetje-te-shpeshta/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `Frequently Asked Questions - ${BUSINESS_INFO.primaryKeyword}`,
-    linkedinDescription: `Get answers to common questions about ${BUSINESS_INFO.primaryKeyword.toLowerCase()} across ${CONTACT.state}.`,
+    linkedinTitle: `Pyetjet e Shpeshta - ${BUSINESS_INFO.name}`,
+    linkedinDescription: `Merrni përgjigje për pyetjet e zakonshme rreth shërbimeve elektrike në mbarë Kosovën.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: `FAQ - ${BUSINESS_INFO.primaryKeyword} Questions & Answers`,
-    socialDescription: `Find answers to frequently asked questions about our ${BUSINESS_INFO.primaryKeyword.toLowerCase()} across ${CONTACT.state}.`,
+    socialTitle: `FAQ - Pyetje dhe Përgjigje mbi Energjinë Elektrike`,
+    socialDescription: `Gjeni përgjigje për pyetjet e shpeshta rreth shërbimeve tona në mbarë Kosovën.`,
     socialImage: "/assets/config/og.png",
     articleSection: "FAQ",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "FAQ", url: `${siteConfig.url}/faq/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "FAQ", url: `${siteConfig.url}/pyetje-te-shpeshta/` }
     ]
   },
-  "/terms/": {
-    title: `Terms & Conditions - ${BUSINESS_INFO.name}`,
-    description: `Read our terms and conditions for ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${getLocationsString(4)}. Service agreements, warranties, and customer responsibilities.`,
-    keywords: ["terms and conditions", "service agreement", `${BUSINESS_INFO.primaryKeyword.toLowerCase()} terms`, "warranty terms", ...LOCATIONS.slice(0, 4).map(l => `${l.city} ${l.state}`)],
-    canonical: `${siteConfig.url}/terms/`,
+  "/kushtet-e-perdorimit/": {
+    title: `Kushtet e Përdorimit - ${BUSINESS_INFO.name}`,
+    description: `Lexoni kushtet e përdorimit për shërbimet elektrike nga ${BUSINESS_INFO.name}. Marrëveshjet e shërbimit, garancitë dhe përgjegjësitë.`,
+    keywords: ["kushtet e perdorimit", "marreveshja e sherbimit", "garancia elektrike"],
+    canonical: `${siteConfig.url}/kushtet-e-perdorimit/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `Terms & Conditions - ${BUSINESS_INFO.name}`,
-    linkedinDescription: `Terms and conditions for our professional ${BUSINESS_INFO.primaryKeyword.toLowerCase()} across ${CONTACT.state}.`,
+    linkedinTitle: `Kushtet e Përdorimit - ${BUSINESS_INFO.name}`,
+    linkedinDescription: `Kushtet e përdorimit për shërbimet tona profesionale elektrike në mbarë Kosovën.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: `Terms & Conditions - ${BUSINESS_INFO.name}`,
-    socialDescription: `Service terms and conditions for our ${BUSINESS_INFO.primaryKeyword.toLowerCase()} across ${CONTACT.state}.`,
+    socialTitle: `Kushtet e Përdorimit - ${BUSINESS_INFO.name}`,
+    socialDescription: `Kushtet e shërbimit për punët tona elektrike në mbarë Kosovën.`,
     socialImage: "/assets/config/og.png",
-    articleSection: "Legal",
+    articleSection: "Ligjore",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "Terms & Conditions", url: `${siteConfig.url}/terms/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "Kushtet e Përdorimit", url: `${siteConfig.url}/kushtet-e-perdorimit/` }
     ]
   },
-  "/privacy-policy/": {
-    title: `Privacy Policy - ${BUSINESS_INFO.name}`,
-    description: `Our privacy policy explains how we collect, use, and protect your personal information when you use our ${BUSINESS_INFO.primaryKeyword.toLowerCase()} in ${getLocationsString(4)}.`,
-    keywords: ["privacy policy", "data protection", "personal information", "privacy rights", ...LOCATIONS.slice(0, 4).map(l => `${l.city} ${l.state}`)],
-    canonical: `${siteConfig.url}/privacy-policy/`,
+  "/politika-e-privatesise/": {
+    title: `Politika e Privatësisë - ${BUSINESS_INFO.name}`,
+    description: `Politika jonë e privatësisë shpjegon se si mbledhim, përdorim dhe mbrojmë informacionin tuaj personal kur përdorni shërbimet tona.`,
+    keywords: ["politika e privatësisë", "mbrojtja e te dhenave", "privatesia"],
+    canonical: `${siteConfig.url}/politika-e-privatesise/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
     twitterCard: "summary_large_image",
-    language: "en-US",
-    geoRegion: `US-${CONTACT.state}`,
+    language: "sq-AL",
+    geoRegion: `AL`,
     geoPosition: `${GOOGLE_MAPS.latitude};${GOOGLE_MAPS.longitude}`,
     geoPlacename: `${CONTACT.city}, ${CONTACT.state}`,
-    linkedinTitle: `Privacy Policy - ${BUSINESS_INFO.name}`,
-    linkedinDescription: `Learn how we protect your privacy and personal information when using our ${BUSINESS_INFO.primaryKeyword.toLowerCase()}.`,
+    linkedinTitle: `Politika e Privatësisë - ${BUSINESS_INFO.name}`,
+    linkedinDescription: `Mësoni se si e mbrojmë privatësinë tuaj dhe informacionin tuaj personal.`,
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: "Privacy Policy - Data Protection & Privacy Rights",
-    socialDescription: "Our commitment to protecting your privacy and personal information.",
+    socialTitle: "Politika e Privatësisë - Mbrojtja e të Dhënave",
+    socialDescription: "Angazhimi ynë për mbrojtjen e privatësisë dhe informacionit tuaj personal.",
     socialImage: "/assets/config/og.png",
-    articleSection: "Legal",
+    articleSection: "Ligjore",
     breadcrumbs: [
-      { name: "Home", url: siteConfig.url },
-      { name: "Privacy Policy", url: `${siteConfig.url}/privacy-policy/` }
+      { name: "Ballina", url: siteConfig.url },
+      { name: "Politika e Privatësisë", url: `${siteConfig.url}/politika-e-privatesise/` }
     ]
   }
 };
@@ -419,7 +419,7 @@ export const defaultSEO: SEOConfig = {
   socialImage: `${siteConfig.url}/assets/config/og.png`,
   articleSection: "General",
   breadcrumbs: [
-    { name: "Home", url: siteConfig.url }
+    { name: "Ballina", url: siteConfig.url }
   ]
 };
 
@@ -441,7 +441,7 @@ export function getOrganizationSchema() {
       "telephone": siteConfig.contact.phone,
       "contactType": "Customer Support",
       "areaServed": siteConfig.contact.country,
-      "availableLanguage": "English"
+      "availableLanguage": "Albanian"
     },
     "address": {
       "@type": "PostalAddress",
@@ -475,8 +475,8 @@ export function getLocalBusinessSchema() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "34.0522",
-      "longitude": "-118.2437"
+      "latitude": "42.6629",
+      "longitude": "21.1655"
     },
     "openingHours": siteConfig.businessHours,
     "areaServed": {
@@ -540,11 +540,7 @@ export function getServiceSchema(pathname: string) {
         "addressCountry": siteConfig.contact.country
       },
       "areaServed": [
-        "Sausalito", "Mill Valley", "Tiburon", "Belvedere", "Corte Madera", 
-        "Larkspur", "Kentfield", "Ross", "San Anselmo", "San Rafael", 
-        "Paradise Cay", "Strawberry", "Marin City", "Greenbrae", 
-        "Tamalpais Valley", "Muir Beach", "Golden Gate Heights", 
-        "Sea Cliff", "Presidio Heights", "Pacific Heights"
+        "Prishtinë", "Prizren", "Pejë", "Gjakovë", "Ferizaj", "Gjilan", "Mitrovicë", "Fushë Kosovë", "Obiliq", "Podujevë", "Vushtrri", "Lipjan", "Suharekë"
       ],
       "url": seoConfig.canonical
     },
@@ -553,8 +549,8 @@ export function getServiceSchema(pathname: string) {
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": 37.8591,
-        "longitude": -122.4853
+        "latitude": 42.6629,
+        "longitude": 21.1655
       },
       "geoRadius": "50000"
     },
@@ -598,7 +594,7 @@ export function getCityLocalBusinessSchema(cityData: {
       "@type": "PostalAddress",
       "addressLocality": cityData.name,
       "addressRegion": cityData.state,
-      "addressCountry": "USA"
+      "addressCountry": "Kosovë"
     },
     ...(cityData.latitude && cityData.longitude && {
       "geo": {
@@ -612,7 +608,7 @@ export function getCityLocalBusinessSchema(cityData: {
       "@type": "City",
       "name": cityData.name,
       "addressRegion": cityData.state,
-      "addressCountry": "USA"
+      "addressCountry": "Kosovë"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -653,7 +649,7 @@ export function getCityPlaceSchema(cityData: {
       "@type": "PostalAddress",
       "addressLocality": cityData.name,
       "addressRegion": cityData.state,
-      "addressCountry": "USA"
+      "addressCountry": "Kosovë"
     },
     ...(cityData.latitude && cityData.longitude && {
       "geo": {
@@ -699,7 +695,7 @@ export function getThingsToDoSchema(thingsToDoData: {
         "@type": "PostalAddress",
         "addressLocality": thingsToDoData.cityName,
         "addressRegion": thingsToDoData.state,
-        "addressCountry": "USA"
+        "addressCountry": "Kosovë"
       },
       ...(thingsToDoData.latitude && thingsToDoData.longitude && {
         "geo": {
@@ -732,7 +728,7 @@ export function getThingsToDoSchema(thingsToDoData: {
             "streetAddress": attraction.address,
             "addressLocality": thingsToDoData.cityName,
             "addressRegion": thingsToDoData.state,
-            "addressCountry": "USA"
+            "addressCountry": "Kosovë"
           },
           "additionalType": attraction.type,
           ...(attraction.mapUrl && {
@@ -850,7 +846,7 @@ export function getArticleSchema(postData: {
       "name": siteConfig.name,
       "logo": {
         "@type": "ImageObject",
-        "url": `${baseUrl}/logo.png`
+        "url": `${baseUrl}/logo.webp`
       }
     },
     "datePublished": postData.publishedAt,
@@ -864,7 +860,7 @@ export function getArticleSchema(postData: {
     "keywords": postData.seo.keywords || postData.tags.join(', '),
     "wordCount": postData.content.split(' ').length,
     "timeRequired": postData.readTime,
-    "inLanguage": "en-US",
+    "inLanguage": "sq-AL",
     "isPartOf": {
       "@type": "Blog",
       "name": `${siteConfig.name} Blog`,
@@ -989,9 +985,9 @@ export function getBusinessSchema(
   let defaultBusinessType: string = "LocalBusiness";
   try {
     defaultBusinessType = BUSINESS_CATEGORIES.primary as string;
-  } catch (e) {
+  } catch {
     // Fall back to LocalBusiness if import fails
-    console.warn('Could not load BUSINESS_CATEGORIES from business-config, using LocalBusiness as default');
+    defaultBusinessType = "LocalBusiness";
   }
 
   return {
@@ -1078,7 +1074,7 @@ export function getServicesPageSchema(services: Array<{
         "telephone": siteConfig.contact.phone,
         "contactType": "Customer Support",
         "areaServed": siteConfig.contact.country,
-        "availableLanguage": "English"
+        "availableLanguage": "Albanian"
       },
       "address": {
         "@type": "PostalAddress",
@@ -1127,14 +1123,14 @@ export function getServicesPageSchema(services: Array<{
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Home",
+          "name": "Ballina",
           "item": siteConfig.url
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Services",
-          "item": `${siteConfig.url}/services/`
+          "name": "Shërbimet",
+          "item": `${siteConfig.url}/sherbime-elektrike/`
         }
       ]
     }

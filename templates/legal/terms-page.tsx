@@ -23,7 +23,7 @@ export default function TermsPage() {
         description={`Please read these terms and conditions carefully before using our ${BUSINESS_INFO.primaryKeyword.toLowerCase()} services. By engaging our services, you agree to be bound by these terms.`}
         image="/assets/config/placeholder-image.png"
         breadcrumbs={[
-          { label: 'Terms & Conditions', href: '/terms/' }
+          { label: 'Kushtet e Përdorimit', href: '/kushtet-e-perdorimit/' }
         ]}
       />
 

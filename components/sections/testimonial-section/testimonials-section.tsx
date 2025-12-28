@@ -1,6 +1,8 @@
-import { Quote } from 'lucide-react';
-import { TestimonialsColumn } from './testimonials-columns-1';
+'use client';
+
+import { Quote, Star, CheckCircle2 } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-config'
+import { motion } from 'framer-motion';
 
 interface TestimonialsSectionProps {
   city?: string;
@@ -8,106 +10,117 @@ interface TestimonialsSectionProps {
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Homeowner",
-    content: `${BUSINESS_INFO.name} delivered exceptional craftsmanship on our residential property upgrade. Their meticulous attention to detail and proactive project management ensured every phase exceeded our quality standards. The investment has significantly enhanced both our property value and daily functionality.`,
+    name: "Arben Krasniqi",
+    role: "Pronar Shtëpie",
+    content: `${BUSINESS_INFO.name} ka bërë një punë të shkëlqyer në instalimin e sistemit elektrik në shtëpinë tonë të re. Profesionalizmi dhe kujdesi ndaj detajeve ishin mbresëlënëse. Rekomandoj me kënaqësi!`,
     rating: 5,
-    service: `${BUSINESS_INFO.primaryKeyword}`,
-    avatar: "SJ"
+    service: "Instalime Elektrike",
+    avatar: "AK"
   },
   {
-    name: "Mike Rodriguez",
-    role: "Commercial Property Owner",
-    content: `Outstanding results on our commercial facility project. ${BUSINESS_INFO.name} demonstrated superior technical expertise and completed the installation three days ahead of schedule. Their comprehensive maintenance program has eliminated downtime and provided excellent return on investment.`,
+    name: "Besa Gashi",
+    role: "Menaxhere Biznesi",
+    content: `Kemi pasur një defekt urgjent në zyrë dhe ekipi i Bujo Electric erdhi brenda 30 minutave. E zgjidhën problemin shpejt dhe me një çmim shumë korrekt. Faleminderit për shërbimin!`,
     rating: 5,
-    service: "Commercial Services",
-    avatar: "MR"
+    service: "Riparime Emergjente",
+    avatar: "BG"
   },
   {
-    name: "Jennifer Davis",
-    role: "Luxury Homeowner",
-    content: `${BUSINESS_INFO.name} exemplifies professional excellence in every interaction. Their technical proficiency, paired with premium materials and precision installation, delivered results that perfectly complement our high-end residence. I recommend their services without reservation.`,
+    name: "Driton Hoxha",
+    role: "Pronar Restoranti",
+    content: `Për mirëmbajtjen e rrjetit elektrik në restorantin tonë, ne i besojmë vetëm Bujo Electric. Janë të saktë, të pastër në punë dhe gjithmonë të gatshëm për të na ndihmuar.`,
     rating: 5,
-    service: `${BUSINESS_INFO.primaryKeyword}`,
-    avatar: "JD"
+    service: "Mirëmbajtje Industriale",
+    avatar: "DH"
   },
   {
-    name: "Robert Chen",
-    role: "Property Manager",
-    content: `Managing multiple properties requires reliable partners who deliver consistent quality. ${BUSINESS_INFO.name} has proven invaluable with their swift response times, transparent pricing, and durable installations. Their proactive maintenance approach has reduced our operational costs by 30 percent across our portfolio.`,
+    name: "Liridona Berisha",
+    role: "Kliente",
+    content: `Instalimi i ndriçimit smart në kopshtin tonë doli më mirë se sa e kishim imagjinuar. Këshillat e tyre ishin shumë të vlefshme dhe rezultati final është fantastik.`,
     rating: 5,
-    service: "Property Management Services",
-    avatar: "RC"
-  },
-  {
-    name: "David Thompson",
-    role: "Architect",
-    content: `As an architect, I appreciate ${BUSINESS_INFO.name}'s collaborative approach and technical precision. They seamlessly integrate design specifications with practical engineering solutions, ensuring both aesthetic excellence and structural integrity. Their work consistently enhances the overall project value.`,
-    rating: 5,
-    service: "Custom Design Projects",
-    avatar: "DT"
+    service: "Ndriçim Smart",
+    avatar: "LB"
   }
 ]
 
 export function TestimonialsSection({ city }: TestimonialsSectionProps = {}) {
-  // Split testimonials into columns for the scrolling section
-  const firstColumn = testimonials.slice(0, 2);
-  const secondColumn = testimonials.slice(2, 4);
-  const thirdColumn = testimonials.slice(4, 6);
-
   return (
-    <section className="py-20 bg-linear-to-br from-background via-background to-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-white relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-5">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary rounded-full blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary rounded-full blur-[120px]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex justify-center mb-4">
-            <div className="p-3 bg-primary/10 rounded-full">
-              <Quote className="h-8 w-8 text-primary" />
-            </div>
-          </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            What Our Clients Say{city ? ` in ${city}` : ''}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 leading-tight">
+            Çfarë thonë klientët tanë{city ? ` në ${city}` : ''}
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don&apos;t just take our word for it. Here&apos;s what our satisfied clients have to say about their experience with Example Company.
+          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            Përvoja e tyre është dëshmia më e mirë e përkushtimit tonë ndaj cilësisë dhe sigurisë elektrike.
           </p>
         </div>
 
-        {/* Scrolling Testimonials Columns - Server-rendered */}
-        <div className="mb-16 max-w-8xl mx-auto">
-          <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[30dvh] overflow-hidden">
-            <TestimonialsColumn testimonials={firstColumn} duration={15} />
-            <TestimonialsColumn testimonials={secondColumn} className="hidden md:block" duration={19} />
-            <TestimonialsColumn testimonials={thirdColumn} className="hidden lg:block" duration={17} />
-          </div>
-        </div>
+        {/* Infinite Carousel */}
+        <div className="relative mt-8 overflow-hidden py-8">
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
+          
+          <motion.div 
+            className="flex gap-6"
+            animate={{
+              x: [0, -1800],
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 40,
+                ease: "linear",
+              },
+            }}
+          >
+            {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
+              <div
+                key={i}
+                className="min-w-[300px] md:min-w-[380px]"
+              >
+                <div className="bg-gray-50 border border-gray-100 p-8 rounded-3xl h-full flex flex-col hover:shadow-lg transition-all duration-500 group">
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="flex gap-1">
+                      {[...Array(t.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <Quote className="w-8 h-8 text-primary/20 group-hover:text-primary/40 transition-colors" />
+                  </div>
+                  
+                  <p className="text-lg text-gray-700 leading-relaxed mb-8 flex-grow italic">
+                    &ldquo;{t.content}&rdquo;
+                  </p>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-center justify-center flex flex-col items-center p-6 bg-card border border-border/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <p className="text-3xl w-full font-bold text-primary flex-col bg-primary/10 rounded-xl mb-2 py-3">
-              1,200+
-            </p>
-            <p className="text-muted-foreground">
-              Happy Clients
-            </p>
-          </div>
-
-          <div className="text-center justify-center flex flex-col items-center p-6 bg-card border border-border/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="text-3xl w-full font-bold flex-col text-primary bg-primary/10 rounded-xl mb-2 py-3">150+</div>
-            <p className="text-muted-foreground">
-              Projects Completed
-            </p>
-          </div>
-
-          <div className="text-center justify-center flex flex-col items-center p-6 bg-card border border-border/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="text-3xl w-full font-bold flex-col text-primary bg-primary/10 rounded-xl mb-2 py-3">98%</div>
-            <p className="text-muted-foreground">
-              Satisfaction Rate
-            </p>
-          </div>
+                  <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary font-black text-lg group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      {t.avatar}
+                    </div>
+                    <div>
+                      <h4 className="text-gray-900 font-bold text-base flex items-center gap-2">
+                        {t.name}
+                        <CheckCircle2 className="w-3 h-3 text-primary" />
+                      </h4>
+                      <p className="text-gray-500 text-xs">{t.role} • {t.service}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>
   )
-} 
+}
+
+ 

@@ -5,7 +5,9 @@ import Link from 'next/link';
 import {  Copy, Check, Share2 } from 'lucide-react';
 import { BUSINESS_INFO } from '@/lib/business-config';
 import { BrandX } from '@/components/ui/icons/brand-icons';
-import DynamicHeading from '@/components/global/dynamic-header/dynamic-header';
+import DynamicHeader from '@/components/global/dynamic-header/dynamic-header';
+import { parseMarkdownContent } from '@/lib/markdown-utils';
+import blogData from '@/data/blog-posts.json';
 
 
 interface Author {
@@ -84,7 +86,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, relatedPosts = [] }) => {
 
   // Format date
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
+    return new Date(dateString).toLocaleDateString('sq-AL', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -98,7 +100,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, relatedPosts = [] }) => {
     }
     const shareData = {
       title: post.title,
-      text: `Check out ${BUSINESS_INFO.name} article: ${post.title}`,
+      text: `Lexoni këtë artikull nga ${BUSINESS_INFO.name}: ${post.title}`,
       url: window.location.href,
     };
 
@@ -120,7 +122,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, relatedPosts = [] }) => {
     if (typeof window === 'undefined') {
       return;
     }
-    const text = `Check out ${BUSINESS_INFO.name} article: ${post.title}`;
+    const text = `Lexoni këtë artikull nga ${BUSINESS_INFO.name}: ${post.title}`;
     const url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(text)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -138,37 +140,18 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, relatedPosts = [] }) => {
     }
   };
 
-  // Convert markdown-style content to JSX (basic conversion)
-  const formatContent = (content: string) => {
-    return content
-      .split('\n')
-      .map((line, index) => {
-        if (line.startsWith('## ')) {
-          return <h2 key={index} className="text-2xl md:text-3xl font-bold text-foreground mb-6 mt-8 first:mt-0">{line.substring(3)}</h2>;
-        }
-        if (line.startsWith('### ')) {
-          return <h3 key={index} className="text-xl md:text-2xl font-semibold text-foreground mb-4 mt-6">{line.substring(4)}</h3>;
-        }
-        if (line.startsWith('* ') && !line.startsWith('* *')) {
-          return <li key={index} className="text-muted-foreground mb-2 ml-4">{line.substring(2)}</li>;
-        }
-        if (line.trim() === '') {
-          return <br key={index} />;
-        }
-        if (line.trim() !== '') {
-          return <p key={index} className="text-muted-foreground leading-relaxed mb-4">{line}</p>;
-        }
-        return null;
-      })
-      .filter(Boolean);
-  };
+  const displayRelatedPosts = relatedPosts.length > 0 
+    ? relatedPosts 
+    : (blogData.blogPosts as unknown as BlogPost[])
+        .filter(p => p.id !== post.id && p.category.slug === post.category.slug)
+        .slice(0, 3);
 
   return (
     <>  
-      <DynamicHeading title={post.title} image={post.image.url} breadcrumbs={[{ label: 'Blog', href: '/blog' }]} />
+      <DynamicHeader title={post.title} image={post.image.url} breadcrumbs={[{ label: 'Blogu', href: '/blog/' }]} />
       {/* Article Content */}
       <article className="bg-background">
-        <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="max-w-7xl mx-auto px-4 py-8">
           {/* Author, Date, and Share Buttons */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-8 pb-8 border-b border-border">
             {/* Author and Date */}
@@ -194,7 +177,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, relatedPosts = [] }) => {
 
             {/* Share Buttons */}
             <div className="flex items-center gap-2">
-              <span className="text-sm text-muted-foreground mr-2">Share:</span>
+              <span className="text-sm text-muted-foreground mr-2">Shpërndaje:</span>
               
               {/* Native Share Button - Only shown if Web Share API is supported */}
               {canShare && (
@@ -229,8 +212,10 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, relatedPosts = [] }) => {
           </div>
 
           {/* Content */}
-          <div className="prose prose-lg max-w-none">
-            {formatContent(post.content)}
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg prose-blue max-w-none">
+              {parseMarkdownContent(post.content)}
+            </div>
           </div>
 
           {/* Tags */}
@@ -252,15 +237,15 @@ const BlogPost: React.FC<BlogPostProps> = ({ post, relatedPosts = [] }) => {
       </article>
 
       {/* More Articles Section */}
-      {relatedPosts.length > 0 && (
+      {displayRelatedPosts.length > 0 && (
         <section className="bg-bg-secondary py-16">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-foreground mb-12 text-center">More Articles</h2>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Artikuj të tjerë</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {relatedPosts.map((relatedPost) => (
+              {displayRelatedPosts.map((relatedPost) => (
                 <Link
                   key={relatedPost.id}
-                  href={`/${relatedPost.category.slug}/${relatedPost.slug}`}
+                  href={`/${relatedPost.slug}/`}
                   className="group block"
                 >
                   <article className="bg-card rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border">

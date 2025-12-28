@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
-import { getSEOConfig, siteConfig, getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema, getServiceSchema, getArticleSchema, getCityLocalBusinessSchema, getCityPlaceSchema, getServicePageSchema, getThingsToDoSchema, getFAQSchema, getBusinessSchema, getPortfolioSchema } from './seo-config';
-// import { generateBreadcrumbSchema } from './breadcrumb-utils';
+import { getSEOConfig, siteConfig, getOrganizationSchema, getLocalBusinessSchema, getWebsiteSchema, getServiceSchema, getArticleSchema, getCityLocalBusinessSchema, getServicePageSchema, getThingsToDoSchema, getFAQSchema, getPortfolioSchema } from './seo-config';
 
 interface BlogPostData {
   title: string;
@@ -45,7 +44,7 @@ export function generateMetadataFromConfig(pathname: string): Metadata {
 
       openGraph: {
         type: seo.ogType,
-        locale: seo.language || 'en_US',
+        locale: seo.language || 'sq_AL',
         url: seo.canonical,
         title: seo.socialTitle || seo.title,
         description: truncateDescription(seo.socialDescription || seo.description || '', 160),
@@ -83,9 +82,9 @@ export function generateMetadataFromConfig(pathname: string): Metadata {
       // Additional metadata for local SEO and explicit meta title
       other: {
         'meta:title': seo.title || siteConfig.name,
-        'geo.region': seo.geoRegion || 'US-TX',
-        'geo.position': seo.geoPosition || '30.2672;-97.7431',
-        'geo.placename': seo.geoPlacename || 'Austin, TX',
+        'geo.region': seo.geoRegion || 'AL',
+        'geo.position': seo.geoPosition || '42.6629;21.1655',
+        'geo.placename': seo.geoPlacename || 'Prishtinë, Kosovë',
       },
 
       // LinkedIn specific fields
@@ -187,11 +186,15 @@ export function generateOGImageUrl(
   return `${siteConfig.url}/${imageUrl}`;
 }
 
-export function generateStructuredData(pathname?: string, additionalData?: { blogPostData?: BlogPostData }) {
+export function generateStructuredData(pathname?: string, additionalData?: { blogPostData?: BlogPostData, isHomepage?: boolean }) {
   const schemas: Record<string, unknown>[] = [
     getWebsiteSchema(), // Website schema for other pages, not Organization
-    getLocalBusinessSchema(), // LocalBusiness schema for the business location
   ];
+
+  // Only add LocalBusiness if NOT homepage
+  if (!additionalData?.isHomepage) {
+    schemas.push(getLocalBusinessSchema());
+  }
   
   // Add service schema for service pages
   if (pathname) {
@@ -291,7 +294,7 @@ export function generateDynamicMetadata(
     
     openGraph: {
       type: 'article',
-      locale: seo.language || 'en_US',
+      locale: seo.language || 'sq_AL',
       url: canonicalUrl,
       title: dynamicData.title,
       description: description,
@@ -467,25 +470,9 @@ export function generateDynamicStructuredData(
 ) {
   const schemas: Record<string, unknown>[] = [];
   
-  // For homepage - Website, LocalBusiness, and Business Schema (from config)
+  // For homepage - Website ONLY (removed LocalBusiness and Breadcrumbs as requested)
   if (pageData?.isHomepage) {
     schemas.push(getWebsiteSchema());
-    schemas.push(getLocalBusinessSchema());
-    schemas.push(getBusinessSchema()); // Uses business type from business.yaml
-    
-    // Add breadcrumb schema if provided
-    if (pageData?.breadcrumbs && pageData.breadcrumbs.length > 0) {
-      schemas.push({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": pageData.breadcrumbs.map((crumb, index) => ({
-          "@type": "ListItem",
-          "position": index + 1,
-          "name": crumb.name,
-          "item": crumb.url
-        }))
-      });
-    }
   }
   // For blog posts, use Article schema only (no automatic HowTo detection)
   else if (pageData?.blogPostData) {
@@ -510,18 +497,16 @@ export function generateDynamicStructuredData(
     // Add Organization schema for publisher info
     schemas.push(getOrganizationSchema());
   } 
-  // For city pages - LocalBusiness ONLY if isBusinessLocation, otherwise use Place schema
+  // For city pages - Always add LocalBusiness schema
   else if (pageData?.cityData) {
-    // Only add LocalBusiness schema if this is the actual business location
-    if (pageData.cityData.isBusinessLocation) {
-      const cityBusinessSchema = getCityLocalBusinessSchema(pageData.cityData);
-      if (cityBusinessSchema) {
-        schemas.push(cityBusinessSchema);
-      }
-    } else {
-      // Use Place schema for service areas
-      const cityPlaceSchema = getCityPlaceSchema(pageData.cityData);
-      schemas.push(cityPlaceSchema);
+    // Add LocalBusiness schema for the city
+    const cityBusinessSchema = getCityLocalBusinessSchema({
+      ...pageData.cityData,
+      isBusinessLocation: true // Force LocalBusiness schema for city pages
+    });
+    
+    if (cityBusinessSchema) {
+      schemas.push(cityBusinessSchema);
     }
     
     // Add Website schema

@@ -17,7 +17,6 @@ interface HeaderData {
   subtitle?: string;
   description?: string;
   image?: string;
-  badges?: string[];
   cta?: {
     primary?: CTAButton;
     secondary?: CTAButton;
@@ -36,36 +35,31 @@ export const generateServiceHeader = (service: {
 }): HeaderData => {
   return {
     id: service.slug,
-    url: `/services/${service.slug}`,
-    title: `${service.name} Services`,
-    subtitle: `Professional ${service.name.toLowerCase()} solutions for your garage`,
+    url: `/sherbime-elektrike/${service.slug}`,
+    title: `${service.name}`,
+    subtitle: `Zgjidhje profesionale për ${service.name.toLowerCase()}`,
     description: service.description,
     image: "/assets/config/placeholder-image.png",
     cta: {
       primary: {
-        text: "Contact Us",
-        link: "/contact",
+        text: "Na Kontaktoni",
+        link: "/kontakti",
         style: "primary"
       },
       secondary: {
-        text: "Learn More",
-        link: `/services/${service.slug}`,
+        text: "Mëso Më Shumë",
+        link: `/sherbime-elektrike/${service.slug}`,
         style: "outline"
       }
     },
-    badges: [
-      "Professional Service",
-      "Quality Guaranteed",
-      "Free Consultation"
-    ],
     breadcrumbs: [
       {
-        label: "Services",
-        href: "/services/"
+        label: "Shërbimet",
+        href: "/sherbime-elektrike/"
       },
       {
         label: service.name,
-        href: `/services/${service.slug}`
+        href: `/sherbime-elektrike/${service.slug}`
       }
     ]
   };
@@ -82,36 +76,31 @@ export const generateCityHeader = (city: {
 }): HeaderData => {
   return {
     id: city.slug,
-    url: `/service-areas/${city.slug}`,
-    title: `Professional Garage Door Services in ${city.name}, ${city.state}`,
-    subtitle: `Quality garage door services for ${city.name} residents`,
+    url: `/zonat-e-sherbimit/${city.slug}`,
+    title: `Shërbime Elektrike Profesionale në ${city.name}, ${city.state}`,
+    subtitle: `Shërbime cilësore elektrike për banorët e ${city.name}`,
     description: city.description,
     image: "/assets/config/placeholder-image.png",
     cta: {
       primary: {
-        text: `Get ${city.name} Quote`,
-        link: "/contact",
+        text: `Merr një Ofertë për ${city.name}`,
+        link: "/kontakti",
         style: "primary"
       },
       secondary: {
-        text: "View Local Work",
-        link: "/portfolio",
+        text: "Shiko Punët Tona",
+        link: "/galeria-e-projekteve",
         style: "outline"
       }
     },
-    badges: [
-      "Local Service",
-      "Expert Solutions",
-      "Free Consultation"
-    ],
     breadcrumbs: [
       {
-        label: "Service Areas",
-        href: "/service-areas/"
+        label: "Zonat e Shërbimit",
+        href: "/zonat-e-sherbimit/"
       },
       {
         label: `${city.name}, ${city.state}`,
-        href: `/service-areas/${city.slug}`
+        href: `/zonat-e-sherbimit/${city.slug}`
       }
     ]
   };
@@ -147,11 +136,6 @@ export const generateBlogHeader = (post: {
         style: "outline"
       }
     },
-    badges: [
-      "Expert Tips",
-      "Professional Advice",
-      "Free Resource"
-    ],
     breadcrumbs: [
       {
         label: "Blog",
@@ -179,7 +163,7 @@ export const generateAboutSubPageHeader = (page: {
 }): HeaderData => {
   return {
     id: page.slug,
-    url: `/about/${page.slug}`,
+    url: `/rreth-nesh/${page.slug}`,
     title: page.title,
     subtitle: `Learn more about ${page.title.toLowerCase()}`,
     description: page.description,
@@ -191,19 +175,14 @@ export const generateAboutSubPageHeader = (page: {
         style: "primary"
       }
     },
-    badges: [
-      "About Us",
-      "Company Info",
-      "Learn More"
-    ],
     breadcrumbs: [
       {
         label: "About Us",
-        href: "/about/"
+        href: "/rreth-nesh/"
       },
       {
         label: page.title,
-        href: `/about/${page.slug}`
+        href: `/rreth-nesh/${page.slug}`
       }
     ]
   };

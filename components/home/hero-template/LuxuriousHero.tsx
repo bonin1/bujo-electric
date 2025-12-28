@@ -38,11 +38,11 @@ export default function LuxuriousHero({
         <div className="absolute inset-0 bg-linear-to-r from-black/70 to-black/30" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           {title}
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl mb-8 max-w-7xl mx-auto">
           {subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

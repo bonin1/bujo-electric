@@ -2,7 +2,7 @@
 alwaysApply: true
 ---
 
-# 📌 Cursor General Coding Rules for Example Company
+# 📌 Cursor General Coding Rules for Bujo Electric
 
 Purpose: Maintain consistent code quality, SEO best practices, and proper Next.js conventions
 
@@ -23,9 +23,11 @@ Purpose: Maintain consistent code quality, SEO best practices, and proper Next.j
 - Provide meaningful alt text for accessibility and SEO
 
 ### Text Content
-- **NEVER use `&apos;` or `"` in strings** - Always use `&apos;` and `&quot;`
-- Example: `Let&apos;s` instead of `Let&apos;s`
-- Example: `He said &quot;Hello&quot;` instead of `He said "Hello"`
+- **NEVER use `&apos;` or `"` in HTML strings** - Always use `&apos;` and `&quot;` for visual content
+- **ONLY apply this rule to HTML content** - NOT for JSON files, TypeScript/JavaScript variables, or configuration files
+- Example (HTML/JSX): `<p>Let&apos;s get started</p>` instead of `<p>Let&apos;s get started</p>`
+- Example (HTML/JSX): `<span>He said &quot;Hello&quot;</span>` instead of `<span>He said "Hello"</span>`
+- Example (Correct - Variables/JSON): `const title = "Let&apos;s go"` or `{"name": "John's Company"}` - these are fine as-is
 
 ### Icons & Visual Elements
 - **NEVER use emojis** - Always use proper icon components
@@ -54,70 +56,62 @@ Purpose: Maintain consistent code quality, SEO best practices, and proper Next.j
 ### Meta Descriptions
 - Keep between 140-160 characters
 - Start with strong hook or action phrase
-- Include primary keyword: Professional Services
+- Include primary keyword: Elektricist
 - Include service areas: [
   {
-    "CITY": "Example City",
-    "STATE": "ST"
+    "CITY": "Prishtin\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "North Town",
-    "STATE": "ST"
+    "CITY": "Prizren",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "South Town",
-    "STATE": "ST"
+    "CITY": "Ferizaj",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "East Village",
-    "STATE": "ST"
+    "CITY": "Gjilan",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "West Borough",
-    "STATE": "ST"
+    "CITY": "Pej\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Central District",
-    "STATE": "ST"
+    "CITY": "Gjakov\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Riverside",
-    "STATE": "ST"
+    "CITY": "Mitrovic\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Hillside",
-    "STATE": "ST"
+    "CITY": "Fush\u00eb Kosov\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Lakeside",
-    "STATE": "ST"
+    "CITY": "Obiliq",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Mountain View",
-    "STATE": "ST"
+    "CITY": "Podujev\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Valley Springs",
-    "STATE": "ST"
+    "CITY": "Vushtrri",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Meadowbrook",
-    "STATE": "ST"
+    "CITY": "Lipjan",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Oak Grove",
-    "STATE": "ST"
-  },
-  {
-    "CITY": "Pine Hills",
-    "STATE": "ST"
-  },
-  {
-    "CITY": "Maple Ridge",
-    "STATE": "ST"
+    "CITY": "Suharek\u00eb",
+    "STATE": "Kosov\u00eb"
   }
 ]
-- End with CTA: Contact us today for a free consultation!
+- End with CTA: Na kontaktoni sot për një konsultim falas!
 
 ---
 
@@ -140,81 +134,73 @@ Purpose: Maintain consistent code quality, SEO best practices, and proper Next.j
 
 ### Internal Linking
 - Each service page should link to related services: 
-- Service One
-- Service Two
-- Service Three
-- Service Four
-- Service Five
+- Instalime Elektrike
+- Riparime Elektrike
+- Mirëmbajtje Elektrike
+- Ndriçim & Energji
+- Sisteme Speciale
 - Link to portfolio examples: 
-- /service-one/
-- /service-two/
-- /service-three/
-- /service-four/
-- /service-five/
-- Include contact/CTA: Phone: (555) 123-4567 | Email: info@example.com
+- /instalime-elektrike/
+- /riparime-elektrike/
+- /mirembajtje-elektrike/
+- /ndricim-energji/
+- /sisteme-elektrike/
+- Include contact/CTA: Phone: 044 239 757 | Email: info@bujoelectric.com
 - Use keyword-rich anchor text
 
 ### Location References
 - Always include service areas: [
   {
-    "CITY": "Example City",
-    "STATE": "ST"
+    "CITY": "Prishtin\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "North Town",
-    "STATE": "ST"
+    "CITY": "Prizren",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "South Town",
-    "STATE": "ST"
+    "CITY": "Ferizaj",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "East Village",
-    "STATE": "ST"
+    "CITY": "Gjilan",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "West Borough",
-    "STATE": "ST"
+    "CITY": "Pej\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Central District",
-    "STATE": "ST"
+    "CITY": "Gjakov\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Riverside",
-    "STATE": "ST"
+    "CITY": "Mitrovic\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Hillside",
-    "STATE": "ST"
+    "CITY": "Fush\u00eb Kosov\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Lakeside",
-    "STATE": "ST"
+    "CITY": "Obiliq",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Mountain View",
-    "STATE": "ST"
+    "CITY": "Podujev\u00eb",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Valley Springs",
-    "STATE": "ST"
+    "CITY": "Vushtrri",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Meadowbrook",
-    "STATE": "ST"
+    "CITY": "Lipjan",
+    "STATE": "Kosov\u00eb"
   },
   {
-    "CITY": "Oak Grove",
-    "STATE": "ST"
-  },
-  {
-    "CITY": "Pine Hills",
-    "STATE": "ST"
-  },
-  {
-    "CITY": "Maple Ridge",
-    "STATE": "ST"
+    "CITY": "Suharek\u00eb",
+    "STATE": "Kosov\u00eb"
   }
 ]
 - Format as "Austin-TX, Dallas-TX, Houston-TX, San Antonio-TX"

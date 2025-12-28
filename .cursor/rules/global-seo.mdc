@@ -16,7 +16,7 @@ export default {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "url": "https://${context.host}",
-        "name": "${context.siteTitle || 'Example Company'}"
+        "name": "${context.siteTitle || 'Bujo Electric'}"
       }
       </script>`;
       context.head.push(canonical, metaRobots, jsonLd);

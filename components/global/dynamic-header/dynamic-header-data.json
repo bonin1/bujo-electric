@@ -195,7 +195,7 @@
     },
     {
       "id": "services",
-      "url": "/services/",
+      "url": "/sherbime-elektrike/",
       "title": "Our Professional Garage Door Services",
       "subtitle": "Complete garage door solutions for your property",
       "description": "From custom garage door installation to year-round maintenance, we provide comprehensive garage door services tailored to your specific needs.",
@@ -220,7 +220,7 @@
     },
     {
       "id": "about",
-      "url": "/about/",
+      "url": "/rreth-nesh/",
       "title": "About Example Company",
       "subtitle": "Your trusted garage door service experts",
       "description": "Learn about our company, team, and commitment to creating quality garage door solutions that enhance your property.",
@@ -245,7 +245,7 @@
     },
     {
       "id": "contact",
-      "url": "/contact/",
+      "url": "/kontakti/",
       "title": "Contact Us",
       "subtitle": "Get in touch for a free consultation",
       "description": "Get in touch with our team for a free consultation. We're here to help bring your vision to life.",
@@ -270,7 +270,7 @@
     },
     {
       "id": "faq",
-      "url": "/faq/",
+      "url": "/pyetje-te-shpeshta/",
       "title": "Frequently Asked Questions",
       "subtitle": "Everything you need to know about our services",
       "description": "Find answers to common questions about garage door installation, repair, maintenance, pricing, and our garage door services across all regions.",

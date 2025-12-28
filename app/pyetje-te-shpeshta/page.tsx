@@ -7,7 +7,7 @@ import { siteConfig } from '@/lib/seo-config';
 
 // Generate metadata using the hybrid approach
 export async function generateMetadata(): Promise<Metadata> {
-  return generateMetadataFromConfig('/faq/');
+  return generateMetadataFromConfig('/pyetje-te-shpeshta/');
 }
 
 const page = () => {
@@ -18,13 +18,13 @@ const page = () => {
   }));
 
   // Generate structured data for FAQ page
-  const structuredData = generateDynamicStructuredData('/faq/', {
+  const structuredData = generateDynamicStructuredData('/pyetje-te-shpeshta/', {
     faqData: {
       questions: allFAQs
     },
     breadcrumbs: [
-      { name: 'Home', url: siteConfig.url },
-      { name: 'FAQ', url: `${siteConfig.url}/faq/` }
+      { name: 'Ballina', url: siteConfig.url },
+      { name: 'Pyetje të Shpeshta', url: `${siteConfig.url}/pyetje-te-shpeshta/` }
     ]
   });
 

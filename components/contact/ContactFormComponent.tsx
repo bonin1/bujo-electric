@@ -75,21 +75,29 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
   };
 
   const services = [
-    'Service Installation',
-    'Service Repair', 
-    'Service Maintenance',
-    'Service Upgrade',
-    'Service Replacement',
-    'Emergency Service',
-    'Other'
+    'Instalime Elektrike',
+    'Riparime Elektrike', 
+    'Mirëmbajtje Elektrike',
+    'Ndriçim & Energji',
+    'Sisteme Speciale',
+    'Tjetër'
   ];
 
   const locations = [
-    'Example City, ST',
-    'North Town, ST',
-    'South Town, ST', 
-    'East Village, ST',
-    'Other'
+    'Prishtinë',
+    'Prizren',
+    'Ferizaj',
+    'Gjilan',
+    'Pejë',
+    'Gjakovë',
+    'Mitrovicë',
+    'Fushë Kosovë',
+    'Obiliq',
+    'Podujevë',
+    'Vushtrri',
+    'Lipjan',
+    'Suharekë',
+    'Tjetër'
   ];
 
   if (isSubmitted) {
@@ -98,9 +106,9 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
         <div className="bg-green-100 p-6 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
           <CheckCircle className="w-10 h-10 text-green-600" />
         </div>
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">Thank You!</h3>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">Ju faleminderit!</h3>
         <p className="text-gray-600">
-          We&apos;ve received your message and will get back to you within 24 hours.
+          Ne kemi pranuar mesazhin tuaj dhe do t&apos;ju kontaktojmë brenda 24 orëve.
         </p>
       </div>
     );
@@ -110,10 +118,10 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
     <div className={`bg-white rounded-xl shadow-lg p-8 border border-gray-100 ${className}`}>
       <div className="text-center mb-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">
-          Request a Free Quote
+          Kërko një Ofertë Falas
         </h2>
         <p className="text-gray-600">
-          Fill out the form below and we&apos;ll get back to you within 24 hours.
+          Plotësoni formën më poshtë dhe ne do t&apos;ju kontaktojmë brenda 24 orëve.
         </p>
       </div>
 
@@ -121,7 +129,7 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-              Full Name *
+              Emri dhe Mbiemri *
             </label>
             <input
               type="text"
@@ -131,12 +139,12 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
               value={formData.name}
               onChange={handleInputChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
-              placeholder="Your full name"
+              placeholder="Emri juaj i plotë"
             />
           </div>
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-              Email Address *
+              Adresa e Email-it *
             </label>
             <input
               type="email"
@@ -146,7 +154,7 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
               value={formData.email}
               onChange={handleInputChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
-              placeholder="your@email.com"
+              placeholder="email@juaj.com"
             />
           </div>
         </div>
@@ -154,7 +162,7 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-              Phone Number
+              Numri i Telefonit
             </label>
             <input
               type="tel"
@@ -163,12 +171,12 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
               value={formData.phone}
               onChange={handleInputChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
-              placeholder="(555) 123-4567"
+              placeholder="+383 4X XXX XXX"
             />
           </div>
           <div>
             <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
-              Service Location *
+              Lokacioni i Shërbimit *
             </label>
             <select
               id="location"
@@ -178,7 +186,7 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
               onChange={handleInputChange}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 hover:border-gray-400"
             >
-              <option value="">Select your city</option>
+              <option value="">Zgjidhni qytetin tuaj</option>
               {locations.map((location) => (
                 <option key={location} value={location}>
                   {location}
@@ -190,7 +198,7 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
 
         <div>
           <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-            Service Needed *
+            Shërbimi i Nevojshëm *
           </label>
           <select
             id="service"
@@ -200,7 +208,7 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
             onChange={handleInputChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
           >
-            <option value="">Select a service</option>
+            <option value="">Zgjidhni një shërbim</option>
             {services.map((service) => (
               <option key={service} value={service}>
                 {service}
@@ -211,7 +219,7 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
 
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-            Project Details
+            Detajet e Projektit
           </label>
           <textarea
             id="message"
@@ -220,7 +228,7 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
             value={formData.message}
             onChange={handleInputChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
-            placeholder="Tell us more about your project, timeline, or any specific requirements..."
+            placeholder="Na tregoni më shumë rreth projektit tuaj, afatet, ose ndonjë kërkesë specifike..."
           />
         </div>
 
@@ -232,12 +240,12 @@ const ContactFormComponent: React.FC<ContactFormComponentProps> = ({
           {isSubmitting ? (
             <>
               <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-              Sending...
+              Duke u dërguar...
             </>
           ) : (
             <>
               <Send className="w-5 h-5 mr-2" />
-              Send Message
+              Dërgo Mesazhin
             </>
           )}
         </button>

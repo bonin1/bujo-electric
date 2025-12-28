@@ -5,10 +5,8 @@ import Link from "next/link";
 import { 
   Phone,
   Mail,
-  MapPin,
   Clock
 } from "lucide-react";
-import { getBrandIcon } from "@/components/ui/icons/brand-icons";
 
 
 interface FooterMapsProps {
@@ -42,11 +40,6 @@ interface FooterMapsProps {
     name: string;
     href: string;
   }>;
-  socialLinks?: Array<{
-    name: string;
-    href: string;
-    icon: React.ReactElement;
-  }>;
   legalLinks?: Array<{
     name: string;
     href: string;
@@ -63,48 +56,26 @@ import {
   getBusinessName,
   getBusinessDescription,
   getContactInfo,
-  getDefaultMapLocation,
-  getCopyright,
-  ACTIVE_SOCIAL_MEDIA,
-  BUSINESS_INFO
+  getCopyright
 } from '@/lib/business-config';
 
 // Business data from business-config.ts (generated from business.yaml)
 const businessName = getBusinessName();
 const businessDescription = getBusinessDescription();
 const contactInfoDefault = getContactInfo();
-const defaultLocations = [getDefaultMapLocation()];
 
-// Get core services from business config
+  // Get core services from business config
 const defaultServices = [
-  { name: "All Services", href: "/services/" },
+  { name: "Të Gjitha Shërbimet", href: "/sherbime-elektrike/" },
   ...getServicesForNavigation()
 ];
 
 const defaultCompanyLinks = getCompanyLinks();
 
-// Build social links from config
-const socialIconMap: Record<string, React.ReactElement> = {
-  facebook: getBrandIcon('facebook', { className: "size-5" }),
-  instagram: getBrandIcon('instagram', { className: "size-5" }),
-  linkedin: getBrandIcon('linkedin', { className: "size-5" }),
-  twitter: getBrandIcon('twitter', { className: "size-5" }),
-  pinterest: getBrandIcon('pinterest', { className: "size-5" }),
-  yelp: getBrandIcon('yelp', { className: "size-5" }),
-  youtube: getBrandIcon('youtube', { className: "size-5" }),
-};
-
-const defaultSocialLinks = Object.entries(ACTIVE_SOCIAL_MEDIA)
-  .map(([key, href]) => ({
-    name: key.charAt(0).toUpperCase() + key.slice(1),
-    href: href as string,
-    icon: socialIconMap[key] || getBrandIcon('facebook', { className: "size-5" }),
-  }));
-
 export const FooterMaps = ({
   logo = {
     url: "/",
-    src: "/assets/config/logo.png",
+    src: "/logo.svg",
     alt: businessName,
     title: businessName,
   },
@@ -112,116 +83,67 @@ export const FooterMaps = ({
   description = businessDescription,
   copyright = getCopyright(),
   contactInfo: footerContactInfo = contactInfoDefault,
-  locations = defaultLocations,
   services = defaultServices,
   companyLinks = defaultCompanyLinks,
-  socialLinks = defaultSocialLinks,
   legalLinks = [
-    { name: "Privacy Policy", href: "/privacy-policy/" },
-    { name: "Terms of Service", href: "/terms/" },
+    { name: "Politika e Privatësisë", href: "/politika-e-privatesise/" },
+    { name: "Kushtet e Shërbimit", href: "/kushtet-e-perdorimit/" },
   ],
 }: FooterMapsProps) => {
-  // Get the main location or first location
-  const mainLocation = locations.find(loc => loc.isMain) || locations[0];
 
   return (
-    <section className="pb-16 bg-neutral-900">
-      {/* Location Header */}
-      <div className="bg-neutral-800 py-4">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="text-center">
-            <p className="text-lg font-semibold mb-1 text-white">Visit Our Location</p>
-            <p className="text-gray-300 text-sm">{mainLocation.address}</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Interactive Map */}
-      <iframe
-        src={mainLocation.mapEmbed}
-        width="100%"
-        height="300"
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        className="w-full h-[300px] mb-4 border-0"
-        style={{ border: 0 }}
-        title={mainLocation.mapTitle}
-      />
-
+    <section className="pb-16 bg-white border-t border-gray-100 pt-16">
       {/* Main Footer Content */}
       <div className="mx-auto max-w-7xl px-2">
-        <div className="flex w-full flex-col justify-between gap-8 lg:flex-row lg:items-start lg:text-left">
+        <div className="flex w-full flex-col justify-between gap-12 lg:flex-row lg:items-start lg:text-left text-center lg:text-left">
           {/* Business Info */}
-          <div className="flex w-full lg:max-w-md flex-col gap-4 lg:items-start">
-            <div className="flex items-center gap-2 lg:justify-start">
+          <div className="flex w-full lg:max-w-md flex-col gap-6 items-center lg:items-start">
+            <div className="flex items-center gap-2 justify-center lg:justify-start">
               <Link href={logo.url}>
                 <Image
                   alt={`${footerBusinessName} Logo`}
                   title={footerBusinessName}
-                  width={160}
-                  height={64}
-                  className="h-20 w-auto"
+                  width={180}
+                  height={72}
+                  className="h-24 w-auto"
                   src={logo.src}
-                  // Removed style to rely on className for sizing
                   loading="lazy"
                 />
               </Link>
             </div>
-            <p className="text-sm footer-text-secondary leading-relaxed">
+            <p className="text-sm text-gray-600 leading-relaxed max-w-sm mx-auto lg:mx-0">
               {description}
             </p>
             
             {/* Contact Info */}
-            <div className="space-y-2 text-sm footer-text-muted">
-              <p className="flex items-center gap-2">
-                <Phone className="footer-text-muted w-4 h-4" />
-                <Link href={`tel:${formatPhoneTel(footerContactInfo.phone)}`} className="hover:text-primary transition-colors footer-text-secondary">
+            <div className="space-y-3 text-sm text-gray-500 flex flex-col items-center lg:items-start">
+              <p className="flex items-center gap-3 justify-center lg:justify-start">
+                <Phone className="text-primary w-4 h-4" />
+                <Link href={`tel:${formatPhoneTel(footerContactInfo.phone)}`} className="hover:text-primary transition-colors text-gray-900 font-bold">
                   {formatPhoneDisplay(footerContactInfo.phone)}
                 </Link>
               </p>
-              <p className="flex items-center gap-2">
-                <Mail className="footer-text-muted w-4 h-4" />
-                <Link href={`mailto:${footerContactInfo.email}`} className="hover:text-primary transition-colors footer-text-secondary">
+              <p className="flex items-center gap-3 justify-center lg:justify-start">
+                <Mail className="text-primary w-4 h-4" />
+                <Link href={`mailto:${footerContactInfo.email}`} className="hover:text-primary transition-colors text-gray-600">
                   {footerContactInfo.email}
                 </Link>
               </p>
-              <p className="flex items-center gap-2">
-                <MapPin className="footer-text-muted w-4 h-4" />
-                <span className=" footer-text-secondary">Locations:</span>
-              </p>
-              <div className="ml-6 space-y-1">
-                {locations.map((location, index) => (
-                  <div key={index}>
-                    <p className="text-xs footer-text-secondary ">
-                      {location.isMain ? "Headquarters" : location.name}
-                    </p>
-                    <Link
-                      href={`https://maps.google.com/?q=${encodeURIComponent(location.address)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block hover:text-primary transition-colors text-xs footer-text-muted"
-                    >
-                      {location.address}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-              <p className="flex items-center gap-2">
-                <Clock className="footer-text-muted w-4 h-4" />
-                <span className="footer-text-muted">{BUSINESS_HOURS.monday}</span>
+              <p className="flex items-center gap-3 justify-center lg:justify-start mt-4">
+                <Clock className="text-primary w-4 h-4" />
+                <span className="text-gray-600 font-medium">{BUSINESS_HOURS.monday}</span>
               </p>
             </div>
           </div>
 
           {/* Navigation Links */}
-          <div className="grid w-full gap-8 md:grid-cols-3 lg:gap-12">
+          <div className="grid w-full gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:max-w-2xl">
             {/* Services */}
-            <div>
-              <p className="mb-4 font-bold footer-text-primary text-lg">Services</p>
-              <ul className="space-y-2 text-sm footer-text-muted">
+            <div className="flex flex-col items-center lg:items-start">
+              <p className="mb-6 font-black text-gray-900 text-xs uppercase tracking-[0.2em]">Shërbimet</p>
+              <ul className="space-y-3 text-sm text-gray-500">
                 {services.map((service, index) => (
-                  <li key={index} className="hover:text-primary text-footer-primary/80 transition-colors">
+                  <li key={index} className="hover:text-primary transition-colors">
                     <Link href={service.href}>{service.name}</Link>
                   </li>
                 ))}
@@ -229,68 +151,46 @@ export const FooterMaps = ({
             </div>
 
             {/* Company */}
-            <div>
-              <p className="mb-4 font-bold footer-text-primary text-lg">Company</p>
-              <ul className="space-y-2 text-sm footer-text-muted">
+            <div className="flex flex-col items-center lg:items-start">
+              <p className="mb-6 font-black text-gray-900 text-xs uppercase tracking-[0.2em]">Kompania</p>
+              <ul className="space-y-3 text-sm text-gray-500">
                 {companyLinks.map((link, index) => (
-                  <li key={index} className="hover:text-primary text-footer-primary/80 transition-colors">
+                  <li key={index} className="hover:text-primary transition-colors">
                     <Link href={link.href}>{link.name}</Link>
                   </li>
                 ))}
               </ul>
             </div>
-
-            {/* Social Links */}
-            <div>
-              <p className="mb-4 font-bold footer-text-primary text-lg">Find Us</p>
-              <div className="space-y-3">
-                {socialLinks.map((social, index) => (
-                  <Link
-                    key={index}
-                    aria-label={social.name}
-                    className="flex items-center gap-1 text-sm footer-text-muted hover:text-primary transition-colors group"
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="flex items-center justify-center w-8 h-8 rounded-full footer-text-subtle group-hover:text-primary transition-all duration-300">
-                      {social.icon}
-                    </span>
-                    <span  >{social.name}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
-        {/* DBLSEO Bottom Section */}
-        <div className="mt-12 border-t border-background/20 pt-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex flex-col sm:flex-row items-center gap-4 text-sm text-background/60">
+        {/* TEBOTRONIC Bottom Section */}
+        <div className="mt-12 border-t border-gray-100 pt-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center gap-4 text-sm text-gray-400">
               <p>{copyright}</p>
-              <span className="hidden sm:inline text-background/40">•</span>
-              <div className="flex items-center gap-1 text-xs text-background/40">
-                <span>Website Design &amp; SEO by</span>
+              <span className="hidden sm:inline text-gray-300">•</span>
+              <div className="flex items-center gap-1 text-xs text-gray-400">
+                <span>Dizajni i Uebfaqes &amp; SEO nga</span>
                 <Link 
-                  href="https://dblseo.com/" 
+                  href="https://www.tebotronic.com/"  
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center gap-2 transition-colors hover:text-primary"
                 >
                   <Image 
-                    alt="DBLSEO Logo" 
+                    alt="TEBOTRONIC Logo" 
                     loading="lazy" 
                     width={20} 
                     height={20} 
                     className="object-contain" 
-                    src="/assets/config/dblseo-logo.webp"
+                    src="/tb.png"
                   />
-                  <span className="font-semibold">DBLSEO.</span>
+                  <span className="font-semibold">TEBOTRONIC</span>
                 </Link>
               </div>
             </div>
-            <div className="flex items-center gap-4 text-sm text-background/60">
+            <div className="flex items-center gap-4 text-sm text-gray-400">
               {legalLinks.map((link, index) => (
                 <Link
                   key={index}

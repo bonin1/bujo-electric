@@ -3,8 +3,10 @@
 import React, { useState, useMemo } from 'react';
 import Image from '@/components/ui/image';
 import Link from 'next/link';
-import { Calendar, Clock, User, Tag, Search } from 'lucide-react';
+import { Calendar, Clock, User, Search, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/buttons';
+import { DynamicHeader } from '@/components/global/dynamic-header';
+import { ScrollRevealUp } from '@/components/ui/animations/scroll-reveal';
 
 interface Author {
   name: string;
@@ -77,15 +79,14 @@ interface BlogIndexProps {
   }>;
 }
 
-const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [], tags = [] }) => {
+const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [] }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('');
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState<'date' | 'title' | 'readTime'>('date');
 
   // Format date
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
+    return new Date(dateString).toLocaleDateString('sq-AL', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -94,14 +95,13 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [], tags = []
 
   // Filter and sort posts based on search and filters
   const filteredPosts = useMemo(() => {
-    let filtered = posts;
+    let filtered = [...posts];
 
     // Search filter
     if (searchQuery) {
       filtered = filtered.filter(post => 
         post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        post.content.toLowerCase().includes(searchQuery.toLowerCase()) ||
         post.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
       );
     }
@@ -109,13 +109,6 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [], tags = []
     // Category filter
     if (selectedCategory) {
       filtered = filtered.filter(post => post.category.slug === selectedCategory);
-    }
-
-    // Tag filter
-    if (selectedTags.length > 0) {
-      filtered = filtered.filter(post => 
-        selectedTags.some(tag => post.tags.includes(tag))
-      );
     }
 
     // Sort posts
@@ -132,302 +125,161 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [], tags = []
     });
 
     return filtered;
-  }, [posts, searchQuery, selectedCategory, selectedTags, sortBy]);
-
-  // Separate featured and regular posts from filtered results
-  const featuredPosts = filteredPosts.filter(post => post.featured);
-  const regularPosts = filteredPosts.filter(post => !post.featured);
-
-  // Handle tag selection
-  const handleTagToggle = (tag: string) => {
-    setSelectedTags(prev => 
-      prev.includes(tag) 
-        ? prev.filter(t => t !== tag)
-        : [...prev, tag]
-    );
-  };
-
-  // Clear all filters
-  const clearFilters = () => {
-    setSearchQuery('');
-    setSelectedCategory('');
-    setSelectedTags([]);
-    setSortBy('date');
-  };
+  }, [posts, searchQuery, selectedCategory, sortBy]);
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="bg-secondary py-16">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-6">
-              Professional Services Blog
-            </h1>
-            <p className="text-xl text-text-secondary leading-relaxed max-w-3xl mx-auto mb-8">
-              Expert tips, guides, and insights for maintaining your property in Example City, North Town, South Town, and East Village.
-            </p>
-            
-            {/* Search and Filter */}
-            <div className="max-w-4xl mx-auto">
-              <div className="flex flex-col sm:flex-row gap-4 mb-4">
-                <div className="relative flex-1">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-text-muted w-4 h-4" />
-                  <input
-                    type="text"
-                    placeholder="Search articles..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-10 pr-4 py-3 border border-border rounded-lg bg-background text-text-dark placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                </div>
+    <div className="min-h-screen bg-gray-50">
+      <DynamicHeader 
+        title="Blogu & Lajmet" 
+        description="Këshilla ekspertësh, udhëzues dhe informacione për mirëmbajtjen e rrjetit tuaj elektrik." 
+        breadcrumbs={[{ label: 'Blogu', href: '/blog/' }]} 
+      />
+
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Search and Filter Bar */}
+          <div className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 mb-16">
+            <div className="flex flex-col lg:flex-row gap-6 items-center">
+              <div className="relative flex-1 w-full">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <input
+                  type="text"
+                  placeholder="Kërko artikuj..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-primary/20 transition-all"
+                />
+              </div>
+              
+              <div className="flex flex-wrap gap-4 w-full lg:w-auto">
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="px-4 py-3 border border-border rounded-lg bg-background text-text-dark focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="flex-1 lg:flex-none px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-primary/20 transition-all appearance-none cursor-pointer"
                 >
-                  <option value="">All Categories</option>
+                  <option value="">Të Gjitha Kategoritë</option>
                   {categories.map((category) => (
                     <option key={category.id} value={category.slug}>
                       {category.name}
                     </option>
                   ))}
                 </select>
+
                 <select
                   value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value as 'date' | 'title' | 'readTime')}
-                  className="px-4 py-3 border border-border rounded-lg bg-background text-text-dark focus:outline-none focus:ring-2 focus:ring-primary"
+                  onChange={(e) => setSortBy(e.target.value as 'date' | 'title')}
+                  className="flex-1 lg:flex-none px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-primary/20 transition-all appearance-none cursor-pointer"
                 >
-                  <option value="date">Sort by Date</option>
-                  <option value="title">Sort by Title</option>
-                  <option value="readTime">Sort by Read Time</option>
+                  <option value="date">Më të fundit</option>
+                  <option value="title">Sipas Titullit</option>
+                  <option value="readTime">Koha e leximit</option>
                 </select>
               </div>
-              
-              {/* Active Filters */}
-              {(searchQuery || selectedCategory || selectedTags.length > 0) && (
-                <div className="flex flex-wrap items-center gap-2 justify-center">
-                  <span className="text-text-muted text-sm">Active filters:</span>
-                  {searchQuery && (
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
-                      Search: {searchQuery}
-                    </span>
-                  )}
-                  {selectedCategory && (
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
-                      Category: {categories.find(c => c.slug === selectedCategory)?.name}
-                    </span>
-                  )}
-                  {selectedTags.map(tag => (
-                    <span 
-                      key={tag}
-                      className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm cursor-pointer hover:bg-accent/20"
-                      onClick={() => handleTagToggle(tag)}
-                    >
-                      {tag} ×
-                    </span>
-                  ))}
-                  <button
-                    onClick={clearFilters}
-                    className="text-text-muted hover:text-text-dark text-sm underline"
-                  >
-                    Clear all
-                  </button>
-                </div>
-              )}
             </div>
           </div>
 
-          {/* Categories */}
-          {categories.length > 0 && (
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-text-dark mb-6 text-center">Browse by Category</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {categories.map((category) => (
-                  <Link
-                    key={category.id}
-                    href={`/${category.slug}`}
-                    className="bg-background p-6 rounded-lg hover:shadow-lg transition-all duration-300 group"
-                  >
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                        <Tag className="w-6 h-6 text-primary" />
+          {/* Blog Grid */}
+          {filteredPosts.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {filteredPosts.map((post, index) => (
+                <ScrollRevealUp key={post.id} delay={index * 0.1}>
+                  <Link href={`/${post.slug}/`} className="group block h-full">
+                    <article className="h-full bg-white rounded-[2.5rem] shadow-sm border border-gray-100 overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 flex flex-col">
+                      <div className="relative h-72 overflow-hidden">
+                        <Image
+                          src={post.image.url}
+                          alt={post.image.alt}
+                          fill
+                          className="object-cover transition-transform duration-700 group-hover:scale-110"
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                        />
+                        <div className="absolute top-6 left-6">
+                          <span className="bg-white/90 backdrop-blur-md text-gray-900 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
+                            {post.category.name}
+                          </span>
+                        </div>
                       </div>
-                      <h3 className="font-semibold text-text-dark mb-2 group-hover:text-primary transition-colors">
-                        {category.name}
-                      </h3>
-                      <p className="text-sm text-text-secondary">
-                        {category.description}
-                      </p>
-                    </div>
+                      
+                      <div className="p-10 flex-grow flex flex-col">
+                        <div className="flex items-center gap-4 text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">
+                          <div className="flex items-center gap-2">
+                            <Calendar className="w-4 h-4 text-primary" />
+                            {formatDate(post.publishedAt)}
+                          </div>
+                          <div className="w-1.5 h-1.5 rounded-full bg-gray-200" />
+                          <div className="flex items-center gap-2">
+                            <Clock className="w-4 h-4 text-primary" />
+                            {post.readTime}
+                          </div>
+                        </div>
+                        
+                        <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors line-clamp-2 leading-tight">
+                          {post.title}
+                        </h3>
+                        
+                        <p className="text-gray-500 text-base line-clamp-3 mb-8 flex-grow leading-relaxed">
+                          {post.excerpt}
+                        </p>
+
+                        <div className="flex items-center justify-between pt-8 border-t border-gray-50">
+                          <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                              <User className="w-5 h-5 text-primary" />
+                            </div>
+                            <span className="text-sm font-bold text-gray-900">Bujo Electric</span>
+                          </div>
+                          <div className="w-12 h-12 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <ArrowRight className="w-5 h-5" />
+                          </div>
+                        </div>
+                      </div>
+                    </article>
                   </Link>
-                ))}
+                </ScrollRevealUp>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20">
+              <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Search className="w-10 h-10 text-gray-300" />
               </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Nuk u gjet asnjë artikull</h3>
+              <p className="text-gray-500">Provoni të kërkoni me terma të tjerë ose pastroni filtrat.</p>
+              <Button 
+                variant="outline" 
+                className="mt-8 rounded-full px-8"
+                onClick={() => {
+                  setSearchQuery('');
+                  setSelectedCategory('');
+                }}
+              >
+                Pastro Filtrat
+              </Button>
             </div>
           )}
         </div>
       </section>
 
-      {/* Featured Posts */}
-      {featuredPosts.length > 0 && (
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-3xl font-bold text-text-dark mb-12 text-center">Featured Articles</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {featuredPosts.map((post) => (
-                <article key={post.id} className="bg-secondary rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="relative h-64 lg:h-80">
-                    <Image
-                      src={post.image.url}
-                      alt={post.image.alt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                        Featured
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-8">
-                    <div className="mb-4">
-                      <Link
-                        href={`/blog/category/${post.category.slug}`}
-                        className="text-primary hover:text-primary/80 text-sm font-medium"
-                      >
-                        {post.category.name}
-                      </Link>
-                    </div>
-                    <h3 className="text-2xl font-bold text-text-dark mb-4 line-clamp-2">
-                      <Link href={`/${post.category.slug}/${post.slug}`} className="hover:text-primary transition-colors">
-                        {post.title}
-                      </Link>
-                    </h3>
-                    <p className="text-text-secondary mb-6 line-clamp-3">
-                      {post.excerpt}
-                    </p>
-                    <div className="flex items-center justify-between text-text-muted text-sm mb-6">
-                      <div className="flex items-center gap-2">
-                        <User className="w-4 h-4" />
-                        <span>{post.author.name}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4" />
-                        <span>{formatDate(post.date)}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4" />
-                        <span>{post.readTime}</span>
-                      </div>
-                    </div>
-                    <Link href={`/${post.category.slug}/${post.slug}`}>
-                      <Button className="w-full">
-                        Read Article
-                      </Button>
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Regular Posts */}
-      <section className="py-16 bg-secondary">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold text-text-dark mb-12 text-center">Latest Articles</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {regularPosts.map((post) => (
-              <article key={post.id} className="bg-background rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="relative h-48">
-                  <Image
-                    src={post.image.url}
-                    alt={post.image.alt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="mb-3">
-                    <Link
-                      href={`/blog/category/${post.category.slug}`}
-                      className="text-primary hover:text-primary/80 text-sm font-medium"
-                    >
-                      {post.category.name}
-                    </Link>
-                  </div>
-                  <h3 className="text-xl font-bold text-text-dark mb-3 line-clamp-2">
-                    <Link href={`/${post.category.slug}/${post.slug}`} className="hover:text-primary transition-colors">
-                      {post.title}
-                    </Link>
-                  </h3>
-                  <p className="text-text-secondary text-sm mb-4 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between text-text-muted text-sm mb-4">
-                    <span>{post.author.name}</span>
-                    <span>{post.readTime}</span>
-                  </div>
-                  <Link href={`/${post.category.slug}/${post.slug}`}>
-                    <Button variant="outline" size="sm" className="w-full">
-                      Read More
-                    </Button>
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Tags Section */}
-      {tags.length > 0 && (
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-3xl font-bold text-text-dark mb-12 text-center">Popular Tags</h2>
-            <div className="flex flex-wrap justify-center gap-3">
-              {tags.map((tag) => (
-                <button
-                  key={tag.slug}
-                  onClick={() => handleTagToggle(tag.name)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-2 ${
-                    selectedTags.includes(tag.name)
-                      ? 'bg-primary text-primary-foreground'
-                      : 'bg-accent/10 text-accent hover:bg-accent/20'
-                  }`}
-                >
-                  <Tag className="w-3 h-3" />
-                  {tag.name} ({tag.count})
-                </button>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* CTA Section */}
-      <section className="bg-primary py-16">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-            Ready to Transform Your Property?
-          </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-            Put these expert tips into action with our professional installation and maintenance services.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg" variant="secondary">
-                Get Free Consultation
+      {/* Newsletter Section */}
+      <section className="py-24 bg-gray-900 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 skew-x-12 translate-x-1/2 pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="bg-primary rounded-[3rem] p-12 md:p-20 text-center text-white">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Qëndroni të informuar</h2>
+            <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+              Regjistrohuni në buletinin tonë për të marrë këshillat më të fundit mbi sigurinë elektrike dhe ofertat tona.
+            </p>
+            <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+              <input
+                type="email"
+                placeholder="Email-i juaj"
+                className="flex-1 px-8 py-5 rounded-full bg-white text-gray-900 border-none focus:ring-4 focus:ring-white/20 transition-all"
+                required
+              />
+              <Button size="lg" variant="secondary" className="rounded-full px-10 font-bold text-primary">
+                Regjistrohu
               </Button>
-            </Link>
-            <Link href="/services">
-              <Button size="lg" variant="outline">
-                View Our Services
-              </Button>
-            </Link>
+            </form>
           </div>
         </div>
       </section>
@@ -436,3 +288,4 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [], tags = []
 };
 
 export default BlogIndex;
+

@@ -33,9 +33,9 @@ export default function PortfolioClientWrapper({
   initialProjects, 
   categories 
 }: PortfolioClientWrapperProps) {
-  const [selectedCategory, setSelectedCategory] = useState("All Projects");
+  const [selectedCategory, setSelectedCategory] = useState("Të Gjitha");
 
-  const filteredProjects = selectedCategory === "All Projects" 
+  const filteredProjects = selectedCategory === "Të Gjitha" 
     ? initialProjects 
     : initialProjects.filter(project => project.category === selectedCategory);
 

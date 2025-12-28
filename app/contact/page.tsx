@@ -30,10 +30,10 @@ const page = () => {
       
       <div>
         <DynamicHeader
-          title="Contact Us"
-          description={`Get in touch for a free consultation and quote. We serve ${topLocations} with professional ${BUSINESS_INFO.primaryKeyword.toLowerCase()}.`}
+          title="Na Kontaktoni"
+          description={`Na kontaktoni për një konsultim dhe ofertë falas. Ne shërbejmë në ${topLocations} me shërbime profesionale të ${BUSINESS_INFO.primaryKeyword.toLowerCase()}.`}
           image="/assets/config/placeholder-image.png"
-          breadcrumbs={[{ label: 'Contact', href: '/contact/' }]}
+          breadcrumbs={[{ label: 'Kontakti', href: '/contact/' }]}
         />
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">

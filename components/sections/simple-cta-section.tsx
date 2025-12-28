@@ -16,7 +16,7 @@ export default function SimpleCTASection({
   title = "Ready to Get Started?",
   description = BUSINESS_INFO.ctaText,
   primaryButtonText = "Request Free Quote",
-  primaryButtonHref = "/contact",
+  primaryButtonHref = "/kontakti",
   secondaryButtonText = `Call Now: ${getPhoneDisplay()}`,
   secondaryButtonHref = `tel:${getPhoneTel()}`
 }: SimpleCTASectionProps) {

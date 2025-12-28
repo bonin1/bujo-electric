@@ -68,7 +68,7 @@ const ThingsToDoPage: React.FC<ThingsToDoPageProps> = ({ cityData, city }) => {
           </div>
         </div>
         
-        <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 text-center text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Things to do in {cityData.cityName}, {cityData.state}
           </h1>
@@ -76,14 +76,14 @@ const ThingsToDoPage: React.FC<ThingsToDoPageProps> = ({ cityData, city }) => {
             Discover the best attractions, activities, and local gems that make {cityData.cityName} a wonderful place to live and visit.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact/">
+            <Link href="/kontakti/">
               <Button size="lg" variant="default">
-                Plan Your Visit
+                Na Kontaktoni
               </Button>
             </Link>
-            <Link href={`/services`}>
+            <Link href={`/sherbime-elektrike`}>
               <Button variant="outline" size="lg">
-                Services in {cityData.cityName}
+                Shërbimet në {cityData.cityName}
               </Button>
             </Link>
           </div>
@@ -253,20 +253,20 @@ const ThingsToDoPage: React.FC<ThingsToDoPageProps> = ({ cityData, city }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-              Planning to Visit {cityData.cityName}?
+              Keni nevojë për shërbime elektrike në {cityData.cityName}?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-              Let us help you create your dream outdoor space in this wonderful city.
+              Na lejoni t&apos;ju ndihmojmë me sigurinë dhe efikasitetin e rrjetit tuaj elektrik.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact/">
+              <Link href="/kontakti/">
                 <Button size="lg" variant="secondary">
-                  Get a Free Consultation
+                  Merr një Konsultim Falas
                 </Button>
               </Link>
-              <Link href={`/services/`}>
+              <Link href={`/sherbime-elektrike/`}>
                 <Button variant="outline" size="lg">
-                  Services in {cityData.cityName}
+                  Shërbimet në {cityData.cityName}
                 </Button>
               </Link>
             </div>

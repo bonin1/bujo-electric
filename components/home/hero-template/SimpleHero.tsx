@@ -37,7 +37,7 @@ export default function SimpleHero({
         <div className="absolute inset-0 bg-black/50" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <ScrollRevealUp delay={0.2}>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             {title}
@@ -45,7 +45,7 @@ export default function SimpleHero({
         </ScrollRevealUp>
         
         <ScrollRevealUp delay={0.4}>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 max-w-7xl mx-auto">
             {subtitle}
           </p>
         </ScrollRevealUp>

@@ -68,10 +68,10 @@ export default function StatsSection() {
   const isStatsInView = useInView(statsRef, { once: false, amount: 0.3 })
 
   const stats = [
-    { icon: <Award className="w-8 h-8" />, value: 150, label: "Projects Completed", suffix: "+" },
-    { icon: <Users className="w-8 h-8" />, value: 1200, label: "Happy Clients", suffix: "+" },
-    { icon: <Calendar className="w-8 h-8" />, value: 12, label: "Years Experience", suffix: "" },
-    { icon: <TrendingUp className="w-8 h-8" />, value: 98, label: "Satisfaction Rate", suffix: "%" },
+    { icon: <Award className="w-8 h-8" />, value: 500, label: "Projekte të Përfunduara", suffix: "+" },
+    { icon: <Users className="w-8 h-8" />, value: 450, label: "Klientë të Kënaqur", suffix: "+" },
+    { icon: <Calendar className="w-8 h-8" />, value: 10, label: "Vite Përvojë", suffix: "+" },
+    { icon: <TrendingUp className="w-8 h-8" />, value: 100, label: "Shkalla e Kënaqësisë", suffix: "%" },
   ]
 
   const containerVariants = {

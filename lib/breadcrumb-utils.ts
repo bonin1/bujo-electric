@@ -17,7 +17,7 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
   const breadcrumbs: BreadcrumbItem[] = [];
   
   breadcrumbs.push({
-    name: 'Home',
+    name: 'Ballina',
     url: '/',
     position: 1
   });
@@ -61,7 +61,7 @@ export function getBreadcrumbProps(pathname: string) {
   return {
     breadcrumbs,
     schema,
-    currentPage: breadcrumbs[breadcrumbs.length - 1]?.name || 'Home'
+    currentPage: breadcrumbs[breadcrumbs.length - 1]?.name || 'Ballina'
   };
 }
 

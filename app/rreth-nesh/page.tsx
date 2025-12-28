@@ -1,18 +1,17 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { generateMetadataFromConfig, generateStructuredData } from '@/lib/seo-metadata'
-import OurStorySection from '@/components/about/our-story-section'
-import StatsSection from '@/components/about/stats-section'
-import MissionValuesSection from '@/components/about/mission-values-section'
+import ModernAbout from '@/components/about/modern-about'
 import CTASection from '@/components/global/call-to-action/cta-section'
 import ServiceAreasThinSection from '@/components/sections/service-areas-thin-section'
 import DynamicHeader from '@/components/global/dynamic-header/dynamic-header'
+import { TestimonialsSection } from '@/components/sections/testimonial-section/testimonials-section'
 
-export const metadata: Metadata = generateMetadataFromConfig('/about/');
+export const metadata: Metadata = generateMetadataFromConfig('/rreth-nesh/');
 
 const page = () => {
   // Generate structured data for about page
-  const structuredData = generateStructuredData('/about/');
+  const structuredData = generateStructuredData('/rreth-nesh/');
 
   return (
     <>
@@ -26,10 +25,18 @@ const page = () => {
       ))}
       
       <div className="min-h-screen">
-        <DynamicHeader title="About Example Project" description="Because we want you to know us" badges={["Local Expertise", "Free Consultation", "Satisfaction Guaranteed"]} breadcrumbs={[{ label: 'About', href: '/about/' }]} />
-        <OurStorySection />
-        <StatsSection />
-        <MissionValuesSection />
+        <DynamicHeader 
+          title="Rreth Nesh" 
+          description="Historia jonë, misioni dhe përkushtimi ndaj sigurisë elektrike në Kosovë" 
+          breadcrumbs={[{ label: 'Rreth Nesh', href: '/rreth-nesh/' }]} 
+        />
+        
+        <ModernAbout />
+
+        <div id="testimonials">
+          <TestimonialsSection />
+        </div>
+        
         <ServiceAreasThinSection />
         <CTASection />
       </div>

@@ -8,18 +8,18 @@ export default function MissionValuesSection() {
   const values = [
     {
       icon: <Award className="w-8 h-8 text-primary" aria-hidden="true" />,
-      title: "Quality Craftsmanship",
-      description: "We use premium materials and proven techniques to ensure every project meets our high standards."
+      title: "Punë Cilësore",
+      description: "Ne përdorim materiale premium dhe teknika të dëshmuara për të siguruar që çdo projekt të përmbushë standardet tona të larta."
     },
     {
       icon: <Users className="w-8 h-8 text-primary" aria-hidden="true" />,
-      title: "Expert Team",
-      description: "Our certified professionals bring years of experience and specialized knowledge to every project."
+      title: "Ekip Ekspertësh",
+      description: "Profesionistët tanë të certifikuar sjellin vite përvojë dhe njohuri të specializuara në çdo projekt elektrik."
     },
     {
       icon: <MapPin className="w-8 h-8 text-primary" aria-hidden="true" />,
-      title: "Local Expertise",
-      description: "We understand local climate and conditions, ensuring your property thrives year-round."
+      title: "Ekspertizë Lokale",
+      description: "Ne njohim mirë rrjetin dhe kërkesat specifike të Kosovës, duke siguruar që instalimet tuaja të jenë të sigurta dhe efikase."
     }
   ]
 
@@ -33,10 +33,10 @@ export default function MissionValuesSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission &amp; Values</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We&apos;re committed to creating sustainable, beautiful solutions while providing exceptional 
-            service to our community.
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Misioni dhe Vlerat Tona</h2>
+          <p className="text-xl text-gray-600 max-w-7xl mx-auto">
+            Ne jemi të përkushtuar për të krijuar zgjidhje të sigurta dhe efikase, duke ofruar shërbim 
+            të jashtëzakonshëm për komunitetin tonë në mbarë Kosovën.
           </p>
         </motion.div>
         
