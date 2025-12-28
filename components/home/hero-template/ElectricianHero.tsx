@@ -27,7 +27,7 @@ export default function ElectricianHero({
 }: ElectricianHeroProps) {
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#042946]">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#042946] pt-16 sm:pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -104,14 +104,14 @@ export default function ElectricianHero({
         />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10 px-[5px]">
         <div className="max-w-7xl">
           {/* Title */}
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-tight"
           >
             {title.split(' ').map((word, i) => (
               <span key={i} className={i === 1 ? "text-primary" : ""}>
@@ -125,7 +125,7 @@ export default function ElectricianHero({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-300 mb-10 max-w-7xl leading-relaxed"
+            className="text-base sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-10 max-w-7xl leading-relaxed"
           >
             {subtitle}
           </motion.p>
@@ -135,17 +135,17 @@ export default function ElectricianHero({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 mb-12"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12"
           >
-            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-white px-8 py-7 text-lg rounded-xl shadow-xl shadow-primary/20 group">
+            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-white px-6 py-5 sm:px-8 sm:py-7 text-base sm:text-lg rounded-xl shadow-xl shadow-primary/20 group">
               <Link href={cta1Link} className="flex items-center gap-2">
                 {cta1Text}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" asChild className="border-white/20 text-white hover:bg-white/10 px-8 py-7 text-lg rounded-xl backdrop-blur-sm">
+            <Button variant="outline" size="lg" asChild className="border-white/20 text-white hover:bg-white/10 px-6 py-5 sm:px-8 sm:py-7 text-base sm:text-lg rounded-xl backdrop-blur-sm">
               <Link href={`tel:${getPhoneTel()}`} className="flex items-center gap-2">
-                <Phone className="w-5 h-5" />
+                <Phone className="w-4 sm:w-5 h-4 sm:h-5" />
                 {getPhoneDisplay()}
               </Link>
             </Button>
@@ -156,42 +156,42 @@ export default function ElectricianHero({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/10 pt-10"
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 border-t border-white/10 pt-6 sm:pt-10"
           >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
-                <Shield className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+                <Shield className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
               </div>
               <div>
-                <p className="text-white font-bold text-sm">Të Licencuar</p>
-                <p className="text-gray-400 text-xs">Siguri maksimale</p>
+                <p className="text-white font-bold text-xs sm:text-sm">Të Licencuar</p>
+                <p className="text-gray-400 text-[10px] sm:text-xs">Siguri maksimale</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
-                <Clock className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+                <Clock className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
               </div>
               <div>
-                <p className="text-white font-bold text-sm">Përgjigje e Shpejtë</p>
-                <p className="text-gray-400 text-xs">Brenda 60 minutave</p>
+                <p className="text-white font-bold text-xs sm:text-sm">Përgjigje e Shpejtë</p>
+                <p className="text-gray-400 text-[10px] sm:text-xs">Brenda 60 minutave</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
-                <Star className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+                <Star className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
               </div>
               <div>
-                <p className="text-white font-bold text-sm">5 Yje</p>
-                <p className="text-gray-400 text-xs">Nga klientët tanë</p>
+                <p className="text-white font-bold text-xs sm:text-sm">5 Yje</p>
+                <p className="text-gray-400 text-[10px] sm:text-xs">Nga klientët tanë</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
-                <Zap className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/5 flex items-center justify-center border border-white/10">
+                <Zap className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
               </div>
               <div>
-                <p className="text-white font-bold text-sm">Ekspertizë</p>
-                <p className="text-gray-400 text-xs">Mbi 10 vite përvojë</p>
+                <p className="text-white font-bold text-xs sm:text-sm">Ekspertizë</p>
+                <p className="text-gray-400 text-[10px] sm:text-xs">Mbi 10 vite përvojë</p>
               </div>
             </div>
           </motion.div>

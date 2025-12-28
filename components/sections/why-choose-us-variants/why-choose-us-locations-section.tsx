@@ -32,7 +32,7 @@ const WhyChooseUsLocationsSection = () => {
           <div className="text-xl font-semibold text-text-dark mb-2">Service Areas</div>
           <div className="text-text-secondary mb-6">Across Multiple Regions</div>
           <Button size="lg" asChild className="group">
-            <Link href="/service-areas">
+            <Link href="/zonat-e-sherbimit/">
               <MapPin className="w-4 h-4 mr-2" />
               View All Locations
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

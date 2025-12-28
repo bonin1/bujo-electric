@@ -94,16 +94,16 @@ export function LongNavbar() {
         <header className={cn(
             "fixed top-0 left-0 right-0 z-50 transition-all duration-300","bg-black/80 backdrop-blur-md shadow-lg border-b border-border/50" 
         )}>
-            <div className="mx-auto flex max-w-8xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+            <div className="mx-auto flex max-w-8xl items-center justify-between px-3 py-2 sm:px-6 sm:py-3 lg:px-8">
                 <Link href="/" className="flex items-center space-x-2" aria-label={`${BUSINESS_INFO.name} Home`}>
                     <Image
                         src="/assets/config/logo.webp"
                         alt={`${BUSINESS_INFO.name} - Professional Services`}
                         width={160}
                         height={64}
-                        className="h-20 w-auto"
+                        className="h-12 sm:h-16 lg:h-20 w-auto"
                         priority
-                        sizes="(max-width: 768px) 120px, 160px"
+                        sizes="(max-width: 768px) 80px, 160px"
                     />
                 </Link>
                 
@@ -112,16 +112,17 @@ export function LongNavbar() {
                     <NavigationMenuDemo />
                 </nav>
                 
-                <div className="hidden xl:flex xl:items-center xl:gap-3">
-                    <Button asChild variant="outline" size="sm">
-                        <Link href={`tel:${getPhoneTel()}`} className="flex items-center gap-2" aria-label={`Telefononi në ${getPhoneDisplay()}`}>
-                            <Phone className="h-4 w-4" />
-                            Telefono Tani!
+                <div className="hidden md:flex md:items-center md:gap-2 lg:gap-3">
+                    <Button asChild variant="outline" size="sm" className="text-xs lg:text-sm px-2 py-1 lg:px-3 lg:py-2">
+                        <Link href={`tel:${getPhoneTel()}`} className="flex items-center gap-1 lg:gap-2" aria-label={`Telefononi në ${getPhoneDisplay()}`}>
+                            <Phone className="h-3 w-3 lg:h-4 lg:w-4" />
+                            <span className="hidden lg:inline">Telefono Tani!</span>
+                            <span className="lg:hidden">{getPhoneDisplay()}</span>
                         </Link>
                     </Button>
-                    <Button asChild variant="outline" size="sm">
+                    <Button asChild variant="outline" size="sm" className="text-xs lg:text-sm px-2 py-1 lg:px-3 lg:py-2">
                         <Link href="/kontakti" aria-label={`Merrni një konsultë falas për shërbimet ${BUSINESS_INFO.primaryKeyword}`}>
-                            Konsultë Falas
+                            Konsultë
                         </Link>
                     </Button>
                     
@@ -131,26 +132,26 @@ export function LongNavbar() {
                     variant="ghost" 
                     size="sm" 
                     className={cn(
-                        "xl:hidden p-3 transition-colors duration-200","text-[#f5f5f5] hover:bg-[#f5f5f5]/10"
+                        "md:hidden p-2 transition-colors duration-200","text-[#f5f5f5] hover:bg-[#f5f5f5]/10"
                     )}
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
                     aria-expanded={isMobileMenuOpen}
                 >
-                    {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                    {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
                 </Button>
             </div>
 
             {/* Mobile Menu Overlay */}
             {isMounted && isMobileMenuOpen && (
-                <div className="xl:hidden fixed inset-0 bg-black/50 z-55" onClick={closeMobileMenu} />
+                <div className="md:hidden fixed inset-0 bg-black/50 z-55" onClick={closeMobileMenu} />
             )}
 
             {/* Mobile Menu Sidebar */}
             {isMounted && (
             <div 
                 className={cn(
-                    "xl:hidden fixed top-0 right-0 h-screen w-80 max-w-[85vw] bg-black shadow-2xl transform transition-transform duration-300 ease-in-out z-60",
+                    "md:hidden fixed top-0 right-0 h-screen w-72 max-w-[85vw] bg-black shadow-2xl transform transition-transform duration-300 ease-in-out z-60",
                     isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
                 )}
                 role="dialog"
@@ -159,14 +160,14 @@ export function LongNavbar() {
             >
                 <div className="flex flex-col h-full">
                     {/* Header - Fixed */}
-                    <div className="flex items-center justify-between p-4 border-b border-white/20 bg-black/95 backdrop-blur-sm">
+                    <div className="flex items-center justify-between p-3 border-b border-white/20 bg-black/95 backdrop-blur-sm">
                         <Link href="/" onClick={closeMobileMenu} className="flex items-center space-x-2">
                             <Image
                                 src="/assets/config/logo.webp"
                                 alt={`${BUSINESS_INFO.name} - Professional Services`}
                                 width={160}
                                 height={64}
-                                className="h-20 w-auto"
+                                className="h-12 w-auto"
                                 priority
                                 fetchPriority="high"
                                 sizes="100px"
@@ -361,19 +362,20 @@ export function LongNavbar() {
                     </div>
 
                     {/* Action Buttons - Fixed at Bottom */}
-                    <div className="p-4 border-t border-white/20 bg-black/95 backdrop-blur-sm space-y-3">
-                        <Button asChild variant="outline" size="sm" className="w-full font-medium border-white/20 text-[#2E2E2E] hover:bg-white/10 hover:border-white/30">
-                            <Link href={`tel:${getPhoneTel()}`} className="flex items-center justify-center gap-2" onClick={closeMobileMenu} aria-label={`Telefononi në ${getPhoneDisplay()}`}>
-                                <Phone className="h-4 w-4" />
-                                Telefono Tani!
-                            </Link>
-                        </Button>
-                        <Button asChild variant="outline" size="sm" className="w-full font-medium border-white/20 text-[#2E2E2E] hover:bg-white/10 hover:border-white/30">
-                            <Link href="/kontakti/" onClick={closeMobileMenu} aria-label="Kërkoni konsultë falas">
-                                Konsultë Falas
-                            </Link>
-                        </Button>
-                        
+                    <div className="p-3 border-t border-white/20 bg-black/95 backdrop-blur-sm">
+                        <div className="flex gap-2">
+                            <Button asChild variant="outline" size="sm" className="flex-1 text-xs font-medium border-white/20 text-[#2E2E2E] hover:bg-white/10 hover:border-white/30 px-2 py-2">
+                                <Link href={`tel:${getPhoneTel()}`} className="flex items-center justify-center gap-1" onClick={closeMobileMenu} aria-label={`Telefononi në ${getPhoneDisplay()}`}>
+                                    <Phone className="h-3 w-3" />
+                                    <span className="whitespace-nowrap">Telefono</span>
+                                </Link>
+                            </Button>
+                            <Button asChild variant="outline" size="sm" className="flex-1 text-xs font-medium border-white/20 text-[#2E2E2E] hover:bg-white/10 hover:border-white/30 px-2 py-2">
+                                <Link href="/kontakti/" onClick={closeMobileMenu} aria-label="Kërkoni konsultë falas">
+                                    <span className="whitespace-nowrap">Konsultë</span>
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>

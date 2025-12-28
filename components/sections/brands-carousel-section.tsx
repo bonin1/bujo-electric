@@ -7,34 +7,34 @@ import { AnimatedBrandLogo } from '@/components/ui/animations/animated-brand-log
 const BrandsCarouselSection = () => {
   const brands = [
     {
-      name: "Schneider Electric",
-      logo: "/assets/images/brands/schneider-electric-logo.webp",
-      alt: "Schneider Electric Logo"
+      name: "Google",
+      logo: "/assets/images/brands/google-logo.webp",
+      alt: "Google Logo"
     },
     {
-      name: "ABB",
-      logo: "/assets/images/brands/abb-logo.webp",
-      alt: "ABB Logo"
+      name: "Facebook",
+      logo: "/assets/images/brands/facebook.webp",
+      alt: "Facebook Logo"
     },
     {
-      name: "Siemens",
-      logo: "/assets/images/brands/siemens-logo.webp",
-      alt: "Siemens Logo"
+      name: "Apple",
+      logo: "/assets/images/brands/apple.webp",
+      alt: "Apple Logo"
     },
     {
-      name: "Legrand",
-      logo: "/assets/images/brands/legrand-logo.webp",
-      alt: "Legrand Logo"
+      name: "BBB",
+      logo: "/assets/images/brands/bbb.webp",
+      alt: "BBB Logo"
     },
     {
-      name: "Philips",
-      logo: "/assets/images/brands/philips-logo.webp",
-      alt: "Philips Lighting Logo"
+      name: "Home Advisor",
+      logo: "/assets/images/brands/home-advisor.webp",
+      alt: "Home Advisor Logo"
     },
     {
-      name: "Eaton",
-      logo: "/assets/images/brands/eaton-logo.webp",
-      alt: "Eaton Logo"
+      name: "Yelp",
+      logo: "/assets/images/brands/yelp-logo.webp",
+      alt: "Yelp Logo"
     }
   ]
 

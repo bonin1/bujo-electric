@@ -64,7 +64,7 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({
            {/* Subtitle */}
             {subtitle && (
               <ScrollRevealUp delay={0.4}>
-                <h2 className="text-xl md:text-2xl text-text-light/90 mb-2 font-medium">
+                <h2 className="text-base sm:text-lg md:text-2xl text-text-light/90 mb-2 font-medium">
                   {subtitle}
                 </h2>
               </ScrollRevealUp>
@@ -74,7 +74,7 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({
             
             {/* Title */}
             <ScrollRevealUp delay={0.3}>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-text-light">
+              <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-text-light">
                 {title}
               </h1>
             </ScrollRevealUp>
@@ -84,7 +84,7 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({
             {/* Description */}
             {description && (
               <ScrollRevealUp delay={0.2}>
-                <p className="text-lg text-text-light/80 mb-1 leading-relaxed max-w-3xl mx-auto">
+                <p className="text-sm sm:text-base md:text-lg text-text-light/80 mb-1 leading-relaxed max-w-3xl mx-auto">
                   {description}
                 </p>
               </ScrollRevealUp>

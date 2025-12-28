@@ -54,11 +54,11 @@ export function ModernNavbar() {
       className={cn(
         "fixed left-1/2 -translate-x-1/2 z-[100] transition-all duration-500 ease-in-out rounded-2xl bg-white/90 backdrop-blur-md shadow-lg border border-gray-200/50",
         isScrolled 
-          ? "top-4 py-2 w-[calc(100%-2rem)] max-w-7xl" 
-          : "top-8 py-5 w-[95%] max-w-[90rem]"
+          ? "top-2 py-1 sm:py-2 w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-7xl" 
+          : "top-3 sm:top-8 py-2 sm:py-5 w-[calc(100%-1rem)] sm:w-[95%] max-w-[90rem]"
       )}
     >
-      <div className="w-full h-full px-6 md:px-10">
+      <div className="w-full h-full px-3 sm:px-6 md:px-10">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <div className="flex-1 flex justify-start">
@@ -67,9 +67,9 @@ export function ModernNavbar() {
                 <Image
                   src="/logo.svg"
                   alt={BUSINESS_INFO.name}
-                  width={isScrolled ? 80 : 90}
-                  height={isScrolled ? 50 : 60}
-                  className="object-contain transition-all duration-300"
+                  width={isScrolled ? 60 : 70}
+                  height={isScrolled ? 35 : 45}
+                  className="object-contain transition-all duration-300 w-16 h-10 sm:w-auto sm:h-auto"
                   priority
                 />
               </div>
@@ -149,9 +149,9 @@ export function ModernNavbar() {
           {/* Mobile Menu Toggle */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-xl transition-colors text-gray-900 hover:bg-gray-100"
+            className="lg:hidden p-1.5 sm:p-2 rounded-xl transition-colors text-gray-900 hover:bg-gray-100"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
           </button>
         </div>
       </div>
@@ -166,8 +166,8 @@ export function ModernNavbar() {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="fixed inset-0 z-[200] bg-white lg:hidden flex flex-col h-[100dvh] w-full overflow-hidden"
           >
-            <div className="p-4 flex items-center justify-between border-b border-gray-100">
-              <div className="h-16 w-48 relative">
+            <div className="p-3 flex items-center justify-between border-b border-gray-100">
+              <div className="h-10 w-32 relative">
                 <Image
                   src="/logo.webp"
                   alt={BUSINESS_INFO.name}
@@ -177,30 +177,30 @@ export function ModernNavbar() {
               </div>
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="p-2 text-gray-900 hover:bg-gray-100 rounded-xl"
+                className="p-1.5 text-gray-900 hover:bg-gray-100 rounded-xl"
               >
-                <X className="w-6 h-6" />
+                <X className="w-5 h-5" />
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto p-4 space-y-2">
+            <div className="flex-1 overflow-y-auto p-3 space-y-1">
               {navLinks.map((link) => (
-                <div key={link.name} className="space-y-1">
+                <div key={link.name} className="space-y-0.5">
                   <Link
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center justify-between p-3 text-lg font-bold text-gray-900 hover:bg-primary/5 hover:text-primary rounded-2xl transition-colors"
+                    className="flex items-center justify-between p-2.5 text-base font-bold text-gray-900 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors"
                   >
                     {link.name}
                   </Link>
                   {link.dropdown && (
-                    <div className="pl-4 space-y-1 border-l-2 border-gray-50 ml-3">
+                    <div className="pl-3 space-y-0.5 border-l-2 border-gray-50 ml-2">
                       {link.dropdown.map((item) => (
                         <Link 
                           key={item.name} 
                           href={item.href}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="block p-2 text-sm text-gray-500 hover:text-primary"
+                          className="block p-2 text-xs text-gray-500 hover:text-primary"
                         >
                           {item.name}
                         </Link>
@@ -211,10 +211,10 @@ export function ModernNavbar() {
               ))}
             </div>
 
-            <div className="p-4 border-t border-gray-100 space-y-3">
-              <Button asChild variant="outline" className="w-full rounded-2xl py-6 text-lg font-bold border-gray-200">
+            <div className="p-3 border-t border-gray-100">
+              <Button asChild variant="outline" className="w-full rounded-xl py-3 text-sm font-bold border-gray-200">
                 <Link href={`tel:${getPhoneTel()}`} className="flex items-center justify-center gap-2">
-                  <Phone className="w-5 h-5" />
+                  <Phone className="w-4 h-4" />
                   {getPhoneDisplay()}
                 </Link>
               </Button>
