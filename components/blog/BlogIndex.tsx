@@ -260,39 +260,6 @@ const BlogIndex: React.FC<BlogIndexProps> = ({ posts, categories = [] }) => {
           )}
         </div>
       </section>
-
-      {/* Newsletter Section */}
-      <section className="py-24 bg-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <Image
-            src="/assets/images/services/8.webp"
-            alt="Newsletter"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-        </div>
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 skew-x-12 translate-x-1/2 pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-primary rounded-[3rem] p-12 md:p-20 text-center text-white">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Qëndroni të informuar</h2>
-            <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-              Regjistrohuni në buletinin tonë për të marrë këshillat më të fundit mbi sigurinë elektrike dhe ofertat tona.
-            </p>
-            <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Email-i juaj"
-                className="flex-1 px-8 py-5 rounded-full bg-white text-gray-900 border-none focus:ring-4 focus:ring-white/20 transition-all"
-                required
-              />
-              <Button size="lg" variant="secondary" className="rounded-full px-10 font-bold text-primary">
-                Regjistrohu
-              </Button>
-            </form>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
