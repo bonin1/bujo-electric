@@ -69,7 +69,7 @@ export function ModernNavbar() {
                   alt={BUSINESS_INFO.name}
                   width={isScrolled ? 60 : 70}
                   height={isScrolled ? 35 : 45}
-                  className="object-contain transition-all duration-300 w-16 h-10 sm:w-auto sm:h-auto"
+                  className="object-contain transition-all duration-300 "
                   priority
                 />
               </div>
