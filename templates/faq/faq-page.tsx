@@ -195,7 +195,7 @@ export default function FAQPage() {
                   Keni ende pyetje?
                 </h3>
                 <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-medium">
-                  Nëse nuk e gjetët përgjigjen që kërkoni, ekipi ynë është i gatshëm t'ju ndihmojë në çdo kohë.
+                  Nëse nuk e gjetët përgjigjen që kërkoni, ne jemi të gatshëm t'ju ndihmojmë në çdo kohë.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <Link

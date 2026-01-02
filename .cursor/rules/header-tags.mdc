@@ -106,14 +106,6 @@ Avoid generic H1s like "Welcome"
       {
         "NAME": "Instalime Rezidenciale",
         "URL": "/instalime-elektrike-rezidenciale/"
-      },
-      {
-        "NAME": "Instalime Komerciale",
-        "URL": "/instalime-elektrike-komerciale/"
-      },
-      {
-        "NAME": "Instalime Industriale",
-        "URL": "/instalime-industriale/"
       }
     ]
   },
@@ -236,14 +228,6 @@ Avoid generic H1s like "Welcome"
       {
         "NAME": "Instalime Rezidenciale",
         "URL": "/instalime-elektrike-rezidenciale/"
-      },
-      {
-        "NAME": "Instalime Komerciale",
-        "URL": "/instalime-elektrike-komerciale/"
-      },
-      {
-        "NAME": "Instalime Industriale",
-        "URL": "/instalime-industriale/"
       }
     ]
   },

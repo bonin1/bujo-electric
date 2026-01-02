@@ -26,8 +26,6 @@
   "serviceType": [
   "Instalime Elektrike",
   "Instalime Rezidenciale",
-  "Instalime Komerciale",
-  "Instalime Industriale",
   "Riparime Elektrike",
   "Defekte Elektrike",
   "Nd\u00ebrrim Siguresash & Panelev",
@@ -72,14 +70,6 @@
       {
         "NAME": "Instalime Rezidenciale",
         "URL": "/instalime-elektrike-rezidenciale/"
-      },
-      {
-        "NAME": "Instalime Komerciale",
-        "URL": "/instalime-elektrike-komerciale/"
-      },
-      {
-        "NAME": "Instalime Industriale",
-        "URL": "/instalime-industriale/"
       }
     ]
   },
@@ -167,14 +157,6 @@
       {
         "NAME": "Instalime Rezidenciale",
         "URL": "/instalime-elektrike-rezidenciale/"
-      },
-      {
-        "NAME": "Instalime Komerciale",
-        "URL": "/instalime-elektrike-komerciale/"
-      },
-      {
-        "NAME": "Instalime Industriale",
-        "URL": "/instalime-industriale/"
       }
     ]
   },

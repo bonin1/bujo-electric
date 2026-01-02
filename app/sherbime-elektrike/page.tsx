@@ -49,6 +49,7 @@ export default function ServicesPage() {
           subtitle="Ekspertizë dhe Siguri"
           description="Zgjidhje të plota për instalim, riparim dhe mirëmbajtje elektrike në të gjithë Kosovën."
           breadcrumbs={[{ label: 'Shërbimet', href: '/sherbime-elektrike/' }]}
+          image="/assets/images/services/1.webp"
         />
 
         {/* Core Services Grid */}

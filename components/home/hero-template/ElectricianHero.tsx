@@ -163,7 +163,7 @@ export default function ElectricianHero({
                 <Shield className="w-4 sm:w-5 h-4 sm:h-5 text-primary" />
               </div>
               <div>
-                <p className="text-white font-bold text-xs sm:text-sm">Të Licencuar</p>
+                <p className="text-white font-bold text-xs sm:text-sm">15 Vite Përvojë</p>
                 <p className="text-gray-400 text-[10px] sm:text-xs">Siguri maksimale</p>
               </div>
             </div>

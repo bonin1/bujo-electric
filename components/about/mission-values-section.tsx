@@ -13,8 +13,8 @@ export default function MissionValuesSection() {
     },
     {
       icon: <Users className="w-8 h-8 text-primary" aria-hidden="true" />,
-      title: "Ekip Ekspertësh",
-      description: "Profesionistët tanë të certifikuar sjellin vite përvojë dhe njohuri të specializuara në çdo projekt elektrik."
+      title: "Përvojë 15 Vjeçare",
+      description: "Ne sjellim mbi 15 vite përvojë dhe njohuri të specializuara në çdo projekt elektrik."
     },
     {
       icon: <MapPin className="w-8 h-8 text-primary" aria-hidden="true" />,

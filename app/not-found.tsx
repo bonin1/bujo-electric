@@ -39,7 +39,7 @@ const NotFound = () => {
         </h1>
         <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
           Faqja që po kërkoni duket se ka pësuar një &quot;shkurtim elektrik&quot;. 
-          Mos u shqetësoni, ekipi i {BUSINESS_INFO.name} është këtu për t&apos;ju rikthyer dritën!
+          Mos u shqetësoni, {BUSINESS_INFO.name} është këtu për t&apos;ju rikthyer dritën!
         </p>
 
         {/* Action Buttons */}

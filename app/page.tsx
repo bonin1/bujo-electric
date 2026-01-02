@@ -64,7 +64,7 @@ export default function Home() {
         {/* Hero Section */}
         <ElectricianHero
           title="Zgjidhje Elektrike Profesionale në mbarë Kosovën"
-          subtitle="Shërbime profesionale elektrike 24/7 në të gjithë Kosovën. Siguri, cilësi dhe korrektësi në çdo projekt. Nga instalimet rezidenciale deri te mirëmbajtja industriale, ekipi ynë i certifikuar garanton performancë maksimale dhe siguri të plotë për rrjetin tuaj elektrik."
+          subtitle="Shërbime profesionale elektrike 24/7 në të gjithë Kosovën. Me mbi 15 vite përvojë, ne garantojmë performancë maksimale dhe siguri të plotë për rrjetin tuaj elektrik."
           cta1Text="Merrni një Konsultë Falas"
           cta1Link="/kontakti/"
           cta2Text="Eksploro Shërbimet"

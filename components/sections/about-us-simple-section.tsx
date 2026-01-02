@@ -48,8 +48,8 @@ const AboutUsSimpleSection = ({ city, cityData }: AboutUsSimpleSectionProps) => 
               <div className="text-xl text-gray-600 leading-relaxed mb-10 max-w-7xl">
                 {cityData?.content ? parseMarkdownContent(cityData.content) : (
                   <div className="space-y-4">
-                    <p>{BUSINESS_INFO.name} është lider në ofrimin e shërbimeve elektrike profesionale në mbarë Kosovën. Me një përvojë mbi 10-vjeçare, ne jemi të përkushtuar të ofrojmë siguri, cilësi dhe efikasitet për çdo projekt, qoftë ai rezidencial, komercial apo industrial.</p>
-                    <p>Ekipi ynë i elektricistëve të certifikuar përdor teknologjinë më të fundit dhe materialet më cilësore për të siguruar që rrjeti juaj elektrik të jetë i sigurt dhe i qëndrueshëm. Ne kuptojmë rëndësinë e energjisë elektrike në jetën tuaj të përditshme, prandaj ofrojmë mbështetje 24/7 për çdo emergjencë.</p>
+                    <p>{BUSINESS_INFO.name} është lider në ofrimin e shërbimeve elektrike profesionale në mbarë Kosovën. Me një përvojë mbi 15-vjeçare, ne jemi të përkushtuar të ofrojmë siguri, cilësi dhe efikasitet për çdo projekt.</p>
+                    <p>Ne përdorim teknologjinë më të fundit dhe materialet më cilësore për të siguruar që rrjeti juaj elektrik të jetë i sigurt dhe i qëndrueshëm. Ne kuptojmë rëndësinë e energjisë elektrike në jetën tuaj të përditshme, prandaj ofrojmë mbështetje 24/7 për çdo emergjencë.</p>
                   </div>
                 )}
               </div>
@@ -61,8 +61,8 @@ const AboutUsSimpleSection = ({ city, cityData }: AboutUsSimpleSectionProps) => 
                     <CheckCircle className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg mb-1">Ekspertizë e Certifikuar</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">Teknikë të kualifikuar dhe me përvojë shumëvjeçare.</p>
+                    <h4 className="font-bold text-gray-900 text-lg mb-1">Përvojë 15 Vjeçare</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">Teknikë me përvojë shumëvjeçare në terren.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 group">
@@ -70,8 +70,8 @@ const AboutUsSimpleSection = ({ city, cityData }: AboutUsSimpleSectionProps) => 
                     <Shield className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg mb-1">Garanci 5-Vjeçare</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">Siguri e plotë dhe garanci për çdo punim tonin.</p>
+                    <h4 className="font-bold text-gray-900 text-lg mb-1">Korrektësi & Siguri</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">Siguri e plotë dhe korrektësi për çdo punim tonin.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 group">
@@ -79,8 +79,8 @@ const AboutUsSimpleSection = ({ city, cityData }: AboutUsSimpleSectionProps) => 
                     <Zap className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg mb-1">Licencuar & Siguruar</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">Punojmë sipas standardeve më të larta ndërkombëtare.</p>
+                    <h4 className="font-bold text-gray-900 text-lg mb-1">Materiale Cilësore</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">Punojmë sipas standardeve më të larta me materialet më të mira.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 group">

@@ -58,7 +58,7 @@ export default function ModernAbout() {
               viewport={{ once: true }}
             >
               <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-10 leading-[1.1]">
-                Mbi një dekadë <span className="text-primary">ekspertizë</span> në energji
+                Mbi 15 vite <span className="text-primary">ekspertizë</span> në energji
               </h2>
               <div className="space-y-8 text-xl text-gray-600 leading-relaxed font-medium">
                 <p>

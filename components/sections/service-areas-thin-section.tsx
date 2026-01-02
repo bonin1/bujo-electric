@@ -37,7 +37,7 @@ const ServiceAreasThinSection = () => {
                 Zonat tona të Shërbimit
               </h2>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-7xl">
-                Ne ofrojmë shërbime elektrike profesionale në të gjithë Kosovën, me fokus të veçantë në rajonin e Rrafshit të Dukagjinit. Ekipi ynë është i gatshëm të ndërhyjë shpejt në çdo lokacion.
+                Ne ofrojmë shërbime elektrike profesionale në të gjithë Kosovën, me fokus të veçantë në rajonin e Rrafshit të Dukagjinit. Ne jemi të gatshëm të ndërhyjmë shpejt në çdo lokacion.
               </p>
               
               <div className="space-y-6 mb-10">

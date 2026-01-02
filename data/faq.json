@@ -2,183 +2,39 @@
   "faqs": [
     {
       "id": 1,
-      "category": "Përgjithshme",
-      "question": "Cilat zona mbuloni me shërbimet tuaja?",
-      "answer": "Ne ofrojmë shërbime në të gjithë Kosovën, me fokus të veçantë në Prishtinë, Prizren, Ferizaj, Gjilan, Pejë dhe Gjakovë. Ekipi ynë është i gatshëm të vijë në lokacionin tuaj kudo që ndodheni."
+      "category": "General",
+      "question": "Cilat zona mbuloni?",
+      "answer": "Ne me krenari u sh\u00ebrbejm\u00eb Prishtin\u00eb, Kosov\u00eb, Prizren, Kosov\u00eb, Ferizaj, Kosov\u00eb, Gjilan, Kosov\u00eb, s\u00eb bashku me zonat p\u00ebrreth. Sh\u00ebrbimet tona profesionale jan\u00eb t\u00eb disponueshme n\u00eb t\u00eb gjitha k\u00ebto komunitete."
     },
     {
       "id": 2,
-      "category": "Përgjithshme",
-      "question": "Si mund të kontaktoj me Bujo Electric?",
-      "answer": "Ju mund të na kontaktoni në numrin tonë 24/7: 044 239 757, ose përmes emailit në info@bujoelectric.com. Gjithashtu mund të na visitoni në rrjetet tona sociale."
+      "category": "General",
+      "question": "Si mund t'ju kontaktoj?",
+      "answer": "Ju mund t\u00eb na kontaktoni n\u00eb 044 239 757 ose t\u00eb na d\u00ebrgoni email n\u00eb info@bujoelectric.com. Ne jemi n\u00eb dispozicion 24/7."
     },
     {
       "id": 3,
-      "category": "Shërbimet",
-      "question": "Çfarë lloj shërbimesh elektrike ofroni?",
-      "answer": "Ne ofrojmë një gamë të plotë shërbimesh: instalime elektrike rezidenciale dhe komerciale, riparime të defekteve, mirëmbajtje parandaluese, ndriçim LED, dhe sisteme të sigurisë."
+      "category": "Services",
+      "question": "\u00c7far\u00eb sh\u00ebrbimesh ofroni?",
+      "answer": "Ne ofrojm\u00eb Instalime Elektrike, Riparime Elektrike, Mir\u00ebmbajtje Elektrike, Ndri\u00e7im & Energji, Sisteme Speciale. Na kontaktoni p\u00ebr nj\u00eb konsultim falas p\u00ebr t\u00eb diskutuar nevojat tuaja specifike."
     },
     {
       "id": 4,
-      "category": "Shërbimet",
-      "question": "A ofroni vlerësime falas për projektet?",
-      "answer": "Po, ne ofrojmë vlerësime dhe konsultime plotësisht falas për të gjitha projektet tuaja. Na kontaktoni dhe ne do të dërgojmë një ekspert për të parë punën."
+      "category": "Services",
+      "question": "A ofroni vler\u00ebsime falas?",
+      "answer": "Po, ne ofrojm\u00eb vler\u00ebsime plot\u00ebsisht falas dhe pa detyrime p\u00ebr t\u00eb gjitha sh\u00ebrbimet tona. Na kontaktoni n\u00eb 044 239 757 p\u00ebr t\u00eb caktuar vler\u00ebsimin tuaj."
     },
     {
       "id": 5,
-      "category": "Siguria",
-      "question": "A janë teknikët tuaj të certifikuar?",
-      "answer": "Po, të gjithë teknikët tanë janë të certifikuar dhe kanë përvojë shumëvjeçare në fushën e elektroteknikës. Siguria juaj është prioriteti ynë kryesor."
+      "category": "Pricing",
+      "question": "Sa kushtojn\u00eb sh\u00ebrbimet tuaja?",
+      "answer": "\u00c7mimi ndryshon n\u00eb var\u00ebsi t\u00eb fush\u00ebveprimit t\u00eb pun\u00ebs, materialeve t\u00eb nevojshme dhe k\u00ebrkesave specifike. Ne ofrojm\u00eb \u00e7mime transparente, paraprake pa tarifa t\u00eb fshehura. Na kontaktoni p\u00ebr nj\u00eb vler\u00ebsim falas."
     },
     {
       "id": 6,
-      "category": "Emergjencat",
-      "question": "A ofroni shërbime emergjente gjatë natës?",
-      "answer": "Po, ne ofrojmë shërbim emergjent 24 orë në ditë, 7 ditë të javës. Nëse keni një defekt kritik, ne do të jemi aty sa më shpejt të jetë e mundur."
-    },
-    {
-      "id": 7,
-      "category": "Pagesat",
-      "question": "Si bëhet pagesa për shërbimet?",
-      "answer": "Ne pranojmë pagesa me para në dorë, transferta bankare dhe pagesa me kartelë. Për projekte më të mëdha, mund të diskutojmë edhe plane pagese."
-    },
-    {
-      "id": 8,
-      "category": "Garancia",
-      "question": "A ofroni garanci për punën e kryer?",
-      "answer": "Po, ne ofrojmë garanci për të gjitha instalimet dhe riparimet tona. Kohëzgjatja e garancisë varet nga lloji i shërbimit, por zakonisht është 1 deri në 5 vite."
-    },
-    {
-      "id": 9,
-      "category": "Materialet",
-      "question": "A i siguroni ju materialet apo duhet t'i blej unë?",
-      "answer": "Ne mund t'i sigurojmë të gjitha materialet e nevojshme nga partnerët tanë të besuar me çmime konkurruese, por ju jeni të lirë t'i blini edhe vetë nëse dëshironi."
-    },
-    {
-      "id": 10,
-      "category": "Kursimi i Energjisë",
-      "question": "A mund të më ndihmoni të kursej energji elektrike?",
-      "answer": "Po, ne ofrojmë auditime të energjisë dhe rekomandojmë zgjidhje si ndriçimi LED dhe sisteme inteligjente që mund të ulin faturën tuaj deri në 30%."
-    },
-    {
-      "id": 11,
-      "category": "Instalime",
-      "question": "A ofroni instalime elektrike për shtëpi të reja?",
-      "answer": "Po, ne jemi specialistë për instalime të plota në objekte të reja rezidenciale, duke filluar nga projektimi deri te montimi i pajisjeve fundore."
-    },
-    {
-      "id": 12,
-      "category": "Instalime",
-      "question": "A mund të bëni instalime elektrike në objekte industriale?",
-      "answer": "Po, kemi përvojë të gjerë në instalime industriale, duke përfshirë panele trefazore, motorë dhe sisteme automatizimi për fabrika."
-    },
-    {
-      "id": 13,
-      "category": "Riparime",
-      "question": "Çfarë duhet të bëj nëse kam një shkëndijë në prizë?",
-      "answer": "Nëse shihni shkëndija, fikni menjëherë siguresën përkatëse dhe na kontaktoni. Kjo mund të jetë shenjë e një lidhjeje të dobët ose mbingarkese."
-    },
-    {
-      "id": 14,
-      "category": "Riparime",
-      "question": "A riparoni panele elektrike të vjetra?",
-      "answer": "Po, ne riparojmë dhe modernizojmë panele të vjetra, duke zëvendësuar siguresat e vjetra me siguresa automatike moderne për siguri më të lartë."
-    },
-    {
-      "id": 15,
-      "category": "Mirëmbajtje",
-      "question": "Pse është e rëndësishme mirëmbajtja parandaluese?",
-      "answer": "Mirëmbajtja parandaluese identifikon problemet e vogla para se të bëhen defekte të mëdha, duke ju kursyer para dhe duke parandaluar ndërprerjet e punës."
-    },
-    {
-      "id": 16,
-      "category": "Mirëmbajtje",
-      "question": "A bëni inspektime termografike të paneleve?",
-      "answer": "Po, përdorim kamera termike për të zbuluar mbinxehjen e fshehur në panele, gjë që është jetike për parandalimin e zjarreve elektrike."
-    },
-    {
-      "id": 17,
-      "category": "Ndriçim",
-      "question": "Cilat janë përfitimet e ndriçimit LED në zyra?",
-      "answer": "Ndriçimi LED në zyra përmirëson përqendrimin e punonjësve, redukton lodhjen e syve dhe ul kostot e energjisë në mënyrë drastike."
-    },
-    {
-      "id": 18,
-      "category": "Ndriçim",
-      "question": "A instaloni ndriçim të jashtëm me sensorë?",
-      "answer": "Po, instalojmë sisteme ndriçimi të jashtëm që aktivizohen me lëvizje ose me rënien e muzgut, duke rritur sigurinë e shtëpisë suaj."
-    },
-    {
-      "id": 19,
-      "category": "Sisteme Speciale",
-      "question": "A instaloni stacione karikimi për vetura elektrike?",
-      "answer": "Po, ne ofrojmë instalim profesional të karikuesve për vetura elektrike (EV) për shtëpi dhe biznese, duke siguruar fuqinë e duhur elektrike."
-    },
-    {
-      "id": 20,
-      "category": "Sisteme Speciale",
-      "question": "A mund të bëni shtëpinë time 'Smart'?",
-      "answer": "Po, ne integrojmë sisteme Smart Home që ju lejojnë të kontrolloni ndriçimin, temperaturën dhe sigurinë përmes telefonit tuaj."
-    },
-    {
-      "id": 21,
-      "category": "Instalime",
-      "question": "A bëni instalime elektrike për biznese dhe dyqane?",
-      "answer": "Po, ofrojmë zgjidhje të plota për ambiente komerciale, duke përfshirë ndriçimin profesional dhe shpërndarjen e energjisë për pajisje zyre."
-    },
-    {
-      "id": 22,
-      "category": "Riparime",
-      "question": "Pse bien siguresat shpesh në shtëpinë time?",
-      "answer": "Kjo zakonisht ndodh për shkak të mbingarkesës së qarkut ose një defekti në ndonjë pajisje. Ne mund të bëjmë një kontroll për të gjetur shkakun e saktë."
-    },
-    {
-      "id": 23,
-      "category": "Siguria",
-      "question": "Si mund ta di nëse tokëzimi im është i rregullt?",
-      "answer": "Ne përdorim pajisje matëse profesionale për të testuar rezistencën e tokëzimit dhe për të garantuar që sistemi juaj i mbrojtjes funksionon."
-    },
-    {
-      "id": 24,
-      "category": "Emergjencat",
-      "question": "Çfarë duhet të bëj nëse ka erë djegieje nga paneli?",
-      "answer": "Fikni menjëherë çelësin kryesor të energjisë dhe na telefononi në numrin tonë të emergjencës. Mos tentoni ta prekni vetë panelin."
-    },
-    {
-      "id": 25,
-      "category": "Instalime",
-      "question": "A ofroni instalime të sistemeve të alarmit?",
-      "answer": "Po, si pjesë e sistemeve tona speciale, ne instalojmë infrastrukturën elektrike për sisteme alarmi dhe vëzhgimi me kamera."
-    },
-    {
-      "id": 26,
-      "category": "Mirëmbajtje",
-      "question": "A ofroni kontrata mirëmbajtjeje për biznese?",
-      "answer": "Po, ofrojmë kontrata vjetore mirëmbajtjeje që përfshijnë kontrolle periodike dhe prioritet në rast të ndonjë defekti."
-    },
-    {
-      "id": 27,
-      "category": "Ndriçim",
-      "question": "A mund të ndërroni ndriçimin e vjetër me LED pa prishur tavanin?",
-      "answer": "Në shumicën e rasteve po. Ne përdorim zgjidhje 'retrofit' që përshtaten me vrimat ekzistuese ose instalojmë shirita LED dekorativë."
-    },
-    {
-      "id": 28,
-      "category": "Sisteme Speciale",
-      "question": "A instaloni sisteme të energjisë rezervë (UPS/Gjeneratorë)?",
-      "answer": "Po, ne instalojmë dhe konfigurojmë sisteme që sigurojnë energji të pandërprerë për serverë ose pajisje kritike mjekësore dhe biznesi."
-    },
-    {
-      "id": 29,
-      "category": "Instalime",
-      "question": "A bëni instalime elektrike në ambiente me lagështi (pishina/banjo)?",
-      "answer": "Po, ne ndjekim rregulla strikte për instalimet në zona me lagështi, duke përdorur pajisje me mbrojtje të lartë IP dhe transformatorë izolues."
-    },
-    {
-      "id": 30,
-      "category": "Përgjithshme",
-      "question": "A jeni të disponueshëm për punë të vogla si ndërrimi i një prize?",
-      "answer": "Po, asnjë punë nuk është shumë e vogël për ne. Ne vlerësojmë çdo klient dhe ofrojmë të njëjtin profesionalizëm për çdo shërbim."
+      "category": "Scheduling",
+      "question": "Sa shpejt mund t\u00eb filloni nj\u00eb projekt?",
+      "answer": "Ne ofrojm\u00eb sh\u00ebrbim n\u00eb t\u00eb nj\u00ebjt\u00ebn dit\u00eb p\u00ebr riparime emergjente. P\u00ebr instalime dhe projekte m\u00eb t\u00eb m\u00ebdha, zakonisht mund t\u00eb caktojm\u00eb brenda pak dit\u00ebsh. Telefononi 044 239 757 p\u00ebr t\u00eb kontrolluar disponueshm\u00ebrin\u00eb aktuale."
     }
   ]
 }

@@ -34,10 +34,6 @@ SERVICES:
     SUB_SERVICES:
       - NAME: "Instalime Rezidenciale"
         URL: "/instalime-elektrike-rezidenciale/"
-      - NAME: "Instalime Komerciale"
-        URL: "/instalime-elektrike-komerciale/"
-      - NAME: "Instalime Industriale"
-        URL: "/instalime-industriale/"
   
   - NAME: "Riparime Elektrike"
     URL: "/riparime-elektrike/"
@@ -93,8 +89,6 @@ CORE_SERVICES_URLS:
 ALL_SERVICES:
   - "Instalime Elektrike"
   - "Instalime Rezidenciale"
-  - "Instalime Komerciale"
-  - "Instalime Industriale"
   - "Riparime Elektrike"
   - "Defekte Elektrike"
   - "Ndërrim Siguresash & Panelev"
@@ -110,8 +104,6 @@ ALL_SERVICES:
 ALL_SERVICES_URLS:
   - "/instalime-elektrike/"
   - "/instalime-elektrike-rezidenciale/"
-  - "/instalime-elektrike-komerciale/"
-  - "/instalime-industriale/"
   - "/riparime-elektrike/"
   - "/defekte-elektrike/"
   - "/nderrim-siguresash/"
@@ -265,7 +257,7 @@ SOCIAL_MEDIA:
 # ----------------------------- 
 META:
   title: "Bujo Electric | Ekspertët e Energjisë dhe Sigurisë Elektrike në Kosovë"
-  description: "Shërbime elektrike profesionale 24/7 në Prishtinë dhe mbarë Kosovën. Instalime, riparime dhe mirëmbajtje elektrike me standarde evropiane."
+  description: "Shërbime elektrike profesionale 24/7 në Prishtinë dhe mbarë Kosovën. Instalime, riparime dhe mirëmbajtje elektrike me përvojë 15 vjeçare."
   keywords: "elektricist, sherbime elektrike, prishtine, kosove, instalime elektrike, riparime elektrike, bujo electric"
 
 # -----------------------------

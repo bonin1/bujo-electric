@@ -161,8 +161,8 @@ export const seoConfigs: Record<string, SEOConfig> = {
 
   "/rreth-nesh/": {
     title: `Rreth Nesh - ${BUSINESS_INFO.name} | Ekspertët Elektrikë në Kosovë`,
-    description: `Mësoni më shumë rreth ${BUSINESS_INFO.name}, partneri juaj i besuar për shërbime elektrike në Kosovë. Profesionistë të certifikuar me përvojë të gjatë.`,
-    keywords: ["rreth nesh", BUSINESS_INFO.name, CONTACT.city, "elektricist i certifikuar", "pervoja elektrike"],
+    description: `Mësoni më shumë rreth ${BUSINESS_INFO.name}, partneri juaj i besuar për shërbime elektrike në Kosovë. Profesionistë me përvojë 15 vjeçare.`,
+    keywords: ["rreth nesh", BUSINESS_INFO.name, CONTACT.city, "elektricist me pervoje", "pervoja elektrike"],
     canonical: `${siteConfig.url}/rreth-nesh/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",
@@ -176,7 +176,7 @@ export const seoConfigs: Record<string, SEOConfig> = {
     linkedinImage: "/assets/config/og.png",
     linkedinAuthor: BUSINESS_INFO.name,
     facebookAppId: siteConfig.social.facebookAppId,
-    socialTitle: `Njihuni me ekipin e ${BUSINESS_INFO.name}`,
+    socialTitle: `Njihuni me ${BUSINESS_INFO.name}`,
     socialDescription: `Profesionistë të përkushtuar për sigurinë tuaj elektrike që nga fillimi ynë.`,
     socialImage: "/assets/config/og.png",
     articleSection: "Rreth Kompanisë",
@@ -348,8 +348,8 @@ export const seoConfigs: Record<string, SEOConfig> = {
   },
   "/kushtet-e-perdorimit/": {
     title: `Kushtet e Përdorimit - ${BUSINESS_INFO.name}`,
-    description: `Lexoni kushtet e përdorimit për shërbimet elektrike nga ${BUSINESS_INFO.name}. Marrëveshjet e shërbimit, garancitë dhe përgjegjësitë.`,
-    keywords: ["kushtet e perdorimit", "marreveshja e sherbimit", "garancia elektrike"],
+    description: `Lexoni kushtet e përdorimit për shërbimet elektrike nga ${BUSINESS_INFO.name}. Marrëveshjet e shërbimit dhe përgjegjësitë.`,
+    keywords: ["kushtet e perdorimit", "marreveshja e sherbimit", "siguria elektrike"],
     canonical: `${siteConfig.url}/kushtet-e-perdorimit/`,
     ogImage: "/assets/config/og.png",
     ogType: "website",

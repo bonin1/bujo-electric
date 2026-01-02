@@ -94,9 +94,7 @@ export const CORE_SERVICES: ServiceItem[] = [
     name: "Instalime Elektrike",
     url: "/instalime-elektrike/",
     subServices: [
-      { name: "Instalime Rezidenciale", url: "/instalime-elektrike-rezidenciale/" },
-      { name: "Instalime Komerciale", url: "/instalime-elektrike-komerciale/" },
-      { name: "Instalime Industriale", url: "/instalime-industriale/" }
+      { name: "Instalime Rezidenciale", url: "/instalime-elektrike-rezidenciale/" }
     ],
   },
   {
@@ -211,11 +209,14 @@ export const GOOGLE_MAPS: GoogleMaps = {
 // ==========================================
 // SOCIAL MEDIA
 // ==========================================
-export const SOCIAL_MEDIA: SocialMedia = {};
+export const SOCIAL_MEDIA: SocialMedia = {
+  facebook: "https://www.facebook.com/bujoelectric",
+  instagram: "https://www.instagram.com/bujoelectric"
+};
 
 // Filter out undefined social media links
 export const ACTIVE_SOCIAL_MEDIA = Object.entries(SOCIAL_MEDIA)
-  .filter(([, url]) => url)
+  .filter(([_, url]) => url)
   .reduce((acc, [key, url]) => ({ ...acc, [key]: url }), {}) as SocialMedia;
 
 // ==========================================
@@ -234,7 +235,7 @@ export const BLOG_TOPICS = [
 // ==========================================
 export const META = {
   title: "Bujo Electric | Ekspertët e Energjisë dhe Sigurisë Elektrike në Kosovë",
-  description: "Shërbime elektrike profesionale 24/7 në Prishtinë dhe mbarë Kosovën. Instalime, riparime dhe mirëmbajtje elektrike me standarde evropiane.",
+  description: "Shërbime elektrike profesionale 24/7 në Prishtinë dhe mbarë Kosovën. Instalime, riparime dhe mirëmbajtje elektrike me përvojë 15 vjeçare.",
   keywords: "elektricist, sherbime elektrike, prishtine, kosove, instalime elektrike, riparime elektrike, bujo electric",
 } as const;
 
@@ -283,24 +284,35 @@ export const getLegalLinks = () => [
 ];
 
 /**
- * Format phone number for display
+ * Format phone number for display (555-123-4567)
  */
 export const formatPhoneDisplay = (phone: string): string => {
+  const digits = phone.replace(/\D/g, '');
+  if (digits.length === 10) {
+    return `${digits.slice(0, 3)}-${digits.slice(3, 6)}-${digits.slice(6)}`;
+  }
+  if (digits.length === 11 && digits.startsWith('1')) {
+    const withoutCountryCode = digits.slice(1);
+    return `${withoutCountryCode.slice(0, 3)}-${withoutCountryCode.slice(3, 6)}-${withoutCountryCode.slice(6)}`;
+  }
   return phone;
 };
 
 /**
- * Format phone number for tel: links (+383...)
+ * Format phone number for tel: links (+15551234567)
  */
 export const formatPhoneTel = (phone: string): string => {
   const digits = phone.replace(/\D/g, '');
-  if (digits.startsWith('383')) {
+  if (digits.length === 10) {
+    return `+1${digits}`;
+  }
+  if (digits.length === 11 && digits.startsWith('1')) {
     return `+${digits}`;
   }
-  if (digits.startsWith('0')) {
-    return `+383${digits.slice(1)}`;
+  if (phone.startsWith('+')) {
+    return phone;
   }
-  return `+383${digits}`;
+  return `+1${digits}`;
 };
 
 export const getPhoneDisplay = (): string => formatPhoneDisplay(CONTACT.phone);

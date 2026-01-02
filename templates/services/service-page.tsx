@@ -41,8 +41,8 @@ export default function ServicePage({ params }: ServicePageProps) {
       answer: `Shërbimi ynë për ${service.name.toLowerCase()} përfshin: ${service.features.slice(0, 3).join(', ')}, dhe më shumë. Ne ofrojmë zgjidhje gjithëpërfshirëse të përshtatura për nevojat tuaja.`
     },
     {
-      question: "A ofroni garanci?",
-      answer: "Po, ne qëndrojmë prapa punës sonë me garanci gjithëpërfshirëse. Të gjitha shërbimet tona vijnë me garanci kënaqësie dhe garanci për cilësinë e punës."
+      question: "A ofroni siguri për punën?",
+      answer: "Po, ne qëndrojmë prapa punës sonë me siguri maksimale. Të gjitha shërbimet tona vijnë me korrektësi dhe cilësi të lartë të punës."
     },
     {
       question: "Si të filloj?",
@@ -106,7 +106,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                         </div>
                         <div>
                           <p className="text-xs text-gray-500 font-bold uppercase">Siguria</p>
-                          <p className="font-bold text-gray-900">Garanci e Plotë</p>
+                          <p className="font-bold text-gray-900">Siguri e Plotë</p>
                         </div>
                       </div>
                     </div>

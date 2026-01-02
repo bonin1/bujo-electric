@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Besa Gashi",
     role: "Menaxhere Biznesi",
-    content: `Kemi pasur një defekt urgjent në zyrë dhe ekipi i Bujo Electric erdhi brenda 30 minutave. E zgjidhën problemin shpejt dhe me një çmim shumë korrekt. Faleminderit për shërbimin!`,
+    content: `Kemi pasur një defekt urgjent në zyrë dhe Bujo Electric erdhi brenda 30 minutave. E zgjidhën problemin shpejt dhe me një çmim shumë korrekt. Faleminderit për shërbimin!`,
     rating: 5,
     service: "Riparime Emergjente",
     avatar: "BG"

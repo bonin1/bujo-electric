@@ -103,7 +103,7 @@ export default function ServicesPage() {
             </h2>
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               Ne jemi pika juaj e vetme për të gjitha nevojat elektrike. Nga instalimet e reja deri te riparimet emergjente, 
-              mirëmbajtja rutinë deri te ndërrimi i plotë i paneleve, ekipi ynë i ekspertëve ofron shërbim profesional 
+              mirëmbajtja rutinë deri te ndërrimi i plotë i paneleve, ne ofrojmë shërbim profesional 
               të cilit mund t&apos;i besoni. Me përvojën tonë të gjerë, ne e trajtojmë çdo projekt me kujdesin dhe vëmendjen që meriton.
             </p>
           </div>

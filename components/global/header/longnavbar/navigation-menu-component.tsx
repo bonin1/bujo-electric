@@ -150,7 +150,7 @@ export function NavigationMenuDemo() {
                         Rreth Nesh
                       </div>
                       <p className="text-sm leading-tight text-white/90">
-                        Mësoni më shumë rreth kompanisë, ekipit dhe misionit tonë.
+                        Mësoni më shumë rreth kompanisë dhe misionit tonë.
                       </p>
                     </div>
                     <Image

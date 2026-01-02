@@ -23,7 +23,7 @@ interface WhatSetsUsApartSectionProps {
 const WhatSetsUsApartSection = ({ city, cityData }: WhatSetsUsApartSectionProps) => {
   const whySetsApartContent = cityData?.sectionContent?.whySetsApart;
   const heading = whySetsApartContent?.heading || `Çfarë e bën Bujo Electric të Veçantë${city ? ` në ${city}` : ''}`;
-  const subheading = whySetsApartContent?.subheading || `Që nga viti 2010, ne kemi ofruar shërbime elektrike të jashtëzakonshme që rrisin vlerën e pronës dhe tejkalojnë pritshmëritë. Profesionistët tanë të certifikuar kombinojnë ekspertizën teknike me materiale cilësore për të siguruar rezultate superiore në të gjithë Kosovën.`;
+  const subheading = whySetsApartContent?.subheading || `Me mbi 15 vite përvojë, ne kemi ofruar shërbime elektrike të jashtëzakonshme që rrisin vlerën e pronës dhe tejkalojnë pritshmëritë. Ne kombinojmë ekspertizën teknike me materiale cilësore për të siguruar rezultate superiore në të gjithë Kosovën.`;
 
   const iconOptions = [
     <Award key="icon-0" className="w-8 h-8" />,
@@ -38,16 +38,16 @@ const WhatSetsUsApartSection = ({ city, cityData }: WhatSetsUsApartSectionProps)
 
   const defaultFeatures = [
     {
-      title: "Cilësi e Certifikuar",
+      title: "Përvojë 15 Vjeçare",
       description: `Të njohur për mjeshtëri të jashtëzakonshme dhe kënaqësi të klientit në të gjithë vendin.`
     },
     {
-      title: "Garanci e Plotë",
-      description: "Çdo projekt vjen me garancinë tonë gjithëpërfshirëse dhe mbështetje të vazhdueshme."
+      title: "Korrektësi & Siguri",
+      description: "Çdo projekt vjen me përkushtimin tonë për siguri maksimale dhe mbështetje të vazhdueshme."
     },
     {
-      title: "Ekip Ekspertësh",
-      description: "Profesionistët tanë janë të trajnuar me teknikat më të fundit dhe përdorin materiale premium."
+      title: "Materiale Cilësore",
+      description: "Ne përdorim teknikat më të fundit dhe materiale premium për çdo instalim."
     },
     {
       title: "Dorëzim në Kohë",

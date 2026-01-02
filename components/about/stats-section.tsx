@@ -70,7 +70,7 @@ export default function StatsSection() {
   const stats = [
     { icon: <Award className="w-8 h-8" />, value: 500, label: "Projekte të Përfunduara", suffix: "+" },
     { icon: <Users className="w-8 h-8" />, value: 450, label: "Klientë të Kënaqur", suffix: "+" },
-    { icon: <Calendar className="w-8 h-8" />, value: 10, label: "Vite Përvojë", suffix: "+" },
+    { icon: <Calendar className="w-8 h-8" />, value: 15, label: "Vite Përvojë", suffix: "+" },
     { icon: <TrendingUp className="w-8 h-8" />, value: 100, label: "Shkalla e Kënaqësisë", suffix: "%" },
   ]
 

@@ -57,7 +57,7 @@ interface FooterProps {
 
 // Business data from business-config.ts (generated from business.yaml)
 const businessName = BUSINESS_INFO.name;
-const businessDescription = `Professional ${BUSINESS_INFO.primaryKeyword} providing quality solutions and exceptional customer service.`;
+const businessDescription = `Shërbime elektrike profesionale me përvojë 15 vjeçare, duke ofruar zgjidhje cilësore dhe siguri maksimale për klientët tanë.`;
 const contactInfoDefault = {
   address: CONTACT.address,
   phone: CONTACT.phone,

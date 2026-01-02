@@ -32,7 +32,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
               </p>
               <div className="p-8 bg-gray-50 rounded-3xl border border-gray-100">
                 <h4 className="text-lg font-bold text-gray-900 mb-2">Nuk gjetët atë që kërkonit?</h4>
-                <p className="text-gray-600 mb-6">Ekipi ynë është i gatshëm t&apos;ju përgjigjet në çdo kohë.</p>
+                <p className="text-gray-600 mb-6">Ne jemi të gatshëm t&apos;ju përgjigjemi në çdo kohë.</p>
                 <Link 
                   href="/kontakti/" 
                   className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-primary text-white font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"

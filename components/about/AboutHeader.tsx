@@ -9,10 +9,10 @@ import { Button } from '@/components/ui'
 
 const AboutHeader = () => {
   const stats = [
-    { icon: <Award className="w-5 h-5" />, value: "150+", label: "Projects Completed" },
-    { icon: <Users className="w-5 h-5" />, value: "1,200+", label: "Happy Clients" },
-    { icon: <Calendar className="w-5 h-5" />, value: "12+", label: "Years Experience" },
-    { icon: <TrendingUp className="w-5 h-5" />, value: "98%", label: "Satisfaction Rate" },
+    { icon: <Award className="w-5 h-5" />, value: "500+", label: "Projekte të Përfunduara" },
+    { icon: <Users className="w-5 h-5" />, value: "450+", label: "Klientë të Kënaqur" },
+    { icon: <Calendar className="w-5 h-5" />, value: "15+", label: "Vite Përvojë" },
+    { icon: <TrendingUp className="w-5 h-5" />, value: "100%", label: "Shkalla e Kënaqësisë" },
   ]
 
   return (
@@ -62,18 +62,18 @@ const AboutHeader = () => {
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium">
                 <Users className="w-4 h-4" />
-                About Example Company
+                Rreth Bujo Electric
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark leading-tight">
-                Professional Services with
+                Shërbime Profesionale me
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent">
-                  {" "}Expert Solutions
+                  {" "}Zgjidhje Eksperte
                 </span>
               </h1>
               <p className="text-xl text-text-secondary leading-relaxed max-w-7xl">
-                The truth is, we&apos;ve been providing professional services for over a decade, and the thing is, 
-                our passion shows in every project we complete. Besides our expert installations, 
-                we specialize in repairs and maintenance that keep your systems operating smoothly for years.
+                Ne kemi ofruar shërbime elektrike profesionale për mbi 15 vite, dhe pasioni ynë 
+                shihet në çdo projekt që përfundojmë. Përveç instalimeve tona eksperte, 
+                ne specializohemi në riparime dhe mirëmbajtje që mbajnë sistemet tuaja në punë pa probleme për vite me radhë.
               </p>
             </motion.div>
 
@@ -83,13 +83,15 @@ const AboutHeader = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <Button size="lg" className="group">
-                Get Free Consultation
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button size="lg" className="group" asChild>
+                <Link href="/kontakti/">
+                  Merr Konsultim Falas
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="/portfolio">
-                  View Our Work
+                <Link href="/galeria-e-projekteve/">
+                  Shiko Punët Tona
                 </Link>
               </Button>
             </motion.div>

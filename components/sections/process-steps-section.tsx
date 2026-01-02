@@ -39,7 +39,7 @@ const ProcessStepsSection = ({ city, cityData }: ProcessStepsSectionProps) => {
     {
       number: "03",
       title: "Realizimi i Punimeve",
-      description: "Ekipi ynë i kualifikuar kryen instalimet me profesionalizëm dhe kujdes maksimal.",
+      description: "Ne kryejmë instalimet me profesionalizëm dhe kujdes maksimal.",
       icon: <Hammer className="w-10 h-10" />
     },
     {

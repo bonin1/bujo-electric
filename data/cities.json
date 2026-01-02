@@ -1,576 +1,576 @@
 {
-  "cities": [
-    {
-      "id": "peje",
-      "name": "Pejë",
-      "state": "Kosovo",
-      "slug": "peje",
-      "description": "Peja është një qytet me traditë dhe zhvillim të vazhdueshëm. Shërbimet tona profesionale elektrike ndihmojnë banorët dhe bizneset e Pejës të mbajnë cilësi dhe siguri të lartë.",
-      "content": "Peja, me bukuritë e saj natyrore dhe trashëgiminë kulturore, është një vend ideal për të jetuar dhe punuar. Shërbimet tona gjithëpërfshirëse elektrike ndihmojnë banorët dhe kompanitë të mbajnë pronat e tyre me ekspertizë profesionale.\\n\\n## Pse të Zgjidhni Shërbimet Tona në Pejë\\n\\n- **Ekspertizë Lokale**: Ne kuptojmë nevojat unike të Pejës\\n- **Përgjigje e Shpejtë**: Shërbim i disponueshëm për emergjenca\\n- **Fokus në Komunitet**: Jemi krenarë që u shërbejmë bizneseve dhe familjeve në Pejë\\n- **Garanci Cilësie**: Garanci gjithëpërfshirëse në të gjitha shërbimet\\n\\n## Shërbimet Popullore në Pejë\\n\\n- Instalime Elektrike\\n- Riparime Emergjente\\n- Ndriçim LED\\n- Sisteme të Sigurisë\\n- Mirëmbajtje Elektrike",
-      "population": "96450",
-      "area": "602",
-      "timezone": "CET",
-      "coordinates": {
-        "latitude": 42.6597,
-        "longitude": 20.2927
-      },
-      "seo": {
-        "metaTitle": "Shërbime Elektrike Profesionale në Pejë | Bujo Electric",
-        "metaDescription": "Ekspertë për instalime dhe riparime elektrike në Pejë. Zgjidhje rezidenciale dhe komerciale me ekspertizë lokale. Konsultim falas!",
-        "keywords": "elektricist Pejë, instalime elektrike Pejë, riparime elektrike Pejë, Bujo Electric Pejë"
-      },
-      "services": [
-        "Instalime Elektrike",
-        "Riparime Emergjente",
-        "Ndriçim LED",
-        "Sisteme të Sigurisë",
-        "Mirëmbajtje Elektrike"
-      ],
-      "featuredImage": "/assets/cities/peja.jpg",
-      "variationFactors": {
-        "environmentalAngle": "urban-residential",
-        "technicalFocus": "safety-reliability",
-        "toneArchetype": "professional-trusted",
-        "localProof": "Duke shërbyer në Pejë me krenari"
-      },
-      "sectionContent": {
-        "services": {
-          "heading": "Zgjidhje Cilësore për Banorët e Pejës",
-          "subheading": "Banorët e Pejës meritojnë shërbime që kombinojnë cilësinë me besueshmërinë. Ne specializohemi në zgjidhje që përshtaten me nevojat tuaja.",
-          "highlights": [
-            "Shërbime elektrike të personalizuara për Pejën",
-            "Ekspertizë lokale me njohuri të thella",
-            "Zgjidhje cilësore për kërkesat unike të Pejës"
-          ],
-          "cta": "Merrni Ofertën Tuaj në Pejë Sot"
-        },
-        "process": {
-          "heading": "Procesi Ynë i Shërbimit në Pejë",
-          "subheading": "Ne e dimë që banorët e Pejës vlerësojnë efikasitetin. Procesi ynë është krijuar për të dhënë rezultate të shkëlqyera pa penguar orarin tuaj.",
-          "steps": [
-            {
-              "title": "Konsultimi",
-              "description": "Ne vizitojmë pronën tuaj në Pejë në kohën që ju përshtatet, duke sjellë ekspertizë dhe rekomandime."
-            },
-            {
-              "title": "Planifikimi",
-              "description": "Ekipi ynë ju ndihmon të zgjidhni zgjidhjet që plotësojnë nevojat tuaja specifike në Pejë."
-            },
-            {
-              "title": "Shërbimi Profesional",
-              "description": "Ekipi ynë i certifikuar përfundon punën me efikasitet, duke respektuar standardet dhe pronën tuaj."
-            },
-            {
-              "title": "Mbështetje e Vazhdueshme",
-              "description": "Ne sigurojmë kënaqësinë tuaj dhe ofrojmë mbështetje të vazhdueshme për klientët në Pejë."
-            }
-          ]
-        },
-        "whySetsApart": {
-          "heading": "Pse Peja na Beson Ne",
-          "subheading": "Ne kemi shërbyer në Pejë me përkushtim, dhe përveç ekspertizës sonë, sjellim kuptim të vërtetë të nevojave të komunitetit.",
-          "features": [
-            {
-              "title": "Njohuri Lokale",
-              "description": "Ne kuptojmë kërkesat unike të Pejës dhe ofrojmë zgjidhje që përshtaten."
-            },
-            {
-              "title": "Fokus në Cilësi",
-              "description": "Cilësi profesionale në çdo projekt që përfundojmë në Pejë."
-            },
-            {
-              "title": "Përkushtim ndaj Komunitetit",
-              "description": "Si pjesë e komunitetit të biznesit në Pejë, ne mbështesim iniciativat lokale."
-            },
-            {
-              "title": "Garanci Gjithëpërfshirëse",
-              "description": "Ne qëndrojmë prapa çdo projekti me garanci për banorët e Pejës."
-            }
-          ]
-        },
-        "cta": {
-          "heading": "Gati për të Filluar Projektin Tuaj në Pejë?",
-          "subheading": "Bashkohuni me banorët e Pejës që kanë zgjedhur shërbimet tona profesionale.",
-          "primaryCTA": "Caktoni Konsultimin në Pejë",
-          "secondaryCTA": "Eksploroni Opsionet"
-        }
-      },
-      "heroTitle": "Zgjidhje Elektrike Inteligjente për Pejën"
+ "cities": [
+  {
+   "id": "peje",
+   "name": "Pejë",
+   "state": "Kosovo",
+   "slug": "peje",
+   "description": "Peja është një qytet me traditë dhe zhvillim të vazhdueshëm. Shërbimet tona profesionale elektrike ndihmojnë banorët dhe bizneset e Pejës të mbajnë cilësi dhe siguri të lartë.",
+   "content": "Peja, me bukuritë e saj natyrore dhe trashëgiminë kulturore, është një vend ideal për të jetuar dhe punuar. Shërbimet tona gjithëpërfshirëse elektrike ndihmojnë banorët dhe kompanitë të mbajnë pronat e tyre me ekspertizë profesionale.\\n\\n## Pse të Zgjidhni Shërbimet Tona në Pejë\\n\\n- **Ekspertizë Lokale**: Ne kuptojmë nevojat unike të Pejës\\n- **Përgjigje e Shpejtë**: Shërbim i disponueshëm për emergjenca\\n- **Fokus në Komunitet**: Jemi krenarë që u shërbejmë bizneseve dhe familjeve në Pejë\\n- **Korrektësi**: Siguri maksimale në të gjitha shërbimet\\n\\n## Shërbimet Popullore në Pejë\\n\\n- Instalime Elektrike\\n- Riparime Emergjente\\n- Ndriçim LED\\n- Sisteme të Sigurisë\\n- Mirëmbajtje Elektrike",
+   "population": "96450",
+   "area": "602",
+   "timezone": "CET",
+   "coordinates": {
+    "latitude": 42.6597,
+    "longitude": 20.2927
+   },
+   "seo": {
+    "metaTitle": "Shërbime Elektrike Profesionale në Pejë | Bujo Electric",
+    "metaDescription": "Ekspertë për instalime dhe riparime elektrike në Pejë. Zgjidhje rezidenciale dhe komerciale me ekspertizë lokale. Konsultim falas!",
+    "keywords": "elektricist Pejë, instalime elektrike Pejë, riparime elektrike Pejë, Bujo Electric Pejë"
+   },
+   "services": [
+    "Instalime Elektrike",
+    "Riparime Emergjente",
+    "Ndriçim LED",
+    "Sisteme të Sigurisë",
+    "Mirëmbajtje Elektrike"
+   ],
+   "featuredImage": "/assets/cities/peja.jpg",
+   "variationFactors": {
+    "environmentalAngle": "urban-residential",
+    "technicalFocus": "safety-reliability",
+    "toneArchetype": "professional-trusted",
+    "localProof": "Duke shërbyer në Pejë me krenari"
+   },
+   "sectionContent": {
+    "services": {
+     "heading": "Zgjidhje Cilësore për Banorët e Pejës",
+     "subheading": "Banorët e Pejës meritojnë shërbime që kombinojnë cilësinë me besueshmërinë. Ne specializohemi në zgjidhje që përshtaten me nevojat tuaja.",
+     "highlights": [
+      "Shërbime elektrike të personalizuara për Pejën",
+      "Ekspertizë lokale me njohuri të thella",
+      "Zgjidhje cilësore për kërkesat unike të Pejës"
+     ],
+     "cta": "Merrni Ofertën Tuaj në Pejë Sot"
     },
-    {
-      "id": "decan",
-      "name": "Deçan",
-      "state": "Kosovo",
-      "slug": "decan",
-      "description": "Deçani është një qytet me natyrë të mrekullueshme. Ne ofrojmë shërbime elektrike të besueshme për të gjithë banorët dhe bizneset e Deçanit.",
-      "content": "Deçani meriton shërbime elektrike të standardeve më të larta. Ne jemi këtu për të ofruar zgjidhje të qëndrueshme dhe efikase për çdo nevojë elektrike.\\n\\n## Shërbimet Tona në Deçan\\n\\n- **Instalime të Reja**: Për shtëpi dhe biznese\\n- **Riparime**: Zgjidhje të shpejta për çdo defekt\\n- **Mirëmbajtje**: Siguri dhe jetëgjatësi për sistemet tuaja",
-      "population": "40000",
-      "area": "297",
-      "timezone": "CET",
-      "coordinates": {
-        "latitude": 42.5386,
-        "longitude": 20.2911
+    "process": {
+     "heading": "Procesi Ynë i Shërbimit në Pejë",
+     "subheading": "Ne e dimë që banorët e Pejës vlerësojnë efikasitetin. Procesi ynë është krijuar për të dhënë rezultate të shkëlqyera pa penguar orarin tuaj.",
+     "steps": [
+      {
+       "title": "Konsultimi",
+       "description": "Ne vizitojmë pronën tuaj në Pejë në kohën që ju përshtatet, duke sjellë ekspertizë dhe rekomandime."
       },
-      "seo": {
-        "metaTitle": "Shërbime Elektrike në Deçan | Bujo Electric",
-        "metaDescription": "Elektricistë profesionistë në Deçan. Instalime, riparime dhe mirëmbajtje elektrike. Kontaktoni për ofertë!",
-        "keywords": "elektricist Deçan, instalime elektrike Deçan, Bujo Electric Deçan"
+      {
+       "title": "Planifikimi",
+       "description": "Ne ju ndihmon të zgjidhni zgjidhjet që plotësojnë nevojat tuaja specifike në Pejë."
       },
-      "services": [
-        "Instalime Elektrike",
-        "Riparime",
-        "Mirëmbajtje"
-      ],
-      "featuredImage": "/assets/cities/decan.jpg",
-      "variationFactors": {
-        "environmentalAngle": "nature-residential",
-        "technicalFocus": "reliability",
-        "toneArchetype": "friendly-local",
-        "localProof": "Shërbim i besueshëm në Deçan"
+      {
+       "title": "Shërbimi Profesional",
+       "description": "Ne përfundon punën me efikasitet, duke respektuar standardet dhe pronën tuaj."
       },
-      "sectionContent": {
-        "services": {
-          "heading": "Shërbime Elektrike për Deçanin",
-          "subheading": "Ne ofrojmë zgjidhje elektrike që i përshtaten nevojave të Deçanit.",
-          "highlights": [
-            "Shërbim i shpejtë dhe efikas",
-            "Ekspertë të kualifikuar",
-            "Çmime konkurruese"
-          ],
-          "cta": "Kontaktoni për Deçan"
-        },
-        "process": {
-          "heading": "Si Punojmë në Deçan",
-          "subheading": "Proces i thjeshtë dhe transparent për klientët tanë në Deçan.",
-          "steps": [
-            {
-              "title": "Vlerësimi",
-              "description": "Vlerësojmë nevojat tuaja në vend."
-            },
-            {
-              "title": "Ekzekutimi",
-              "description": "Puna kryhet me standarde të larta."
-            },
-            {
-              "title": "Dorëzimi",
-              "description": "Sigurohemi që gjithçka funksionon në mënyrë perfekte."
-            },
-            {
-              "title": "Garancia",
-              "description": "Mbështetje pas përfundimit të punës."
-            }
-          ]
-        },
-        "whySetsApart": {
-          "heading": "Pse të na Zgjidhni në Deçan",
-          "subheading": "Përkushtimi ynë ndaj cilësisë na bën zgjedhjen e parë në Deçan.",
-          "features": [
-            {
-              "title": "Besueshmëri",
-              "description": "Jemi gjithmonë aty kur keni nevojë."
-            },
-            {
-              "title": "Profesionalizëm",
-              "description": "Staf i trajnuar dhe i certifikuar."
-            },
-            {
-              "title": "Kujdes për Klientin",
-              "description": "Klienti është prioriteti ynë."
-            },
-            {
-              "title": "Zgjidhje Afatgjate",
-              "description": "Punime që zgjasin."
-            }
-          ]
-        },
-        "cta": {
-          "heading": "Keni Nevojë për Elektricist në Deçan?",
-          "subheading": "Na kontaktoni sot për një zgjidhje të shpejtë.",
-          "primaryCTA": "Telefononi Tani",
-          "secondaryCTA": "Na Shkruani"
-        }
-      },
-      "heroTitle": "Ekspertë Elektrikë në Deçan"
+      {
+       "title": "Mbështetje e Vazhdueshme",
+       "description": "Ne sigurojmë kënaqësinë tuaj dhe ofrojmë mbështetje të vazhdueshme për klientët në Pejë."
+      }
+     ]
     },
-    {
-      "id": "gjakove",
-      "name": "Gjakovë",
-      "state": "Kosovo",
-      "slug": "gjakove",
-      "description": "Gjakova, qyteti i traditës dhe kulturës. Ne sjellim teknologjinë më të fundit elektrike për të modernizuar shtëpitë dhe bizneset tuaja.",
-      "content": "Në Gjakovë, ne kombinojmë respektin për traditën me zgjidhjet moderne elektrike. Shërbimet tona janë të dizajnuara për të përmirësuar komoditetin dhe sigurinë tuaj.\\n\\n## Oferta Jonë për Gjakovën\\n\\n- **Sisteme Inteligjente**: Automatizim për shtëpi që rrit komoditetin\\n- **Efiçiencë Energjetike**: Kurseni energji dhe para me zgjidhjet tona LED\\n- **Siguri**: Mbrojtje maksimale për pronën tuaj me sisteme alarmi dhe kamera\\n- **Riparime 24/7**: Jemi gjithmonë në dispozicion për emergjenca",
-      "population": "94556",
-      "area": "585",
-      "timezone": "CET",
-      "coordinates": {
-        "latitude": 42.3802,
-        "longitude": 20.4308
+    "whySetsApart": {
+     "heading": "Pse Peja na Beson Ne",
+     "subheading": "Ne kemi shërbyer në Pejë me përkushtim, dhe përveç ekspertizës sonë, sjellim kuptim të vërtetë të nevojave të komunitetit.",
+     "features": [
+      {
+       "title": "Njohuri Lokale",
+       "description": "Ne kuptojmë kërkesat unike të Pejës dhe ofrojmë zgjidhje që përshtaten."
       },
-      "seo": {
-        "metaTitle": "Elektricist në Gjakovë | Instalime & Riparime | Bujo Electric",
-        "metaDescription": "Shërbime profesionale elektrike në Gjakovë. Nga instalimet e thjeshta deri te sistemet komplekse industriale. Cilësi e garantuar.",
-        "keywords": "elektricist Gjakovë, instalime Gjakovë, riparime Gjakovë"
+      {
+       "title": "Fokus në Cilësi",
+       "description": "Cilësi profesionale në çdo projekt që përfundojmë në Pejë."
       },
-      "services": [
-        "Instalime Inteligjente",
-        "Efiçiencë Energjetike",
-        "Siguri Elektrike"
-      ],
-      "featuredImage": "/assets/cities/gjakova.jpg",
-      "variationFactors": {
-        "environmentalAngle": "urban-cultural",
-        "technicalFocus": "modern-efficiency",
-        "toneArchetype": "respectful-innovative",
-        "localProof": "Partneri juaj në Gjakovë"
+      {
+       "title": "Përkushtim ndaj Komunitetit",
+       "description": "Si pjesë e komunitetit të biznesit në Pejë, ne mbështesim iniciativat lokale."
       },
-      "sectionContent": {
-        "services": {
-          "heading": "Modernizoni Pronën Tuaj në Gjakovë",
-          "subheading": "Sillni teknologjinë e fundit në shtëpinë ose biznesin tuaj në Gjakovë.",
-          "highlights": [
-            "Teknologji e avancuar",
-            "Zgjidhje të personalizuara",
-            "Efiçiencë e lartë"
-          ],
-          "cta": "Konsultohuni për Gjakovën"
-        },
-        "process": {
-          "heading": "Procesi i Punës në Gjakovë",
-          "subheading": "Hapa të qartë për një rezultat të suksesshëm.",
-          "steps": [
-            {
-              "title": "Analiza",
-              "description": "Kuptojmë kërkesat tuaja specifike."
-            },
-            {
-              "title": "Dizajni",
-              "description": "Projektojmë sistemin ideal për ju."
-            },
-            {
-              "title": "Implementimi",
-              "description": "Instalim profesional dhe i pastër."
-            },
-            {
-              "title": "Testimi",
-              "description": "Verifikim i plotë i funksionalitetit."
-            }
-          ]
-        },
-        "whySetsApart": {
-          "heading": "Diferenca Jonë në Gjakovë",
-          "subheading": "Pse klientët në Gjakovë na preferojnë ne.",
-          "features": [
-            {
-              "title": "Inovacion",
-              "description": "Sjellim zgjidhjet më të reja."
-            },
-            {
-              "title": "Kualitet",
-              "description": "Materiale dhe punë e cilësisë së parë."
-            },
-            {
-              "title": "Transparencë",
-              "description": "Pa kosto të fshehura."
-            },
-            {
-              "title": "Përkushtim",
-              "description": "Jemi me ju në çdo hap."
-            }
-          ]
-        },
-        "cta": {
-          "heading": "Gati për Ndryshim në Gjakovë?",
-          "subheading": "Kontaktoni Bujo Electric për shërbime superiore.",
-          "primaryCTA": "Na Kontaktoni",
-          "secondaryCTA": "Mësoni Më Shumë"
-        }
-      },
-      "heroTitle": "Inovacion Elektrik në Gjakovë"
+      {
+       "title": "Siguri Maksimale",
+       "description": "Ne qëndrojmë prapa çdo projekti me siguri për banorët e Pejës."
+      }
+     ]
     },
-    {
-      "id": "istog",
-      "name": "Istog",
-      "state": "Kosovo",
-      "slug": "istog",
-      "description": "Istogu, qyteti i burimit. Ne sigurojmë që energjia elektrike të rrjedhë po aq pastër dhe sigurt në shtëpitë tuaja.",
-      "content": "Për banorët e Istogut, ne ofrojmë shërbime elektrike që garantojnë siguri dhe rehati. Pavarësisht nëse është një shtëpi private apo një biznes, ne kemi zgjidhjen e duhur.\\n\\n## Shërbimet Kryesore në Istog\\n\\n- **Instalime Shtëpiake**: Për ndërtime të reja dhe renovime të plota\\n- **Riparime të Shpejta**: Zgjidhje për çdo problem elektrik, nga prizat te panelet\\n- **Konsulencë**: Këshilla profesionale për sistemet tuaja dhe kursim energjie\\n- **Mirëmbajtje**: Kontroll periodik për të parandaluar defektet",
-      "population": "39289",
-      "area": "454",
-      "timezone": "CET",
-      "coordinates": {
-        "latitude": 42.7808,
-        "longitude": 20.4875
-      },
-      "seo": {
-        "metaTitle": "Shërbime Elektrike në Istog | Bujo Electric",
-        "metaDescription": "Elektricistë të besueshëm në Istog. Instalime cilësore dhe riparime të shpejta. Na kontaktoni për çdo nevojë elektrike.",
-        "keywords": "elektricist Istog, instalime Istog, Bujo Electric Istog"
-      },
-      "services": [
-        "Instalime Shtëpiake",
-        "Riparime të Shpejta",
-        "Konsulencë"
-      ],
-      "featuredImage": "/assets/cities/istog.jpg",
-      "variationFactors": {
-        "environmentalAngle": "scenic-residential",
-        "technicalFocus": "stability",
-        "toneArchetype": "friendly-reliable",
-        "localProof": "Pranë jush në Istog"
-      },
-      "sectionContent": {
-        "services": {
-          "heading": "Energji e Sigurt për Istogun",
-          "subheading": "Zgjidhje elektrike që ju japin paqe mendore.",
-          "highlights": [
-            "Siguri maksimale",
-            "Punë e garantuar",
-            "Shërbim miqësor"
-          ],
-          "cta": "Kërkoni Shërbim në Istog"
-        },
-        "process": {
-          "heading": "Si Veprojmë në Istog",
-          "subheading": "Hapa të thjeshtë për shërbim të shkëlqyer.",
-          "steps": [
-            {
-              "title": "Kontaktimi",
-              "description": "Na tregoni për problemin tuaj."
-            },
-            {
-              "title": "Inspektimi",
-              "description": "Vlerësojmë situatën në terren."
-            },
-            {
-              "title": "Zgjidhja",
-              "description": "Aplikojmë zgjidhjen më të mirë."
-            },
-            {
-              "title": "Verifikimi",
-              "description": "Sigurohemi që jeni të kënaqur."
-            }
-          ]
-        },
-        "whySetsApart": {
-          "heading": "Pse Istogu na Zgjedh Ne",
-          "subheading": "Reputacioni ynë është ndërtuar mbi besim dhe cilësi.",
-          "features": [
-            {
-              "title": "Përvojë",
-              "description": "Vite përvojë në fushën elektrike."
-            },
-            {
-              "title": "Korrektësi",
-              "description": "Respektojmë kohën dhe pronën tuaj."
-            },
-            {
-              "title": "Çmime të Drejta",
-              "description": "Vlerë për paratë tuaja."
-            },
-            {
-              "title": "Disponueshmëri",
-              "description": "Gjithmonë të gatshëm për t'ju ndihmuar."
-            }
-          ]
-        },
-        "cta": {
-          "heading": "Kërkoni Elektricist në Istog?",
-          "subheading": "Jemi vetëm një telefonatë larg.",
-          "primaryCTA": "Na Telefononi",
-          "secondaryCTA": "Dërgoni Mesazh"
-        }
-      },
-      "heroTitle": "Shërbime Elektrike Cilësore në Istog"
-    },
-    {
-      "id": "kline",
-      "name": "Klinë",
-      "state": "Kosovo",
-      "slug": "kline",
-      "description": "Klina, një qytet në zhvillim. Ne mbështesim rritjen e Klinës me infrastrukturë elektrike moderne dhe të qëndrueshme.",
-      "content": "Bizneset dhe shtëpitë në Klinë kanë nevojë për energji të qëndrueshme. Ne ofrojmë instalime dhe mirëmbajtje që sigurojnë funksionim pa ndërprerje.\\n\\n## Për Klinën Ofrojmë\\n\\n- **Instalime Industriale**: Për fabrika dhe punishte\\n- **Instalime Komerciale**: Për dyqane dhe zyra\\n- **Instalime Rezidenciale**: Për shtëpi dhe banesa",
-      "population": "38496",
-      "area": "303",
-      "timezone": "CET",
-      "coordinates": {
-        "latitude": 42.6217,
-        "longitude": 20.5779
-      },
-      "seo": {
-        "metaTitle": "Elektricist në Klinë | Instalime Industriale & Shtëpiake | Bujo Electric",
-        "metaDescription": "Zgjidhje elektrike profesionale në Klinë. Specializuar në instalime industriale dhe rezidenciale. Kontaktoni për shërbim të shpejtë.",
-        "keywords": "elektricist Klinë, instalime Klinë, Bujo Electric Klinë"
-      },
-      "services": [
-        "Instalime Industriale",
-        "Instalime Komerciale",
-        "Instalime Rezidenciale"
-      ],
-      "featuredImage": "/assets/cities/klina.jpg",
-      "variationFactors": {
-        "environmentalAngle": "developing-urban",
-        "technicalFocus": "capacity-growth",
-        "toneArchetype": "supportive-professional",
-        "localProof": "Duke mbështetur zhvillimin e Klinës"
-      },
-      "sectionContent": {
-        "services": {
-          "heading": "Energji për Zhvillimin e Klinës",
-          "subheading": "Infrastrukturë elektrike që mbështet rritjen tuaj.",
-          "highlights": [
-            "Kapacitete të larta",
-            "Standarde industriale",
-            "Zgjidhje të shkallëzueshme"
-          ],
-          "cta": "Konsultim për Biznesin Tuaj në Klinë"
-        },
-        "process": {
-          "heading": "Metodologjia Jonë në Klinë",
-          "subheading": "Qasje profesionale për çdo projekt.",
-          "steps": [
-            {
-              "title": "Planifikimi Strategjik",
-              "description": "Dizajnojmë për të ardhmen."
-            },
-            {
-              "title": "Instalimi i Sigurt",
-              "description": "Prioritet siguria në punë."
-            },
-            {
-              "title": "Testimi i Ngarkesës",
-              "description": "Sigurojmë që sistemi përballon kërkesat."
-            },
-            {
-              "title": "Mirëmbajtja",
-              "description": "Plane mirëmbajtjeje periodike."
-            }
-          ]
-        },
-        "whySetsApart": {
-          "heading": "Partneri Juaj në Klinë",
-          "subheading": "Ne jemi më shumë se thjesht elektricistë, jemi partnerë në zhvillim.",
-          "features": [
-            {
-              "title": "Ekspertizë Teknike",
-              "description": "Njohuri të thella inxhinierike."
-            },
-            {
-              "title": "Përgjegjshmëri",
-              "description": "Marrim përgjegjësi për punën tonë."
-            },
-            {
-              "title": "Efikasitet",
-              "description": "Minimizojmë kohën e ndërprerjes."
-            },
-            {
-              "title": "Mbështetje Lokale",
-              "description": "Jemi afër jush në Klinë."
-            }
-          ]
-        },
-        "cta": {
-          "heading": "Projekte Elektrike në Klinë?",
-          "subheading": "Le të diskutojmë kërkesat tuaja.",
-          "primaryCTA": "Caktoni Takim",
-          "secondaryCTA": "Kërkoni Ofertë"
-        }
-      },
-      "heroTitle": "Zgjidhje Elektrike për Klinën"
-    },
-    {
-      "id": "junik",
-      "name": "Junik",
-      "state": "Kosovo",
-      "slug": "junik",
-      "description": "Juniku, vendi i traditës. Ne sjellim dritë dhe energji në çdo kullë dhe shtëpi të Junikut, duke respektuar arkitekturën unike.",
-      "content": "Në Junik, ne ofrojmë shërbime që respektojnë trashëgiminë ndërsa sjellin komoditetin modern. Instalimet tona janë diskrete dhe të sigurta.\\n\\n## Shërbimet për Junikun\\n\\n- **Renovime Elektrike**: Për ndërtesa tradicionale\\n- **Instalime të Reja**: Për ndërtime moderne\\n- **Ndriçim i Jashtëm**: Për të theksuar bukurinë e pronës",
-      "population": "6084",
-      "area": "86",
-      "timezone": "CET",
-      "coordinates": {
-        "latitude": 42.4753,
-        "longitude": 20.2772
-      },
-      "seo": {
-        "metaTitle": "Elektricist në Junik | Instalime & Renovime | Bujo Electric",
-        "metaDescription": "Shërbime elektrike në Junik. Kujdes i veçantë për ndërtesat tradicionale dhe moderne. Kontaktoni për shërbim profesional.",
-        "keywords": "elektricist Junik, instalime Junik, Bujo Electric Junik"
-      },
-      "services": [
-        "Renovime Elektrike",
-        "Instalime të Reja",
-        "Ndriçim i Jashtëm"
-      ],
-      "featuredImage": "/assets/cities/junik.jpg",
-      "variationFactors": {
-        "environmentalAngle": "traditional-residential",
-        "technicalFocus": "preservation-modernization",
-        "toneArchetype": "respectful-careful",
-        "localProof": "Duke ruajtur traditën në Junik"
-      },
-      "sectionContent": {
-        "services": {
-          "heading": "Shërbime me Kujdes për Junikun",
-          "subheading": "Kombinojmë traditën me modernen në mënyrë harmonike.",
-          "highlights": [
-            "Kujdes ndaj detajeve",
-            "Respekt për arkitekturën",
-            "Siguri moderne"
-          ],
-          "cta": "Konsultim në Junik"
-        },
-        "process": {
-          "heading": "Qasja Jonë në Junik",
-          "subheading": "Punojmë me kujdes dhe precizitet.",
-          "steps": [
-            {
-              "title": "Vlerësimi i Objektit",
-              "description": "Analizojmë strukturën me kujdes."
-            },
-            {
-              "title": "Planifikimi i Detajuar",
-              "description": "Zgjidhje që nuk dëmtojnë estetikën."
-            },
-            {
-              "title": "Instalimi i Kujdesshëm",
-              "description": "Punë e pastër dhe precize."
-            },
-            {
-              "title": "Përfundimi",
-              "description": "Rezultat estetik dhe funksional."
-            }
-          ]
-        },
-        "whySetsApart": {
-          "heading": "Pse Juniku na Beson",
-          "subheading": "Ne kuptojmë vlerën e trashëgimisë dhe rëndësinë e sigurisë.",
-          "features": [
-            {
-              "title": "Ndjeshmëri Kulturore",
-              "description": "Respektojmë vlerat e Junikut."
-            },
-            {
-              "title": "Ekspertizë",
-              "description": "Zgjidhje për çdo lloj ndërtimi."
-            },
-            {
-              "title": "Besim",
-              "description": "Marrëdhënie afatgjata me klientët."
-            },
-            {
-              "title": "Cilësi",
-              "description": "Standarde të larta në çdo punë."
-            }
-          ]
-        },
-        "cta": {
-          "heading": "Keni Nevojë për Ndihmë në Junik?",
-          "subheading": "Na kontaktoni për një vlerësim falas.",
-          "primaryCTA": "Kontaktoni Tani",
-          "secondaryCTA": "Mësoni Më Tepër"
-        }
-      },
-      "heroTitle": "Dritë dhe Energji për Junikun"
+    "cta": {
+     "heading": "Gati për të Filluar Projektin Tuaj në Pejë?",
+     "subheading": "Bashkohuni me banorët e Pejës që kanë zgjedhur shërbimet tona profesionale.",
+     "primaryCTA": "Caktoni Konsultimin në Pejë",
+     "secondaryCTA": "Eksploroni Opsionet"
     }
-  ]
+   },
+   "heroTitle": "Zgjidhje Elektrike Inteligjente për Pejën"
+  },
+  {
+   "id": "decan",
+   "name": "Deçan",
+   "state": "Kosovo",
+   "slug": "decan",
+   "description": "Deçani është një qytet me natyrë të mrekullueshme. Ne ofrojmë shërbime elektrike të besueshme për të gjithë banorët dhe bizneset e Deçanit.",
+   "content": "Deçani meriton shërbime elektrike të standardeve më të larta. Ne jemi këtu për të ofruar zgjidhje të qëndrueshme dhe efikase për çdo nevojë elektrike.\\n\\n## Shërbimet Tona në Deçan\\n\\n- **Instalime të Reja**: Për shtëpi dhe biznese\\n- **Riparime**: Zgjidhje të shpejta për çdo defekt\\n- **Mirëmbajtje**: Siguri dhe jetëgjatësi për sistemet tuaja",
+   "population": "40000",
+   "area": "297",
+   "timezone": "CET",
+   "coordinates": {
+    "latitude": 42.5386,
+    "longitude": 20.2911
+   },
+   "seo": {
+    "metaTitle": "Shërbime Elektrike në Deçan | Bujo Electric",
+    "metaDescription": "Elektricistë profesionistë në Deçan. Instalime, riparime dhe mirëmbajtje elektrike. Kontaktoni për ofertë!",
+    "keywords": "elektricist Deçan, instalime elektrike Deçan, Bujo Electric Deçan"
+   },
+   "services": [
+    "Instalime Elektrike",
+    "Riparime",
+    "Mirëmbajtje"
+   ],
+   "featuredImage": "/assets/cities/decan.jpg",
+   "variationFactors": {
+    "environmentalAngle": "nature-residential",
+    "technicalFocus": "reliability",
+    "toneArchetype": "friendly-local",
+    "localProof": "Shërbim i besueshëm në Deçan"
+   },
+   "sectionContent": {
+    "services": {
+     "heading": "Shërbime Elektrike për Deçanin",
+     "subheading": "Ne ofrojmë zgjidhje elektrike që i përshtaten nevojave të Deçanit.",
+     "highlights": [
+      "Shërbim i shpejtë dhe efikas",
+      "Ekspertë të kualifikuar",
+      "Çmime konkurruese"
+     ],
+     "cta": "Kontaktoni për Deçan"
+    },
+    "process": {
+     "heading": "Si Punojmë në Deçan",
+     "subheading": "Proces i thjeshtë dhe transparent për klientët tanë në Deçan.",
+     "steps": [
+      {
+       "title": "Vlerësimi",
+       "description": "Vlerësojmë nevojat tuaja në vend."
+      },
+      {
+       "title": "Ekzekutimi",
+       "description": "Puna kryhet me standarde të larta."
+      },
+      {
+       "title": "Dorëzimi",
+       "description": "Sigurohemi që gjithçka funksionon në mënyrë perfekte."
+      },
+      {
+       "title": "Siguria",
+       "description": "Mbështetje pas përfundimit të punës."
+      }
+     ]
+    },
+    "whySetsApart": {
+     "heading": "Pse të na Zgjidhni në Deçan",
+     "subheading": "Përkushtimi ynë ndaj cilësisë na bën zgjedhjen e parë në Deçan.",
+     "features": [
+      {
+       "title": "Besueshmëri",
+       "description": "Jemi gjithmonë aty kur keni nevojë."
+      },
+      {
+       "title": "Profesionalizëm",
+       "description": "Staf i trajnuar dhe ."
+      },
+      {
+       "title": "Kujdes për Klientin",
+       "description": "Klienti është prioriteti ynë."
+      },
+      {
+       "title": "Zgjidhje Afatgjate",
+       "description": "Punime që zgjasin."
+      }
+     ]
+    },
+    "cta": {
+     "heading": "Keni Nevojë për Elektricist në Deçan?",
+     "subheading": "Na kontaktoni sot për një zgjidhje të shpejtë.",
+     "primaryCTA": "Telefononi Tani",
+     "secondaryCTA": "Na Shkruani"
+    }
+   },
+   "heroTitle": "Ekspertë Elektrikë në Deçan"
+  },
+  {
+   "id": "gjakove",
+   "name": "Gjakovë",
+   "state": "Kosovo",
+   "slug": "gjakove",
+   "description": "Gjakova, qyteti i traditës dhe kulturës. Ne sjellim teknologjinë më të fundit elektrike për të modernizuar shtëpitë dhe bizneset tuaja.",
+   "content": "Në Gjakovë, ne kombinojmë respektin për traditën me zgjidhjet moderne elektrike. Shërbimet tona janë të dizajnuara për të përmirësuar komoditetin dhe sigurinë tuaj.\\n\\n## Oferta Jonë për Gjakovën\\n\\n- **Sisteme Inteligjente**: Automatizim për shtëpi që rrit komoditetin\\n- **Efiçiencë Energjetike**: Kurseni energji dhe para me zgjidhjet tona LED\\n- **Siguri**: Mbrojtje maksimale për pronën tuaj me sisteme alarmi dhe kamera\\n- **Riparime 24/7**: Jemi gjithmonë në dispozicion për emergjenca",
+   "population": "94556",
+   "area": "585",
+   "timezone": "CET",
+   "coordinates": {
+    "latitude": 42.3802,
+    "longitude": 20.4308
+   },
+   "seo": {
+    "metaTitle": "Elektricist në Gjakovë | Instalime & Riparime | Bujo Electric",
+    "metaDescription": "Shërbime profesionale elektrike në Gjakovë. Nga instalimet e thjeshta deri te sistemet komplekse industriale. Cilësi e garantuar.",
+    "keywords": "elektricist Gjakovë, instalime Gjakovë, riparime Gjakovë"
+   },
+   "services": [
+    "Instalime Inteligjente",
+    "Efiçiencë Energjetike",
+    "Siguri Elektrike"
+   ],
+   "featuredImage": "/assets/cities/gjakova.jpg",
+   "variationFactors": {
+    "environmentalAngle": "urban-cultural",
+    "technicalFocus": "modern-efficiency",
+    "toneArchetype": "respectful-innovative",
+    "localProof": "Partneri juaj në Gjakovë"
+   },
+   "sectionContent": {
+    "services": {
+     "heading": "Modernizoni Pronën Tuaj në Gjakovë",
+     "subheading": "Sillni teknologjinë e fundit në shtëpinë ose biznesin tuaj në Gjakovë.",
+     "highlights": [
+      "Teknologji e avancuar",
+      "Zgjidhje të personalizuara",
+      "Efiçiencë e lartë"
+     ],
+     "cta": "Konsultohuni për Gjakovën"
+    },
+    "process": {
+     "heading": "Procesi i Punës në Gjakovë",
+     "subheading": "Hapa të qartë për një rezultat të suksesshëm.",
+     "steps": [
+      {
+       "title": "Analiza",
+       "description": "Kuptojmë kërkesat tuaja specifike."
+      },
+      {
+       "title": "Dizajni",
+       "description": "Projektojmë sistemin ideal për ju."
+      },
+      {
+       "title": "Implementimi",
+       "description": "Instalim profesional dhe i pastër."
+      },
+      {
+       "title": "Testimi",
+       "description": "Verifikim i plotë i funksionalitetit."
+      }
+     ]
+    },
+    "whySetsApart": {
+     "heading": "Diferenca Jonë në Gjakovë",
+     "subheading": "Pse klientët në Gjakovë na preferojnë ne.",
+     "features": [
+      {
+       "title": "Inovacion",
+       "description": "Sjellim zgjidhjet më të reja."
+      },
+      {
+       "title": "Kualitet",
+       "description": "Materiale dhe punë e cilësisë së parë."
+      },
+      {
+       "title": "Transparencë",
+       "description": "Pa kosto të fshehura."
+      },
+      {
+       "title": "Përkushtim",
+       "description": "Jemi me ju në çdo hap."
+      }
+     ]
+    },
+    "cta": {
+     "heading": "Gati për Ndryshim në Gjakovë?",
+     "subheading": "Kontaktoni Bujo Electric për shërbime superiore.",
+     "primaryCTA": "Na Kontaktoni",
+     "secondaryCTA": "Mësoni Më Shumë"
+    }
+   },
+   "heroTitle": "Inovacion Elektrik në Gjakovë"
+  },
+  {
+   "id": "istog",
+   "name": "Istog",
+   "state": "Kosovo",
+   "slug": "istog",
+   "description": "Istogu, qyteti i burimit. Ne sigurojmë që energjia elektrike të rrjedhë po aq pastër dhe sigurt në shtëpitë tuaja.",
+   "content": "Për banorët e Istogut, ne ofrojmë shërbime elektrike që garantojnë siguri dhe rehati. Pavarësisht nëse është një shtëpi private apo një biznes, ne kemi zgjidhjen e duhur.\\n\\n## Shërbimet Kryesore në Istog\\n\\n- **Instalime Shtëpiake**: Për ndërtime të reja dhe renovime të plota\\n- **Riparime të Shpejta**: Zgjidhje për çdo problem elektrik, nga prizat te panelet\\n- **Konsulencë**: Këshilla profesionale për sistemet tuaja dhe kursim energjie\\n- **Mirëmbajtje**: Kontroll periodik për të parandaluar defektet",
+   "population": "39289",
+   "area": "454",
+   "timezone": "CET",
+   "coordinates": {
+    "latitude": 42.7808,
+    "longitude": 20.4875
+   },
+   "seo": {
+    "metaTitle": "Shërbime Elektrike në Istog | Bujo Electric",
+    "metaDescription": "Elektricistë të besueshëm në Istog. Instalime cilësore dhe riparime të shpejta. Na kontaktoni për çdo nevojë elektrike.",
+    "keywords": "elektricist Istog, instalime Istog, Bujo Electric Istog"
+   },
+   "services": [
+    "Instalime Shtëpiake",
+    "Riparime të Shpejta",
+    "Konsulencë"
+   ],
+   "featuredImage": "/assets/cities/istog.jpg",
+   "variationFactors": {
+    "environmentalAngle": "scenic-residential",
+    "technicalFocus": "stability",
+    "toneArchetype": "friendly-reliable",
+    "localProof": "Pranë jush në Istog"
+   },
+   "sectionContent": {
+    "services": {
+     "heading": "Energji e Sigurt për Istogun",
+     "subheading": "Zgjidhje elektrike që ju japin paqe mendore.",
+     "highlights": [
+      "Siguri maksimale",
+      "Punë e garantuar",
+      "Shërbim miqësor"
+     ],
+     "cta": "Kërkoni Shërbim në Istog"
+    },
+    "process": {
+     "heading": "Si Veprojmë në Istog",
+     "subheading": "Hapa të thjeshtë për shërbim të shkëlqyer.",
+     "steps": [
+      {
+       "title": "Kontaktimi",
+       "description": "Na tregoni për problemin tuaj."
+      },
+      {
+       "title": "Inspektimi",
+       "description": "Vlerësojmë situatën në terren."
+      },
+      {
+       "title": "Zgjidhja",
+       "description": "Aplikojmë zgjidhjen më të mirë."
+      },
+      {
+       "title": "Verifikimi",
+       "description": "Sigurohemi që jeni të kënaqur."
+      }
+     ]
+    },
+    "whySetsApart": {
+     "heading": "Pse Istogu na Zgjedh Ne",
+     "subheading": "Reputacioni ynë është ndërtuar mbi besim dhe cilësi.",
+     "features": [
+      {
+       "title": "Përvojë",
+       "description": "Vite përvojë në fushën elektrike."
+      },
+      {
+       "title": "Korrektësi",
+       "description": "Respektojmë kohën dhe pronën tuaj."
+      },
+      {
+       "title": "Çmime të Drejta",
+       "description": "Vlerë për paratë tuaja."
+      },
+      {
+       "title": "Disponueshmëri",
+       "description": "Gjithmonë të gatshëm për t'ju ndihmuar."
+      }
+     ]
+    },
+    "cta": {
+     "heading": "Kërkoni Elektricist në Istog?",
+     "subheading": "Jemi vetëm një telefonatë larg.",
+     "primaryCTA": "Na Telefononi",
+     "secondaryCTA": "Dërgoni Mesazh"
+    }
+   },
+   "heroTitle": "Shërbime Elektrike Cilësore në Istog"
+  },
+  {
+   "id": "kline",
+   "name": "Klinë",
+   "state": "Kosovo",
+   "slug": "kline",
+   "description": "Klina, një qytet në zhvillim. Ne mbështesim rritjen e Klinës me infrastrukturë elektrike moderne dhe të qëndrueshme.",
+   "content": "Bizneset dhe shtëpitë në Klinë kanë nevojë për energji të qëndrueshme. Ne ofrojmë instalime dhe mirëmbajtje që sigurojnë funksionim pa ndërprerje.\\n\\n## Për Klinën Ofrojmë\\n\\n- **Instalime Rezidenciale**: Për fabrika dhe punishte\\n- **Riparime Elektrike**: Për dyqane dhe zyra\\n- **Instalime Rezidenciale**: Për shtëpi dhe banesa",
+   "population": "38496",
+   "area": "303",
+   "timezone": "CET",
+   "coordinates": {
+    "latitude": 42.6217,
+    "longitude": 20.5779
+   },
+   "seo": {
+    "metaTitle": "Elektricist në Klinë | Instalime Rezidenciale & Shtëpiake | Bujo Electric",
+    "metaDescription": "Zgjidhje elektrike profesionale në Klinë. Specializuar në instalime industriale dhe rezidenciale. Kontaktoni për shërbim të shpejtë.",
+    "keywords": "elektricist Klinë, instalime Klinë, Bujo Electric Klinë"
+   },
+   "services": [
+    "Instalime Rezidenciale",
+    "Riparime Elektrike",
+    "Instalime Rezidenciale"
+   ],
+   "featuredImage": "/assets/cities/klina.jpg",
+   "variationFactors": {
+    "environmentalAngle": "developing-urban",
+    "technicalFocus": "capacity-growth",
+    "toneArchetype": "supportive-professional",
+    "localProof": "Duke mbështetur zhvillimin e Klinës"
+   },
+   "sectionContent": {
+    "services": {
+     "heading": "Energji për Zhvillimin e Klinës",
+     "subheading": "Infrastrukturë elektrike që mbështet rritjen tuaj.",
+     "highlights": [
+      "Kapacitete të larta",
+      "Standarde industriale",
+      "Zgjidhje të shkallëzueshme"
+     ],
+     "cta": "Konsultim për Biznesin Tuaj në Klinë"
+    },
+    "process": {
+     "heading": "Metodologjia Jonë në Klinë",
+     "subheading": "Qasje profesionale për çdo projekt.",
+     "steps": [
+      {
+       "title": "Planifikimi Strategjik",
+       "description": "Dizajnojmë për të ardhmen."
+      },
+      {
+       "title": "Instalimi i Sigurt",
+       "description": "Prioritet siguria në punë."
+      },
+      {
+       "title": "Testimi i Ngarkesës",
+       "description": "Sigurojmë që sistemi përballon kërkesat."
+      },
+      {
+       "title": "Mirëmbajtja",
+       "description": "Plane mirëmbajtjeje periodike."
+      }
+     ]
+    },
+    "whySetsApart": {
+     "heading": "Partneri Juaj në Klinë",
+     "subheading": "Ne jemi më shumë se thjesht elektricistë, jemi partnerë në zhvillim.",
+     "features": [
+      {
+       "title": "Ekspertizë Teknike",
+       "description": "Njohuri të thella inxhinierike."
+      },
+      {
+       "title": "Përgjegjshmëri",
+       "description": "Marrim përgjegjësi për punën tonë."
+      },
+      {
+       "title": "Efikasitet",
+       "description": "Minimizojmë kohën e ndërprerjes."
+      },
+      {
+       "title": "Mbështetje Lokale",
+       "description": "Jemi afër jush në Klinë."
+      }
+     ]
+    },
+    "cta": {
+     "heading": "Projekte Elektrike në Klinë?",
+     "subheading": "Le të diskutojmë kërkesat tuaja.",
+     "primaryCTA": "Caktoni Takim",
+     "secondaryCTA": "Kërkoni Ofertë"
+    }
+   },
+   "heroTitle": "Zgjidhje Elektrike për Klinën"
+  },
+  {
+   "id": "junik",
+   "name": "Junik",
+   "state": "Kosovo",
+   "slug": "junik",
+   "description": "Juniku, vendi i traditës. Ne sjellim dritë dhe energji në çdo kullë dhe shtëpi të Junikut, duke respektuar arkitekturën unike.",
+   "content": "Në Junik, ne ofrojmë shërbime që respektojnë trashëgiminë ndërsa sjellin komoditetin modern. Instalimet tona janë diskrete dhe të sigurta.\\n\\n## Shërbimet për Junikun\\n\\n- **Renovime Elektrike**: Për ndërtesa tradicionale\\n- **Instalime të Reja**: Për ndërtime moderne\\n- **Ndriçim i Jashtëm**: Për të theksuar bukurinë e pronës",
+   "population": "6084",
+   "area": "86",
+   "timezone": "CET",
+   "coordinates": {
+    "latitude": 42.4753,
+    "longitude": 20.2772
+   },
+   "seo": {
+    "metaTitle": "Elektricist në Junik | Instalime & Renovime | Bujo Electric",
+    "metaDescription": "Shërbime elektrike në Junik. Kujdes i veçantë për ndërtesat tradicionale dhe moderne. Kontaktoni për shërbim profesional.",
+    "keywords": "elektricist Junik, instalime Junik, Bujo Electric Junik"
+   },
+   "services": [
+    "Renovime Elektrike",
+    "Instalime të Reja",
+    "Ndriçim i Jashtëm"
+   ],
+   "featuredImage": "/assets/cities/junik.jpg",
+   "variationFactors": {
+    "environmentalAngle": "traditional-residential",
+    "technicalFocus": "preservation-modernization",
+    "toneArchetype": "respectful-careful",
+    "localProof": "Duke ruajtur traditën në Junik"
+   },
+   "sectionContent": {
+    "services": {
+     "heading": "Shërbime me Kujdes për Junikun",
+     "subheading": "Kombinojmë traditën me modernen në mënyrë harmonike.",
+     "highlights": [
+      "Kujdes ndaj detajeve",
+      "Respekt për arkitekturën",
+      "Siguri moderne"
+     ],
+     "cta": "Konsultim në Junik"
+    },
+    "process": {
+     "heading": "Qasja Jonë në Junik",
+     "subheading": "Punojmë me kujdes dhe precizitet.",
+     "steps": [
+      {
+       "title": "Vlerësimi i Objektit",
+       "description": "Analizojmë strukturën me kujdes."
+      },
+      {
+       "title": "Planifikimi i Detajuar",
+       "description": "Zgjidhje që nuk dëmtojnë estetikën."
+      },
+      {
+       "title": "Instalimi i Kujdesshëm",
+       "description": "Punë e pastër dhe precize."
+      },
+      {
+       "title": "Përfundimi",
+       "description": "Rezultat estetik dhe funksional."
+      }
+     ]
+    },
+    "whySetsApart": {
+     "heading": "Pse Juniku na Beson",
+     "subheading": "Ne kuptojmë vlerën e trashëgimisë dhe rëndësinë e sigurisë.",
+     "features": [
+      {
+       "title": "Ndjeshmëri Kulturore",
+       "description": "Respektojmë vlerat e Junikut."
+      },
+      {
+       "title": "Ekspertizë",
+       "description": "Zgjidhje për çdo lloj ndërtimi."
+      },
+      {
+       "title": "Besim",
+       "description": "Marrëdhënie afatgjata me klientët."
+      },
+      {
+       "title": "Cilësi",
+       "description": "Standarde të larta në çdo punë."
+      }
+     ]
+    },
+    "cta": {
+     "heading": "Keni Nevojë për Ndihmë në Junik?",
+     "subheading": "Na kontaktoni për një vlerësim falas.",
+     "primaryCTA": "Kontaktoni Tani",
+     "secondaryCTA": "Mësoni Më Tepër"
+    }
+   },
+   "heroTitle": "Dritë dhe Energji për Junikun"
+  }
+ ]
 }

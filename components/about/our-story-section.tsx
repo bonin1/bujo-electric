@@ -21,9 +21,8 @@ export default function OurStorySection() {
               që rrisin sigurinë dhe vlerën e pronave të klientëve tanë.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              Me përvojë të gjatë në tregun e Kosovës, ne kemi ndërtuar reputacionin tonë mbi cilësinë e punës, 
-              instalimet e sakta dhe shërbimin e jashtëzakonshëm ndaj klientit. Ekipi ynë i profesionistëve të certifikuar 
-              sjell ekspertizë në instalime, riparime, mirëmbajtje dhe mbështetje teknike gjithëpërfshirëse.
+              Me përvojë 15 vjeçare në tregun e Kosovës, ne kemi ndërtuar reputacionin tonë mbi cilësinë e punës, 
+              instalimet e sakta dhe shërbimin e jashtëzakonshëm ndaj klientit. Ne sjellim ekspertizë në instalime, riparime, mirëmbajtje dhe mbështetje teknike gjithëpërfshirëse.
             </p>
             <p className="text-lg text-gray-700">
               Jemi krenarë që shërbejmë në Prishtinë, Prizren, Ferizaj dhe në të gjithë Kosovën, 
@@ -40,7 +39,7 @@ export default function OurStorySection() {
           >
             <Image
               src="/assets/config/placeholder-image.png"
-              alt="Ekipi i Bujo Electric duke punuar"
+              alt="Bujo Electric duke punuar"
               fill
               className="object-cover w-auto"
               sizes="(max-width: 768px) 100vw, 50vw"
