@@ -8,112 +8,112 @@
   "projects": [
     {
       "id": 1,
-      "title": "Professional Instalime Elektrike Project",
+      "title": "Instalime Elektrike për Banesë Moderne në Pejë",
       "category": "Instalime Elektrike",
-      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
+      "image": "/assets/images/services/21.webp",
       "date": "2024",
-      "location": "Prishtin\u00eb, Kosov\u00eb",
-      "description": "Complete instalime elektrike with professional installation and quality materials.",
+      "location": "Pejë, Kosovë",
+      "description": "Instalim i plotë elektrik për banesë me tri dhoma, duke përfshirë panel modern, ndriçim LED dhe priza inteligjente.",
       "features": [
-        "Professional Installation",
-        "Quality Materials",
-        "Expert Service",
-        "Customer Satisfaction"
+        "Instalim Profesional",
+        "Materiale Cilësore",
+        "Shërbim Ekspert",
+        "Kënaqësi e Garantuar"
       ],
-      "client": "Residential Client",
-      "duration": "1-2 Days",
+      "client": "Klient Rezidencial",
+      "duration": "1-2 Ditë",
       "tags": [
         "Instalime Elektrike",
-        "Prishtin\u00eb",
-        "Kosov\u00eb"
+        "Pejë",
+        "Kosovë"
       ]
     },
     {
       "id": 2,
-      "title": "Professional Riparime Elektrike Project",
+      "title": "Riparim i Sistemit Elektrik për Biznes në Deçan",
       "category": "Riparime Elektrike",
-      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
+      "image": "/assets/images/services/22.webp",
       "date": "2024",
-      "location": "Prizren, Kosov\u00eb",
-      "description": "Complete riparime elektrike with professional installation and quality materials.",
+      "location": "Deçan, Kosovë",
+      "description": "Riparim i plotë i sistemit elektrik për dyqan, duke përfshirë ndërrimin e panelit të vjetër dhe instalimin e sigurive automatike.",
       "features": [
-        "Professional Installation",
-        "Quality Materials",
-        "Expert Service",
-        "Customer Satisfaction"
+        "Diagnostikim Profesional",
+        "Riparim i Shpejtë",
+        "Garanci 5-Vjeçare",
+        "Çmim Transparent"
       ],
-      "client": "Commercial Client",
-      "duration": "1-2 Days",
+      "client": "Klient Komercial",
+      "duration": "1-2 Ditë",
       "tags": [
         "Riparime Elektrike",
-        "Prizren",
-        "Kosov\u00eb"
+        "Deçan",
+        "Kosovë"
       ]
     },
     {
       "id": 3,
-      "title": "Professional Mir\u00ebmbajtje Elektrike Project",
-      "category": "Mir\u00ebmbajtje Elektrike",
-      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
+      "title": "Mirëmbajtje Preventive për Kompleks Banesash në Gjakovë",
+      "category": "Mirëmbajtje Elektrike",
+      "image": "/assets/images/services/23.webp",
       "date": "2024",
-      "location": "Ferizaj, Kosov\u00eb",
-      "description": "Complete mir\u00ebmbajtje elektrike with professional installation and quality materials.",
+      "location": "Gjakovë, Kosovë",
+      "description": "Mirëmbajtje e rregullt vjetore për kompleks banesash me 20 apartamente, duke përfshirë kontroll të plotë të sistemit elektrik.",
       "features": [
-        "Professional Installation",
-        "Quality Materials",
-        "Expert Service",
-        "Customer Satisfaction"
+        "Kontroll i Plotë",
+        "Testim i Sigurive",
+        "Raport Teknik",
+        "Rekomandime Profesionale"
       ],
-      "client": "Residential Client",
-      "duration": "1-2 Days",
+      "client": "Klient Rezidencial",
+      "duration": "2-3 Ditë",
       "tags": [
-        "Mir\u00ebmbajtje Elektrike",
-        "Ferizaj",
-        "Kosov\u00eb"
+        "Mirëmbajtje Elektrike",
+        "Gjakovë",
+        "Kosovë"
       ]
     },
     {
       "id": 4,
-      "title": "Professional Ndri\u00e7im & Energji Project",
-      "category": "Ndri\u00e7im & Energji",
-      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
+      "title": "Instalim i Ndriçimit LED për Zyre në Istog",
+      "category": "Ndriçim & Energji",
+      "image": "/assets/images/services/24.webp",
       "date": "2024",
-      "location": "Gjilan, Kosov\u00eb",
-      "description": "Complete ndri\u00e7im & energji with professional installation and quality materials.",
+      "location": "Istog, Kosovë",
+      "description": "Transformim i plotë i ndriçimit të zyrës me teknologji LED moderne, duke reduktuar konsumin e energjisë deri në 75%.",
       "features": [
-        "Professional Installation",
-        "Quality Materials",
-        "Expert Service",
-        "Customer Satisfaction"
+        "Ndriçim LED Efikas",
+        "Kursim Energjie",
+        "Ndriçim i Rregullueshëm",
+        "Instalim Profesional"
       ],
-      "client": "Commercial Client",
-      "duration": "1-2 Days",
+      "client": "Klient Komercial",
+      "duration": "1 Ditë",
       "tags": [
-        "Ndri\u00e7im & Energji",
-        "Gjilan",
-        "Kosov\u00eb"
+        "Ndriçim & Energji",
+        "Istog",
+        "Kosovë"
       ]
     },
     {
       "id": 5,
-      "title": "Professional Sisteme Speciale Project",
+      "title": "Instalim i Sistemit Smart Home në Pejë",
       "category": "Sisteme Speciale",
-      "image": "/assets/images/portfolio/la-marque-garage-door-center-17.webp",
+      "image": "/assets/images/services/25.webp",
       "date": "2024",
-      "location": "Pej\u00eb, Kosov\u00eb",
-      "description": "Complete sisteme speciale with professional installation and quality materials.",
+      "location": "Pejë, Kosovë",
+      "description": "Instalim i plotë i sistemit Smart Home, duke përfshirë ndriçim inteligjent, termostat dhe kontroll me zë përmes asistentëve virtualë.",
       "features": [
-        "Professional Installation",
-        "Quality Materials",
-        "Expert Service",
-        "Customer Satisfaction"
+        "Teknologji Moderne",
+        "Kontroll me Smartphone",
+        "Automatizim i Plotë",
+        "Trajnim për Përdorues"
       ],
-      "client": "Residential Client",
-      "duration": "1-2 Days",
+      "client": "Klient Rezidencial",
+      "duration": "2-3 Ditë",
       "tags": [
         "Sisteme Speciale",
-        "Pej\u00eb",
-        "Kosov\u00eb"
+        "Pejë",
+        "Kosovë"
       ]
     }
   ]
